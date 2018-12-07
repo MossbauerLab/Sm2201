@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L InterfaceBoard:3601 D10
+L ISA_Camac_Interface-rescue:3601-InterfaceBoard D10
 U 1 1 5BFFC0EF
 P 5250 1250
 F 0 "D10" H 5250 1925 50  0000 C CNN
@@ -26,7 +26,7 @@ F 3 "" H 5250 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L InterfaceBoard:3604 D15
+L ISA_Camac_Interface-rescue:3604-InterfaceBoard D15
 U 1 1 5BFFC19E
 P 9400 1400
 F 0 "D15" H 9400 2225 50  0000 C CNN
@@ -290,7 +290,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS374" H 7550 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L InterfaceBoard:IC8216 D1
+L ISA_Camac_Interface-rescue:IC8216-InterfaceBoard D1
 U 1 1 5C04B225
 P 3700 3600
 F 0 "D1" H 3700 4325 50  0000 C CNN
@@ -301,7 +301,7 @@ F 3 "" H 3700 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L InterfaceBoard:IC8216 D2
+L ISA_Camac_Interface-rescue:IC8216-InterfaceBoard D2
 U 1 1 5C04B390
 P 3700 7350
 F 0 "D2" H 3700 8075 50  0000 C CNN
@@ -820,7 +820,7 @@ Wire Wire Line
 Text Label 6500 7650 0    50   ~ 10
 Z(C2)
 $Comp
-L InterfaceBoard:IC3226 D11
+L ISA_Camac_Interface-rescue:IC3226-InterfaceBoard D11
 U 1 1 5C34E2D9
 P 8950 5300
 F 0 "D11" H 8950 6025 50  0000 C CNN
@@ -831,7 +831,7 @@ F 3 "" H 8950 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L InterfaceBoard:IC3226 D12
+L ISA_Camac_Interface-rescue:IC3226-InterfaceBoard D12
 U 1 1 5C34E668
 P 8950 9000
 F 0 "D12" H 8950 9725 50  0000 C CNN

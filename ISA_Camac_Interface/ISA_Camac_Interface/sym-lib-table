@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name InterfaceBoard)(type Legacy)(uri C:/Users/michael/Projects/Messbauer/sm2201/СМ2201/ISA_Camac_Interface/ISA_Camac_Interface/KiCadLib/InterfaceBoard.lib)(options "")(descr ""))
+  (lib (name ISA_Camac_Interface-rescue)(type Legacy)(uri ${KIPRJMOD}/ISA_Camac_Interface-rescue.lib)(options "")(descr ""))
 )

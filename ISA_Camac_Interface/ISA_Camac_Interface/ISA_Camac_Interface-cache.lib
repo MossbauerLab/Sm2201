@@ -385,11 +385,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# InterfaceBoard_3601
+# ISA_Camac_Interface-rescue_3601-InterfaceBoard
 #
-DEF InterfaceBoard_3601 D 0 40 Y Y 1 F N
+DEF ISA_Camac_Interface-rescue_3601-InterfaceBoard D 0 40 Y Y 1 F N
 F0 "D" 0 700 50 H V C CNN
-F1 "InterfaceBoard_3601" 0 600 50 H V C CNN
+F1 "ISA_Camac_Interface-rescue_3601-InterfaceBoard" 0 600 50 H V C CNN
 F2 "" 0 700 50 H I C CNN
 F3 "" 0 700 50 H I C CNN
 $FPLIST
@@ -418,11 +418,11 @@ X D3 9 500 100 197 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# InterfaceBoard_3604
+# ISA_Camac_Interface-rescue_3604-InterfaceBoard
 #
-DEF InterfaceBoard_3604 D 0 40 Y Y 1 F N
+DEF ISA_Camac_Interface-rescue_3604-InterfaceBoard D 0 40 Y Y 1 F N
 F0 "D" 0 800 50 H V C CNN
-F1 "InterfaceBoard_3604" 0 700 50 H V C CNN
+F1 "ISA_Camac_Interface-rescue_3604-InterfaceBoard" 0 700 50 H V C CNN
 F2 "" 0 800 50 H I C CNN
 F3 "" 0 800 50 H I C CNN
 DRAW
@@ -455,11 +455,11 @@ X D0 9 550 550 197 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# InterfaceBoard_IC3226
+# ISA_Camac_Interface-rescue_IC3226-InterfaceBoard
 #
-DEF InterfaceBoard_IC3226 D 0 40 Y Y 1 F N
+DEF ISA_Camac_Interface-rescue_IC3226-InterfaceBoard D 0 40 Y Y 1 F N
 F0 "D" 0 750 50 H V C CNN
-F1 "InterfaceBoard_IC3226" 0 650 50 H V C CNN
+F1 "ISA_Camac_Interface-rescue_IC3226-InterfaceBoard" 0 650 50 H V C CNN
 F2 "" 0 750 50 H I C CNN
 F3 "" 0 750 50 H I C CNN
 DRAW
@@ -484,11 +484,11 @@ X DI2 9 -500 300 197 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# InterfaceBoard_IC8216
+# ISA_Camac_Interface-rescue_IC8216-InterfaceBoard
 #
-DEF InterfaceBoard_IC8216 D 0 40 Y Y 1 F N
+DEF ISA_Camac_Interface-rescue_IC8216-InterfaceBoard D 0 40 Y Y 1 F N
 F0 "D" 0 750 50 H V C CNN
-F1 "InterfaceBoard_IC8216" 0 650 50 H V C CNN
+F1 "ISA_Camac_Interface-rescue_IC8216-InterfaceBoard" 0 650 50 H V C CNN
 F2 "" 0 750 50 H I C CNN
 F3 "" 0 750 50 H I C CNN
 $FPLIST
