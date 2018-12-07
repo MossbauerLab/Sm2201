@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 3601
+D 256x4 ROM
+K ROM
+$ENDCMP
+#
+$CMP 3604
+D 512x8 ROM
+K ROM
+$ENDCMP
+#
+#End Doc Library
