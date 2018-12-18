@@ -92,10 +92,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 14450 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS04 U?
+L 74xx:74LS04 D18.1
 U 1 1 5C002C60
 P 12550 1250
-F 0 "U?" H 12550 1567 50  0000 C CNN
+F 0 "D18.1" H 12550 1567 50  0000 C CNN
 F 1 "74LS04" H 12550 1476 50  0000 C CNN
 F 2 "" H 12550 1250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 12550 1250 50  0001 C CNN
@@ -122,28 +122,6 @@ F 1 "74LS04" H 14000 8026 50  0000 C CNN
 F 2 "" H 14000 7800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 14000 7800 50  0001 C CNN
 	3    14000 7800
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS04 U?
-U 4 1 5C002E87
-P 15600 950
-F 0 "U?" H 15600 1267 50  0000 C CNN
-F 1 "74LS04" H 15600 1176 50  0000 C CNN
-F 2 "" H 15600 950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 15600 950 50  0001 C CNN
-	4    15600 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS04 U?
-U 5 1 5C002F5C
-P 15600 1400
-F 0 "U?" H 15600 1717 50  0000 C CNN
-F 1 "74LS04" H 15600 1626 50  0000 C CNN
-F 2 "" H 15600 1400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 15600 1400 50  0001 C CNN
-	5    15600 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -984,14 +962,6 @@ Text Label 9450 8650 0    50   ~ 0
 D1
 Text Label 9450 8550 0    50   ~ 0
 D0
-Wire Wire Line
-	8450 9200 7850 9200
-Wire Wire Line
-	8450 9300 7850 9300
-Wire Wire Line
-	8450 9400 7850 9400
-Wire Wire Line
-	8450 9500 7850 9500
 Text Label 7850 9050 0    50   ~ 0
 D(CEL)
 Text Label 7850 9500 0    50   ~ 0
@@ -2074,8 +2044,6 @@ Wire Notes Line
 	1050 3500 1050 10700
 Text Notes 850  3450 0    50   ~ 0
 X2.1\n
-Wire Wire Line
-	950  4100 3050 4100
 Text Notes 900  3800 0    39   ~ 0
 C3
 Text Notes 900  3900 0    39   ~ 0
@@ -2090,18 +2058,8 @@ Text Notes 900  9400 0    39   ~ 0
 C4
 Text Notes 900  9000 0    39   ~ 0
 B5
-Wire Wire Line
-	950  9600 2950 9600
 Text Notes 900  9600 0    39   ~ 0
 C5
-Wire Wire Line
-	950  5250 3200 5250
-Wire Wire Line
-	950  5450 3200 5450
-Wire Wire Line
-	950  5650 3200 5650
-Wire Wire Line
-	950  5050 3200 5050
 Text Notes 900  5250 0    39   ~ 0
 B6
 Text Notes 900  5050 0    39   ~ 0
@@ -2133,23 +2091,202 @@ Wire Wire Line
 Text Notes 7800 5500 0    39   ~ 0
 A5
 Text Notes 7800 5600 0    39   ~ 0
-A5
+A4
 Text Notes 7800 5700 0    39   ~ 0
-A5
+A3
 Text Notes 7800 5800 0    39   ~ 0
-A5
+A2
+Wire Notes Line
+	7850 9100 7850 9600
 Wire Wire Line
-	950  3800 2900 3800
+	7700 9200 8450 9200
 Wire Wire Line
-	950  3900 3000 3900
+	7700 9300 8450 9300
 Wire Wire Line
-	950  4000 2950 4000
+	7700 9400 8450 9400
 Wire Wire Line
-	950  9200 3000 9200
+	7700 9500 8450 9500
+Text Notes 7650 9200 0    39   ~ 0
+A8
+Text Notes 7650 9300 0    39   ~ 0
+A9
+Text Notes 7650 9400 0    39   ~ 0
+A7
+Text Notes 7650 9500 0    39   ~ 0
+A6
+Text Notes 7650 9100 0    50   ~ 0
+X1.3
 Wire Wire Line
-	950  9400 2900 9400
+	950  4100 3050 4100
 Wire Wire Line
-	950  9000 2850 9000
+	950  9600 2950 9600
+Wire Wire Line
+	950  5250 3200 5250
+Wire Wire Line
+	950  5450 3200 5450
+Wire Wire Line
+	950  5650 3200 5650
+Wire Wire Line
+	950  5050 3200 5050
+Text Notes 13500 1150 0    50   ~ 0
+X1.4
+Text Notes 13550 1200 0    39   ~ 0
+A10
+Text Notes 11300 2600 0    50   ~ 0
+X1.5
+Text Notes 11350 2650 0    39   ~ 0
+B20
+Text Notes 9950 650  0    50   ~ 0
+X2.4
+Text Notes 10000 700  0    39   ~ 0
+B24
+Text Notes 6400 1800 0    50   ~ 0
+X2.2
+Text Notes 6450 1850 0    39   ~ 0
+B21
+Text Notes 10250 3700 0    50   ~ 0
+X1.4
+Text Notes 10300 3750 0    39   ~ 0
+B14
+Text Notes 10250 4450 0    50   ~ 0
+X1.4
+Text Notes 10300 4500 0    39   ~ 0
+B13
+Text Notes 11550 5750 0    50   ~ 0
+X2.3
+Text Notes 11850 5650 0    50   ~ 0
+X1.4
+Text Notes 11800 6700 0    50   ~ 0
+X2.3
+Wire Wire Line
+	15850 2550 15100 2550
+Wire Wire Line
+	15100 2550 15100 2650
+Wire Wire Line
+	15100 2650 15850 2650
+Wire Wire Line
+	15850 2750 15100 2750
+Wire Wire Line
+	15100 2750 15100 2650
+Connection ~ 15100 2650
+Text Label 15700 2550 0    39   ~ 0
+CB_A1
+Text Label 15700 2650 0    39   ~ 0
+CB_A2
+Text Label 15700 2750 0    39   ~ 0
+CB_A3
+Wire Wire Line
+	15850 3100 15100 3100
+Wire Wire Line
+	15100 3100 15100 3200
+Wire Wire Line
+	15100 3200 15850 3200
+$Comp
+L power:GNDD #PWR?
+U 1 1 5C682994
+P 15100 2750
+F 0 "#PWR?" H 15100 2500 50  0001 C CNN
+F 1 "GNDD" H 15104 2595 50  0000 C CNN
+F 2 "" H 15100 2750 50  0001 C CNN
+F 3 "" H 15100 2750 50  0001 C CNN
+	1    15100 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15850 3300 15100 3300
+Wire Wire Line
+	15100 3300 15100 3200
+Connection ~ 15100 3200
+Wire Wire Line
+	15850 3400 15100 3400
+Wire Wire Line
+	15100 3400 15100 3300
+Connection ~ 15100 3300
+Wire Wire Line
+	15850 3500 15100 3500
+Wire Wire Line
+	15100 3500 15100 3400
+Connection ~ 15100 3400
+Wire Wire Line
+	15850 3600 15100 3600
+Wire Wire Line
+	15100 3600 15100 3500
+Connection ~ 15100 3500
+Wire Wire Line
+	15100 3700 15100 3600
+Connection ~ 15100 3600
+Wire Wire Line
+	15100 3700 15850 3700
+$Comp
+L power:GNDD #PWR?
+U 1 1 5C9F7E3C
+P 15100 3700
+F 0 "#PWR?" H 15100 3450 50  0001 C CNN
+F 1 "GNDD" H 15104 3545 50  0000 C CNN
+F 2 "" H 15100 3700 50  0001 C CNN
+F 3 "" H 15100 3700 50  0001 C CNN
+	1    15100 3700
+	1    0    0    -1  
+$EndComp
+Text Label 15700 3100 0    39   ~ 0
+CB_A4
+Text Label 15700 3200 0    39   ~ 0
+CB_A5
+Text Label 15700 3300 0    39   ~ 0
+CB_A6
+Text Label 15700 3400 0    39   ~ 0
+CB_A7
+Text Label 15700 3500 0    39   ~ 0
+CB_A8
+Text Label 15700 3600 0    39   ~ 0
+CB_A9
+Text Label 15700 3700 0    39   ~ 0
+CB_A10
+Connection ~ 15100 3700
+Wire Wire Line
+	15850 4000 15100 4000
+Wire Wire Line
+	15100 4000 15100 4100
+Wire Wire Line
+	15100 4100 15850 4100
+$Comp
+L power:GNDD #PWR?
+U 1 1 5CBE33B9
+P 15100 4100
+F 0 "#PWR?" H 15100 3850 50  0001 C CNN
+F 1 "GNDD" H 15104 3945 50  0000 C CNN
+F 2 "" H 15100 4100 50  0001 C CNN
+F 3 "" H 15100 4100 50  0001 C CNN
+	1    15100 4100
+	1    0    0    -1  
+$EndComp
+Text Label 15700 4000 0    39   ~ 0
+CB_A11
+Text Label 15700 4100 0    39   ~ 0
+CB_A12
+Wire Wire Line
+	15850 4400 15100 4400
+Wire Wire Line
+	15100 4400 15100 4500
+Wire Wire Line
+	15100 4500 15850 4500
+$Comp
+L power:GNDD #PWR?
+U 1 1 5CC358E3
+P 15100 4500
+F 0 "#PWR?" H 15100 4250 50  0001 C CNN
+F 1 "GNDD" H 15104 4345 50  0000 C CNN
+F 2 "" H 15100 4500 50  0001 C CNN
+F 3 "" H 15100 4500 50  0001 C CNN
+	1    15100 4500
+	1    0    0    -1  
+$EndComp
+Text Label 15700 4400 0    39   ~ 0
+CB_A25
+Text Label 15700 4500 0    39   ~ 0
+CB_A26
+Wire Wire Line
+	950  8900 3200 8900
 Wire Wire Line
 	950  9100 3200 9100
 Wire Wire Line
@@ -2157,7 +2294,17 @@ Wire Wire Line
 Wire Wire Line
 	950  9500 3200 9500
 Wire Wire Line
-	950  8900 3200 8900
+	950  9400 2900 9400
+Wire Wire Line
+	950  9200 3000 9200
+Wire Wire Line
+	950  9000 2850 9000
+Wire Wire Line
+	950  3800 2900 3800
+Wire Wire Line
+	950  3900 3000 3900
+Wire Wire Line
+	950  4000 2950 4000
 Wire Bus Line
 	1750 6300 1750 10350
 Wire Bus Line
