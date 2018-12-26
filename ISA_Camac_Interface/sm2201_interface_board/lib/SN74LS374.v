@@ -5,34 +5,30 @@
 // 
 // Create Date:    23:57:05 08/28/2017 
 // Design Name: 
-// Module Name:    74LS298
+// Module Name:    SN74LS374
 // Project Name:   sm2201_interface_board
 // Target Devices: 
 // Tool versions:  Quartus 12.1 sp1
-// Description:    An implementation of chip 74LS298 (2 4bit - 1 multiplexer) with data storage
+// Description:    An implementation of chip SN74LS374 (8bit register) with tri state
 //
 // Dependencies: 
 //
 // Revision: 
 // Revision 1.0
-// Additional Comments: Analog of К555КП13
+// Additional Comments: Analog of К555ИР23
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module SN74LS298 
+module SN74LS374
 (
-    input wire [3:0] s1,         // source 1: MSB -> A1, B1, C1, D1 <- LSB
-	 input wire [3:0] s2,         // source 2: MSB -> A2, B2, C3, D4 <- LSB
-	 input wire ws,               // word or source select
+    input wire [7:0] data,
 	 input wire clk,
-	 output reg [3:0] q          // output: MSB -> QA QB QC QD <- LSB
+	 input wire out_control,
+	 output tri [7:0] out 
 );
 
-always @(negedge clk)
+always @(posedge clk)
 begin
-    if (ws == 1'b0)
-	    q = s1;
-    else q = s2;
 end
 
 endmodule
