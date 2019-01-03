@@ -27,8 +27,13 @@ module SN74LS374
 	 output tri [7:0] out 
 );
 
+reg [7:0] out_reg;
+
+assign out = out_control == 1 ? 'bz : out_reg;
+
 always @(posedge clk)
 begin
+    out_reg = data;
 end
 
 endmodule
