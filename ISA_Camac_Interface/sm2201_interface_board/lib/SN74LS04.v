@@ -5,42 +5,46 @@
 // 
 // Create Date:    23:57:05 08/28/2017 
 // Design Name: 
-// Module Name:    SN74LS00
+// Module Name:    SN74LS04
 // Project Name:   sm2201_interface_board
 // Target Devices: 
 // Tool versions:  Quartus 12.1 sp1
-// Description:    An implementation of chip SN74LS00 (4 2NAND logocal elements)
+// Description:    An implementation of chip SN74LS04 (6 1 bit inverters)
 //
 // Dependencies: 
 //
 // Revision: 
 // Revision 1.0
-// Additional Comments: Analog of К555ЛА3
+// Additional Comments: Analog of К555ЛП9
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module SN74LS00
+module SN74LS04
 (
     input wire a1,
-    input wire b1, 
     output wire y1,
     
     input wire a2,
-    input wire b2, 
     output wire y2,
     
     input wire a3,
-    input wire b3, 
     output wire y3,
 
     input wire a4,
-    input wire b4, 
     output wire y4,
+    
+    input wire a5,
+    output wire y5,
+    
+    input wire a6,
+    output wire y6,
 );
 
-assign y1 = ~(a1 & b1);
-assign y2 = ~(a2 & b2);
-assign y3 = ~(a3 & b3);
-assign y4 = ~(a4 & b4);
+assign y1 = ~a1;
+assign y2 = ~a2;
+assign y3 = ~a3;
+assign y4 = ~a4;
+assign y5 = ~a5;
+assign y6 = ~a6;
 
 endmodule
