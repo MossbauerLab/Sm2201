@@ -41,20 +41,30 @@ module SN74LS257_testbench;
 		.out_control(out_control), 
 		.y(y)
 	);
+	
+	reg [3:0] counter;
 
 	initial begin
 		// Initialize Inputs
 		a = 0;
 		b = 0;
 		select = 0;
-		out_control = 0;
+		out_control = 1;
+		counter = 0;
 
 		// Wait 100 ns for global reset to finish
-		#100;
+		#1000;
         
-		// Add stimulus here
-
+		out_control = 0;
+      a = 8'b10110001;
+		b = 8'b00100100;
 	end
       
+   always
+	begin
+	   #100 counter <= counter + 1;
+		select <= counter < 8 ? 0 : 1;
+	end
+	
 endmodule
 
