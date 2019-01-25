@@ -41,19 +41,29 @@ module SN74LS298_testbench;
 		.clk(clk), 
 		.q(q)
 	);
+	
+	reg [3:0] counter;
 
 	initial begin
 		// Initialize Inputs
-		s1 = 0;
-		s2 = 0;
+		s1 = 4'b0110;
+		s2 = 4'b1001;
 		ws = 0;
 		clk = 0;
+		counter = 0;
 
 		// Wait 100 ns for global reset to finish
-		#100;
+		#1000;
         
 		// Add stimulus here
 
+	end
+	
+	always
+	begin
+	    #100 clk <= ~clk;
+		 counter <= counter + 1;
+		 ws = counter < 8 ? 0 : 1;
 	end
       
 endmodule
