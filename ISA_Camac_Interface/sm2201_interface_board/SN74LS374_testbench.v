@@ -40,14 +40,14 @@ module SN74LS374_testbench;
 		.out(out)
 	);
 	
-	reg[15:0] counter;
+	//reg[15:0] counter;
 
 	initial begin
 		// Initialize Inputs
 		data = 0;
 		clk = 0;
 		out_control = 1;
-		counter = 0;
+		//counter = 0;
 
 		// Wait 1 us for global reset to finish
 		#1000;
@@ -60,7 +60,7 @@ module SN74LS374_testbench;
 	begin
 	    #100 data <= data + 1;
 		 #10 clk <= ~clk;	 
-		 counter <= counter + 1;
+		 // counter <= counter + 1;
 	end
       
 endmodule
