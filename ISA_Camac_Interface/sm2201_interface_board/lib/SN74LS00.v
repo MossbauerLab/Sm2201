@@ -35,7 +35,7 @@ module SN74LS00
 
     input wire a4,
     input wire b4, 
-    output wire y4,
+    output wire y4
 );
 
 assign y1 = ~(a1 & b1);

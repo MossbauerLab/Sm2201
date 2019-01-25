@@ -37,7 +37,7 @@ module SN74LS04
     output wire y5,
     
     input wire a6,
-    output wire y6,
+    output wire y6
 );
 
 assign y1 = ~a1;
