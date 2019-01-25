@@ -24,44 +24,44 @@
 
 module SN74LS374_testbench;
 
-	// Inputs
-	reg [7:0] data;
-	reg clk;
-	reg out_control;
+    // Inputs
+    reg [7:0] data;
+    reg clk;
+    reg out_control;
 
-	// Outputs
-	wire [7:0] out;
+    // Outputs
+    wire [7:0] out;
 
-	// Instantiate the Unit Under Test (UUT)
-	SN74LS374 uut (
-		.data(data), 
-		.clk(clk), 
-		.out_control(out_control), 
-		.out(out)
-	);
-	
-	//reg[15:0] counter;
+    // Instantiate the Unit Under Test (UUT)
+    SN74LS374 uut (
+        .data(data), 
+        .clk(clk), 
+        .out_control(out_control), 
+        .out(out)
+    );
+    
+    //reg[15:0] counter;
 
-	initial begin
-		// Initialize Inputs
-		data = 0;
-		clk = 0;
-		out_control = 1;
-		//counter = 0;
+    initial begin
+        // Initialize Inputs
+        data = 0;
+        clk = 0;
+        out_control = 1;
+        //counter = 0;
 
-		// Wait 1 us for global reset to finish
-		#1000;
+        // Wait 1 us for global reset to finish
+        #1000;
         
-		// Add stimulus here
+        // Add stimulus here
       out_control = 0;
-	end
-	
-	always
-	begin
-	    #100 data <= data + 1;
-		 #10 clk <= ~clk;	 
-		 // counter <= counter + 1;
-	end
+    end
+    
+    always
+    begin
+        #100 data <= data + 1;
+         #10 clk <= ~clk;     
+         // counter <= counter + 1;
+    end
       
 endmodule
 

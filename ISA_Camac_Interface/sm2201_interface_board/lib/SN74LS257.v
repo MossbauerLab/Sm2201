@@ -26,15 +26,15 @@ module SN74LS257 #
 )
 (
     input wire [7:0] a,
-	 input wire [7:0] b,
-	 input wire select,
-	 input wire out_control,
-	 output tri [7:0] y
+    input wire [7:0] b,
+    input wire select,
+    input wire out_control,
+    output tri [7:0] y
 );
     wire [7:0] selection;
-	 wire [7:0] internal_out;
-	 assign selection = select == 0 ? a : b;
-	 assign internal_out = INVERTED_OUTPUT == 0 ? selection : 255 - selection;
+    wire [7:0] internal_out;
+    assign selection = select == 0 ? a : b;
+    assign internal_out = INVERTED_OUTPUT == 0 ? selection : 255 - selection;
     
     assign y = out_control == 0 ? internal_out : 'bz;
 endmodule

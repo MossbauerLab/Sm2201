@@ -24,47 +24,47 @@
 
 module SN74LS298_testbench;
 
-	// Inputs
-	reg [3:0] s1;
-	reg [3:0] s2;
-	reg ws;
-	reg clk;
+    // Inputs
+    reg [3:0] s1;
+    reg [3:0] s2;
+    reg ws;
+    reg clk;
 
-	// Outputs
-	wire [3:0] q;
+    // Outputs
+    wire [3:0] q;
 
-	// Instantiate the Unit Under Test (UUT)
-	SN74LS298 uut (
-		.s1(s1), 
-		.s2(s2), 
-		.ws(ws), 
-		.clk(clk), 
-		.q(q)
-	);
-	
-	reg [3:0] counter;
+    // Instantiate the Unit Under Test (UUT)
+    SN74LS298 uut (
+        .s1(s1), 
+        .s2(s2), 
+        .ws(ws), 
+        .clk(clk), 
+        .q(q)
+    );
+    
+    reg [3:0] counter;
 
-	initial begin
-		// Initialize Inputs
-		s1 = 4'b0110;
-		s2 = 4'b1001;
-		ws = 0;
-		clk = 0;
-		counter = 0;
+    initial begin
+        // Initialize Inputs
+        s1 = 4'b0110;
+        s2 = 4'b1001;
+        ws = 0;
+        clk = 0;
+        counter = 0;
 
-		// Wait 100 ns for global reset to finish
-		#1000;
+        // Wait 100 ns for global reset to finish
+        #1000;
         
-		// Add stimulus here
+        // Add stimulus here
 
-	end
-	
-	always
-	begin
-	    #100 clk <= ~clk;
-		 counter <= counter + 1;
-		 ws = counter < 8 ? 0 : 1;
-	end
+    end
+    
+    always
+    begin
+        #100 clk <= ~clk;
+         counter <= counter + 1;
+         ws = counter < 8 ? 0 : 1;
+    end
       
 endmodule
 

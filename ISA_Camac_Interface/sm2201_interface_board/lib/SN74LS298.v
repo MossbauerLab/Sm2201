@@ -22,16 +22,16 @@
 module SN74LS298 
 (
     input wire [3:0] s1,         // source 1: MSB -> A1, B1, C1, D1 <- LSB
-	 input wire [3:0] s2,         // source 2: MSB -> A2, B2, C3, D4 <- LSB
-	 input wire ws,               // word or source select
-	 input wire clk,
-	 output reg [3:0] q          // output: MSB -> QA QB QC QD <- LSB
+    input wire [3:0] s2,         // source 2: MSB -> A2, B2, C3, D4 <- LSB
+    input wire ws,               // word or source select
+    input wire clk,
+    output reg [3:0] q          // output: MSB -> QA QB QC QD <- LSB
 );
 
 always @(negedge clk)
 begin
     if (ws == 1'b0)
-	    q = s1;
+        q = s1;
     else q = s2;
 end
 

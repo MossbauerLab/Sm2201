@@ -24,47 +24,47 @@
 
 module SN74LS257_testbench;
 
-	// Inputs
-	reg [7:0] a;
-	reg [7:0] b;
-	reg select;
-	reg out_control;
+    // Inputs
+    reg [7:0] a;
+    reg [7:0] b;
+    reg select;
+    reg out_control;
 
-	// Outputs
-	wire [7:0] y;
+    // Outputs
+    wire [7:0] y;
 
-	// Instantiate the Unit Under Test (UUT)
-	SN74LS257 uut (
-		.a(a), 
-		.b(b), 
-		.select(select), 
-		.out_control(out_control), 
-		.y(y)
-	);
-	
-	reg [3:0] counter;
+    // Instantiate the Unit Under Test (UUT)
+    SN74LS257 uut (
+        .a(a), 
+        .b(b), 
+        .select(select), 
+        .out_control(out_control), 
+        .y(y)
+    );
+    
+    reg [3:0] counter;
 
-	initial begin
-		// Initialize Inputs
-		a = 0;
-		b = 0;
-		select = 0;
-		out_control = 1;
-		counter = 0;
+    initial begin
+        // Initialize Inputs
+        a = 0;
+        b = 0;
+        select = 0;
+        out_control = 1;
+        counter = 0;
 
-		// Wait 100 ns for global reset to finish
-		#1000;
+        // Wait 100 ns for global reset to finish
+        #1000;
         
-		out_control = 0;
+        out_control = 0;
       a = 8'b10110001;
-		b = 8'b00100100;
-	end
+        b = 8'b00100100;
+    end
       
    always
-	begin
-	   #100 counter <= counter + 1;
-		select <= counter < 8 ? 0 : 1;
-	end
-	
+    begin
+       #100 counter <= counter + 1;
+        select <= counter < 8 ? 0 : 1;
+    end
+    
 endmodule
 
