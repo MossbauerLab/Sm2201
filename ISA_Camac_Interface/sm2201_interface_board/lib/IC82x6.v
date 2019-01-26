@@ -9,16 +9,17 @@
 // Project Name:   sm2201_interface_board
 // Target Devices: 
 // Tool versions:  Quartus 12.1 sp1
-// Description:    An implementation of chip IC8216 (4bit bus former)
+// Description:    An implementation of chip IC8216 and 8226 (4bit bus former)
+//                 8216 - buffers, 8226 - inverters
 //
 // Dependencies: 
 //
 // Revision: 1.0
-// Additional Comments: Analog of К589АП16
+// Additional Comments: Analog of К589АП16 & К589АП26
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module IC8216
+module IC82x6
 (
     input tri [3:0] d_in,
     output tri [3:0] d_out,
