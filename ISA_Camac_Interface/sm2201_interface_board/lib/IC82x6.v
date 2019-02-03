@@ -10,7 +10,7 @@
 // Target Devices: 
 // Tool versions:  Quartus 12.1 sp1
 // Description:    An implementation of chip IC8216 and 8226 (4bit bus former)
-//                 8216 - buffers, 8226 - inverters
+//                 8216 - buffers, 8226 - inverters (INVERTED_OUTPUT must be set to 1)
 //
 // Dependencies: 
 //
@@ -19,16 +19,40 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module IC82x6
+module IC82x6 #
+(
+    INVERTED_OUTPUT = 0
+)
 (
     input tri [3:0] d_in,
-    output tri [3:0] d_out,
-    inout tri [3:0] d_bus,
+    output reg [3:0] d_out,
+    inout wire [3:0] d_bus,
     input wire cs_n,
     input wire dce
 );
 
-assign d_out = cs_n == 0 ? (dce == 1 ? d_bus : 4'bz) : 4'bz;
-assign d_bus = cs_n == 0 ? (dce == 0 ? d_in : d_bus) : 4'bz;
+// assign d_out = (cs_n == 1'b0 && dce == 1'b1) ? d_bus : 4'bz;
+// cs_n == 1'b0 ? (dce == 1'b1 ? (INVERTED_OUTPUT == 0 ? d_bus : ~d_bus) : d_out) : 4'bz;
+// 0: DI to DB
+// assign d_bus = (cs_n == 1'b0 && dce == 1'b0) ? d_in : 4'bz;
+// assign d_bus = cs_n == 1'b0 ? (dce == 1'b0 ? (INVERTED_OUTPUT == 0 ? d_in : ~d_in) : d_bus) : 4'bz;
+
+reg [3:0] d_bus_reg;
+assign d_bus = cs_n == 1'b0 ? ((dce== 1'b0) ? d_bus_reg : d_bus) : 4'bz;
+
+always @(*) //dce or cs_n
+begin
+   if (cs_n == 1'b1)
+	begin
+	    d_out <= 4'bz;
+		 d_bus_reg <= 4'bz;
+	end
+	else
+	begin
+	    if (dce == 1'b0)  // d_in to d_bus
+		     d_bus_reg <= d_in;
+		 else d_out <= d_bus_reg;
+	end
+end
 
 endmodule
