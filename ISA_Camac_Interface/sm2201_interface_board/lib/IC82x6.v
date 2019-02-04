@@ -31,27 +31,21 @@ module IC82x6 #
     input wire dce
 );
 
-// assign d_out = (cs_n == 1'b0 && dce == 1'b1) ? d_bus : 4'bz;
-// cs_n == 1'b0 ? (dce == 1'b1 ? (INVERTED_OUTPUT == 0 ? d_bus : ~d_bus) : d_out) : 4'bz;
-// 0: DI to DB
-// assign d_bus = (cs_n == 1'b0 && dce == 1'b0) ? d_in : 4'bz;
-// assign d_bus = cs_n == 1'b0 ? (dce == 1'b0 ? (INVERTED_OUTPUT == 0 ? d_in : ~d_in) : d_bus) : 4'bz;
-
 reg [3:0] d_bus_reg;
 assign d_bus = cs_n == 1'b0 ? ((dce== 1'b0) ? d_bus_reg : d_bus) : 4'bz;
 
-always @(*) //dce or cs_n
+always @(*)
 begin
-   if (cs_n == 1'b1)
+   if (cs_n == 1'b1)               // chip is OFF
 	begin
 	    d_out <= 4'bz;
 		 d_bus_reg <= 4'bz;
 	end
-	else
+	else                            // chip is ON
 	begin
-	    if (dce == 1'b0)  // d_in to d_bus
-		     d_bus_reg <= d_in;
-		 else d_out <= d_bus_reg;
+	    if (dce == 1'b0)            // READ: d_in -> d_bus
+		     d_bus_reg <= d_in;    
+		 else d_out <= d_bus_reg;    // WRITE: d_bus -> d_out via register
 	end
 end
 
