@@ -37,6 +37,7 @@ module IC8216_testbench;
 	
 	localparam [3:0] TEST_VALUE_1 = 4'b0101;
 	localparam [3:0] TEST_VALUE_2 = 4'b0001;
+	localparam [3:0] TEST_VALUE_3 = 4'b1001;
 	
 	reg [3:0] d_bus_reg;
 	wire [3:0] d_bus_net;
@@ -110,7 +111,20 @@ module IC8216_testbench;
 		 begin
 		     cs_n <= 1;                // OFF
 			  d_bus_source <= 0;
-		 end  
+		 end
+		 
+		 if (counter == 18)
+		 begin
+		     d_in <= TEST_VALUE_3;
+			  dce <= 0;
+			  cs_n <= 0;
+		 end
+		 
+		 if (counter == 20)
+		 begin
+			  cs_n <= 1;
+			  counter <= 0;
+		 end
 	end
       
 endmodule
