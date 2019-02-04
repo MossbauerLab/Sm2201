@@ -39,8 +39,9 @@ module IC8216_testbench;
 	localparam [3:0] TEST_VALUE_2 = 4'b0001;
 	
 	reg [3:0] d_bus_reg;
+	wire [3:0] d_bus_net;
 	reg d_bus_source = 1'b0;
-	//assign d_bus = d_bus_source == 1'b1 ? d_bus_reg : d_bus;
+	assign d_bus = d_bus_source == 1'b1 ? d_bus_reg : d_bus_net;
 
 	// Instantiate the Unit Under Test (UUT)
 	IC82x6 # (.INVERTED_OUTPUT(0))
@@ -106,7 +107,10 @@ module IC8216_testbench;
 			  cs_n <= 0;
 		 end
 		 if (counter == 16)
-		     cs_n <= 0;                // OFF
+		 begin
+		     cs_n <= 1;                // OFF
+			  d_bus_source <= 0;
+		 end  
 	end
       
 endmodule
