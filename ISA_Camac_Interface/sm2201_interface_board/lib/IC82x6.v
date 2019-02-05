@@ -44,8 +44,8 @@ begin
 	else                                                                          // chip is ON
 	begin
        if (dce == 1'b0)                                                          // READ: d_in -> d_bus
-		     d_bus_reg <= INVERTED_OUTPUT == 0 ? d_in : ~d_in;    
-       else d_out <= INVERTED_OUTPUT == 0 ? d_bus_reg : ~d_bus_reg;              // WRITE: d_bus -> d_out via register
+		     d_bus_reg <= INVERTED_OUTPUT == 0 ? d_in : 15 - d_in;    
+       else d_out <= INVERTED_OUTPUT == 0 ? d_bus_reg : 15  - d_bus_reg;              // WRITE: d_bus -> d_out via register
 	end
 end
 
