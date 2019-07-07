@@ -37,7 +37,7 @@ module sm2201_interface_board(
     output wire [7:0] isa_addr,
     output wire [4:0] isa_irq,
     // Controller interface bus (common bus = ОШ)
-    input wire [15:0] cb_data,
+    inout wire [15:0] cb_data,
     input wire cb_prr,
     input wire cb_cx1,
     input wire cb_zk4                // X 2.2 B21 ЗК4 ???
@@ -49,4 +49,23 @@ module sm2201_interface_board(
     
 );
 
+wire m_w;
+wire n_c1;
+wire [3:0] d1_di_lines;
+wire [3:0] d2_di_lines;
+supply0 gnd;
+
+// DD1 (BUS former)
+IC82x6 #(.INVERTED_OUTPUT(0)) 
+    d1 (.dce(gnd), .cs_n(m_w), .d_in(d1_di_lines), .d_bus());
+	 
+// DD4
+SN74LS298 d4(.ws(m_w), .clk(n_c1), .s1(), .s2(), .q());
+
+// DD2 (BUS former)
+IC82x6 #(.INVERTED_OUTPUT(0)) 
+    d2 (.dce(gnd), .cs_n(m_w), .d_in(d2_di_lines), .d_bus());
+
+// DD3
+SN74LS298 d3(.ws(m_w), .clk(n_c1), .s1(), .s2(), .q());
 endmodule
