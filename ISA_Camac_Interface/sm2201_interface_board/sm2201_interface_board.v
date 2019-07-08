@@ -40,7 +40,7 @@ module sm2201_interface_board(
     inout wire [15:0] cb_data,
     input wire cb_prr,
     input wire cb_cx1,
-    input wire cb_zk4                // X 2.2 B21 ЗК4 ???
+    input wire cb_zk4,               // X 2.2 B21 ЗК4 ???
     output wire [11:0] cb_addr,
     output wire cb_prepare_bus,      // ОШ ПОДГ.
     output wire cb_b_b1,             // ОШ B/B1
@@ -52,20 +52,46 @@ module sm2201_interface_board(
 wire m_w;
 wire n_c1;
 wire [3:0] d1_di_lines;
+wire [3:0] d1_db_lines;
 wire [3:0] d2_di_lines;
+wire [3:0] d4_s1_lines;
+wire [3:0] d4_s2_lines;
+wire [3:0] d4_q_lines;
 supply0 gnd;
+
+// DD1
+assign d1_db_lines[0] = cb_data[12];
+assign d1_db_lines[1] = cb_data[14];
+assign d1_db_lines[2] = cb_data[13];
+assign d1_db_lines[3] = cb_data[15];
+
+assign d1_di_lines[0] = d4_q_lines[0];
+assign d1_di_lines[1] = d4_q_lines[2];
+assign d1_di_lines[2] = d4_q_lines[3];
+assign d1_di_lines[3] = d4_q_lines[1];
+
+// DD4
+assign d4_s1_lines[0] = cb_data[4];
+assign d4_s1_lines[1] = cb_data[7];
+assign d4_s1_lines[2] = cb_data[6];
+assign d4_s1_lines[3] = cb_data[5];
+
+assign d4_s2_lines[0] = cb_data[12];
+assign d4_s2_lines[1] = cb_data[15];
+assign d4_s2_lines[2] = cb_data[14];
+assign d4_s2_lines[3] = cb_data[13];
 
 // DD1 (BUS former)
 IC82x6 #(.INVERTED_OUTPUT(0)) 
-    d1 (.dce(gnd), .cs_n(m_w), .d_in(d1_di_lines), .d_bus());
+    d1 (.dce(gnd), .cs_n(m_w), .d_in(d1_di_lines), .d_bus(d1_db_lines));
 	 
 // DD4
-SN74LS298 d4(.ws(m_w), .clk(n_c1), .s1(), .s2(), .q());
+SN74LS298 d4(.ws(m_w), .clk(n_c1), .s1(d4_s1_lines), .s2(d4_s2_lines), .q(d4_q_lines));
 
 // DD2 (BUS former)
-IC82x6 #(.INVERTED_OUTPUT(0)) 
-    d2 (.dce(gnd), .cs_n(m_w), .d_in(d2_di_lines), .d_bus());
+//IC82x6 #(.INVERTED_OUTPUT(0)) 
+    //d2 (.dce(gnd), .cs_n(m_w), .d_in(d2_di_lines), .d_bus());
 
 // DD3
-SN74LS298 d3(.ws(m_w), .clk(n_c1), .s1(), .s2(), .q());
+//SN74LS298 d3(.ws(m_w), .clk(n_c1), .s1(), .s2(), .q());
 endmodule
