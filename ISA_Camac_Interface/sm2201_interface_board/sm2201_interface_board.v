@@ -34,7 +34,7 @@ module sm2201_interface_board(
     input wire isa_reset,
     input wire isa_ior,
     input wire isa_iow,
-    output wire [7:0] isa_addr,
+    inout wire [7:0] isa_addr,
     output wire [4:0] isa_irq,
     // controller interface bus (common bus = ОШ)
     inout wire [15:0] cb_data,
@@ -55,6 +55,9 @@ wire k_sel2;
 wire q_r;
 wire d_cel;
 wire z_c2;
+wire x0;
+wire x1;
+wire rdy;
 
 wire [3:0] d1_di_lines;
 wire [3:0] d1_db_lines;
@@ -89,7 +92,18 @@ wire [3:0] d12_di_lines;
 wire [3:0] d12_db_lines;
 wire [3:0] d12_do_lines;
 
+wire [5:0] d13_data;
+wire [5:0] d13_out;
+
+wire [5:0] d14_data;
+wire [5:0] d14_out;
+
+wire [5:0] d17_data;
+wire [5:0] d17_out;
+
+
 supply0 gnd;
+supply1 vcc;
 
 // ######################### LINES ASSIGNMENT ############################
 
@@ -192,7 +206,54 @@ assign d12_do_lines[2] = cb_data[2];
 assign d12_do_lines[3] = cb_data[3];
 
 // DD8
-assign d8_data[0] = ;
+assign d8_data[0] = cb_data[5];
+assign d8_data[1] = cb_data[0];
+assign d8_data[2] = cb_data[6];
+assign d8_data[3] = cb_data[1];
+assign d8_data[4] = cb_data[3];
+assign d8_data[5] = cb_data[7];
+assign d8_data[6] = cb_data[2];
+assign d8_data[7] = cb_data[4];
+
+// DD13
+assign d13_data[0] = vcc;
+assign d13_data[1] = d8_out[0];
+assign d13_data[2] = d8_out[2];
+assign d13_data[3] = x0;
+assign d13_data[4] = x1;
+assign d13_data[5] = m_w;
+
+// DD14
+assign d14_data[0] = d8_out[6];
+assign d14_data[1] = d8_out[3];
+assign d14_data[2] = d8_out[4];
+assign d14_data[3] = d8_out[1];
+assign d14_data[4] = d8_out[7];
+assign d14_data[5] = vcc;
+
+// DD17
+assign d17_data[0] = isa_addr[4];
+assign d17_data[1] = isa_addr[3];
+assign d17_data[2] = isa_addr[2];
+assign d17_data[3] = isa_addr[1];
+assign d17_data[4] = isa_reset;
+assign d17_data[5] = rdy;
+
+// BOARD I/O
+assign cb_addr[1] = d17_out[3];   // do we have A0 or not ? i don't know
+assign cb_addr[2] = d17_out[2];
+assign cb_addr[3] = d17_out[1];
+assign cb_addr[4] = d17_out[0];
+assign cb_addr[5] = d14_out[3];
+assign cb_addr[6] = d14_out[1];
+assign cb_addr[7] = d14_out[0];
+assign cb_addr[8] = d14_out[2];
+assign cb_addr[9] = d14_out[4];
+assign cb_addr[10] = d13_out[1];
+assign cb_addr[11] = d13_out[2];
+assign cb_pc4 = d13_out[3];
+assign cb_cx3 = d13_out[4];
+assign cb_b_b1 = d13_out[5];
 
 // #######################################################################
 
@@ -221,7 +282,7 @@ SN74LS257 #(.INVERTED_OUTPUT(0))
 
 // DD11 - IC8226
 IC82x6 #(.INVERTED_OUTPUT(1)) 
-    d11 (.dce(g_r), .cs_n(d_cel), .d_in(d11_di_lines), .d_bus(d11_db_lines), .d_out(d11_do_lines));
+    d11 (.dce(q_r), .cs_n(d_cel), .d_in(d11_di_lines), .d_bus(d11_db_lines), .d_out(d11_do_lines));
 
 // DD12 - IC8226
 IC82x6 #(.INVERTED_OUTPUT(1)) 
@@ -229,5 +290,18 @@ IC82x6 #(.INVERTED_OUTPUT(1))
 	 
 // DD8 - SN74LS374
 SN74LS374 d8(.clk(z_c2), .out_control(gnd), .data(d8_data), .out(d8_out));
+
+// DD13 - SN74LS365
+SN74LS365 #(.INVERTED_OUTPUT(0))
+    d13(.e1(gnd), .e2(gnd), .data(d13_data), .out(d13_out));
+
+// DD14 - SN74LS365
+SN74LS365 #(.INVERTED_OUTPUT(0))
+    d14(.e1(gnd), .e2(gnd), .data(d14_data), .out(d14_out));
+	 
+// DD17 - SN74LS366
+SN74LS365 #(.INVERTED_OUTPUT(1))
+    d17(.e1(gnd), .e2(gnd), .data(d17_data), .out(d17_out));
+
 
 endmodule
