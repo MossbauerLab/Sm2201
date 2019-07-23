@@ -35,7 +35,7 @@ module sm2201_interface_board(
     input wire isa_ior,
     input wire isa_iow,
     inout wire [7:0] isa_addr,
-    output wire [4:0] isa_irq,
+    output wire [7:0] isa_irq,
     // controller interface bus (common bus = ОШ)
     inout wire [15:0] cb_data,
     input wire cb_prr,
@@ -58,6 +58,9 @@ wire z_c2;
 wire x0;
 wire x1;
 wire rdy;
+wire f_tim;
+wire b_cxi;
+wire a;
 
 wire [3:0] d1_di_lines;
 wire [3:0] d1_db_lines;
@@ -239,6 +242,8 @@ assign d17_data[3] = isa_addr[1];
 assign d17_data[4] = isa_reset;
 assign d17_data[5] = rdy;
 
+// assign f_tim = d17_out[5];
+
 // BOARD I/O
 assign cb_addr[1] = d17_out[3];   // do we have A0 or not ? i don't know
 assign cb_addr[2] = d17_out[2];
@@ -254,6 +259,8 @@ assign cb_addr[11] = d13_out[2];
 assign cb_pc4 = d13_out[3];
 assign cb_cx3 = d13_out[4];
 assign cb_b_b1 = d13_out[5];
+assign cb_prepare_bus = d17_out[4];
+assign isa_irq[7] = b_cxi; // index issue ???? start from 0 or 1, number, e.t.c.
 
 // #######################################################################
 
@@ -303,5 +310,9 @@ SN74LS365 #(.INVERTED_OUTPUT(0))
 SN74LS365 #(.INVERTED_OUTPUT(1))
     d17(.e1(gnd), .e2(gnd), .data(d17_data), .out(d17_out));
 
+// DD18
+SN74LS04 d8(.a6(d17_out[5]), .y6(f_tim),
+            .a3(cb_prr), .y3(b_cxi),
+            /*.a2(cb_prr), y2(a)*/);
 
 endmodule
