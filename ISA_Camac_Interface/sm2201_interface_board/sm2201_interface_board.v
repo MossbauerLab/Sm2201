@@ -54,6 +54,7 @@ wire n_c1;
 wire k_sel2;
 wire q_r;
 wire d_cel;
+wire z_c2;
 
 wire [3:0] d1_di_lines;
 wire [3:0] d1_db_lines;
@@ -76,6 +77,9 @@ wire [3:0] d6_y_lines;
 wire [3:0] d7_a_lines;
 wire [3:0] d7_b_lines;
 wire [3:0] d7_y_lines;
+
+wire [7:0] d8_data;
+wire [7:0] d8_out;
 
 wire [3:0] d11_di_lines;
 wire [3:0] d11_db_lines;
@@ -155,7 +159,7 @@ assign d7_b_lines[1] = cb_data[0];
 assign d7_b_lines[2] = cb_data[3];
 assign d7_b_lines[3] = cb_data[2];
 
-// D11
+// DD11
 assign d11_di_lines[0] = d6_y_lines[0];
 assign d11_di_lines[1] = d6_y_lines[1];
 assign d11_di_lines[2] = d6_y_lines[3];
@@ -171,7 +175,7 @@ assign d11_do_lines[1] = cb_data[5];
 assign d11_do_lines[2] = cb_data[6];
 assign d11_do_lines[3] = cb_data[7];
 
-//D12
+// DD12
 assign d12_di_lines[0] = d7_y_lines[0];
 assign d12_di_lines[1] = d7_y_lines[1];
 assign d12_di_lines[2] = d7_y_lines[3];
@@ -186,6 +190,9 @@ assign d12_do_lines[0] = cb_data[0];
 assign d12_do_lines[1] = cb_data[1];
 assign d12_do_lines[2] = cb_data[2];
 assign d12_do_lines[3] = cb_data[3];
+
+// DD8
+assign d8_data[0] = ;
 
 // #######################################################################
 
@@ -219,5 +226,8 @@ IC82x6 #(.INVERTED_OUTPUT(1))
 // DD12 - IC8226
 IC82x6 #(.INVERTED_OUTPUT(1)) 
     d12 (.dce(q_r), .cs_n(d_cel), .d_in(d12_di_lines), .d_bus(d12_db_lines), .d_out(d12_do_lines));
+	 
+// DD8 - SN74LS374
+SN74LS374 d8(.clk(z_c2), .out_control(gnd), .data(d8_data), .out(d8_out));
 
 endmodule
