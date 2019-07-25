@@ -243,6 +243,8 @@ assign d17_data[4] = isa_reset;
 assign d17_data[5] = rdy;
 
 // assign f_tim = d17_out[5];
+// INTERNAL
+assign a = f_tim;
 
 // BOARD I/O
 assign cb_addr[1] = d17_out[3];   // do we have A0 or not ? i don't know
@@ -311,8 +313,8 @@ SN74LS365 #(.INVERTED_OUTPUT(1))
     d17(.e1(gnd), .e2(gnd), .data(d17_data), .out(d17_out));
 
 // DD18
-SN74LS04 d8(.a6(d17_out[5]), .y6(f_tim),
-            .a3(cb_prr), .y3(b_cxi),
-            /*.a2(cb_prr), y2(a)*/);
+SN74LS04 d18(.a6(d17_out[5]), .y6(f_tim),
+             .a3(cb_prr), .y3(b_cxi),
+             /*.a2(cb_prr), y2(a)*/);
 
 endmodule
