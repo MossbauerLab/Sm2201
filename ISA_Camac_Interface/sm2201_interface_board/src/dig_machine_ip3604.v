@@ -539,4 +539,9 @@ localparam reg[7:0] mem_dump[511:0] = {
 8'b00100100
 };
 
+wire[7:0] selected_data;
+
+assign selected_data = mem_dump[address];
+assign data = cs == 4'b1100 ? data : 8'b00000000;
+
 endmodule
