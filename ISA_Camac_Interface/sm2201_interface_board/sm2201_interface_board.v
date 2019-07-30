@@ -314,7 +314,7 @@ SN74LS365 #(.INVERTED_OUTPUT(1))
 
 // DD18
 SN74LS04 d18(.a6(d17_out[5]), .y6(f_tim),
-             .a3(cb_prr), .y3(b_cxi),
+             .a3(cb_prr), .y3(b_cxi)
              /*.a2(cb_prr), y2(a)*/);
 
 endmodule
