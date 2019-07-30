@@ -9,7 +9,7 @@
 // Project Name:   sm2201_interface_board
 // Target Devices: 
 // Tool versions:  Quartus 12.1 sp1
-// Description:    A state of programmed IP3604 (КР556РТ5)
+// Description:    AMemory state (dump) of programmed IP3604 (КР556РТ5)
 //
 // Dependencies: 
 //
