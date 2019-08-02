@@ -61,39 +61,41 @@ wire rdy;
 wire f_tim;
 wire b_cxi;
 wire a;
+wire g_rd;
+wire p_wr;
 
-wire [3:0] d1_di_lines;
-wire [3:0] d1_db_lines;
+wire [3:0] d1_di;
+wire [3:0] d1_db;
 
-wire [3:0] d2_di_lines;
-wire [3:0] d2_db_lines;
+wire [3:0] d2_di;
+wire [3:0] d2_db;
 
-wire [3:0] d3_s1_lines;
-wire [3:0] d3_s2_lines;
-wire [3:0] d3_q_lines;
+wire [3:0] d3_s1;
+wire [3:0] d3_s2;
+wire [3:0] d3_q;
 
-wire [3:0] d4_s1_lines;
-wire [3:0] d4_s2_lines;
-wire [3:0] d4_q_lines;
+wire [3:0] d4_s1;
+wire [3:0] d4_s2;
+wire [3:0] d4_q;
 
-wire [3:0] d6_a_lines;
-wire [3:0] d6_b_lines;
-wire [3:0] d6_y_lines;
+wire [3:0] d6_a;
+wire [3:0] d6_b;
+wire [3:0] d6_y;
 
-wire [3:0] d7_a_lines;
-wire [3:0] d7_b_lines;
-wire [3:0] d7_y_lines;
+wire [3:0] d7_a;
+wire [3:0] d7_b;
+wire [3:0] d7_y;
 
 wire [7:0] d8_data;
 wire [7:0] d8_out;
 
-wire [3:0] d11_di_lines;
-wire [3:0] d11_db_lines;
-wire [3:0] d11_do_lines;
+wire [3:0] d11_di;
+wire [3:0] d11_db;
+wire [3:0] d11_do;
 
-wire [3:0] d12_di_lines;
-wire [3:0] d12_db_lines;
-wire [3:0] d12_do_lines;
+wire [3:0] d12_di;
+wire [3:0] d12_db;
+wire [3:0] d12_do;
 
 wire [5:0] d13_data;
 wire [5:0] d13_out;
@@ -104,6 +106,13 @@ wire [5:0] d14_out;
 wire [5:0] d17_data;
 wire [5:0] d17_out;
 
+wire [7:0] d10_addr;
+wire [1:0] d10_cs;
+wire [3:0] d10_out;
+
+wire d5_y1;
+
+wire d9_y1;
 
 supply0 gnd;
 supply1 vcc;
@@ -111,102 +120,102 @@ supply1 vcc;
 // ######################### LINES ASSIGNMENT ############################
 
 // DD1
-assign d1_db_lines[0] = cb_data[12];
-assign d1_db_lines[1] = cb_data[14];
-assign d1_db_lines[2] = cb_data[13];
-assign d1_db_lines[3] = cb_data[15];
+assign d1_d[0] = cb_data[12];
+assign d1_db[1] = cb_data[14];
+assign d1_db[2] = cb_data[13];
+assign d1_db[3] = cb_data[15];
 
-assign d1_di_lines[0] = d4_q_lines[0];
-assign d1_di_lines[1] = d4_q_lines[2];
-assign d1_di_lines[2] = d4_q_lines[3];
-assign d1_di_lines[3] = d4_q_lines[1];
+assign d1_di[0] = d4_q[0];
+assign d1_di[1] = d4_q[2];
+assign d1_di[2] = d4_q[3];
+assign d1_di[3] = d4_q[1];
 
 // DD4
-assign d4_s1_lines[0] = cb_data[4];
-assign d4_s1_lines[1] = cb_data[7];
-assign d4_s1_lines[2] = cb_data[6];
-assign d4_s1_lines[3] = cb_data[5];
+assign d4_s1[0] = cb_data[4];
+assign d4_s1[1] = cb_data[7];
+assign d4_s1[2] = cb_data[6];
+assign d4_s1[3] = cb_data[5];
 
-assign d4_s2_lines[0] = cb_data[12];
-assign d4_s2_lines[1] = cb_data[15];
-assign d4_s2_lines[2] = cb_data[14];
-assign d4_s2_lines[3] = cb_data[13];
+assign d4_s2[0] = cb_data[12];
+assign d4_s2[1] = cb_data[15];
+assign d4_s2[2] = cb_data[14];
+assign d4_s2[3] = cb_data[13];
 
 // DD2
-assign d2_db_lines[0] = cb_data[9];
-assign d2_db_lines[1] = cb_data[10];
-assign d2_db_lines[2] = cb_data[8];
-assign d2_db_lines[3] = cb_data[11];
+assign d2_db[0] = cb_data[9];
+assign d2_db[1] = cb_data[10];
+assign d2_db[2] = cb_data[8];
+assign d2_db[3] = cb_data[11];
 
-assign d2_di_lines[0] = d3_q_lines[0];
-assign d2_di_lines[1] = d3_q_lines[2];
-assign d2_di_lines[2] = d3_q_lines[3];
-assign d2_di_lines[3] = d3_q_lines[1];
+assign d2_di[0] = d3_q[0];
+assign d2_di[1] = d3_q[2];
+assign d2_di[2] = d3_q[3];
+assign d2_di[3] = d3_q[1];
 
 // DD3
-assign d3_s1_lines[0] = cb_data[1];
-assign d3_s1_lines[1] = cb_data[3];
-assign d3_s1_lines[2] = cb_data[2];
-assign d3_s1_lines[3] = cb_data[0];
+assign d3_s1[0] = cb_data[1];
+assign d3_s1[1] = cb_data[3];
+assign d3_s1[2] = cb_data[2];
+assign d3_s1[3] = cb_data[0];
 
-assign d3_s2_lines[0] = cb_data[9];
-assign d3_s2_lines[1] = cb_data[11];
-assign d3_s2_lines[2] = cb_data[10];
-assign d3_s2_lines[3] = cb_data[8];
+assign d3_s2[0] = cb_data[9];
+assign d3_s2[1] = cb_data[11];
+assign d3_s2[2] = cb_data[10];
+assign d3_s2[3] = cb_data[8];
 
 // DD6
-assign d6_a_lines[0] = d4_q_lines[0];
-assign d6_a_lines[1] = d4_q_lines[3];
-assign d6_a_lines[2] = d4_q_lines[1];
-assign d6_a_lines[3] = d4_q_lines[2];
+assign d6_a[0] = d4_q[0];
+assign d6_a[1] = d4_q[3];
+assign d6_a[2] = d4_q[1];
+assign d6_a[3] = d4_q[2];
 
-assign d6_b_lines[0] = cb_data[4];
-assign d6_b_lines[1] = cb_data[5];
-assign d6_b_lines[2] = cb_data[7];
-assign d6_b_lines[3] = cb_data[6];
+assign d6_b[0] = cb_data[4];
+assign d6_b[1] = cb_data[5];
+assign d6_b[2] = cb_data[7];
+assign d6_b[3] = cb_data[6];
 
 // DD7
-assign d7_a_lines[0] = d3_q_lines[0];
-assign d7_a_lines[1] = d3_q_lines[3];
-assign d7_a_lines[2] = d3_q_lines[1];
-assign d7_a_lines[3] = d3_q_lines[2];
+assign d7_a[0] = d3_q[0];
+assign d7_a[1] = d3_q[3];
+assign d7_a[2] = d3_q[1];
+assign d7_a[3] = d3_q[2];
 
-assign d7_b_lines[0] = cb_data[1];
-assign d7_b_lines[1] = cb_data[0];
-assign d7_b_lines[2] = cb_data[3];
-assign d7_b_lines[3] = cb_data[2];
+assign d7_b[0] = cb_data[1];
+assign d7_b[1] = cb_data[0];
+assign d7_b[2] = cb_data[3];
+assign d7_b[3] = cb_data[2];
 
 // DD11
-assign d11_di_lines[0] = d6_y_lines[0];
-assign d11_di_lines[1] = d6_y_lines[1];
-assign d11_di_lines[2] = d6_y_lines[3];
-assign d11_di_lines[3] = d6_y_lines[2];
+assign d11_di[0] = d6_y[0];
+assign d11_di[1] = d6_y[1];
+assign d11_di[2] = d6_y[3];
+assign d11_di[3] = d6_y[2];
 
-assign d11_db_lines[0] = isa_data[4];
-assign d11_db_lines[1] = isa_data[5];
-assign d11_db_lines[2] = isa_data[6];
-assign d11_db_lines[3] = isa_data[7];
+assign d11_db[0] = isa_data[4];
+assign d11_db[1] = isa_data[5];
+assign d11_db[2] = isa_data[6];
+assign d11_db[3] = isa_data[7];
 
-assign d11_do_lines[0] = cb_data[4];
-assign d11_do_lines[1] = cb_data[5];
-assign d11_do_lines[2] = cb_data[6];
-assign d11_do_lines[3] = cb_data[7];
+assign d11_do[0] = cb_data[4];
+assign d11_do[1] = cb_data[5];
+assign d11_do[2] = cb_data[6];
+assign d11_do[3] = cb_data[7];
 
 // DD12
-assign d12_di_lines[0] = d7_y_lines[0];
-assign d12_di_lines[1] = d7_y_lines[1];
-assign d12_di_lines[2] = d7_y_lines[3];
-assign d12_di_lines[3] = d7_y_lines[2];
+assign d12_di[0] = d7_y[0];
+assign d12_di[1] = d7_y[1];
+assign d12_di[2] = d7_y[3];
+assign d12_di[3] = d7_y[2];
 
-assign d12_db_lines[0] = isa_data[0];
-assign d12_db_lines[1] = isa_data[1];
-assign d12_db_lines[2] = isa_data[2];
-assign d12_db_lines[3] = isa_data[3];
+assign d12_db[0] = isa_data[0];
+assign d12_db[1] = isa_data[1];
+assign d12_db[2] = isa_data[2];
+assign d12_db[3] = isa_data[3];
 
-assign d12_do_lines[0] = cb_data[0];
-assign d12_do_lines[1] = cb_data[1];
-assign d12_do_lines[2] = cb_data[2];
-assign d12_do_lines[3] = cb_data[3];
+assign d12_do[0] = cb_data[0];
+assign d12_do[1] = cb_data[1];
+assign d12_do[2] = cb_data[2];
+assign d12_do[3] = cb_data[3];
 
 // DD8
 assign d8_data[0] = cb_data[5];
@@ -242,6 +251,19 @@ assign d17_data[3] = isa_addr[1];
 assign d17_data[4] = isa_reset;
 assign d17_data[5] = rdy;
 
+// DD10
+assign d10_addr[0] = isa_addr[6];
+assign d10_addr[1] = isa_addr[5];
+assign d10_addr[2] = isa_addr[4];
+assign d10_addr[3] = isa_addr[3];
+assign d10_addr[4] = isa_addr[2];
+assign d10_addr[5] = isa_addr[1];
+assign d10_addr[6] = isa_addr[0];
+assign d10_addr[7] = isa_ale;
+
+assign d10_cs[0] = d9_y1;
+assign d10_cs[1] = isa_aen;
+
 // assign f_tim = d17_out[5];
 // INTERNAL
 assign a = f_tim;
@@ -268,34 +290,34 @@ assign isa_irq[7] = b_cxi; // index issue ???? start from 0 or 1, number, e.t.c.
 
 // DD1 (BUS former)
 IC82x6 #(.INVERTED_OUTPUT(0)) 
-    d1 (.dce(gnd), .cs_n(m_w), .d_in(d1_di_lines), .d_bus(d1_db_lines));
+    d1 (.dce(gnd), .cs_n(m_w), .d_in(d1_di), .d_bus(d1_db));
 	 
 // DD4
-SN74LS298 d4(.ws(m_w), .clk(n_c1), .s1(d4_s1_lines), .s2(d4_s2_lines), .q(d4_q_lines));
+SN74LS298 d4(.ws(m_w), .clk(n_c1), .s1(d4_s1), .s2(d4_s2), .q(d4_q));
 
 // DD2 (BUS former)
 IC82x6 #(.INVERTED_OUTPUT(0)) 
-    d2 (.dce(gnd), .cs_n(m_w), .d_in(d2_di_lines), .d_bus(d2_db_lines));
+    d2 (.dce(gnd), .cs_n(m_w), .d_in(d2_di), .d_bus(d2_db));
 
 // DD3
-SN74LS298 d3(.ws(m_w), .clk(n_c1), .s1(d3_s1_lines), .s2(d3_s2_lines), .q(d3_q_lines));
+SN74LS298 d3(.ws(m_w), .clk(n_c1), .s1(d3_s1), .s2(d3_s2), .q(d3_q));
 
 
 // DD6
 SN74LS257 #(.INVERTED_OUTPUT(0)) 
-    d6(.select(k_sel2), .out_control(gnd), .a(d6_a_lines), .b(d6_b_lines), .y(d6_y_lines));
+    d6(.select(k_sel2), .out_control(gnd), .a(d6_a), .b(d6_b), .y(d6_y));
 
 // DD7
 SN74LS257 #(.INVERTED_OUTPUT(0)) 
-    d7(.select(k_sel2), .out_control(gnd), .a(d7_a_lines), .b(d7_b_lines), .y(d7_y_lines));
+    d7(.select(k_sel2), .out_control(gnd), .a(d7_a), .b(d7_b), .y(d7_y));
 
 // DD11 - IC8226
 IC82x6 #(.INVERTED_OUTPUT(1)) 
-    d11 (.dce(q_r), .cs_n(d_cel), .d_in(d11_di_lines), .d_bus(d11_db_lines), .d_out(d11_do_lines));
+    d11 (.dce(q_r), .cs_n(d_cel), .d_in(d11_di), .d_bus(d11_db), .d_out(d11_do));
 
 // DD12 - IC8226
 IC82x6 #(.INVERTED_OUTPUT(1)) 
-    d12 (.dce(q_r), .cs_n(d_cel), .d_in(d12_di_lines), .d_bus(d12_db_lines), .d_out(d12_do_lines));
+    d12 (.dce(q_r), .cs_n(d_cel), .d_in(d12_di), .d_bus(d12_db), .d_out(d12_do));
 	 
 // DD8 - SN74LS374
 SN74LS374 d8(.clk(z_c2), .out_control(gnd), .data(d8_data), .out(d8_out));
@@ -316,5 +338,20 @@ SN74LS365 #(.INVERTED_OUTPUT(1))
 SN74LS04 d18(.a6(d17_out[5]), .y6(f_tim),
              .a3(cb_prr), .y3(b_cxi)
              /*.a2(cb_prr), y2(a)*/);
+
+// DD5
+SN74LS00 d5(.a1(g_rd), .b1(p_wr), y1(d5_y1));
+
+// DD9
+SN74LS27 d9(.a1(d5_y1), .b1(d5_y1), .c1(d5_y1), .y1(d9_y1));
+				 
+// DD10
+dig_machine_ip3601 d10(.address(d10_addr), .cs(d10_cs), .data(d10_out));
+
+// DD15
+dig_machine_ip3604 d15(.address(), .cs(), .data());
+
+// DD16
+SN74LS374 d16(.out_control(), .clk(), .data(), .out());
 
 endmodule
