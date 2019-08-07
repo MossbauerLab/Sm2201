@@ -26,7 +26,7 @@
 
 module sm2201_interface_board(
     // ISA interface
-    input wire [9:0] isa_data,
+    input wire [7:0] isa_data,
     input wire isa_ale,
     input wire isa_aen,
     input wire isa_clk,
@@ -34,7 +34,7 @@ module sm2201_interface_board(
     input wire isa_reset,
     input wire isa_ior,
     input wire isa_iow,
-    inout wire [7:0] isa_addr,
+    inout wire [9:0] isa_addr,
     output wire [7:0] isa_irq,
     // controller interface bus (common bus = ОШ)
     inout wire [15:0] cb_data,
@@ -113,6 +113,7 @@ wire [3:0] d10_out;
 wire d5_y1;
 
 wire d9_y1;
+wire d9_y2;
 
 supply0 gnd;
 supply1 vcc;
@@ -343,7 +344,8 @@ SN74LS04 d18(.a6(d17_out[5]), .y6(f_tim),
 SN74LS00 d5(.a1(g_rd), .b1(p_wr), y1(d5_y1));
 
 // DD9
-SN74LS27 d9(.a1(d5_y1), .b1(d5_y1), .c1(d5_y1), .y1(d9_y1));
+SN74LS27 d9(.a1(d5_y1), .b1(d5_y1), .c1(d5_y1), .y1(d9_y1),
+            .a2(isa_addr[7]), .b2(d10_out[3]), .c2(isa_addr[9]), .y2(d9_y2));
 				 
 // DD10
 dig_machine_ip3601 d10(.address(d10_addr), .cs(d10_cs), .data(d10_out));
