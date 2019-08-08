@@ -311,6 +311,10 @@ assign x0 = d15_out[2];
 assign rdy = d16_out[2];
 assign m_w = d5_y1;
 assign q_r = d5_y2;
+assign x1 = d16_out[0];
+assign z_c2 = d16_out[5];
+assign n_c1 = d16_out[6];
+assign k_sel2 = d16_out[7];
 
 // BOARD I/O
 assign cb_addr[1] = d17_out[3];   // do we have A0 or not ? i don't know
