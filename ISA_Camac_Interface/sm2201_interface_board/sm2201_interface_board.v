@@ -30,7 +30,7 @@ module sm2201_interface_board(
     input wire isa_ale,
     input wire isa_aen,
     input wire isa_clk,
-    input wire isa_chrdy,
+    output wire isa_chrdy,
     input wire isa_reset,
     input wire isa_ior,
     input wire isa_iow,
@@ -117,6 +117,8 @@ wire [3:0] d15_cs;
 wire [7:0] d15_out;
 
 wire d5_y1;
+wire d5_y2;
+wire d5_y3;
 
 wire d9_y1;
 wire d9_y2;
@@ -306,6 +308,9 @@ assign d16_data[7] = d15_out[3];
 assign a = f_tim; // !!!!!!!!!!!!!!!!!!!! A is a strange thing !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 assign l_sel1 = d10_out[2];
 assign x0 = d15_out[2];
+assign rdy = d16_out[2];
+assign m_w = d5_y1;
+assign q_r = d5_y2;
 
 // BOARD I/O
 assign cb_addr[1] = d17_out[3];   // do we have A0 or not ? i don't know
@@ -375,15 +380,18 @@ SN74LS365 #(.INVERTED_OUTPUT(1))
 
 // DD18
 SN74LS04 d18(.a6(d17_out[5]), .y6(f_tim),
-             .a3(cb_prr), .y3(b_cxi)
+             .a3(cb_prr), .y3(b_cxi),
+				 .a1(d16_out[2]), .y1(isa_chrdy)
              /*.a2(cb_prr), y2(a)*/);
 
 // DD5
-SN74LS00 d5(.a1(g_rd), .b1(p_wr), .y1(d5_y1),
+SN74LS00 d5(.a1(g_rd|isa_ior), .b1(d5_y2), .y1(d5_y1),
+            .a2(p_wr|isa_iow), .b2(d5_y1), .y2(d5_y2),
+            .a3(g_rd), .b3(p_wr), .y3(d5_y3),
             .a4(d9_y2), .b4(isa_addr[9]), .y4(d_sel));
 
 // DD9
-SN74LS27 d9(.a1(d5_y1), .b1(d5_y1), .c1(d5_y1), .y1(d9_y1),
+SN74LS27 d9(.a1(d5_y3), .b1(d5_y3), .c1(d5_y3), .y1(d9_y1),
             .a2(isa_addr[7]), .b2(d10_out[3]), .c2(isa_addr[9]), .y2(d9_y2),
 				.a3(v_rp), .b3(cb_zk4), .c3(v_rp), .y3(d9_y3));
 				 
