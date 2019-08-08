@@ -315,6 +315,7 @@ assign x1 = d16_out[0];
 assign z_c2 = d16_out[5];
 assign n_c1 = d16_out[6];
 assign k_sel2 = d16_out[7];
+assign v_rp = d8_out[5];
 
 // BOARD I/O
 assign cb_addr[1] = d17_out[3];   // do we have A0 or not ? i don't know
@@ -376,7 +377,7 @@ SN74LS365 #(.INVERTED_OUTPUT(0))
 
 // DD14 - SN74LS365
 SN74LS365 #(.INVERTED_OUTPUT(0))
-    d14(.e1(gnd), .e2(gnd), .data(d14_data), .out(d14_out));
+    d14(.e1(l_sel1), .e2(l_sel1), .data(d14_data), .out(d14_out));
 	 
 // DD17 - SN74LS366
 SN74LS365 #(.INVERTED_OUTPUT(1))
