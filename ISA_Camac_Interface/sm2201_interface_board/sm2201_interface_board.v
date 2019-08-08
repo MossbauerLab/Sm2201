@@ -131,7 +131,7 @@ supply1 vcc;
 // ######################### LINES ASSIGNMENT ############################
 
 // DD1
-assign d1_d[0] = cb_data[12];
+assign d1_db[0] = cb_data[12];
 assign d1_db[1] = cb_data[14];
 assign d1_db[2] = cb_data[13];
 assign d1_db[3] = cb_data[15];
@@ -277,7 +277,7 @@ assign d10_cs[1] = isa_aen;
 
 // DD15
 assign d15_addr[0] = d16_out[3];
-assign d15_addr[1] = d16_out[4];;
+assign d15_addr[1] = d16_out[4];
 assign d15_addr[2] = d10_out[1];
 assign d15_addr[3] = d10_out[0];
 assign d15_addr[4] = d9_y3;
@@ -352,11 +352,11 @@ SN74LS257 #(.INVERTED_OUTPUT(0))
 
 // DD11 - IC8226
 IC82x6 #(.INVERTED_OUTPUT(1)) 
-    d11 (.dce(q_r), .cs_n(d_cel), .d_in(d11_di), .d_bus(d11_db), .d_out(d11_do));
+    d11 (.dce(q_r), .cs_n(d_sel), .d_in(d11_di), .d_bus(d11_db), .d_out(d11_do));
 
 // DD12 - IC8226
 IC82x6 #(.INVERTED_OUTPUT(1)) 
-    d12 (.dce(q_r), .cs_n(d_cel), .d_in(d12_di), .d_bus(d12_db), .d_out(d12_do));
+    d12 (.dce(q_r), .cs_n(d_sel), .d_in(d12_di), .d_bus(d12_db), .d_out(d12_do));
 	 
 // DD8 - SN74LS374
 SN74LS374 d8(.clk(z_c2), .out_control(gnd), .data(d8_data), .out(d8_out));
@@ -379,8 +379,8 @@ SN74LS04 d18(.a6(d17_out[5]), .y6(f_tim),
              /*.a2(cb_prr), y2(a)*/);
 
 // DD5
-SN74LS00 d5(.a1(g_rd), .b1(p_wr), y1(d5_y1),
-            .a4(d9_y2), .b4(isa_addr[9]), y4(d_sel));
+SN74LS00 d5(.a1(g_rd), .b1(p_wr), .y1(d5_y1),
+            .a4(d9_y2), .b4(isa_addr[9]), .y4(d_sel));
 
 // DD9
 SN74LS27 d9(.a1(d5_y1), .b1(d5_y1), .c1(d5_y1), .y1(d9_y1),
