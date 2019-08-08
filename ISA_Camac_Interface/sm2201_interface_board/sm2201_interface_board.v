@@ -53,7 +53,7 @@ wire m_w;
 wire n_c1;
 wire k_sel2;
 wire q_r;
-wire d_cel;
+wire d_sel;
 wire z_c2;
 wire x0;
 wire x1;
@@ -63,6 +63,8 @@ wire b_cxi;
 wire a;
 wire g_rd;
 wire p_wr;
+wire l_sel1;
+wire v_rp;
 
 wire [3:0] d1_di;
 wire [3:0] d1_db;
@@ -110,10 +112,18 @@ wire [7:0] d10_addr;
 wire [1:0] d10_cs;
 wire [3:0] d10_out;
 
+wire [8:0] d15_addr;
+wire [3:0] d15_cs;
+wire [7:0] d15_out;
+
 wire d5_y1;
 
 wire d9_y1;
 wire d9_y2;
+wire d9_y3;
+
+wire [7:0] d16_data;
+wire [7:0] d16_out;
 
 supply0 gnd;
 supply1 vcc;
@@ -265,9 +275,37 @@ assign d10_addr[7] = isa_ale;
 assign d10_cs[0] = d9_y1;
 assign d10_cs[1] = isa_aen;
 
+// DD15
+assign d15_addr[0] = d16_out[3];
+assign d15_addr[1] = d16_out[4];;
+assign d15_addr[2] = d10_out[1];
+assign d15_addr[3] = d10_out[0];
+assign d15_addr[4] = d9_y3;
+assign d15_addr[5] = d16_out[1];
+assign d15_addr[6] = f_tim;
+assign d15_addr[7] = m_w;
+assign d15_addr[8] = d_sel;
+
+assign d15_cs[0] = a;
+assign d15_cs[1] = a;
+assign d15_cs[2] = gnd;
+assign d15_cs[3] = gnd;
+
+// DD16
+assign d16_data[0] = d15_out[6];
+assign d16_data[1] = cb_cx1;
+assign d16_data[2] = d15_out[0];
+assign d16_data[3] = d15_out[1];
+assign d16_data[4] = d15_out[7];
+assign d16_data[5] = d15_out[5];
+assign d16_data[6] = d15_out[4];
+assign d16_data[7] = d15_out[3];
+
 // assign f_tim = d17_out[5];
 // INTERNAL
-assign a = f_tim;
+assign a = f_tim; // !!!!!!!!!!!!!!!!!!!! A is a strange thing !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+assign l_sel1 = d10_out[2];
+assign x0 = d15_out[2];
 
 // BOARD I/O
 assign cb_addr[1] = d17_out[3];   // do we have A0 or not ? i don't know
@@ -341,19 +379,21 @@ SN74LS04 d18(.a6(d17_out[5]), .y6(f_tim),
              /*.a2(cb_prr), y2(a)*/);
 
 // DD5
-SN74LS00 d5(.a1(g_rd), .b1(p_wr), y1(d5_y1));
+SN74LS00 d5(.a1(g_rd), .b1(p_wr), y1(d5_y1),
+            .a4(d9_y2), .b4(isa_addr[9]), y4(d_sel));
 
 // DD9
 SN74LS27 d9(.a1(d5_y1), .b1(d5_y1), .c1(d5_y1), .y1(d9_y1),
-            .a2(isa_addr[7]), .b2(d10_out[3]), .c2(isa_addr[9]), .y2(d9_y2));
+            .a2(isa_addr[7]), .b2(d10_out[3]), .c2(isa_addr[9]), .y2(d9_y2),
+				.a3(v_rp), .b3(cb_zk4), .c3(v_rp), .y3(d9_y3));
 				 
 // DD10
 dig_machine_ip3601 d10(.address(d10_addr), .cs(d10_cs), .data(d10_out));
 
 // DD15
-dig_machine_ip3604 d15(.address(), .cs(), .data());
+dig_machine_ip3604 d15(.address(d15_addr), .cs(d15_cs), .data(d15_out));
 
 // DD16
-SN74LS374 d16(.out_control(), .clk(), .data(), .out());
+SN74LS374 d16(.out_control(gnd), .clk(isa_clk), .data(d16_data), .out(d16_out));
 
 endmodule
