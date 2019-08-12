@@ -318,7 +318,7 @@ assign k_sel2 = d16_out[7];
 assign v_rp = d8_out[5];
 
 // BOARD I/O
-assign cb_addr[1] = d17_out[3];   // do we have A0 or not ? i don't know
+assign cb_addr[1] = d17_out[3];          // do we have A0 or not ? i don't know
 assign cb_addr[2] = d17_out[2];
 assign cb_addr[3] = d17_out[1];
 assign cb_addr[4] = d17_out[0];
@@ -333,7 +333,14 @@ assign cb_pc4 = d13_out[3];
 assign cb_cx3 = d13_out[4];
 assign cb_b_b1 = d13_out[5];
 assign cb_prepare_bus = d17_out[4];
-assign isa_irq[7] = b_cxi; // index issue ???? start from 0 or 1, number, e.t.c.
+assign isa_irq[7] = b_cxi;               // index issue ???? start from 0 or 1, number, e.t.c.
+assign isa_irq[0] = vcc;
+assign isa_irq[1] = vcc;
+assign isa_irq[2] = vcc;
+assign isa_irq[3] = vcc;
+assign isa_irq[4] = vcc;
+assign isa_irq[5] = vcc;
+assign isa_irq[6] = vcc;
 
 // #######################################################################
 
