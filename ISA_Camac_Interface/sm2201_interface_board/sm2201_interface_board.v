@@ -34,7 +34,7 @@ module sm2201_interface_board(
     input wire isa_reset,
     input wire isa_ior,
     input wire isa_iow,
-    inout wire [9:0] isa_addr,
+    input wire [9:0] isa_addr,
     output wire [7:0] isa_irq,
     // controller interface bus (common bus = ОШ)
     inout wire [15:0] cb_data,
