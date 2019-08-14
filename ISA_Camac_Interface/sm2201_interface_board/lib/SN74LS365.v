@@ -28,12 +28,12 @@ module SN74LS365 #
     input wire e1,
     input wire e2,
     input wire [5:0] data,
-    output tri [5:0] out 
+    output wire [5:0] out 
 );
 
 wire ena = e1 | e2;
 wire [5:0] data_res;
 assign data_res = INVERTED_OUTPUT == 0 ? data : ~data;
-assign out = ena == 1'b0 ? data_res : 6'bZ;
+assign out = ena == 1'b0 ? data_res : /*6'bZ;*/ 6'b000000;
 
 endmodule

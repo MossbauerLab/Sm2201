@@ -24,12 +24,12 @@ module SN74LS374
     input wire [7:0] data,
     input wire clk,
     input wire out_control,
-    output tri [7:0] out 
+    output wire [7:0] out 
 );
 
 reg [7:0] out_reg;
 
-assign out = out_control == 1 ? 'bz : out_reg;
+assign out = out_control == 1 ? /*8'bz*/ 8'b00000000 : out_reg;
 
 always @(posedge clk)
 begin

@@ -29,7 +29,7 @@ module SN74LS257 #
     input wire [3:0] b,
     input wire select,
     input wire out_control,
-    output tri [3:0] y
+    output wire [3:0] y
 );
     wire [3:0] selection;
     wire [3:0] internal_out;

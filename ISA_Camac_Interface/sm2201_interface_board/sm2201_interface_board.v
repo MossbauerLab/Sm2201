@@ -26,7 +26,7 @@
 
 module sm2201_interface_board(
     // ISA interface
-    input wire [7:0] isa_data,
+    inout wire [7:0] isa_data,
     input wire isa_ale,
     input wire isa_aen,
     input wire isa_clk,
@@ -133,11 +133,6 @@ supply1 vcc;
 // ######################### LINES ASSIGNMENT ############################
 
 // DD1
-assign d1_db[0] = cb_data[12];
-assign d1_db[1] = cb_data[14];
-assign d1_db[2] = cb_data[13];
-assign d1_db[3] = cb_data[15];
-
 assign d1_di[0] = d4_q[0];
 assign d1_di[1] = d4_q[2];
 assign d1_di[2] = d4_q[3];
@@ -155,11 +150,6 @@ assign d4_s2[2] = cb_data[14];
 assign d4_s2[3] = cb_data[13];
 
 // DD2
-assign d2_db[0] = cb_data[9];
-assign d2_db[1] = cb_data[10];
-assign d2_db[2] = cb_data[8];
-assign d2_db[3] = cb_data[11];
-
 assign d2_di[0] = d3_q[0];
 assign d2_di[1] = d3_q[2];
 assign d2_di[2] = d3_q[3];
@@ -209,11 +199,6 @@ assign d11_db[1] = isa_data[5];
 assign d11_db[2] = isa_data[6];
 assign d11_db[3] = isa_data[7];
 
-assign d11_do[0] = cb_data[4];
-assign d11_do[1] = cb_data[5];
-assign d11_do[2] = cb_data[6];
-assign d11_do[3] = cb_data[7];
-
 // DD12
 assign d12_di[0] = d7_y[0];
 assign d12_di[1] = d7_y[1];
@@ -224,11 +209,6 @@ assign d12_db[0] = isa_data[0];
 assign d12_db[1] = isa_data[1];
 assign d12_db[2] = isa_data[2];
 assign d12_db[3] = isa_data[3];
-
-assign d12_do[0] = cb_data[0];
-assign d12_do[1] = cb_data[1];
-assign d12_do[2] = cb_data[2];
-assign d12_do[3] = cb_data[3];
 
 // DD8
 assign d8_data[0] = cb_data[5];
@@ -274,8 +254,8 @@ assign d10_addr[5] = isa_addr[1];
 assign d10_addr[6] = isa_addr[0];
 assign d10_addr[7] = isa_ale;
 
-assign d10_cs[0] = d9_y1;
-assign d10_cs[1] = isa_aen;
+assign d10_cs[0] = vcc;//d9_y1;
+assign d10_cs[1] = vcc;//isa_aen;
 
 // DD15
 assign d15_addr[0] = d16_out[3];
@@ -288,10 +268,12 @@ assign d15_addr[6] = f_tim;
 assign d15_addr[7] = m_w;
 assign d15_addr[8] = d_sel;
 
-assign d15_cs[0] = a;
-assign d15_cs[1] = a;
-assign d15_cs[2] = gnd;
-assign d15_cs[3] = gnd;
+// ???????????????????????????????????????????????????
+assign d15_cs[0] = a;//gnd;//vcc;//a;
+assign d15_cs[1] = a;//gnd;//vcc;//a;
+assign d15_cs[2] = vcc;//gnd;
+assign d15_cs[3] = vcc;//gnd;
+// ???????????????????????????????????????????????????
 
 // DD16
 assign d16_data[0] = d15_out[6];
@@ -342,11 +324,31 @@ assign isa_irq[4] = vcc;
 assign isa_irq[5] = vcc;
 assign isa_irq[6] = vcc;
 
+assign cb_data[4] = d11_do[0];
+assign cb_data[5] = d11_do[1];
+assign cb_data[6] = d11_do[2];
+assign cb_data[7] = d11_do[3];
+
+assign cb_data[0] = d12_do[0];
+assign cb_data[1] = d12_do[1];
+assign cb_data[2] = d12_do[2];
+assign cb_data[3] = d12_do[3];
+
+assign cb_data[12] = d1_db[0];
+assign cb_data[14] = d1_db[1];
+assign cb_data[13] = d1_db[2];
+assign cb_data[15] = d1_db[3];
+
+assign cb_data[9] = d2_db[0];
+assign cb_data[10] = d2_db[1];
+assign cb_data[8] = d2_db[2];
+assign cb_data[11] = d2_db[3];
+
 // #######################################################################
 
 // DD1 (BUS former)
 IC82x6 #(.INVERTED_OUTPUT(0)) 
-    d1 (.dce(gnd), .cs_n(m_w), .d_in(d1_di), .d_bus(d1_db));
+   d1 (.dce(gnd), .cs_n(m_w), .d_in(d1_di), .d_bus(d1_db));
 	 
 // DD4
 SN74LS298 d4(.ws(m_w), .clk(n_c1), .s1(d4_s1), .s2(d4_s2), .q(d4_q));
@@ -366,6 +368,9 @@ SN74LS257 #(.INVERTED_OUTPUT(0))
 // DD7
 SN74LS257 #(.INVERTED_OUTPUT(0)) 
     d7(.select(k_sel2), .out_control(gnd), .a(d7_a), .b(d7_b), .y(d7_y));
+	 
+// DD8 - SN74LS374
+SN74LS374 d8(.clk(z_c2), .out_control(gnd), .data(d8_data), .out(d8_out));
 
 // DD11 - IC8226
 IC82x6 #(.INVERTED_OUTPUT(1)) 
@@ -375,8 +380,6 @@ IC82x6 #(.INVERTED_OUTPUT(1))
 IC82x6 #(.INVERTED_OUTPUT(1)) 
     d12 (.dce(q_r), .cs_n(d_sel), .d_in(d12_di), .d_bus(d12_db), .d_out(d12_do));
 	 
-// DD8 - SN74LS374
-SN74LS374 d8(.clk(z_c2), .out_control(gnd), .data(d8_data), .out(d8_out));
 
 // DD13 - SN74LS365
 SN74LS365 #(.INVERTED_OUTPUT(0))
@@ -393,8 +396,7 @@ SN74LS365 #(.INVERTED_OUTPUT(1))
 // DD18
 SN74LS04 d18(.a6(d17_out[5]), .y6(f_tim),
              .a3(cb_prr), .y3(b_cxi),
-				 .a1(d16_out[2]), .y1(isa_chrdy)
-             /*.a2(cb_prr), y2(a)*/);
+				 .a1(d16_out[2]), .y1(isa_chrdy));
 
 // DD5
 SN74LS00 d5(.a1(g_rd|isa_ior), .b1(d5_y2), .y1(d5_y1),
@@ -415,5 +417,6 @@ dig_machine_ip3604 d15(.address(d15_addr), .cs(d15_cs), .data(d15_out));
 
 // DD16
 SN74LS374 d16(.out_control(gnd), .clk(isa_clk), .data(d16_data), .out(d16_out));
+
 
 endmodule
