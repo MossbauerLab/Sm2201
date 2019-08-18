@@ -20,7 +20,7 @@
 // Dependencies: 
 //
 // Revision: 1.0
-// Additional Comments: 
+// Additional Comments: D1 + D2 or D3 + D4 are sources for D6 + D7
 //
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -66,10 +66,10 @@ wire p_wr;
 wire l_sel1;
 wire v_rp;
 
-wire [3:0] d1_do;
+wire [3:0] d1_di;
 wire [3:0] d1_db;
 
-wire [3:0] d2_do;
+wire [3:0] d2_di;
 wire [3:0] d2_db;
 
 wire [3:0] d3_s1;
@@ -133,15 +133,15 @@ supply1 vcc;
 // ######################### LINES ASSIGNMENT ############################
 
 // DD1
-/*assign d1_di[0] = d4_q[0];
-assign d1_di[1] = d4_q[2];
-assign d1_di[2] = d4_q[3];
-assign d1_di[3] = d4_q[1];*/
-
 assign d1_db[0] = cb_data[12];
 assign d1_db[1] = cb_data[14];
 assign d1_db[2] = cb_data[13];
 assign d1_db[3] = cb_data[15];
+
+assign d1_di[0] = d3_q[0];
+assign d1_di[1] = d3_q[2];
+assign d1_di[2] = d3_q[3];
+assign d1_di[3] = d3_q[1];
 
 // DD4
 assign d4_s1[0] = cb_data[4];
@@ -155,16 +155,15 @@ assign d4_s2[2] = cb_data[14];
 assign d4_s2[3] = cb_data[13];
 
 // DD2
-/*assign d2_di[0] = d3_q[0];
-assign d2_di[1] = d3_q[2];
-assign d2_di[2] = d3_q[3];
-assign d2_di[3] = d3_q[1];*/
-
 assign d2_db[0] = cb_data[9];
 assign d2_db[1] = cb_data[10];
 assign d2_db[2] = cb_data[8];
 assign d2_db[3] = cb_data[11];
 
+assign d2_di[0] = d4_q[0];
+assign d2_di[1] = d4_q[2];
+assign d2_di[2] = d4_q[3];
+assign d2_di[3] = d4_q[1];
 
 // DD3
 assign d3_s1[0] = cb_data[1];
@@ -178,10 +177,10 @@ assign d3_s2[2] = cb_data[10];
 assign d3_s2[3] = cb_data[8];
 
 // DD6
-assign d6_a[0] = d4_q[0] | d2_do[0];
-assign d6_a[1] = d4_q[3] | d2_do[3];
-assign d6_a[2] = d4_q[1] | d2_do[1];
-assign d6_a[3] = d4_q[2] | d2_do[2];
+assign d6_a[0] = d4_q[0];
+assign d6_a[1] = d4_q[3];
+assign d6_a[2] = d4_q[1];
+assign d6_a[3] = d4_q[2];
 
 assign d6_b[0] = cb_data[4];
 assign d6_b[1] = cb_data[5];
@@ -189,10 +188,10 @@ assign d6_b[2] = cb_data[7];
 assign d6_b[3] = cb_data[6];
 
 // DD7
-assign d7_a[0] = d3_q[0] | d1_do[0];
-assign d7_a[1] = d3_q[3] | d1_do[3];
-assign d7_a[2] = d3_q[1] | d1_do[1];
-assign d7_a[3] = d3_q[2] | d1_do[2];
+assign d7_a[0] = d3_q[0];
+assign d7_a[1] = d3_q[3];
+assign d7_a[2] = d3_q[1];
+assign d7_a[3] = d3_q[2];
 
 assign d7_b[0] = cb_data[1];
 assign d7_b[1] = cb_data[0];
@@ -348,19 +347,28 @@ assign cb_data[3] = d12_do[3];
 // #######################################################################
 
 // DD1 (BUS former)
+/*
+ * Passes data to CAMAC BUS from DD3 
+ * Mode was permanently set to always write to bus (di -> db) when m_w is 0
+ * therefore it captures data from s1 lines d3_s1 -> db
+ */
 IC82x6 #(.INVERTED_OUTPUT(0)) 
-   d1 (.dce(gnd), .cs_n(m_w), .d_out(d1_do), .d_bus(d1_db));
-	 
-// DD4
-SN74LS298 d4(.ws(m_w), .clk(n_c1), .s1(d4_s1), .s2(d4_s2), .q(d4_q));
-
+   d1 (.dce(gnd), .cs_n(m_w), .d_in(d1_di), .d_bus(d1_db));
+	
 // DD2 (BUS former)
+/*
+ * Passes data to CAMAC BUS from DD4
+ * Mode was permanently set to always write to bus (di -> db) when m_w is 0
+ * therefore it captures data from s1 lines d4_s1 -> db
+ */
 IC82x6 #(.INVERTED_OUTPUT(0)) 
-    d2 (.dce(gnd), .cs_n(m_w), .d_out(d2_do), .d_bus(d2_db));
+    d2 (.dce(gnd), .cs_n(m_w), .d_in(d2_di), .d_bus(d2_db));	 
 
 // DD3
 SN74LS298 d3(.ws(m_w), .clk(n_c1), .s1(d3_s1), .s2(d3_s2), .q(d3_q));
 
+// DD4
+SN74LS298 d4(.ws(m_w), .clk(n_c1), .s1(d4_s1), .s2(d4_s2), .q(d4_q));
 
 // DD6
 SN74LS257 #(.INVERTED_OUTPUT(0)) 
