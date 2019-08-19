@@ -334,7 +334,7 @@ assign isa_irq[4] = vcc;
 assign isa_irq[5] = vcc;
 assign isa_irq[6] = vcc;
 
-assign cb_data[4] = d_sel == 1'b0 ? d11_do[0]: 1'bz;
+assign cb_data[4] = d11_do[0];
 assign cb_data[5] = d11_do[1];
 assign cb_data[6] = d11_do[2];
 assign cb_data[7] = d11_do[3];
