@@ -395,7 +395,7 @@ SN74LS374 d8(.clk(z_c2), .out_control(gnd), .data(d8_data), .out(d8_out));
 /* DD11 - IC8226 (Buffer)
  * DI
  * DB
- * DO
+ * DO - connected to CAMAC BUS
  */
 IC82x6 #(.INVERTED_OUTPUT(1)) 
     d11 (.dce(q_r), .cs_n(d_sel), .d_in(d11_di), .d_bus(d11_db), .d_out(d11_do));
@@ -403,7 +403,7 @@ IC82x6 #(.INVERTED_OUTPUT(1))
 /* DD12 - IC8226 (Buffer)
  * DI
  * DB
- * DO
+ * DO - connected to CAMAC BUS
  */
 IC82x6 #(.INVERTED_OUTPUT(1)) 
     d12 (.dce(q_r), .cs_n(d_sel), .d_in(d12_di), .d_bus(d12_db), .d_out(d12_do));
