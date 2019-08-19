@@ -346,8 +346,7 @@ assign cb_data[3] = d12_do[3];
 
 // #######################################################################
 
-// DD1 (BUS former)
-/*
+/* DD1 (BUS former)
  * Passes data to CAMAC BUS from DD3 
  * Mode was permanently set to always write to bus (di -> db) when m_w is 0
  * therefore it captures data from s1 lines d3_s1 -> db
@@ -355,8 +354,7 @@ assign cb_data[3] = d12_do[3];
 IC82x6 #(.INVERTED_OUTPUT(0)) 
    d1 (.dce(gnd), .cs_n(m_w), .d_in(d1_di), .d_bus(d1_db));
 	
-// DD2 (BUS former)
-/*
+/* DD2 (BUS former)
  * Passes data to CAMAC BUS from DD4
  * Mode was permanently set to always write to bus (di -> db) when m_w is 0
  * therefore it captures data from s1 lines d4_s1 -> db
@@ -364,32 +362,52 @@ IC82x6 #(.INVERTED_OUTPUT(0))
 IC82x6 #(.INVERTED_OUTPUT(0)) 
     d2 (.dce(gnd), .cs_n(m_w), .d_in(d2_di), .d_bus(d2_db));	 
 
-// DD3
+/* DD3 (Multiplexer)
+ * Switches Camac Data Lines to out according to address (ws) signal,
+ * Data sampling triggers by posedge on clk line
+ */
 SN74LS298 d3(.ws(m_w), .clk(n_c1), .s1(d3_s1), .s2(d3_s2), .q(d3_q));
 
-// DD4
+/* DD4 (Multiplexer)
+ * Switches Camac Data Lines to out according to address (ws) signal
+ * Data sampling triggers by posedge on clk line
+ */
 SN74LS298 d4(.ws(m_w), .clk(n_c1), .s1(d4_s1), .s2(d4_s2), .q(d4_q));
 
-// DD6
+/* DD6 (Multiplexer)
+ * Passing data to multiplexer out from D3 or from CAMAC BUS directly
+ */
 SN74LS257 #(.INVERTED_OUTPUT(0)) 
     d6(.select(k_sel2), .out_control(gnd), .a(d6_a), .b(d6_b), .y(d6_y));
 
-// DD7
+/* DD7 (Multiplexer)
+ * Passing data to multiplexer out from D4 or from CAMAC BUS directly
+ */
 SN74LS257 #(.INVERTED_OUTPUT(0)) 
     d7(.select(k_sel2), .out_control(gnd), .a(d7_a), .b(d7_b), .y(d7_y));
 	 
-// DD8 - SN74LS374
+/* DD8 - SN74LS374 (Register)
+ * Passing data from input lines to out by clock, enabled by one on out_control line,
+ * Permanently enabled by gnd
+ */
 SN74LS374 d8(.clk(z_c2), .out_control(gnd), .data(d8_data), .out(d8_out));
 
-// DD11 - IC8226
+/* DD11 - IC8226 (Buffer)
+ * DI
+ * DB
+ * DO
+ */
 IC82x6 #(.INVERTED_OUTPUT(1)) 
     d11 (.dce(q_r), .cs_n(d_sel), .d_in(d11_di), .d_bus(d11_db), .d_out(d11_do));
-
-// DD12 - IC8226
+ 
+/* DD12 - IC8226 (Buffer)
+ * DI
+ * DB
+ * DO
+ */
 IC82x6 #(.INVERTED_OUTPUT(1)) 
     d12 (.dce(q_r), .cs_n(d_sel), .d_in(d12_di), .d_bus(d12_db), .d_out(d12_do));
 	 
-
 // DD13 - SN74LS365
 SN74LS365 #(.INVERTED_OUTPUT(0))
     d13(.e1(gnd), .e2(gnd), .data(d13_data), .out(d13_out));
