@@ -22,7 +22,7 @@
 
 module SN74LS365 #
 (
-    INVERTED_OUTPUT = 0
+    parameter INVERTED_OUTPUT = 0
 )
 (
     input wire e1,

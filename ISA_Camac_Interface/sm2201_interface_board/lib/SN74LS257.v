@@ -22,7 +22,7 @@
 
 module SN74LS257 #
 (
-    INVERTED_OUTPUT = 0
+    parameter INVERTED_OUTPUT = 0
 )
 (
     input wire [3:0] a,
@@ -36,5 +36,5 @@ module SN74LS257 #
     assign selection = select == 0 ? a : b;
     assign internal_out = INVERTED_OUTPUT == 0 ? selection : 15 - selection;
     
-    assign y = out_control == 0 ? internal_out : 'bz;
+    assign y = out_control == 0 ? internal_out : 4'b0000;
 endmodule
