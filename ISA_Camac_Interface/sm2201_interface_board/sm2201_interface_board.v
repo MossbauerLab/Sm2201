@@ -37,7 +37,7 @@ module sm2201_interface_board(
     input wire [9:0] isa_addr,
     output wire [7:0] isa_irq,
     // controller interface bus (common bus = ОШ)
-    inout wire [15:0] cb_data,
+    inout reg [15:0] cb_data,
     input wire cb_prr,
     input wire cb_cx1,
     input wire cb_zk4,               // X 2.2 B21 ЗК4 ???
@@ -130,13 +130,16 @@ wire [7:0] d16_out;
 supply0 gnd;
 supply1 vcc;
 
+reg [7:0] cb_data_out_l;
+reg [7:0] cb_data_out_h;
+
 // ######################### LINES ASSIGNMENT ############################
 
 // DD1
-assign d1_db[0] = cb_data[12];
+/*assign d1_db[0] = cb_data[12];
 assign d1_db[1] = cb_data[14];
 assign d1_db[2] = cb_data[13];
-assign d1_db[3] = cb_data[15];
+assign d1_db[3] = cb_data[15];*/
 
 assign d1_di[0] = d3_q[0];
 assign d1_di[1] = d3_q[2];
@@ -155,10 +158,10 @@ assign d4_s2[2] = cb_data[14];
 assign d4_s2[3] = cb_data[13];
 
 // DD2
-assign d2_db[0] = cb_data[9];
+/*assign d2_db[0] = cb_data[9];
 assign d2_db[1] = cb_data[10];
 assign d2_db[2] = cb_data[8];
-assign d2_db[3] = cb_data[11];
+assign d2_db[3] = cb_data[11];*/
 
 assign d2_di[0] = d4_q[0];
 assign d2_di[1] = d4_q[2];
@@ -334,7 +337,7 @@ assign isa_irq[4] = vcc;
 assign isa_irq[5] = vcc;
 assign isa_irq[6] = vcc;
 
-assign cb_data[4] = d11_do[0];
+/*assign cb_data[4] = d11_do[0];
 assign cb_data[5] = d11_do[1];
 assign cb_data[6] = d11_do[2];
 assign cb_data[7] = d11_do[3];
@@ -343,6 +346,16 @@ assign cb_data[0] = d12_do[0];
 assign cb_data[1] = d12_do[1];
 assign cb_data[2] = d12_do[2];
 assign cb_data[3] = d12_do[3];
+
+assign cb_data[12] = d1_db[0];
+assign cb_data[14] = d1_db[1];
+assign cb_data[13] = d1_db[2];
+assign cb_data[15] = d1_db[3];
+
+assign cb_data[9] = d2_db[0];
+assign cb_data[10] = d2_db[1];
+assign cb_data[8] = d2_db[2];
+assign cb_data[11] = d2_db[3];*/
 
 // #######################################################################
 
@@ -445,5 +458,34 @@ dig_machine_ip3604 d15(.address(d15_addr), .cs(d15_cs), .data(d15_out));
 // DD16
 SN74LS374 d16(.out_control(gnd), .clk(isa_clk), .data(d16_data), .out(d16_out));
 
+always @(*)
+begin
+    cb_data_out_l[0] = d12_do[0];
+    cb_data_out_l[1] = d12_do[1];
+    cb_data_out_l[2] = d12_do[2];
+    cb_data_out_l[3] = d12_do[3];
+	 
+	 cb_data_out_l[4] = d11_do[0];
+	 cb_data_out_l[5] = d11_do[1];
+    cb_data_out_l[6] = d11_do[2];
+    cb_data_out_l[7] = d11_do[3];
+
+    cb_data_out_h[1] = d2_db[0];
+    cb_data_out_h[2] = d2_db[1];
+    cb_data_out_h[0] = d2_db[2];
+    cb_data_out_h[3] = d2_db[3];
+	 	 
+    cb_data_out_h[4] = d1_db[0];
+    cb_data_out_h[6] = d1_db[1];
+    cb_data_out_h[5] = d1_db[2];
+    cb_data_out_h[7] = d1_db[3];
+	 
+    if (m_w == 1'b0)
+	     cb_data[15:8] = cb_data_out_h[7:0];
+	 //cb_data[15:8] = m_w == 1'b0 ? cb_data_out_h[7:0] : cb_data[15:8];
+	 if (d_sel == 1'b0 & q_r == 1'b1)
+	     cb_data[7:0] = cb_data_out_l[7:0];
+	 //cb_data[7:0] = d_sel == 1'b0 & q_r == 1'b1 ? cb_data_out_l[7:0] : cb_data[7:0];
+end
 
 endmodule
