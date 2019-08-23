@@ -66,4 +66,41 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name ENABLE_LOGIC_ANALYZER_INTERFACE OFF
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH IC8216_testbench -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME IC8216_testbench -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id IC8216_testbench
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "200 us" -section_id IC8216_testbench
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME IC8216_testbench -section_id IC8216_testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/IC8216_testbench.v -section_id IC8216_testbench
+set_global_assignment -name EDA_TEST_BENCH_NAME IC8226_testbench -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id IC8226_testbench
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "200 us" -section_id IC8226_testbench
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME IC8226_testbench -section_id IC8226_testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/IC8226_testbench.v -section_id IC8226_testbench
+set_global_assignment -name EDA_TEST_BENCH_NAME SN74LS257_testbench -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id SN74LS257_testbench
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "200 us" -section_id SN74LS257_testbench
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME SN74LS257_testbench -section_id SN74LS257_testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS257_testbench.v -section_id SN74LS257_testbench
+set_global_assignment -name EDA_TEST_BENCH_NAME SN74LS298_testbench -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id SN74LS298_testbench
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "200 us" -section_id SN74LS298_testbench
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME SN74LS298_testbench -section_id SN74LS298_testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS298_testbench.v -section_id SN74LS298_testbench
+set_global_assignment -name EDA_TEST_BENCH_NAME SN74LS365A_testbench -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id SN74LS365A_testbench
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "200 us" -section_id SN74LS365A_testbench
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME SN74LS365A_testbench -section_id SN74LS365A_testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS365A_testbench.v -section_id SN74LS365A_testbench
+set_global_assignment -name EDA_TEST_BENCH_NAME SN74LS366A_testbench -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id SN74LS366A_testbench
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "200 us" -section_id SN74LS366A_testbench
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME SN74LS366A_testbench -section_id SN74LS366A_testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS366A_testbench.v -section_id SN74LS366A_testbench
+set_global_assignment -name EDA_TEST_BENCH_NAME SN74LS374_testbench -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id SN74LS374_testbench
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "200 us" -section_id SN74LS374_testbench
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME SN74LS374_testbench -section_id SN74LS374_testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS374_testbench.v -section_id SN74LS374_testbench
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
