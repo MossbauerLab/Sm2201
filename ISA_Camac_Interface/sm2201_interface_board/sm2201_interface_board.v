@@ -19,19 +19,19 @@
 //
 // Dependencies: Implemented on QMTech Core Board
 //               ISA lines connected to U8:
-//                   DATA (A2-A9): 7 (AA13), 6 (AA14), 5 (AA15), 4 (AA16), 
-//                                 3 (AA17), 2 (AA18), 1 (AA19), 0 (AA20)
+//                   DATA (A2-A9): 7 (xAA13), 6 (xAA14), 5 (xAA15), 4 (xAA16), 
+//                                 3 (xAA17), 2 (xAA18), 1 (xAA19), 0 (xAA20)
 //                   CH RDY (A10): AB20
-//                   ADDRESS (A21-A30): 9 (E21), 8 (C21), 7 (B21), 6 (N19), 5 (M19),
-//                                      4 (D22), 3 (C22), 2 (B22), 1 (N20), 0 (M20)
+//                   ADDRESS (A21-A30): 9 (U21), 8 (U22), 7 (V21), 6 (V22), 5 (W21),
+//                                      4 (W22), 3 (Y21), 2 (Y22), 1 (AB20), 0 (AA20)
 //                   IRQ2 (B4): R22
-//                   SMEMW (Sys memory Write, B11): L21
-//                   SMEMR (Sys memory Read, B12): K21
-//                   DRQU1 (DMA Request 1, B18):  M22 ??? (Don't know)
-//                   REFRESH (B19): F22 ??? (Don't know)
-//                   IRQ6 (B22): F21
-//                   ALE (Address Latch Enable, B28): E22
-//                   CLK (B30) : H21
+//                   SMEMW (Sys memory Write, B11): xL21
+//                   SMEMR (Sys memory Read, B12): xK21
+//                   DRQU1 (DMA Request 1, B18):  xM22 ??? (Don't know)
+//                   REFRESH (B19): xF22 ??? (Don't know)
+//                   IRQ6 (B22): xF21
+//                   ALE (Address Latch Enable, B28): xE22
+//                   CLK (B30) : xH21
 //               CAMAC lines connected to U7
 //
 // Revision: 1.0
