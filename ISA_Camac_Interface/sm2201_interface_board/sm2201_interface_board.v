@@ -19,19 +19,24 @@
 //
 // Dependencies: Implemented on QMTech Core Board
 //               ISA lines connected to U8:
-//                   DATA (A2-A9): 7 (xAA13), 6 (xAA14), 5 (xAA15), 4 (xAA16), 
-//                                 3 (xAA17), 2 (xAA18), 1 (xAA19), 0 (xAA20)
-//                   CH RDY (A10): AB20
+//                   DATA (A2-A9): 7 (C22), 6 (C21), 5 (B22), 4 (B21), 
+//                                 3 (N20), 2 (N19), 1 (M20), 0 (M19)
+//                   CH RDY (Channel ready, A10): D22
+//                   AEN (Address Enable, A11): D21
 //                   ADDRESS (A21-A30): 9 (U21), 8 (U22), 7 (V21), 6 (V22), 5 (W21),
 //                                      4 (W22), 3 (Y21), 2 (Y22), 1 (AB20), 0 (AA20)
-//                   IRQ2 (B4): R22
-//                   SMEMW (Sys memory Write, B11): xL21
-//                   SMEMR (Sys memory Read, B12): xK21
-//                   DRQU1 (DMA Request 1, B18):  xM22 ??? (Don't know)
-//                   REFRESH (B19): xF22 ??? (Don't know)
-//                   IRQ6 (B22): xF21
-//                   ALE (Address Latch Enable, B28): xE22
-//                   CLK (B30) : xH21
+//                   RESET (B2): AA19
+//                   IRQ2 (B4): AB19
+//                   IOW (B13): J22
+//                   IOR (B14): K21
+//                   CLK (B20) : E22
+//                   IRQ7 (B21): R22
+//                   IRQ6 (B22): R21
+//                   IRQ5 (B23): P22
+//                   IRQ4 (B24): P21
+//                   IRQ3 (B25): N22
+//                   ALE (Address Latch Enable, B28): E21
+//                   
 //               CAMAC lines connected to U7
 //
 // Revision: 1.0
