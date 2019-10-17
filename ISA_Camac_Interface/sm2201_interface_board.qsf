@@ -37,7 +37,7 @@
 
 
 set_global_assignment -name FAMILY "Cyclone IV E"
-set_global_assignment -name DEVICE EP4CE6E22I7
+set_global_assignment -name DEVICE EP4CE15F23C8
 set_global_assignment -name TOP_LEVEL_ENTITY sm2201_interface_board
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:46:39  JUNE 25, 2019"
@@ -58,8 +58,8 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VERILOG_FILE sm2201_interface_board/src/dig_machine_ip3604.v
 set_global_assignment -name VERILOG_FILE sm2201_interface_board/src/dig_machine_ip3601.v
-set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
-set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
@@ -103,4 +103,56 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id SN74LS374_te
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "200 us" -section_id SN74LS374_testbench
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME SN74LS374_testbench -section_id SN74LS374_testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS374_testbench.v -section_id SN74LS374_testbench
+set_location_assignment PIN_AB13 -to isa_data[7]
+set_location_assignment PIN_AA14 -to isa_data[6]
+set_location_assignment PIN_AA15 -to isa_data[5]
+set_location_assignment PIN_AA16 -to isa_data[4]
+set_location_assignment PIN_AA17 -to isa_data[3]
+set_location_assignment PIN_AA18 -to isa_data[2]
+set_location_assignment PIN_AA19 -to isa_data[1]
+set_location_assignment PIN_AA20 -to isa_data[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_data[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_data[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_data[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_data[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_data[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_data[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_data[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_data[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_data
+set_location_assignment PIN_AB20 -to isa_chrdy
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_chrdy
+set_location_assignment PIN_M20 -to isa_addr[0]
+set_location_assignment PIN_N20 -to isa_addr[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_addr[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_addr[1]
+set_location_assignment PIN_B22 -to isa_addr[2]
+set_location_assignment PIN_C22 -to isa_addr[3]
+set_location_assignment PIN_D22 -to isa_addr[4]
+set_location_assignment PIN_M19 -to isa_addr[5]
+set_location_assignment PIN_N19 -to isa_addr[6]
+set_location_assignment PIN_B21 -to isa_addr[7]
+set_location_assignment PIN_C21 -to isa_addr[8]
+set_location_assignment PIN_E21 -to isa_addr[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_addr[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_addr[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_addr[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_addr[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_addr[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_addr[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_addr[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_addr[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_addr
+set_location_assignment PIN_E22 -to isa_ale
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_ale
+set_location_assignment PIN_F21 -to isa_irq[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_irq[6]
+set_location_assignment PIN_R22 -to isa_irq[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_irq[2]
+set_location_assignment PIN_L21 -to isa_iow
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_iow
+set_location_assignment PIN_K21 -to isa_ior
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_ior
+set_location_assignment PIN_H21 -to isa_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_clk
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

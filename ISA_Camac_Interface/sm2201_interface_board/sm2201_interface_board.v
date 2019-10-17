@@ -17,7 +17,22 @@
 //                     - PC4(ПК4)       Don't know (C22)
 //                     - CX3            Don't know (B22)
 //
-// Dependencies: 
+// Dependencies: Implemented on QMTech Core Board
+//               ISA lines connected to U8:
+//                   DATA (A2-A9): 7 (AA13), 6 (AA14), 5 (AA15), 4 (AA16), 
+//                                 3 (AA17), 2 (AA18), 1 (AA19), 0 (AA20)
+//                   CH RDY (A10): AB20
+//                   ADDRESS (A21-A30): 9 (E21), 8 (C21), 7 (B21), 6 (N19), 5 (M19),
+//                                      4 (D22), 3 (C22), 2 (B22), 1 (N20), 0 (M20)
+//                   IRQ2 (B4): R22
+//                   SMEMW (Sys memory Write, B11): L21
+//                   SMEMR (Sys memory Read, B12): K21
+//                   DRQU1 (DMA Request 1, B18):  M22 ??? (Don't know)
+//                   REFRESH (B19): F22 ??? (Don't know)
+//                   IRQ6 (B22): F21
+//                   ALE (Address Latch Enable, B28): E22
+//                   CLK (B30) : H21
+//               CAMAC lines connected to U7
 //
 // Revision: 1.0
 // Additional Comments: D1 + D2 or D3 + D4 are sources for D6 + D7
@@ -26,7 +41,7 @@
 
 module sm2201_interface_board(
     // ISA interface
-    input wire [7:0] isa_data,
+    inout wire [7:0] isa_data,
     input wire isa_ale,
     input wire isa_aen,
     input wire isa_clk,
