@@ -28,21 +28,36 @@ module sm2201_interface_board_testbench;
     reg isa_ior;
     reg isa_iow;
     reg isa_reset;
+    reg isa_ale;
+    reg isa_aen;
+
+    reg [9:0] isa_addr;
+    wire [7:0] isa_irq;
+    wire isa_chrdy;
 
     // Instantiate the Unit Under Test (UUT)
     sm2201_interface_board
     uut (
-        .d_in(d_in), 
-        .d_out(d_out), 
-        .d_bus(d_bus), 
-        .cs_n(cs_n), 
-        .dce(dce)
+        // isa inputs
+        .isa_clk(isa_clk), 
+        .isa_reset(isa_reset), 
+        .isa_ior(isa_ior), 
+        .isa_iow(isa_iow), 
+        .isa_addr(isa_addr),
+        // isa outputs
+        .isa_addr(isa_addr)
     );
 
     initial begin
+        isa_reset <= 0;
+        isa_clk <= 0;
+        isa_ior <= 1;
+        isa_iow <= 1;
+        isa_addr <= 0;
     end
     
     always
     begin
-   end
+        #60 isa_clk <= ~isa_clk; 
+    end
 endmodule
