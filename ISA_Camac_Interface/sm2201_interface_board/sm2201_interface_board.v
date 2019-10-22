@@ -453,8 +453,8 @@ SN74LS365 #(.INVERTED_OUTPUT(0))
 SN74LS365 #(.INVERTED_OUTPUT(1))
     d17(.e1(gnd), .e2(gnd), .data(d17_data), .out(d17_out));
 
-// DD18
-SN74LS04 d18(.a6(d17_out[5]), .y6(f_tim),
+// DD18 - SN74LS366 (К155ЛП9)
+SN74LS07 d18(.a6(d17_out[5]), .y6(f_tim),
              .a3(cb_prr), .y3(b_cxi),
 				 .a1(d16_out[2]), .y1(isa_chrdy));
 
@@ -500,12 +500,12 @@ begin
     cb_data_out_h[5] = d1_db[2];
     cb_data_out_h[7] = d1_db[3];
 	 
-    if (m_w == 1'b0)
-	     cb_data[15:8] = cb_data_out_h[7:0];
-	 //cb_data[15:8] = m_w == 1'b0 ? cb_data_out_h[7:0] : cb_data[15:8];
-	 if (d_sel == 1'b0 & q_r == 1'b1)
-	     cb_data[7:0] = cb_data_out_l[7:0];
-	 //cb_data[7:0] = d_sel == 1'b0 & q_r == 1'b1 ? cb_data_out_l[7:0] : cb_data[7:0];
+    //if (m_w == 1'b0)
+	     //cb_data[15:8] = cb_data_out_h[7:0];
+	 cb_data[15:8] = m_w == 1'b0 ? cb_data_out_h[7:0] : cb_data[15:8];
+	 //if (d_sel == 1'b0 & q_r == 1'b1)
+	     //cb_data[7:0] = cb_data_out_l[7:0];
+	 cb_data[7:0] = d_sel == 1'b0 & q_r == 1'b1 ? cb_data_out_l[7:0] : cb_data[7:0];
 end
 
 endmodule
