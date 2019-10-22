@@ -56,13 +56,13 @@ module SN74LS257_testbench;
         #1000;
         
         out_control = 0;
-      a = 8'b10110001;
+        a = 8'b10110001;
         b = 8'b00100100;
     end
       
-   always
+    always
     begin
-       #100 counter <= counter + 1;
+        #100 counter <= counter + 1;
         select <= counter < 8 ? 0 : 1;
     end
     

@@ -59,8 +59,8 @@ module SN74LS374_testbench;
     always
     begin
         #100 data <= data + 1;
-         #10 clk <= ~clk;     
-         // counter <= counter + 1;
+        #10 clk <= ~clk;
+        // counter <= counter + 1;
     end
       
 endmodule

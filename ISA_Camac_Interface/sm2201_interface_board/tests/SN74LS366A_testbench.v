@@ -24,44 +24,44 @@
 
 module SN74LS366A_testbench;
 
-	// Inputs
-	reg e1;
-	reg e2;
-	reg [5:0] data;
+    // Inputs
+    reg e1;
+    reg e2;
+    reg [5:0] data;
 
-	// Outputs
-	wire [5:0] out;
+    // Outputs
+    wire [5:0] out;
 
-	// Instantiate the Unit Under Test (UUT)
-	SN74LS365 # (.INVERTED_OUTPUT(1)) uut (
-		.e1(e1), 
-		.e2(e2), 
-		.data(data), 
-		.out(out)
-	);
+    // Instantiate the Unit Under Test (UUT)
+    SN74LS365 # (.INVERTED_OUTPUT(1)) uut (
+        .e1(e1), 
+        .e2(e2), 
+        .data(data), 
+        .out(out)
+    );
 
-	initial begin
-		// Initialize Inputs
-		e1 = 1;
-		e2 = 0;
-		data = 0;
-		
-		#100;
-		e2 = 1;
+    initial begin
+        // Initialize Inputs
+        e1 = 1;
+        e2 = 0;
+        data = 0;
+        
+        #100;
+        e2 = 1;
 
-		// Wait 100 ns for global reset to finish
-		#100;      
-		// Add stimulus here
-      e1 = 0;
-		
-		#100;
-		e2 = 0;
-	end
+        // Wait 100 ns for global reset to finish
+        #100;      
+        // Add stimulus here
+        e1 = 0;
+        
+        #100;
+        e2 = 0;
+    end
       
-	always
-	begin
-	    #100 data <= data + 1;
-	end
+    always
+    begin
+        #100 data <= data + 1;
+    end
       
 endmodule
 

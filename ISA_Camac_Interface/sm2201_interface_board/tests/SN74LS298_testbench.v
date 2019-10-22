@@ -62,8 +62,8 @@ module SN74LS298_testbench;
     always
     begin
         #100 clk <= ~clk;
-         counter <= counter + 1;
-         ws = counter < 8 ? 0 : 1;
+        counter <= counter + 1;
+        ws = counter < 8 ? 0 : 1;
     end
       
 endmodule
