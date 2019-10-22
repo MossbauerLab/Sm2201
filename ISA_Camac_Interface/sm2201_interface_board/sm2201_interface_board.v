@@ -57,7 +57,7 @@ module sm2201_interface_board(
     input wire [9:0] isa_addr,
     output wire [7:0] isa_irq,
     // controller interface bus (common bus = ОШ)
-    inout reg [15:0] cb_data,
+    inout wire [15:0] cb_data,
     input wire cb_prr,
     input wire cb_cx1,
     input wire cb_zk4,               // X 2.2 B21 ЗК4 ???
@@ -65,8 +65,11 @@ module sm2201_interface_board(
     output wire cb_prepare_bus,      // ОШ ПОДГ.
     output wire cb_b_b1,             // ОШ B/B1
     output wire cb_pc4,              // ОШ ПК4        ???
-    output wire cb_cx3               // ОШ СХ3
-    
+    output wire cb_cx3,              // ОШ СХ3
+    // debug pins
+	 output wire d_sel_debug,
+	 output wire l_sel1_debug,
+	 output wire k_sel2_debug
 );
 
 wire m_w;
@@ -80,7 +83,7 @@ wire x1;
 wire rdy;
 wire f_tim;
 wire b_cxi;
-wire a;
+// wire a;
 wire g_rd;
 wire p_wr;
 wire l_sel1;
@@ -287,8 +290,8 @@ assign d10_addr[5] = isa_addr[1];
 assign d10_addr[6] = isa_addr[0];
 assign d10_addr[7] = isa_ale;
 
-assign d10_cs[0] = vcc;//d9_y1;
-assign d10_cs[1] = vcc;//isa_aen;
+assign d10_cs[0] = d9_y1;
+assign d10_cs[1] = isa_aen;
 
 // DD15
 assign d15_addr[0] = d16_out[3];
@@ -302,10 +305,10 @@ assign d15_addr[7] = m_w;
 assign d15_addr[8] = d_sel;
 
 // ???????????????????????????????????????????????????
-assign d15_cs[0] = a;//gnd;//vcc;//a;
-assign d15_cs[1] = a;//gnd;//vcc;//a;
-assign d15_cs[2] = vcc;//gnd;
-assign d15_cs[3] = vcc;//gnd;
+assign d15_cs[0] = vcc; //= a;//gnd;//vcc;//a;
+assign d15_cs[1] = vcc; //= a;//gnd;//vcc;//a;
+assign d15_cs[2] = gnd;
+assign d15_cs[3] = gnd;
 // ???????????????????????????????????????????????????
 
 // DD16
@@ -320,7 +323,7 @@ assign d16_data[7] = d15_out[3];
 
 // assign f_tim = d17_out[5];
 // INTERNAL
-assign a = f_tim; // !!!!!!!!!!!!!!!!!!!! A is a strange thing !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// assign a = f_tim; // !!!!!!!!!!!!!!!!!!!! A is a strange thing !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 assign l_sel1 = d10_out[2];
 assign x0 = d15_out[2];
 assign rdy = d16_out[2];
@@ -376,6 +379,11 @@ assign cb_data[9] = d2_db[0];
 assign cb_data[10] = d2_db[1];
 assign cb_data[8] = d2_db[2];
 assign cb_data[11] = d2_db[3];*/
+
+// Debug
+assign d_sel_debug = d_sel;
+assign l_sel1_debug = l_sel1;
+assign k_sel2_debug = k_sel2;
 
 // #######################################################################
 
@@ -500,12 +508,14 @@ begin
     cb_data_out_h[5] = d1_db[2];
     cb_data_out_h[7] = d1_db[3];
 	 
-    //if (m_w == 1'b0)
-	     //cb_data[15:8] = cb_data_out_h[7:0];
-	 cb_data[15:8] = m_w == 1'b0 ? cb_data_out_h[7:0] : cb_data[15:8];
-	 //if (d_sel == 1'b0 & q_r == 1'b1)
-	     //cb_data[7:0] = cb_data_out_l[7:0];
-	 cb_data[7:0] = d_sel == 1'b0 & q_r == 1'b1 ? cb_data_out_l[7:0] : cb_data[7:0];
+    /*if (m_w == 1'b0)
+        cb_data[15:8] = cb_data_out_h[7:0];
+    if (d_sel == 1'b0 & q_r == 1'b1)
+        cb_data[7:0] = cb_data_out_l[7:0];*/
+
 end
+
+assign cb_data[15:8] = m_w == 1'b0 ? cb_data_out_h[7:0] : cb_data[15:8];
+assign cb_data[7:0] = d_sel == 1'b0 & q_r == 1'b1 ? cb_data_out_l[7:0] : cb_data[7:0];
 
 endmodule

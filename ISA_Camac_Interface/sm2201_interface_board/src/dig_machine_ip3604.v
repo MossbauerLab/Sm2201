@@ -544,7 +544,7 @@ reg[7:0] mem_dump[511:0];
 wire[7:0] selected_data;
 
 assign selected_data = mem_dump[address];
-assign data = cs == 4'b1100 ? selected_data : 8'b00000000;
+assign data = cs == 4'b0011 ? selected_data : 8'b00000000;
 
 always @(*)
 begin

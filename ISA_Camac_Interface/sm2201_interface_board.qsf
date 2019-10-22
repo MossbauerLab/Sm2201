@@ -44,20 +44,9 @@ set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:46:39  JUNE 25, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name SEARCH_PATH .\\sm2201_interface_board\\lib
-set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS374.v
-set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS365.v
-set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS298.v
-set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS257.v
-set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS27.v
-set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS04.v
-set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS00.v
-set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/IC82x6.v
-set_global_assignment -name VERILOG_FILE sm2201_interface_board/sm2201_interface_board.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VERILOG_FILE sm2201_interface_board/src/dig_machine_ip3604.v
-set_global_assignment -name VERILOG_FILE sm2201_interface_board/src/dig_machine_ip3601.v
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
@@ -163,9 +152,6 @@ set_location_assignment PIN_P21 -to isa_irq[4]
 set_location_assignment PIN_P22 -to isa_irq[5]
 set_location_assignment PIN_R22 -to isa_irq[7]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_aen
-set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS07.v
-set_global_assignment -name VERILOG_FILE output_files/sm2201_interface_board_testbench.v
-set_global_assignment -name VERILOG_FILE sm2201_interface_board/sm2201_interface_board_testbench.v
 set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/IC8216_testbench.v -section_id IC8216_testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/IC8226_testbench.v -section_id IC8226_testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS257_testbench.v -section_id SN74LS257_testbench
@@ -178,4 +164,16 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id sm2201_inter
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "10 ms" -section_id sm2201_interface_board_testbench
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME sm2201_interface_board_testbench -section_id sm2201_interface_board_testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/sm2201_interface_board_testbench.v -section_id sm2201_interface_board_testbench
+set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS374.v
+set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS365.v
+set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS298.v
+set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS257.v
+set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS27.v
+set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS04.v
+set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS00.v
+set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/IC82x6.v
+set_global_assignment -name VERILOG_FILE sm2201_interface_board/sm2201_interface_board.v
+set_global_assignment -name VERILOG_FILE sm2201_interface_board/src/dig_machine_ip3604.v
+set_global_assignment -name VERILOG_FILE sm2201_interface_board/src/dig_machine_ip3601.v
+set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS07.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
