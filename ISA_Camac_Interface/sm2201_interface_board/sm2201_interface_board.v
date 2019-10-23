@@ -69,7 +69,9 @@ module sm2201_interface_board(
     // debug pins
 	 output wire d_sel_debug,
 	 output wire l_sel1_debug,
-	 output wire k_sel2_debug
+	 output wire k_sel2_debug,
+	 output wire m_w_debug,
+	 output wire q_r_debug
 );
 
 wire m_w;
@@ -305,8 +307,8 @@ assign d15_addr[7] = m_w;
 assign d15_addr[8] = d_sel;
 
 // ???????????????????????????????????????????????????
-assign d15_cs[0] = vcc; //= a;//gnd;//vcc;//a;
-assign d15_cs[1] = vcc; //= a;//gnd;//vcc;//a;
+assign d15_cs[0] = vcc; //= a;
+assign d15_cs[1] = vcc; //= a;
 assign d15_cs[2] = gnd;
 assign d15_cs[3] = gnd;
 // ???????????????????????????????????????????????????
@@ -334,6 +336,8 @@ assign z_c2 = d16_out[5];
 assign n_c1 = d16_out[6];
 assign k_sel2 = d16_out[7];
 assign v_rp = d8_out[5];
+assign g_rd = isa_ior;
+assign p_wr = isa_iow;
 
 // BOARD I/O
 assign cb_addr[1] = d17_out[3];          // do we have A0 or not ? i don't know
@@ -384,6 +388,8 @@ assign cb_data[11] = d2_db[3];*/
 assign d_sel_debug = d_sel;
 assign l_sel1_debug = l_sel1;
 assign k_sel2_debug = k_sel2;
+assign m_w_debug = m_w;
+assign q_r_debug = q_r;
 
 // #######################################################################
 
@@ -467,8 +473,8 @@ SN74LS07 d18(.a6(d17_out[5]), .y6(f_tim),
 				 .a1(d16_out[2]), .y1(isa_chrdy));
 
 // DD5
-SN74LS00 d5(.a1(g_rd|isa_ior), .b1(d5_y2), .y1(d5_y1),
-            .a2(p_wr|isa_iow), .b2(d5_y1), .y2(d5_y2),
+SN74LS00 d5(.a1(isa_ior), .b1(d5_y2), .y1(d5_y1),
+            .a2(isa_iow), .b2(d5_y1), .y2(d5_y2),
             .a3(g_rd), .b3(p_wr), .y3(d5_y3),
             .a4(d9_y2), .b4(isa_addr[9]), .y4(d_sel));
 

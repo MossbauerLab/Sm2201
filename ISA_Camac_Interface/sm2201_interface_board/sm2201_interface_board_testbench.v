@@ -44,8 +44,8 @@ module sm2201_interface_board_testbench;
         .isa_ior(isa_ior), 
         .isa_iow(isa_iow), 
         .isa_addr(isa_addr),
-		  .isa_ale(isa_ale),
-		  .isa_aen(isa_aen),
+        .isa_ale(isa_ale),
+        .isa_aen(isa_aen),
         // isa outputs
         .isa_chrdy(isa_chrdy)
     );
@@ -53,11 +53,13 @@ module sm2201_interface_board_testbench;
     initial begin
         isa_reset <= 0;
         isa_clk <= 0;
-        isa_ior <= 1;
-        isa_iow <= 1;
+        isa_ior <= 0;
+        isa_iow <= 0;
         isa_addr <= 0;
-		  isa_ale <= 0;
-		  isa_aen <= 0;
+        isa_ale <= 0;
+        isa_aen <= 0;
+        
+        #100 isa_ior <= 1;
     end
     
     always
