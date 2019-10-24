@@ -53,13 +53,17 @@ module sm2201_interface_board_testbench;
     initial begin
         isa_reset <= 0;
         isa_clk <= 0;
-        isa_ior <= 0;
-        isa_iow <= 0;
+        isa_ior <= 1;
+        isa_iow <= 1;
         isa_addr <= 0;
         isa_ale <= 0;
         isa_aen <= 0;
         
-        #100 isa_ior <= 1;
+        #100 
+        isa_ior <= 0;
+        #1000 
+        isa_ior <= 1;
+        isa_iow <= 0;
     end
     
     always

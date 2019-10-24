@@ -71,7 +71,12 @@ module sm2201_interface_board(
 	 output wire l_sel1_debug,
 	 output wire k_sel2_debug,
 	 output wire m_w_debug,
-	 output wire q_r_debug
+	 output wire q_r_debug,
+    output wire f_tim_debug,
+    output wire n_c1_debug,
+    output wire z_c2_debug,
+    output wire x0_debug,
+    output wire x1_debug
 );
 
 wire m_w;
@@ -85,6 +90,7 @@ wire x1;
 wire rdy;
 wire f_tim;
 wire b_cxi;
+wire b_cxi_pulled;
 // wire a;
 wire g_rd;
 wire p_wr;
@@ -338,6 +344,7 @@ assign k_sel2 = d16_out[7];
 assign v_rp = d8_out[5];
 assign g_rd = isa_ior;
 assign p_wr = isa_iow;
+assign b_cxi_pulled = b_cxi == 1'b0 ? b_cxi : 1'b1;
 
 // BOARD I/O
 assign cb_addr[1] = d17_out[3];          // do we have A0 or not ? i don't know
@@ -355,7 +362,7 @@ assign cb_pc4 = d13_out[3];
 assign cb_cx3 = d13_out[4];
 assign cb_b_b1 = d13_out[5];
 assign cb_prepare_bus = d17_out[4];
-assign isa_irq[7] = b_cxi;               // index issue ???? start from 0 or 1, number, e.t.c.
+assign isa_irq[7] = b_cxi_pulled;
 assign isa_irq[0] = vcc;
 assign isa_irq[1] = vcc;
 assign isa_irq[2] = vcc;
@@ -390,6 +397,11 @@ assign l_sel1_debug = l_sel1;
 assign k_sel2_debug = k_sel2;
 assign m_w_debug = m_w;
 assign q_r_debug = q_r;
+assign f_tim_debug = f_tim;
+assign n_c1_debug = n_c1;
+assign z_c2_debug = z_c2;
+assign x0_debug = x0;
+assign x1_debug = x1;
 
 // #######################################################################
 
