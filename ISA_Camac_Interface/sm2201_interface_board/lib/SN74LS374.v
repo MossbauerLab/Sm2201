@@ -29,10 +29,12 @@ module SN74LS374
 
 reg [7:0] out_reg;
 
-assign out = out_control == 1 ? /*8'bz*/ 8'b00000000 : out_reg;
+assign out = out_control == 1'b1 ? /*8'bz*/ 8'b00000000 : out_reg;
 
 always @(posedge clk)
 begin
+    if (out_control == 1'b1)
+	     out_reg = 8'b00000000;
     out_reg = data;
 end
 
