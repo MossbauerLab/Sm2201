@@ -38,7 +38,7 @@ begin
     #200
     cs = 2'b00;
     #400
-    address = 8'b00000011;
+    address = 8'b00000110;
     #400
     address = 8'b00001000;
 end
