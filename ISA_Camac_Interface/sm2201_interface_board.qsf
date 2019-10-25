@@ -152,18 +152,10 @@ set_location_assignment PIN_P21 -to isa_irq[4]
 set_location_assignment PIN_P22 -to isa_irq[5]
 set_location_assignment PIN_R22 -to isa_irq[7]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_aen
-set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/IC8216_testbench.v -section_id IC8216_testbench
-set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/IC8226_testbench.v -section_id IC8226_testbench
-set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS257_testbench.v -section_id SN74LS257_testbench
-set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS298_testbench.v -section_id SN74LS298_testbench
-set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS365A_testbench.v -section_id SN74LS365A_testbench
-set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS366A_testbench.v -section_id SN74LS366A_testbench
-set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS374_testbench.v -section_id SN74LS374_testbench
 set_global_assignment -name EDA_TEST_BENCH_NAME sm2201_interface_board_testbench -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id sm2201_interface_board_testbench
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "10 ms" -section_id sm2201_interface_board_testbench
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME sm2201_interface_board_testbench -section_id sm2201_interface_board_testbench
-set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/sm2201_interface_board_testbench.v -section_id sm2201_interface_board_testbench
 set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS374.v
 set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS365.v
 set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS298.v
@@ -176,4 +168,16 @@ set_global_assignment -name VERILOG_FILE sm2201_interface_board/sm2201_interface
 set_global_assignment -name VERILOG_FILE sm2201_interface_board/src/dig_machine_ip3604.v
 set_global_assignment -name VERILOG_FILE sm2201_interface_board/src/dig_machine_ip3601.v
 set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS07.v
+set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/IC8216_testbench.v -section_id IC8216_testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/IC8226_testbench.v -section_id IC8226_testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS257_testbench.v -section_id SN74LS257_testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS298_testbench.v -section_id SN74LS298_testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS365A_testbench.v -section_id SN74LS365A_testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS366A_testbench.v -section_id SN74LS366A_testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/SN74LS374_testbench.v -section_id SN74LS374_testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/sm2201_interface_board_testbench.v -section_id sm2201_interface_board_testbench
+set_global_assignment -name EDA_TEST_BENCH_NAME dig_machine_ip3601_testbench -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id dig_machine_ip3601_testbench
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME dig_machine_ip3601_testbench -section_id dig_machine_ip3601_testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/dig_machine_ip3601_testbench.v -section_id dig_machine_ip3601_testbench
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

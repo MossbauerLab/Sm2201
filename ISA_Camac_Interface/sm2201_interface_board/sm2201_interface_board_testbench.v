@@ -64,7 +64,7 @@ module sm2201_interface_board_testbench;
         isa_clk <= 0;
         isa_ior <= 1;
         isa_iow <= 1;
-        isa_addr <= 0;
+        isa_addr <= 10'b0100010011;
         isa_ale <= 0;
         isa_aen <= 0;
         // initial CAMAC

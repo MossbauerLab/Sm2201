@@ -76,7 +76,9 @@ module sm2201_interface_board(
     output wire n_c1_debug,
     output wire z_c2_debug,
     output wire x0_debug,
-    output wire x1_debug
+    output wire x1_debug,
+	 output wire [3:0] d10_data_debug,
+	 output wire [8:0] d15_addr_debug
 );
 
 wire m_w;
@@ -89,6 +91,7 @@ wire x0;
 wire x1;
 wire rdy;
 wire f_tim;
+wire f_tim_pulled;
 wire b_cxi;
 wire b_cxi_pulled;
 // wire a;
@@ -308,7 +311,7 @@ assign d15_addr[2] = d10_out[1];
 assign d15_addr[3] = d10_out[0];
 assign d15_addr[4] = d9_y3;
 assign d15_addr[5] = d16_out[1];
-assign d15_addr[6] = f_tim;
+assign d15_addr[6] = f_tim_pulled;
 assign d15_addr[7] = m_w;
 assign d15_addr[8] = d_sel;
 
@@ -331,7 +334,6 @@ assign d16_data[7] = d15_out[3];
 
 // assign f_tim = d17_out[5];
 // INTERNAL
-// assign a = f_tim; // !!!!!!!!!!!!!!!!!!!! A is a strange thing !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 assign l_sel1 = d10_out[2];
 assign x0 = d15_out[2];
 assign rdy = d16_out[2];
@@ -345,6 +347,7 @@ assign v_rp = d8_out[5];
 assign g_rd = isa_ior;
 assign p_wr = isa_iow;
 assign b_cxi_pulled = b_cxi == 1'b0 ? b_cxi : 1'b1;
+assign f_tim_pulled = f_tim == 1'b0 ? f_tim : 1'b1;
 
 // BOARD I/O
 assign cb_addr[1] = d17_out[3];          // do we have A0 or not ? i don't know
@@ -397,11 +400,13 @@ assign l_sel1_debug = l_sel1;
 assign k_sel2_debug = k_sel2;
 assign m_w_debug = m_w;
 assign q_r_debug = q_r;
-assign f_tim_debug = f_tim;
+assign f_tim_debug = f_tim_pulled;
 assign n_c1_debug = n_c1;
 assign z_c2_debug = z_c2;
 assign x0_debug = x0;
 assign x1_debug = x1;
+assign d10_data_debug = d10_out;
+assign d15_addr_debug = d15_addr;
 
 // #######################################################################
 
