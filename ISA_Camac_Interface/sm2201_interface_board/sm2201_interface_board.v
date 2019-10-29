@@ -149,6 +149,7 @@ wire [3:0] d10_out;
 wire [8:0] d15_addr;
 wire [3:0] d15_cs;
 wire [7:0] d15_out;
+wire [7:0] d15_out_pulled;
 
 wire d5_y1;
 wire d5_y2;
@@ -315,6 +316,15 @@ assign d15_addr[6] = f_tim_pulled;
 assign d15_addr[7] = m_w;
 assign d15_addr[8] = d_sel;
 
+assign d15_out_pulled[0] = d15_out[0] == 1'b0 ? 1'b0 : 1'b1;
+assign d15_out_pulled[1] = d15_out[1] == 1'b0 ? 1'b0 : 1'b1;
+assign d15_out_pulled[2] = d15_out[2] == 1'b0 ? 1'b0 : 1'b1;
+assign d15_out_pulled[3] = d15_out[3] == 1'b0 ? 1'b0 : 1'b1;
+assign d15_out_pulled[4] = d15_out[4] == 1'b0 ? 1'b0 : 1'b1;
+assign d15_out_pulled[5] = d15_out[5] == 1'b0 ? 1'b0 : 1'b1;
+assign d15_out_pulled[6] = d15_out[6] == 1'b0 ? 1'b0 : 1'b1;
+assign d15_out_pulled[7] = d15_out[7] == 1'b0 ? 1'b0 : 1'b1;
+
 // ???????????????????????????????????????????????????
 assign d15_cs[0] = vcc;
 assign d15_cs[1] = vcc;
@@ -323,19 +333,19 @@ assign d15_cs[3] = gnd;
 // ???????????????????????????????????????????????????
 
 // DD16
-assign d16_data[0] = d15_out[6];
+assign d16_data[0] = d15_out_pulled[6];
 assign d16_data[1] = cb_cx1;
-assign d16_data[2] = d15_out[0];
-assign d16_data[3] = d15_out[1];
-assign d16_data[4] = d15_out[7];
-assign d16_data[5] = d15_out[5];
-assign d16_data[6] = d15_out[4];
-assign d16_data[7] = d15_out[3];
+assign d16_data[2] = d15_out_pulled[0];
+assign d16_data[3] = d15_out_pulled[1];
+assign d16_data[4] = d15_out_pulled[7];
+assign d16_data[5] = d15_out_pulled[5];
+assign d16_data[6] = d15_out_pulled[4];
+assign d16_data[7] = d15_out_pulled[3];
 
 // assign f_tim = d17_out[5];
 // INTERNAL
 assign l_sel1 = d10_out[2];
-assign x0 = d15_out[2];
+assign x0 = d15_out_pulled[2];
 assign rdy = d16_out[2];
 assign m_w = d5_y1;
 assign q_r = d5_y2;
