@@ -40,6 +40,14 @@ module sm2201_interface_board_testbench;
 
     // CAMAC input signals
     reg cb_prr;
+    reg cb_zk4;
+    reg cb_data_op;
+    wire [15:0] cb_data;
+    reg [15:0] cb_data_out;
+    // wire [15:0] cb_data_in; 
+    reg [11:0] cb_addr;
+
+    assign cb_data = cb_data_op == 1'b1 ? cb_data_out : 16'bz;
 
     // Instantiate the Unit Under Test (UUT)
     sm2201_interface_board
@@ -55,7 +63,9 @@ module sm2201_interface_board_testbench;
         // isa outputs
         .isa_chrdy(isa_chrdy),
         // CAMAC inputs
-        .cb_prr(cb_prr)
+        .cb_prr(cb_prr),
+        .cb_zk4(cb_zk4),
+        .cb_data(cb_data)
     );
 
     initial begin
@@ -69,6 +79,10 @@ module sm2201_interface_board_testbench;
         isa_aen <= 0;
         // initial CAMAC
         cb_prr <= 1;
+        cb_zk4 <= 1;
+        cb_data_op <= 1'b1;
+        cb_data_out <= 16'b0100001000001000;
+        cb_addr <= 11'b00000000000;
         
         #100 
         isa_ior <= 0;

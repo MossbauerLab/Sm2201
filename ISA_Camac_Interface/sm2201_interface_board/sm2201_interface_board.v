@@ -94,7 +94,6 @@ wire f_tim;
 wire f_tim_pulled;
 wire b_cxi;
 wire b_cxi_pulled;
-// wire a;
 wire g_rd;
 wire p_wr;
 wire l_sel1;
@@ -519,7 +518,7 @@ dig_machine_ip3604 d15(.address(d15_addr), .cs(d15_cs), .data(d15_out));
 // DD16
 SN74LS374 d16(.out_control(gnd), .clk(isa_clk), .data(d16_data), .out(d16_out));
 
-always @(*)
+/*always @(*)
 begin
     cb_data_out_l[0] = d12_do[0];
     cb_data_out_l[1] = d12_do[1];
@@ -540,15 +539,10 @@ begin
     cb_data_out_h[6] = d1_db[1];
     cb_data_out_h[5] = d1_db[2];
     cb_data_out_h[7] = d1_db[3];
-	 
-    /*if (m_w == 1'b0)
-        cb_data[15:8] = cb_data_out_h[7:0];
-    if (d_sel == 1'b0 & q_r == 1'b1)
-        cb_data[7:0] = cb_data_out_l[7:0];*/
 
-end
+end*/
 
-assign cb_data[15:8] = m_w == 1'b0 ? cb_data_out_h[7:0] : cb_data[15:8];
-assign cb_data[7:0] = d_sel == 1'b0 & q_r == 1'b1 ? cb_data_out_l[7:0] : cb_data[7:0];
+//assign cb_data[15:8] = m_w == 1'b0 ? cb_data_out_h[7:0] : cb_data[15:8];
+//assign cb_data[7:0] = d_sel == 1'b0 & q_r == 1'b1 ? cb_data_out_l[7:0] : cb_data[7:0];
 
 endmodule
