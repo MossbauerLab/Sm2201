@@ -167,6 +167,8 @@ supply1 vcc;
 reg [7:0] cb_data_out_l;
 reg [7:0] cb_data_out_h;
 
+//wire isa_chrdy_val;
+
 // ######################### LINES ASSIGNMENT ############################
 
 // DD1
@@ -374,7 +376,7 @@ assign cb_pc4 = d13_out[3];
 assign cb_cx3 = d13_out[4];
 assign cb_b_b1 = d13_out[5];
 assign cb_prepare_bus = d17_out[4];
-assign isa_irq[7] = b_cxi_pulled;
+assign isa_irq[7] = b_cxi_pulled == 1'b0 ? 1'b0: 1'b1;
 assign isa_irq[0] = vcc;
 assign isa_irq[1] = vcc;
 assign isa_irq[2] = vcc;
@@ -383,7 +385,9 @@ assign isa_irq[4] = vcc;
 assign isa_irq[5] = vcc;
 assign isa_irq[6] = vcc;
 
-/*assign cb_data[4] = d11_do[0];
+//assign isa_chrdy = vcc;
+
+assign cb_data[4] = d11_do[0];
 assign cb_data[5] = d11_do[1];
 assign cb_data[6] = d11_do[2];
 assign cb_data[7] = d11_do[3];
@@ -401,7 +405,7 @@ assign cb_data[15] = d1_db[3];
 assign cb_data[9] = d2_db[0];
 assign cb_data[10] = d2_db[1];
 assign cb_data[8] = d2_db[2];
-assign cb_data[11] = d2_db[3];*/
+assign cb_data[11] = d2_db[3];
 
 // Debug
 assign d_sel_debug = d_sel;
@@ -517,32 +521,5 @@ dig_machine_ip3604 d15(.address(d15_addr), .cs(d15_cs), .data(d15_out));
 
 // DD16
 SN74LS374 d16(.out_control(gnd), .clk(isa_clk), .data(d16_data), .out(d16_out));
-
-/*always @(*)
-begin
-    cb_data_out_l[0] = d12_do[0];
-    cb_data_out_l[1] = d12_do[1];
-    cb_data_out_l[2] = d12_do[2];
-    cb_data_out_l[3] = d12_do[3];
-	 
-	 cb_data_out_l[4] = d11_do[0];
-	 cb_data_out_l[5] = d11_do[1];
-    cb_data_out_l[6] = d11_do[2];
-    cb_data_out_l[7] = d11_do[3];
-
-    cb_data_out_h[1] = d2_db[0];
-    cb_data_out_h[2] = d2_db[1];
-    cb_data_out_h[0] = d2_db[2];
-    cb_data_out_h[3] = d2_db[3];
-	 	 
-    cb_data_out_h[4] = d1_db[0];
-    cb_data_out_h[6] = d1_db[1];
-    cb_data_out_h[5] = d1_db[2];
-    cb_data_out_h[7] = d1_db[3];
-
-end*/
-
-//assign cb_data[15:8] = m_w == 1'b0 ? cb_data_out_h[7:0] : cb_data[15:8];
-//assign cb_data[7:0] = d_sel == 1'b0 & q_r == 1'b1 ? cb_data_out_l[7:0] : cb_data[7:0];
 
 endmodule

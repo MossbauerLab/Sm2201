@@ -12,7 +12,7 @@
 // Tool versions:  
 // Description: 
 //
-// Verilog Test Fixture created of top level module sm2201_interface_board
+// Verilog Test Fixture created for top level module sm2201_interface_board
 //
 // Dependencies:
 // 
@@ -33,6 +33,7 @@ module sm2201_interface_board_testbench;
     reg isa_aen;
 
     reg [9:0] isa_addr;
+    reg [31:0] counter;
 
     // isa output signals
     wire [7:0] isa_irq;
@@ -83,6 +84,7 @@ module sm2201_interface_board_testbench;
         cb_data_op <= 1'b1;
         cb_data_out <= 16'b0100001000001000;
         cb_addr <= 11'b00000000000;
+        counter <= 0;
         
         #100 
         isa_ior <= 0;
@@ -94,5 +96,19 @@ module sm2201_interface_board_testbench;
     always
     begin
         #60 isa_clk <= ~isa_clk; 
+        #120 counter <= counter + 1;
+        // ALE generation
+        if (counter == 10) 
+        begin
+            isa_ale <= 1;
+        end
+        else if (counter == 44)
+        begin
+            isa_ale <= 0;
+        end
+        else if (counter == 146)
+        begin
+            counter <= 10;
+        end
     end
 endmodule
