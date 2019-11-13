@@ -34,6 +34,7 @@ module sm2201_interface_board_testbench;
 
     reg [9:0] isa_addr;
     reg [31:0] counter;
+    reg [1:0] operation;        // 0 -read, 1 - write
 
     // isa output signals
     wire [7:0] isa_irq;
@@ -75,7 +76,7 @@ module sm2201_interface_board_testbench;
         isa_clk <= 0;
         isa_ior <= 1;
         isa_iow <= 1;
-        isa_addr <= 10'b0100010011;
+        isa_addr <= 256;
         isa_ale <= 0;
         isa_aen <= 0;
         // initial CAMAC
@@ -85,14 +86,10 @@ module sm2201_interface_board_testbench;
         cb_data_out <= 16'b0100001000001000;
         cb_addr <= 11'b00000000000;
         counter <= 0;
-        
-        #100 
-        isa_ior <= 0;
-        #1000 
-        isa_ior <= 1;
-        isa_iow <= 0;
+        operation <= 0;
     end
     
+    // we are model ISA logic
     always
     begin
         #60 isa_clk <= ~isa_clk; 
@@ -102,13 +99,38 @@ module sm2201_interface_board_testbench;
         begin
             isa_ale <= 1;
         end
+        else if (counter == 20)
+        begin
+            if (operation == 0)
+                isa_ior <= 0;
+            else
+                isa_iow <= 0;
+        end
         else if (counter == 44)
         begin
             isa_ale <= 0;
         end
+        else if (counter == 136)
+        begin
+            if (operation == 0)
+                isa_ior <= 1;
+            else
+                isa_iow <= 1;
+        end
         else if (counter == 146)
         begin
             counter <= 10;
+            operation <= operation + 1;
+            if (operation == 1)
+            begin
+                isa_addr <= isa_addr + 1;
+                operation <= 0;
+            end
+            // isa addresses range from 100-13E
+            if (isa_addr == 318)
+            begin
+                isa_addr <= 100;
+            end
         end
     end
 endmodule
