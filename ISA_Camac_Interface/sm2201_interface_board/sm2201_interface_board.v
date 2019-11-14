@@ -67,18 +67,18 @@ module sm2201_interface_board(
     output wire cb_pc4,              // ОШ ПК4        ???
     output wire cb_cx3,              // ОШ СХ3
     // debug pins
-	 output wire d_sel_debug,
-	 output wire l_sel1_debug,
-	 output wire k_sel2_debug,
-	 output wire m_w_debug,
-	 output wire q_r_debug,
+    output wire d_sel_debug,
+    output wire l_sel1_debug,
+    output wire k_sel2_debug,
+    output wire m_w_debug,
+    output wire q_r_debug,
     output wire f_tim_debug,
     output wire n_c1_debug,
     output wire z_c2_debug,
     output wire x0_debug,
     output wire x1_debug,
-	 output wire [3:0] d10_data_debug,
-	 output wire [8:0] d15_addr_debug
+    output wire [3:0] d10_data_debug,
+    output wire [8:0] d15_addr_debug
 );
 
 wire m_w;
@@ -144,6 +144,7 @@ wire [5:0] d17_out;
 wire [7:0] d10_addr;
 wire [1:0] d10_cs;
 wire [3:0] d10_out;
+wire [3:0] d10_out_pulled;
 
 wire [8:0] d15_addr;
 wire [3:0] d15_cs;
@@ -164,13 +165,8 @@ wire [7:0] d16_out;
 supply0 gnd;
 supply1 vcc;
 
-reg [7:0] cb_data_out_l;
-reg [7:0] cb_data_out_h;
-
-//wire isa_chrdy_val;
 
 // ######################### LINES ASSIGNMENT ############################
-
 // DD1
 /*assign d1_db[0] = cb_data[12];
 assign d1_db[1] = cb_data[14];
@@ -306,11 +302,16 @@ assign d10_addr[7] = isa_ale;
 assign d10_cs[0] = d9_y1;
 assign d10_cs[1] = isa_aen;
 
+assign d10_out_pulled[0] = d10_out[0] == 1'b0 ? 1'b0 : 1'b1;
+assign d10_out_pulled[1] = d10_out[1] == 1'b0 ? 1'b0 : 1'b1;
+assign d10_out_pulled[2] = d10_out[2] == 1'b0 ? 1'b0 : 1'b1;
+assign d10_out_pulled[3] = d10_out[3] == 1'b0 ? 1'b0 : 1'b1;
+
 // DD15
 assign d15_addr[0] = d16_out[3];
 assign d15_addr[1] = d16_out[4];
-assign d15_addr[2] = d10_out[1];
-assign d15_addr[3] = d10_out[0];
+assign d15_addr[2] = d10_out_pulled[1];
+assign d15_addr[3] = d10_out_pulled[0];
 assign d15_addr[4] = d9_y3;
 assign d15_addr[5] = d16_out[1];
 assign d15_addr[6] = f_tim_pulled;
@@ -326,12 +327,10 @@ assign d15_out_pulled[5] = d15_out[5] == 1'b0 ? 1'b0 : 1'b1;
 assign d15_out_pulled[6] = d15_out[6] == 1'b0 ? 1'b0 : 1'b1;
 assign d15_out_pulled[7] = d15_out[7] == 1'b0 ? 1'b0 : 1'b1;
 
-// ???????????????????????????????????????????????????
 assign d15_cs[0] = vcc;
 assign d15_cs[1] = vcc;
 assign d15_cs[2] = gnd;
 assign d15_cs[3] = gnd;
-// ???????????????????????????????????????????????????
 
 // DD16
 assign d16_data[0] = d15_out_pulled[6];
@@ -343,9 +342,8 @@ assign d16_data[5] = d15_out_pulled[5];
 assign d16_data[6] = d15_out_pulled[4];
 assign d16_data[7] = d15_out_pulled[3];
 
-// assign f_tim = d17_out[5];
 // INTERNAL
-assign l_sel1 = d10_out[2];
+assign l_sel1 = d10_out_pulled[2];
 assign x0 = d15_out_pulled[2];
 assign rdy = d16_out[2];
 assign m_w = d5_y1;
@@ -385,8 +383,6 @@ assign isa_irq[4] = vcc;
 assign isa_irq[5] = vcc;
 assign isa_irq[6] = vcc;
 
-//assign isa_chrdy = vcc;
-
 assign cb_data[4] = d11_do[0];
 assign cb_data[5] = d11_do[1];
 assign cb_data[6] = d11_do[2];
@@ -418,7 +414,7 @@ assign n_c1_debug = n_c1;
 assign z_c2_debug = z_c2;
 assign x0_debug = x0;
 assign x1_debug = x1;
-assign d10_data_debug = d10_out;
+assign d10_data_debug = d10_out_pulled;
 assign d15_addr_debug = d15_addr;
 
 // #######################################################################
@@ -430,14 +426,14 @@ assign d15_addr_debug = d15_addr;
  */
 IC82x6 #(.INVERTED_OUTPUT(0)) 
    d1 (.dce(gnd), .cs_n(m_w), .d_in(d1_di), .d_bus(d1_db));
-	
+
 /* DD2 (BUS former)
  * Passes data to CAMAC BUS from DD4
  * Mode was permanently set to always write to bus (di -> db) when m_w is 0
  * therefore it captures data from s1 lines d4_s1 -> db
  */
 IC82x6 #(.INVERTED_OUTPUT(0)) 
-    d2 (.dce(gnd), .cs_n(m_w), .d_in(d2_di), .d_bus(d2_db));	 
+    d2 (.dce(gnd), .cs_n(m_w), .d_in(d2_di), .d_bus(d2_db));
 
 /* DD3 (Multiplexer)
  * Switches Camac Data Lines to out according to address (ws) signal,
@@ -462,7 +458,7 @@ SN74LS257 #(.INVERTED_OUTPUT(0))
  */
 SN74LS257 #(.INVERTED_OUTPUT(0)) 
     d7(.select(k_sel2), .out_control(gnd), .a(d7_a), .b(d7_b), .y(d7_y));
-	 
+
 /* DD8 - SN74LS374 (Register)
  * Passing data from input lines to out by clock, enabled by one on out_control line,
  * Permanently enabled by gnd
@@ -484,7 +480,7 @@ IC82x6 #(.INVERTED_OUTPUT(1))
  */
 IC82x6 #(.INVERTED_OUTPUT(1)) 
     d12 (.dce(q_r), .cs_n(d_sel), .d_in(d12_di), .d_bus(d12_db), .d_out(d12_do));
-	 
+
 // DD13 - SN74LS365
 SN74LS365 #(.INVERTED_OUTPUT(0))
     d13(.e1(gnd), .e2(gnd), .data(d13_data), .out(d13_out));
@@ -492,7 +488,7 @@ SN74LS365 #(.INVERTED_OUTPUT(0))
 // DD14 - SN74LS365
 SN74LS365 #(.INVERTED_OUTPUT(0))
     d14(.e1(l_sel1), .e2(l_sel1), .data(d14_data), .out(d14_out));
-	 
+
 // DD17 - SN74LS366
 SN74LS365 #(.INVERTED_OUTPUT(1))
     d17(.e1(gnd), .e2(gnd), .data(d17_data), .out(d17_out));
@@ -500,7 +496,7 @@ SN74LS365 #(.INVERTED_OUTPUT(1))
 // DD18 - SN74LS366 (К155ЛП9)
 SN74LS07 d18(.a6(d17_out[5]), .y6(f_tim),
              .a3(cb_prr), .y3(b_cxi),
-				 .a1(d16_out[2]), .y1(isa_chrdy));
+             .a1(d16_out[2]), .y1(isa_chrdy));
 
 // DD5
 SN74LS00 d5(.a1(isa_ior), .b1(d5_y2), .y1(d5_y1),
@@ -510,9 +506,9 @@ SN74LS00 d5(.a1(isa_ior), .b1(d5_y2), .y1(d5_y1),
 
 // DD9
 SN74LS27 d9(.a1(d5_y3), .b1(d5_y3), .c1(d5_y3), .y1(d9_y1),
-            .a2(isa_addr[7]), .b2(d10_out[3]), .c2(isa_addr[9]), .y2(d9_y2),
-				.a3(v_rp), .b3(cb_zk4), .c3(v_rp), .y3(d9_y3));
-				 
+            .a2(isa_addr[7]), .b2(d10_out_pulled[3]), .c2(isa_addr[9]), .y2(d9_y2),
+            .a3(v_rp), .b3(cb_zk4), .c3(v_rp), .y3(d9_y3));
+
 // DD10
 dig_machine_ip3601 d10(.address(d10_addr), .cs(d10_cs), .data(d10_out));
 
