@@ -51,7 +51,9 @@ module micro_program_automate_testbench();
             counter <= 0;
         end
         #300 w <= ~w;
+        #500 cx1 <= ~cx1;
         #600 ie <= ~ie;
+        #1200 sel <= ~sel;
     end
 
 endmodule
