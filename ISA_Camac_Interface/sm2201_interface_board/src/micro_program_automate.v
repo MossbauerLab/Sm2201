@@ -20,7 +20,7 @@
 
 module micro_program_automate #
 (
-    MICRO_ADDRESS_BUS_WIDTH = 2
+    parameter MICRO_ADDRESS_BUS_WIDTH = 2
 )
 (
     input wire reset_n,
@@ -29,11 +29,14 @@ module micro_program_automate #
     input wire w,
     input wire sel,
     input wire tim,
-    input wire ie,   // В руководстве ПР полагаю, что это ПРЕРЫВАНИЕ РАЗРЕШЕНО (interrupt enabled)
+    input wire ie,   // ПР это, возможно, ПРЕРЫВАНИЕ РАЗРЕШЕНО (interrupt enabled)
+    input wire cx1,  // ???
     output wire rdy,
     output wire c1,
     output wire c2,
-    output wire sel2
+    output wire sel2,
+    output wire x0,
+    output wire x1
 );
 
 wire [8:0] d15_addr;
@@ -50,9 +53,9 @@ supply1 vcc;
 // DD15
 assign d15_addr[0] = d16_out[3];
 assign d15_addr[1] = d16_out[4];
-assign d15_addr[2] = d10_out_pulled[1];
-assign d15_addr[3] = d10_out_pulled[0];
-assign d15_addr[4] = d9_y3;
+assign d15_addr[2] = a[1];
+assign d15_addr[3] = a[0];
+assign d15_addr[4] = ie;
 assign d15_addr[5] = d16_out[1];
 assign d15_addr[6] = tim;
 assign d15_addr[7] = w;
@@ -74,7 +77,7 @@ assign d15_cs[3] = gnd;
 
 // DD16
 assign d16_data[0] = d15_out_pulled[6];
-assign d16_data[1] = cb_cx1;
+assign d16_data[1] = cx1;
 assign d16_data[2] = d15_out_pulled[0];
 assign d16_data[3] = d15_out_pulled[1];
 assign d16_data[4] = d15_out_pulled[7];
@@ -87,5 +90,12 @@ dig_machine_ip3604 d15(.address(d15_addr), .cs(d15_cs), .data(d15_out));
 
 // DD16
 SN74LS374 d16(.out_control(gnd), .clk(clk), .data(d16_data), .out(d16_out));
+
+assign x0 = d15_out_pulled[2];
+assign x1 = d16_out[0];
+assign rdy = d16_out[2];
+assign c2 = d16_out[5];
+assign c1 = d16_out[6];
+assign sel2 = d16_out[7];
 
 endmodule

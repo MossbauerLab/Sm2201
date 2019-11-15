@@ -59,7 +59,7 @@ module sm2201_interface_board(
     // controller interface bus (common bus = ОШ)
     inout wire [15:0] cb_data,
     input wire cb_prr,
-    input wire cb_cx1,
+    output wire cb_cx1,
     input wire cb_zk4,               // X 2.2 B21 ЗК4 ???
     output wire [11:0] cb_addr,
     output wire cb_prepare_bus,      // ОШ ПОДГ.
@@ -75,10 +75,10 @@ module sm2201_interface_board(
     output wire f_tim_debug,
     output wire n_c1_debug,
     output wire z_c2_debug,
-    output wire x0_debug,
-    output wire x1_debug,
-    output wire [3:0] d10_data_debug,
-    output wire [8:0] d15_addr_debug
+    //output wire x0_debug,
+    //output wire x1_debug,
+    output wire [3:0] d10_data_debug
+    //output wire [8:0] d15_addr_debug
 );
 
 wire m_w;
@@ -146,10 +146,10 @@ wire [1:0] d10_cs;
 wire [3:0] d10_out;
 wire [3:0] d10_out_pulled;
 
-wire [8:0] d15_addr;
-wire [3:0] d15_cs;
-wire [7:0] d15_out;
-wire [7:0] d15_out_pulled;
+//wire [8:0] d15_addr;
+//wire [3:0] d15_cs;
+//wire [7:0] d15_out;
+//wire [7:0] d15_out_pulled;
 
 wire d5_y1;
 wire d5_y2;
@@ -159,11 +159,16 @@ wire d9_y1;
 wire d9_y2;
 wire d9_y3;
 
-wire [7:0] d16_data;
-wire [7:0] d16_out;
+//wire [7:0] d16_data;
+//wire [7:0] d16_out;
+
+wire [1:0] micro_program_automate_addr;
 
 supply0 gnd;
 supply1 vcc;
+
+reg global_reset;
+reg [7:0] counter;
 
 
 // ######################### LINES ASSIGNMENT ############################
@@ -307,8 +312,12 @@ assign d10_out_pulled[1] = d10_out[1] == 1'b0 ? 1'b0 : 1'b1;
 assign d10_out_pulled[2] = d10_out[2] == 1'b0 ? 1'b0 : 1'b1;
 assign d10_out_pulled[3] = d10_out[3] == 1'b0 ? 1'b0 : 1'b1;
 
-// ===========================> more to micro program automate
+assign micro_program_automate_addr[0] = d10_out_pulled[0];
+assign micro_program_automate_addr[1] = d10_out_pulled[1];
+
+// ===========================> move to micro program automate
 // DD15
+/*
 assign d15_addr[0] = d16_out[3];
 assign d15_addr[1] = d16_out[4];
 assign d15_addr[2] = d10_out_pulled[1];
@@ -342,18 +351,19 @@ assign d16_data[4] = d15_out_pulled[7];
 assign d16_data[5] = d15_out_pulled[5];
 assign d16_data[6] = d15_out_pulled[4];
 assign d16_data[7] = d15_out_pulled[3];
-// ===========================> / more to micro program automate
+*/
+// ===========================> / move to micro program automate
 
 // INTERNAL
 assign l_sel1 = d10_out_pulled[2];
-assign x0 = d15_out_pulled[2];
-assign rdy = d16_out[2];
+//assign x0 = d15_out_pulled[2]; // ===========================> move to micro program automate
+//assign rdy = d16_out[2];       // ===========================> move to micro program automate
 assign m_w = d5_y1;
 assign q_r = d5_y2;
-assign x1 = d16_out[0];
-assign z_c2 = d16_out[5];
-assign n_c1 = d16_out[6];
-assign k_sel2 = d16_out[7];
+//assign x1 = d16_out[0];        // ===========================> move to micro program automate
+//assign z_c2 = d16_out[5];
+//assign n_c1 = d16_out[6];
+//assign k_sel2 = d16_out[7];
 assign v_rp = d8_out[5];
 assign g_rd = isa_ior;
 assign p_wr = isa_iow;
@@ -376,6 +386,7 @@ assign cb_pc4 = d13_out[3];
 assign cb_cx3 = d13_out[4];
 assign cb_b_b1 = d13_out[5];
 assign cb_prepare_bus = d17_out[4];
+assign cb_cx1 = b_cxi_pulled;
 assign isa_irq[7] = b_cxi_pulled == 1'b0 ? 1'b0: 1'b1;
 assign isa_irq[0] = vcc;
 assign isa_irq[1] = vcc;
@@ -417,7 +428,7 @@ assign z_c2_debug = z_c2;
 assign x0_debug = x0;
 assign x1_debug = x1;
 assign d10_data_debug = d10_out_pulled;
-assign d15_addr_debug = d15_addr;
+//assign d15_addr_debug = d15_addr;
 
 // #######################################################################
 
@@ -498,7 +509,7 @@ SN74LS365 #(.INVERTED_OUTPUT(1))
 // DD18 - SN74LS366 (К155ЛП9)
 SN74LS07 d18(.a6(d17_out[5]), .y6(f_tim),
              .a3(cb_prr), .y3(b_cxi),
-             .a1(d16_out[2]), .y1(isa_chrdy));
+             .a1(rdy), .y1(isa_chrdy));
 
 // DD5
 SN74LS00 d5(.a1(isa_ior), .b1(d5_y2), .y1(d5_y1),
@@ -514,10 +525,16 @@ SN74LS27 d9(.a1(d5_y3), .b1(d5_y3), .c1(d5_y3), .y1(d9_y1),
 // DD10
 dig_machine_ip3601 d10(.address(d10_addr), .cs(d10_cs), .data(d10_out));
 
+/*
 // DD15
 dig_machine_ip3604 d15(.address(d15_addr), .cs(d15_cs), .data(d15_out));
 
 // DD16
 SN74LS374 d16(.out_control(gnd), .clk(isa_clk), .data(d16_data), .out(d16_out));
+*/
+
+micro_program_automate automate (.reset_n(global_reset), .clk(isa_clk), 
+                                 .a(micro_program_automate_addr), .w(m_w), .sel(d_sel), .tim(f_tim_pulled), .ie(d9_y3), .cx1(b_cxi_pulled),
+                                 .rdy(rdy), .c1(n_c1), .c2(z_c2), .sel2(k_sel2), .x0(x0), .x1(x1));
 
 endmodule
