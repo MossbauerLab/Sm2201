@@ -307,6 +307,7 @@ assign d10_out_pulled[1] = d10_out[1] == 1'b0 ? 1'b0 : 1'b1;
 assign d10_out_pulled[2] = d10_out[2] == 1'b0 ? 1'b0 : 1'b1;
 assign d10_out_pulled[3] = d10_out[3] == 1'b0 ? 1'b0 : 1'b1;
 
+// ===========================> more to micro program automate
 // DD15
 assign d15_addr[0] = d16_out[3];
 assign d15_addr[1] = d16_out[4];
@@ -341,6 +342,7 @@ assign d16_data[4] = d15_out_pulled[7];
 assign d16_data[5] = d15_out_pulled[5];
 assign d16_data[6] = d15_out_pulled[4];
 assign d16_data[7] = d15_out_pulled[3];
+// ===========================> / more to micro program automate
 
 // INTERNAL
 assign l_sel1 = d10_out_pulled[2];
