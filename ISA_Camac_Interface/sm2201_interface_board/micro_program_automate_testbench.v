@@ -29,31 +29,25 @@ module micro_program_automate_testbench();
         a <= 0;
         w <= 0;
         sel <= 1;
-        tim <= 1;
+        tim <= 0;
         ie <= 0;
         cx1 <= 0;
         counter <= 0;
+        #35000 tim <= 1;
+        #36000 tim <= 0;
     end
 
     always
     begin
         #60 clk <= ~clk;
         counter <= counter + 1;
-        if (counter == 50)
-            a <= 1;
-        if (counter == 100)
-            a <= 2;
-        if (counter == 150)
-            a <= 3;
-        if (counter == 200)
-        begin
-            a <= 0;
-            counter <= 0;
-        end
-        #300 w <= ~w;
+        if (counter > 0 && counter % 500 == 0)
+            a <= a+1;
+
+        /*#300 w <= ~w;
         #500 cx1 <= ~cx1;
         #600 ie <= ~ie;
-        #1200 sel <= ~sel;
+        #1200 sel <= ~sel;*/
     end
 
 endmodule
