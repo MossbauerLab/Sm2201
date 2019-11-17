@@ -90,8 +90,8 @@ wire z_c2;
 wire x0;
 wire x1;
 wire rdy;
-wire f_tim;
-wire f_tim_pulled;
+// wire f_tim;
+// wire f_tim_pulled;
 wire b_cxi;
 wire b_cxi_pulled;
 wire g_rd;
@@ -169,6 +169,8 @@ supply1 vcc;
 
 reg global_reset;
 reg [7:0] counter;
+
+localparam reg[7:0] RESET_COUNTER = 10;
 
 
 // ######################### LINES ASSIGNMENT ############################
@@ -368,7 +370,7 @@ assign v_rp = d8_out[5];
 assign g_rd = isa_ior;
 assign p_wr = isa_iow;
 assign b_cxi_pulled = b_cxi == 1'b0 ? b_cxi : 1'b1;
-assign f_tim_pulled = f_tim == 1'b0 ? f_tim : 1'b1;
+// assign f_tim_pulled = f_tim == 1'b0 ? f_tim : 1'b1;
 
 // BOARD I/O
 assign cb_addr[1] = d17_out[3];          // do we have A0 or not ? i don't know
@@ -422,7 +424,7 @@ assign l_sel1_debug = l_sel1;
 assign k_sel2_debug = k_sel2;
 assign m_w_debug = m_w;
 assign q_r_debug = q_r;
-assign f_tim_debug = f_tim_pulled;
+// assign f_tim_debug = f_tim_pulled;
 assign n_c1_debug = n_c1;
 assign z_c2_debug = z_c2;
 assign x0_debug = x0;
@@ -507,7 +509,7 @@ SN74LS365 #(.INVERTED_OUTPUT(1))
     d17(.e1(gnd), .e2(gnd), .data(d17_data), .out(d17_out));
 
 // DD18 - SN74LS366 (К155ЛП9)
-SN74LS07 d18(.a6(d17_out[5]), .y6(f_tim),
+SN74LS07 d18(//.a6(d17_out[5]), .y6(f_tim),
              .a3(cb_prr), .y3(b_cxi),
              .a1(rdy), .y1(isa_chrdy));
 
@@ -533,8 +535,28 @@ dig_machine_ip3604 d15(.address(d15_addr), .cs(d15_cs), .data(d15_out));
 SN74LS374 d16(.out_control(gnd), .clk(isa_clk), .data(d16_data), .out(d16_out));
 */
 
-micro_program_automate automate (.reset_n(global_reset), .clk(isa_clk), 
-                                 .a(micro_program_automate_addr), .w(m_w), .sel(d_sel), .tim(f_tim_pulled), .ie(d9_y3), .cx1(b_cxi_pulled),
+micro_program_automate automate (.reset(global_reset), .clk(isa_clk), 
+                                 .a(micro_program_automate_addr), .w(m_w), .sel(d_sel), /*.tim(f_tim_pulled),*/ 
+                                 .ie(d9_y3), .cx1(b_cxi_pulled),
                                  .rdy(rdy), .c1(n_c1), .c2(z_c2), .sel2(k_sel2), .x0(x0), .x1(x1));
+
+always @(posedge isa_clk)
+begin
+    if (global_reset != 1'b1)
+    begin
+        if (counter != RESET_COUNTER)
+        begin
+            counter <= 0;
+            global_reset <= 1;
+        end
+    end
+    else
+    begin
+        if (counter < RESET_COUNTER)
+            counter <= counter + 1;
+        else
+            global_reset <= 0;
+    end
+end
 
 endmodule
