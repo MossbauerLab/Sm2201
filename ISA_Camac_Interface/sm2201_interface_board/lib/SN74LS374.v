@@ -21,6 +21,7 @@
 
 module SN74LS374
 (
+    input wire reset,
     input wire [7:0] data,
     input wire clk,
     input wire out_control,
@@ -33,9 +34,16 @@ assign out = out_control == 1'b1 ? /*8'bz*/ 8'b00000000 : out_reg;
 
 always @(posedge clk)
 begin
-    if (out_control == 1'b1)
-	     out_reg = 8'b00000000;
-    out_reg = data;
+    if(reset == 1'b1)
+    begin
+        out_reg <= 8'b00000000;
+    end
+    else
+    begin
+        if (out_control == 1'b1)
+            out_reg <= 8'b00000000;
+        out_reg <= data;
+    end
 end
 
 endmodule

@@ -14,7 +14,9 @@
 // Dependencies:   src/ip_3604_dig_machine (ROM with image), /lib/SN74LS374 (register)
 //
 // Revision: 1.0
-// Additional Comments:
+// Additional Comments: 
+//    rdy 
+//        1)generation does not depends on w signal (read or write operation mode)
 //
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -23,7 +25,7 @@ module micro_program_automate #
     parameter MICRO_ADDRESS_BUS_WIDTH = 2
 )
 (
-    input wire reset_n,
+    input wire reset,
     input wire clk,
     input wire [MICRO_ADDRESS_BUS_WIDTH - 1 : 0] a,
     input wire w,
@@ -89,7 +91,7 @@ assign d16_data[7] = d15_out_pulled[3];
 dig_machine_ip3604 d15(.address(d15_addr), .cs(d15_cs), .data(d15_out));
 
 // DD16
-SN74LS374 d16(.out_control(gnd), .clk(clk), .data(d16_data), .out(d16_out));
+SN74LS374 d16(.out_control(gnd), .clk(clk), .reset(reset), .data(d16_data), .out(d16_out));
 
 assign x0 = d15_out_pulled[2];
 assign x1 = d16_out[0];
