@@ -16,7 +16,13 @@
 // Revision: 1.0
 // Additional Comments: 
 //    rdy 
-//        1)generation does not depends on w signal (read or write operation mode)
+//        1) doesn not depends on w signal (read or write operation mode)
+//        2) tim must be 0, it is useless (now i am not see any reason to use it,
+//           because when tim is 1 it force to rdy -> 0)
+//        3) sel = 1 switch of rdy (=0) when a is 0 or 2, when a = 1, rdy is 
+//           independent from sel
+//        4) rdy is 0 when a = 3
+//        5) might be ANY additional cases due to COMLICATED structure of this module
 //
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -30,7 +36,7 @@ module micro_program_automate #
     input wire [MICRO_ADDRESS_BUS_WIDTH - 1 : 0] a,
     input wire w,
     input wire sel,
-    input wire tim,
+    // input wire tim,
     input wire ie,   // ПР это, возможно, ПРЕРЫВАНИЕ РАЗРЕШЕНО (interrupt enabled)
     input wire cx1,  // ???
     output wire rdy,
@@ -59,7 +65,7 @@ assign d15_addr[2] = a[1];
 assign d15_addr[3] = a[0];
 assign d15_addr[4] = ie;
 assign d15_addr[5] = d16_out[1];
-assign d15_addr[6] = tim;
+assign d15_addr[6] = gnd; //tim;
 assign d15_addr[7] = w;
 assign d15_addr[8] = sel;
 

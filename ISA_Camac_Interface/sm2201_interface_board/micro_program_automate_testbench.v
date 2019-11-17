@@ -7,7 +7,6 @@ module micro_program_automate_testbench();
     reg [1:0] a;
     reg w;
     reg sel;
-    reg tim;
     reg ie;
     reg cx1;
     wire rdy;
@@ -19,7 +18,7 @@ module micro_program_automate_testbench();
     
     reg [31:0] counter;
     
-    micro_program_automate uut(.reset(reset), .clk(clk), .a(a), .w(w), .sel(sel), .tim(tim), .ie(ie), .cx1(cx1),
+    micro_program_automate uut(.reset(reset), .clk(clk), .a(a), .w(w), .sel(sel), .ie(ie), .cx1(cx1),
                                .rdy(rdy), .c1(c1), .c2(c2), .sel2(sel2), .x0(x0), .x1(x1));
     
     initial
@@ -33,9 +32,6 @@ module micro_program_automate_testbench();
         ie <= 0;
         cx1 <= 0;
         counter <= 0;
-        // #500 sel <= 1;
-        #10000 tim <= 1;
-        #10000 sel <= 1;
     end
 
     always
@@ -50,8 +46,12 @@ module micro_program_automate_testbench();
         begin
             w <= ~w;
         end
-        //if (counter > 0 && counter % 500 == 0)
-        //    a <= a+1;
+        if (counter > 0 && counter % 10000 == 0)
+            a <= a+1;
+        if (counter > 40000 && counter % 2000 == 0)
+        begin
+            sel <= ~sel;
+        end
     end
 
 endmodule
