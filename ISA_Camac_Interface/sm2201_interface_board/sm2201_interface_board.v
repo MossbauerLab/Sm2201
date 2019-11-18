@@ -373,6 +373,7 @@ assign b_cxi_pulled = b_cxi == 1'b0 ? b_cxi : 1'b1;
 // assign f_tim_pulled = f_tim == 1'b0 ? f_tim : 1'b1;
 
 // BOARD I/O
+assign cb_addr[0] = gnd;                 // i have not seen driver for 0 index
 assign cb_addr[1] = d17_out[3];          // do we have A0 or not ? i don't know
 assign cb_addr[2] = d17_out[2];
 assign cb_addr[3] = d17_out[1];
