@@ -72,7 +72,6 @@ module sm2201_interface_board(
     output wire k_sel2_debug,
     output wire m_w_debug,
     output wire q_r_debug,
-    output wire f_tim_debug,
     output wire n_c1_debug,
     output wire z_c2_debug,
     //output wire x0_debug,
@@ -246,10 +245,10 @@ assign d11_di[1] = d6_y[1];
 assign d11_di[2] = d6_y[3];
 assign d11_di[3] = d6_y[2];
 
-assign d11_db[0] = isa_data[4];
-assign d11_db[1] = isa_data[5];
-assign d11_db[2] = isa_data[6];
-assign d11_db[3] = isa_data[7];
+//assign d11_db[0] = isa_data[4];
+//assign d11_db[1] = isa_data[5];
+//assign d11_db[2] = isa_data[6];
+//assign d11_db[3] = isa_data[7];
 
 // DD12
 assign d12_di[0] = d7_y[0];
@@ -257,10 +256,10 @@ assign d12_di[1] = d7_y[1];
 assign d12_di[2] = d7_y[3];
 assign d12_di[3] = d7_y[2];
 
-assign d12_db[0] = isa_data[0];
-assign d12_db[1] = isa_data[1];
-assign d12_db[2] = isa_data[2];
-assign d12_db[3] = isa_data[3];
+//assign d12_db[0] = isa_data[0];
+//assign d12_db[1] = isa_data[1];
+//assign d12_db[2] = isa_data[2];
+//assign d12_db[3] = isa_data[3];
 
 // DD8
 assign d8_data[0] = cb_data[5];
@@ -419,6 +418,15 @@ assign cb_data[10] = d2_db[1];
 assign cb_data[8] = d2_db[2];
 assign cb_data[11] = d2_db[3];
 
+assign isa_data[0] = d12_db[0];
+assign isa_data[1] = d12_db[1];
+assign isa_data[2] = d12_db[2];
+assign isa_data[3] = d12_db[3];
+assign isa_data[4] = d11_db[0];
+assign isa_data[5] = d11_db[1];
+assign isa_data[6] = d11_db[2];
+assign isa_data[7] = d11_db[3];
+
 // Debug
 assign d_sel_debug = d_sel;
 assign l_sel1_debug = l_sel1;
@@ -483,7 +491,7 @@ SN74LS374 d8(.clk(z_c2), .reset(global_reset), .out_control(gnd), .data(d8_data)
 
 /* DD11 - IC8226 (Buffer)
  * DI
- * DB
+ * DB - connected to ISA DATA
  * DO - connected to CAMAC BUS
  */
 IC82x6 #(.INVERTED_OUTPUT(1)) 
@@ -491,7 +499,7 @@ IC82x6 #(.INVERTED_OUTPUT(1))
  
 /* DD12 - IC8226 (Buffer)
  * DI
- * DB
+ * DB - connected to ISA DATA
  * DO - connected to CAMAC BUS
  */
 IC82x6 #(.INVERTED_OUTPUT(1)) 

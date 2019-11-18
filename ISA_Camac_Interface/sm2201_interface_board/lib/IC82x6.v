@@ -38,16 +38,21 @@ assign d_bus = cs_n == 1'b0 ? ((dce== 1'b0) ? d_bus_reg : d_bus) : 4'bz;
 always @(*)
 begin
    if (cs_n == 1'b1)                                                             // chip is OFF
-	begin
-	    d_out <= 4'bz;
-		 d_bus_reg <= 4'bz;
-	end
-	else                                                                          // chip is ON
-	begin
-       if (dce == 1'b0)                                                          // READ: d_in -> d_bus
-		     d_bus_reg <= INVERTED_OUTPUT == 0 ? d_in : 15 - d_in;    
-       else d_out <= INVERTED_OUTPUT == 0 ? d_bus_reg : 15  - d_bus_reg;         // WRITE: d_bus -> d_out via register
-	end
+    begin
+        d_out <= 4'bz;
+        d_bus_reg <= 4'bz;
+    end
+    else                                                                          // chip is ON
+    begin
+        if (dce == 1'b0)                                                          // READ: d_in -> d_bus
+        begin
+            d_bus_reg <= INVERTED_OUTPUT == 0 ? d_in : 15 - d_in;
+        end
+        else
+        begin
+            d_out <= INVERTED_OUTPUT == 0 ? d_bus_reg : 15  - d_bus_reg;         // WRITE: d_bus -> d_out via register
+        end
+    end
 end
 
 endmodule
