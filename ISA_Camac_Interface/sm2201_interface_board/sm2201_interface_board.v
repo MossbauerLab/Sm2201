@@ -314,8 +314,8 @@ assign d10_out_pulled[1] = d10_out[1] == 1'b0 ? 1'b0 : 1'b1;
 assign d10_out_pulled[2] = d10_out[2] == 1'b0 ? 1'b0 : 1'b1;
 assign d10_out_pulled[3] = d10_out[3] == 1'b0 ? 1'b0 : 1'b1;
 
-assign micro_program_automate_addr[0] = d10_out_pulled[0];
-assign micro_program_automate_addr[1] = d10_out_pulled[1];
+assign micro_program_automate_addr[0] = d10_out_pulled[1];
+assign micro_program_automate_addr[1] = d10_out_pulled[0];
 
 // ===========================> move to micro program automate
 // DD15
@@ -427,8 +427,8 @@ assign q_r_debug = q_r;
 // assign f_tim_debug = f_tim_pulled;
 assign n_c1_debug = n_c1;
 assign z_c2_debug = z_c2;
-assign x0_debug = x0;
-assign x1_debug = x1;
+//assign x0_debug = x0;
+//assign x1_debug = x1;
 assign d10_data_debug = d10_out_pulled;
 //assign d15_addr_debug = d15_addr;
 
@@ -478,7 +478,7 @@ SN74LS257 #(.INVERTED_OUTPUT(0))
  * Passing data from input lines to out by clock, enabled by one on out_control line,
  * Permanently enabled by gnd
  */
-SN74LS374 d8(.clk(z_c2), .out_control(gnd), .data(d8_data), .out(d8_out));
+SN74LS374 d8(.clk(z_c2), .reset(global_reset), .out_control(gnd), .data(d8_data), .out(d8_out));
 
 /* DD11 - IC8226 (Buffer)
  * DI
@@ -517,7 +517,7 @@ SN74LS07 d18(//.a6(d17_out[5]), .y6(f_tim),
 SN74LS00 d5(.a1(isa_ior), .b1(d5_y2), .y1(d5_y1),
             .a2(isa_iow), .b2(d5_y1), .y2(d5_y2),
             .a3(g_rd), .b3(p_wr), .y3(d5_y3),
-            .a4(d9_y2), .b4(isa_addr[9]), .y4(d_sel));
+            .a4(d9_y2), .b4(isa_addr[8]), .y4(d_sel));
 
 // DD9
 SN74LS27 d9(.a1(d5_y3), .b1(d5_y3), .c1(d5_y3), .y1(d9_y1),

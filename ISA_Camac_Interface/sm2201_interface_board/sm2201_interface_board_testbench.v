@@ -47,7 +47,6 @@ module sm2201_interface_board_testbench;
     reg cb_data_op;
     wire [15:0] cb_data;
     reg [15:0] cb_data_out;
-    // wire [15:0] cb_data_in; 
     reg [11:0] cb_addr;
 
     assign cb_data = cb_data_op == 1'b1 ? cb_data_out : 16'bz;
@@ -68,7 +67,7 @@ module sm2201_interface_board_testbench;
         // CAMAC inputs
         .cb_prr(cb_prr),
         .cb_zk4(cb_zk4),
-        //.cb_cx1(cb_cx1),
+        .cb_cx1(cb_cx1),
         .cb_data(cb_data)
     );
 
@@ -79,7 +78,7 @@ module sm2201_interface_board_testbench;
         isa_clk <= 0;
         isa_ior <= 1;
         isa_iow <= 1;
-        isa_addr <= 256;
+        isa_addr <= 240;
         isa_ale <= 0;
         isa_aen <= 0;
         // initial CAMAC
