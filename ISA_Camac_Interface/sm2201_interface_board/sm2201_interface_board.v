@@ -179,10 +179,10 @@ assign d1_db[1] = cb_data[14];
 assign d1_db[2] = cb_data[13];
 assign d1_db[3] = cb_data[15];*/
 
-assign d1_di[0] = d3_q[0];
-assign d1_di[1] = d3_q[2];
-assign d1_di[2] = d3_q[3];
-assign d1_di[3] = d3_q[1];
+assign d1_di[0] = d4_q[0];
+assign d1_di[1] = d4_q[2];
+assign d1_di[2] = d4_q[3];
+assign d1_di[3] = d4_q[1];
 
 // DD4
 assign d4_s1[0] = cb_data[4];
@@ -201,10 +201,10 @@ assign d2_db[1] = cb_data[10];
 assign d2_db[2] = cb_data[8];
 assign d2_db[3] = cb_data[11];*/
 
-assign d2_di[0] = d4_q[0];
-assign d2_di[1] = d4_q[2];
-assign d2_di[2] = d4_q[3];
-assign d2_di[3] = d4_q[1];
+assign d2_di[0] = d3_q[0];
+assign d2_di[1] = d3_q[2];
+assign d2_di[2] = d3_q[3];
+assign d2_di[3] = d3_q[1];
 
 // DD3
 assign d3_s1[0] = cb_data[1];
