@@ -31,8 +31,10 @@ module sm2201_interface_board_testbench;
     reg isa_reset;
     reg isa_ale;
     reg isa_aen;
+    wire q_r_debug;
 
     reg [9:0] isa_addr;
+    wire [7:0] isa_data;
     reg [31:0] counter;
     reg [1:0] operation;        // 0 -read, 1 - write
 
@@ -44,12 +46,13 @@ module sm2201_interface_board_testbench;
     reg cb_prr;
     reg cb_zk4;
     //reg cb_cx1;
-    reg cb_data_op;
     wire [15:0] cb_data;
     reg [15:0] cb_data_out;
     reg [11:0] cb_addr;
+    reg [7:0] isa_data_out;
 
-    assign cb_data = cb_data_op == 1'b1 ? cb_data_out : 16'bz;
+    assign cb_data = q_r_debug == 1'b0 ? cb_data_out : 16'bz;
+    //assign isa_data = q_r_debug == 1'b1 ? isa_data_out : 8'bz;
 
     // Instantiate the Unit Under Test (UUT)
     sm2201_interface_board
@@ -60,10 +63,13 @@ module sm2201_interface_board_testbench;
         .isa_ior(isa_ior), 
         .isa_iow(isa_iow), 
         .isa_addr(isa_addr),
+        .isa_data(isa_data),
         .isa_ale(isa_ale),
         .isa_aen(isa_aen),
         // isa outputs
         .isa_chrdy(isa_chrdy),
+        // debug
+        .q_r_debug(q_r_debug),
         // CAMAC inputs
         .cb_prr(cb_prr),
         .cb_zk4(cb_zk4),
@@ -85,7 +91,6 @@ module sm2201_interface_board_testbench;
         cb_prr <= 1;
         cb_zk4 <= 1;
         //cb_cx1 <= 1;
-        cb_data_op <= 1'b1;
         cb_data_out <= 16'b0100001000001000;
         cb_addr <= 11'b00000000000;
         counter <= 0;
