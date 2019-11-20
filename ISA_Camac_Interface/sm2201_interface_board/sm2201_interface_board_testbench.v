@@ -51,8 +51,8 @@ module sm2201_interface_board_testbench;
     reg [11:0] cb_addr;
     reg [7:0] isa_data_out;
 
-    assign cb_data = q_r_debug == 1'b0 ? cb_data_out : 16'bz;
-    //assign isa_data = q_r_debug == 1'b1 ? isa_data_out : 8'bz;
+    assign cb_data = q_r_debug == 1'b0 ? cb_data_out : 16'b0000000000000000;
+    assign isa_data = q_r_debug == 1'b1 ? isa_data_out : 8'b00000000;
 
     // Instantiate the Unit Under Test (UUT)
     sm2201_interface_board
@@ -95,8 +95,8 @@ module sm2201_interface_board_testbench;
         cb_addr <= 11'b00000000000;
         counter <= 0;
         operation <= 0;
-        #4000 cb_prr <= 0;
-        #5000 cb_prr <= 1;
+        //#4000 cb_prr <= 0;
+        //#5000 cb_prr <= 1;
     end
     
     // we are model ISA logic
