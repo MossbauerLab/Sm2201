@@ -463,13 +463,13 @@ IC82x6 #(.INVERTED_OUTPUT(0))
  * Switches Camac Data Lines to out according to address (ws) signal,
  * Data sampling triggers by posedge on clk line
  */
-SN74LS298 d3(.ws(m_w), .clk(n_c1), .s1(d3_s1), .s2(d3_s2), .q(d3_q));
+SN74LS298 d3(.ws(m_w), .clk(n_c1), .reset(global_reset), .s1(d3_s1), .s2(d3_s2), .q(d3_q));
 
 /* DD4 (Multiplexer)
  * Switches Camac Data Lines to out according to address (ws) signal
  * Data sampling triggers by posedge on clk line
  */
-SN74LS298 d4(.ws(m_w), .clk(n_c1), .s1(d4_s1), .s2(d4_s2), .q(d4_q));
+SN74LS298 d4(.ws(m_w), .clk(n_c1), .reset(global_reset), .s1(d4_s1), .s2(d4_s2), .q(d4_q));
 
 /* DD6 (Multiplexer)
  * Passing data to multiplexer out from D3 or from CAMAC BUS directly

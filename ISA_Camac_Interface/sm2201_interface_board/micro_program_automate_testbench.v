@@ -28,7 +28,7 @@ module micro_program_automate_testbench();
         a <= 0;
         w <= 0;
         sel <= 0;
-        tim <= 0;
+        //tim <= 0;
         ie <= 0;
         cx1 <= 0;
         counter <= 0;
@@ -47,10 +47,15 @@ module micro_program_automate_testbench();
             w <= ~w;
         end
         if (counter > 0 && counter % 10000 == 0)
-            a <= a+1;
+            a <= a + 1;
         if (counter > 40000 && counter % 2000 == 0)
         begin
             sel <= ~sel;
+        end
+        if (counter > 40000 && counter % 5000 == 0)
+        begin
+            cx1 <= ~cx1;
+            ie <= ~ie;
         end
     end
 
