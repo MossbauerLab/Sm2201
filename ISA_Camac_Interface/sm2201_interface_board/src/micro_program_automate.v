@@ -36,7 +36,7 @@ module micro_program_automate #
     input wire [MICRO_ADDRESS_BUS_WIDTH - 1 : 0] a,
     input wire w,
     input wire sel,
-    // input wire tim,
+    input wire tim,
     input wire ie,   // ПР это, возможно, ПРЕРЫВАНИЕ РАЗРЕШЕНО (interrupt enabled)
     input wire cx1,  // ???
     output wire rdy,
