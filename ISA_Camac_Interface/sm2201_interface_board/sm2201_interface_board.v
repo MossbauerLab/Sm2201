@@ -296,27 +296,6 @@ assign d17_data[3] = isa_addr[1];
 assign d17_data[4] = isa_reset;
 assign d17_data[5] = rdy;
 
-// DD10
-/*assign d10_addr[0] = isa_addr[6];
-assign d10_addr[1] = isa_addr[5];
-assign d10_addr[2] = isa_addr[4];
-assign d10_addr[3] = isa_addr[3];
-assign d10_addr[4] = isa_addr[2];
-assign d10_addr[5] = isa_addr[1];
-assign d10_addr[6] = isa_addr[0];
-assign d10_addr[7] = isa_ale;
-
-assign d10_cs[0] = d9_y1;
-assign d10_cs[1] = isa_aen;
-
-assign d10_out_pulled[0] = d10_out[0] == 1'b0 ? 1'b0 : 1'b1;
-assign d10_out_pulled[1] = d10_out[1] == 1'b0 ? 1'b0 : 1'b1;
-assign d10_out_pulled[2] = d10_out[2] == 1'b0 ? 1'b0 : 1'b1;
-assign d10_out_pulled[3] = d10_out[3] == 1'b0 ? 1'b0 : 1'b1;
-
-assign micro_program_automate_addr[0] = d10_out_pulled[1];
-assign micro_program_automate_addr[1] = d10_out_pulled[0];*/
-
 
 // INTERNAL
 //assign l_sel1 = d10_out_pulled[2];
@@ -490,21 +469,12 @@ SN74LS07 d18(.a6(d17_out[5]), .y6(f_tim),
 
 // DD5
 SN74LS00 d5(.a1(isa_ior), .b1(d5_y2), .y1(d5_y1),
-            .a2(isa_iow), .b2(d5_y1), .y2(d5_y2),
-            /*.a3(g_rd), .b3(p_wr), .y3(d5_y3),
-            .a4(d9_y2), .b4(isa_addr[8]), .y4(d_sel)*/);
+            .a2(isa_iow), .b2(d5_y1), .y2(d5_y2)
+            );
 
-// DD9
-/*SN74LS27 d9(.a1(d5_y3), .b1(d5_y3), .c1(d5_y3), .y1(d9_y1),
-            .a2(isa_addr[7]), .b2(d10_out_pulled[3]), .c2(isa_addr[9]), .y2(d9_y2),
-            .a3(v_rp), .b3(cb_zk4), .c3(v_rp), .y3(d9_y3));*/
-
-// DD10
-// dig_machine_ip3601 d10(.address(d10_addr), .cs(d10_cs), .data(d10_out));
-
-address_request_decoder (.address(isa_addr), .ale(isa_ale), .aen(isa_aen), .ior(g_rd), .iow(p_wr), 
-                         .interrupt_req(v_rp), .zk4(cb_zk4), .sel(d_sel), .sel1(l_sel1), 
-                         .internal_address(micro_program_automate_addr), .interrupt_en(interrupt_en));
+address_request_decoder addr_decoder(.address(isa_addr), .ale(isa_ale), .aen(isa_aen), .ior(g_rd), .iow(p_wr), 
+                                     .interrupt_req(v_rp), .zk4(cb_zk4), .sel(d_sel), .sel1(l_sel1), 
+                                     .internal_address(micro_program_automate_addr), .interrupt_en(interrupt_en));
 
 micro_program_automate automate (.reset(global_reset), .clk(isa_clk), 
                                  .a(micro_program_automate_addr), .w(m_w), .sel(d_sel), .tim(f_tim),
