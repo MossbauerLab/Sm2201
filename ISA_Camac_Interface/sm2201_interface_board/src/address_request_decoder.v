@@ -26,7 +26,7 @@
 //                     internal_address:
 //                         0 address interrupt register
 //                         1 2nd byte reqister
-//                         2 crate address
+//                         2 CAMAC crate address
 //                         3 ???
 //                     sel1 generates (related to internal_address value):
 //                         1 when internal_address = 1 and aen = 0
@@ -78,8 +78,8 @@ assign d10_out_pulled[2] = d10_out[2] == 1'b0 ? 1'b0 : 1'b1;
 assign d10_out_pulled[3] = d10_out[3] == 1'b0 ? 1'b0 : 1'b1;
 
 assign interrupt_en = d9_y3;
-assign internal_address[0] = d10_out_pulled[0];
-assign internal_address[1] = d10_out_pulled[1];
+assign internal_address[0] = d10_out_pulled[1];
+assign internal_address[1] = d10_out_pulled[0];
 assign sel1 = d10_out_pulled[2];
 
 // DD5
