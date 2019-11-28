@@ -65,7 +65,7 @@ assign d15_addr[2] = a[1];
 assign d15_addr[3] = a[0];
 assign d15_addr[4] = ie;
 assign d15_addr[5] = d16_out[1];
-assign d15_addr[6] = gnd; //tim;
+assign d15_addr[6] = tim; // gnd
 assign d15_addr[7] = w;
 assign d15_addr[8] = sel;
 
