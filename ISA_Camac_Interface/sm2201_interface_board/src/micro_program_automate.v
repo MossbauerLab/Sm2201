@@ -55,19 +55,22 @@ wire [7:0] d15_out_pulled;
 wire [7:0] d16_data;
 wire [7:0] d16_out;
 
+wire [7:0] d20_data;
+wire [7:0] d20_out;
+
 supply0 gnd;
 supply1 vcc;
 
 // DD15
-assign d15_addr[0] = d16_out[3];
-assign d15_addr[1] = d16_out[4];
-assign d15_addr[2] = a[1];
-assign d15_addr[3] = a[0];
-assign d15_addr[4] = ie;
-assign d15_addr[5] = d16_out[1];
-assign d15_addr[6] = tim; // gnd
-assign d15_addr[7] = w;
-assign d15_addr[8] = sel;
+assign d15_addr[0] = d20_out[3];//d16_out[3];
+assign d15_addr[1] = d20_out[4];//d16_out[4];
+assign d15_addr[2] = d16_out[2];//a[1];
+assign d15_addr[3] = d16_out[1];//;a[0];
+assign d15_addr[4] = d16_out[6];//ie;
+assign d15_addr[5] = d20_out[1];
+assign d15_addr[6] = d16_out[7];//tim; // gnd
+assign d15_addr[7] = d16_out[0];//w;
+assign d15_addr[8] = d16_out[4];//sel;
 
 assign d15_out_pulled[0] = d15_out[0] == 1'b0 ? 1'b0 : 1'b1;
 assign d15_out_pulled[1] = d15_out[1] == 1'b0 ? 1'b0 : 1'b1;
@@ -84,14 +87,24 @@ assign d15_cs[2] = gnd;
 assign d15_cs[3] = gnd;
 
 // DD16
-assign d16_data[0] = d15_out_pulled[6];
-assign d16_data[1] = cx1;
-assign d16_data[2] = d15_out_pulled[0];
-assign d16_data[3] = d15_out_pulled[1];
-assign d16_data[4] = d15_out_pulled[7];
-assign d16_data[5] = d15_out_pulled[5];
-assign d16_data[6] = d15_out_pulled[4];
-assign d16_data[7] = d15_out_pulled[3];
+assign d16_data[0] = w;//d15_out_pulled[6];
+assign d16_data[1] = a[0];//cx1;
+assign d16_data[2] = a[1];//d15_out_pulled[0];
+assign d16_data[3] = d15_out_pulled[2];
+assign d16_data[4] = sel;//d15_out_pulled[7];
+assign d16_data[5] = d15_out_pulled[6];
+assign d16_data[6] = ie;//d15_out_pulled[4];
+assign d16_data[7] = gnd;//tim;//d15_out_pulled[3];
+
+// DD16
+assign d20_data[0] = vcc;
+assign d20_data[1] = cx1;
+assign d20_data[2] = d15_out_pulled[0];
+assign d20_data[3] = d15_out_pulled[1];
+assign d20_data[4] = d15_out_pulled[7];
+assign d20_data[5] = d15_out_pulled[5];
+assign d20_data[6] = d15_out_pulled[4];
+assign d20_data[7] = d15_out_pulled[3];
 
 // DD15
 dig_machine_ip3604 d15(.address(d15_addr), .cs(d15_cs), .data(d15_out));
@@ -99,11 +112,14 @@ dig_machine_ip3604 d15(.address(d15_addr), .cs(d15_cs), .data(d15_out));
 // DD16
 SN74LS374 d16(.out_control(gnd), .clk(clk), .reset(reset), .data(d16_data), .out(d16_out));
 
-assign x0 = d15_out_pulled[2];
-assign x1 = d16_out[0];
-assign rdy = d16_out[2];
-assign c2 = d16_out[5];
-assign c1 = d16_out[6];
-assign sel2 = d16_out[7];
+// DD20
+SN74LS374 d20(.out_control(gnd), .clk(clk), .reset(reset), .data(d20_data), .out(d20_out));
+
+assign x0 = d16_out[3];
+assign x1 = d16_out[5];
+assign rdy = d20_out[2];
+assign c2 = d20_out[5];
+assign c1 = d20_out[6];
+assign sel2 = d20_out[7];
 
 endmodule

@@ -32,7 +32,7 @@ module micro_program_automate_testbench();
         sel <= 1;
         tim <= 0;
         ie <= 0;
-        cx1 <= 0;
+        cx1 <= 1;
         counter <= 0;
         #10000 tim <= 1;
     end
@@ -57,7 +57,7 @@ module micro_program_automate_testbench();
         end*/
         if (counter > 40000 && counter % 5000 == 0)
         begin
-            cx1 <= ~cx1;
+            // cx1 <= ~cx1;
             ie <= ~ie;
         end
     end
