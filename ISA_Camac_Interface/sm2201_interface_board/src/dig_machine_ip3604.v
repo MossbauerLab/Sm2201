@@ -26,7 +26,7 @@ module dig_machine_ip3604(
 
 reg[7:0] selected_data;
 
-assign data = cs == 4'b0011 ? selected_data : 8'b00000000;
+assign data = cs == 4'b0011 ? ~selected_data : 8'b00000000;
 
 always @(*)
 begin

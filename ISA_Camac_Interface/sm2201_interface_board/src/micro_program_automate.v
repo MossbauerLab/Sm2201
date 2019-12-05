@@ -94,7 +94,7 @@ assign d16_data[3] = d15_out_pulled[2];
 assign d16_data[4] = sel;//d15_out_pulled[7];
 assign d16_data[5] = d15_out_pulled[6];
 assign d16_data[6] = ie;//d15_out_pulled[4];
-assign d16_data[7] = gnd;//tim;//d15_out_pulled[3];
+assign d16_data[7] = tim;//d15_out_pulled[3];
 
 // DD16
 assign d20_data[0] = vcc;
