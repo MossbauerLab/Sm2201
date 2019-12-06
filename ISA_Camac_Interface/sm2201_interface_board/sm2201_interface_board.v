@@ -74,10 +74,6 @@ module sm2201_interface_board(
     output wire q_r_debug,
     output wire n_c1_debug,
     output wire z_c2_debug
-    //output wire x0_debug,
-    //output wire x1_debug,
-    //output wire [3:0] d10_data_debug
-    //output wire [8:0] d15_addr_debug
 );
 
 wire m_w;
@@ -140,26 +136,8 @@ wire [5:0] d14_out;
 wire [5:0] d17_data;
 wire [5:0] d17_out;
 
-//wire [7:0] d10_addr;
-//wire [1:0] d10_cs;
-//wire [3:0] d10_out;
-//wire [3:0] d10_out_pulled;
-
-//wire [8:0] d15_addr;
-//wire [3:0] d15_cs;
-//wire [7:0] d15_out;
-//wire [7:0] d15_out_pulled;
-
 wire d5_y1;
 wire d5_y2;
-//wire d5_y3;
-
-//wire d9_y1;
-//wire d9_y2;
-//wire d9_y3;
-
-//wire [7:0] d16_data;
-//wire [7:0] d16_out;
 
 wire [1:0] micro_program_automate_addr;
 wire interrupt_en;
@@ -169,8 +147,12 @@ supply1 vcc;
 
 reg global_reset;
 reg [7:0] counter;
+reg [1:0] state;
 
 localparam reg[7:0] RESET_COUNTER = 10;
+localparam reg[1:0] INITIAL_STATE = 0;
+localparam reg[1:0] BEGIN_INIT_STATE = 1;
+localparam reg[1:0] INITED_STATE = 2;
 
 
 // ######################### LINES ASSIGNMENT ############################
@@ -483,20 +465,44 @@ micro_program_automate automate (.reset(global_reset), .clk(isa_clk),
 
 always @(posedge isa_clk)
 begin
-    if (global_reset != 1'b1)
-    begin
-        if (counter != RESET_COUNTER)
+    case (state)
+        INITIAL_STATE:
         begin
-            counter <= 0;
-            global_reset <= 1;
+            if (counter == 1)
+            begin
+                state <= BEGIN_INIT_STATE;
+            end
         end
+        BEGIN_INIT_STATE:
+        begin
+            if (counter == RESET_COUNTER)
+                state <= INITED_STATE;
+        end
+        INITED_STATE:
+        begin
+            state <= INITED_STATE;
+        end
+        default:
+        begin
+             state <= INITIAL_STATE;
+        end
+    endcase
+end
+
+always @(posedge isa_clk)
+begin
+    if(state == INITIAL_STATE)
+    begin
+        counter <= 1;
+    end
+    else if (state == BEGIN_INIT_STATE)
+    begin
+        counter <= counter + 1;
+        global_reset <= 0;
     end
     else
     begin
-        if (counter < RESET_COUNTER)
-            counter <= counter + 1;
-        else
-            global_reset <= 0;
+        global_reset <= 1;
     end
 end
 
