@@ -65,7 +65,8 @@ module sm2201_interface_board(
     output wire cb_prepare_bus,      // ОШ ПОДГ.
     output wire cb_b_b1,             // ОШ B/B1
     output wire cb_pc4,              // ОШ ПК4        ???
-    output wire cb_cx3               // ОШ СХ3
+    output wire cb_cx3,              // ОШ СХ3
+    output wire q_r_debug
 );
 
 wire m_w;
@@ -318,6 +319,9 @@ assign isa_data[4] = d11_db[0];
 assign isa_data[5] = d11_db[1];
 assign isa_data[6] = d11_db[2];
 assign isa_data[7] = d11_db[3];
+
+// DEBUG
+assign q_r_debug = q_r;
 
 // #######################################################################
 
