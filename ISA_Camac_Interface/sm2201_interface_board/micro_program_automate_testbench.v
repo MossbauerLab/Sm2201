@@ -41,7 +41,7 @@ module micro_program_automate_testbench();
     begin
         #60 clk <= ~clk;
         counter <= counter + 1;
-        if (counter == 4)
+        if (counter == 20)
         begin
            reset <= 0;
         end
