@@ -157,10 +157,6 @@ localparam reg[1:0] INITED_STATE = 2;
 
 // ######################### LINES ASSIGNMENT ############################
 // DD1
-/*assign d1_db[0] = cb_data[12];
-assign d1_db[1] = cb_data[14];
-assign d1_db[2] = cb_data[13];
-assign d1_db[3] = cb_data[15];*/
 
 assign d1_di[0] = d4_q[0];
 assign d1_di[1] = d4_q[2];
@@ -179,10 +175,6 @@ assign d4_s2[2] = cb_data[14];
 assign d4_s2[3] = cb_data[13];
 
 // DD2
-/*assign d2_db[0] = cb_data[9];
-assign d2_db[1] = cb_data[10];
-assign d2_db[2] = cb_data[8];
-assign d2_db[3] = cb_data[11];*/
 
 assign d2_di[0] = d3_q[0];
 assign d2_di[1] = d3_q[2];
@@ -228,21 +220,11 @@ assign d11_di[1] = d6_y[1];
 assign d11_di[2] = d6_y[3];
 assign d11_di[3] = d6_y[2];
 
-//assign d11_db[0] = isa_data[4];
-//assign d11_db[1] = isa_data[5];
-//assign d11_db[2] = isa_data[6];
-//assign d11_db[3] = isa_data[7];
-
 // DD12
 assign d12_di[0] = d7_y[0];
 assign d12_di[1] = d7_y[1];
 assign d12_di[2] = d7_y[3];
 assign d12_di[3] = d7_y[2];
-
-//assign d12_db[0] = isa_data[0];
-//assign d12_db[1] = isa_data[1];
-//assign d12_db[2] = isa_data[2];
-//assign d12_db[3] = isa_data[3];
 
 // DD8
 assign d8_data[0] = cb_data[5];
@@ -280,15 +262,8 @@ assign d17_data[5] = rdy;
 
 
 // INTERNAL
-//assign l_sel1 = d10_out_pulled[2];
-//assign x0 = d15_out_pulled[2]; // ===========================> move to micro program automate
-//assign rdy = d16_out[2];       // ===========================> move to micro program automate
 assign m_w = d5_y1;
 assign q_r = d5_y2;
-//assign x1 = d16_out[0];        // ===========================> move to micro program automate
-//assign z_c2 = d16_out[5];
-//assign n_c1 = d16_out[6];
-//assign k_sel2 = d16_out[7];
 assign v_rp = d8_out[5];
 assign g_rd = isa_ior;
 assign p_wr = isa_iow;
@@ -314,7 +289,6 @@ assign cb_cx3 = d13_out[4];
 assign cb_b_b1 = d13_out[5];
 assign cb_prepare_bus = d17_out[4];
 assign cb_cx1 = b_cxi_pulled;
-//assign isa_chrdy = vcc;
 assign isa_irq[7] = b_cxi_pulled == 1'b0 ? 1'b0: 1'b1;
 assign isa_irq[0] = vcc;
 assign isa_irq[1] = vcc;
@@ -359,13 +333,8 @@ assign l_sel1_debug = l_sel1;
 assign k_sel2_debug = k_sel2;
 assign m_w_debug = m_w;
 assign q_r_debug = q_r;
-// assign f_tim_debug = f_tim_pulled;
 assign n_c1_debug = n_c1;
 assign z_c2_debug = z_c2;
-//assign x0_debug = x0;
-//assign x1_debug = x1;
-//assign d10_data_debug = d10_out_pulled;
-//assign d15_addr_debug = d15_addr;
 
 // #######################################################################
 
