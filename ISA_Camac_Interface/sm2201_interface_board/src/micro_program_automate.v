@@ -3,7 +3,7 @@
 // Company:        MossbauerLab, EasySoft
 // Engineer:       EvilLord666 (Ushakov MV)
 // 
-// Create Date:    23:57:05 08/28/2017 
+// Create Date:    11/15/2019 
 // Design Name: 
 // Module Name:    micro_program_automate
 // Project Name:   micro_program_automate
@@ -11,7 +11,8 @@
 // Tool versions:  Quartus 19.1 sp1
 // Description:    Micro programmable automate based on ROM + Synchronous register
 //
-// Dependencies:   src/ip_3604_dig_machine (ROM with image), /lib/SN74LS374 (register)
+// Dependencies:   src/ip_3604_dig_machine (ROM with image)
+//                 /lib/SN74LS374          (register)
 //
 // Revision: 1.0
 // Additional Comments: 
@@ -19,10 +20,10 @@
 //        1) doesn not depends on w signal (read or write operation mode)
 //        2) tim must be 0, it is useless (now i am not see any reason to use it,
 //           because when tim is 1 it force to rdy -> 0)
-//        3) sel = 1 switch of rdy (=0) when a is 0 or 2, when a = 1, rdy is 
-//           independent from sel
-//        4) rdy is 0 when a = 3
-//        5) might be ANY additional cases due to COMLICATED structure of this module
+//        3) sel = 1 when isa addr does not corresponds to whole sm_2201_interface_board
+//        4) rdy is 1 on next clk posedge when d15_addr = 100100011, after that 
+//           it goes to 100100000 value
+//        5) c1 and sel2 are set to 1, c2 to 0 initially, other cases should be checked
 //
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -62,15 +63,15 @@ supply0 gnd;
 supply1 vcc;
 
 // DD15
-assign d15_addr[0] = d20_out[3];//d16_out[3];
-assign d15_addr[1] = d20_out[4];//d16_out[4];
-assign d15_addr[2] = d16_out[2];//a[1];
-assign d15_addr[3] = d16_out[1];//;a[0];
-assign d15_addr[4] = d16_out[6];//ie;
+assign d15_addr[0] = d20_out[3];
+assign d15_addr[1] = d20_out[4];
+assign d15_addr[2] = d16_out[2];
+assign d15_addr[3] = d16_out[1];
+assign d15_addr[4] = d16_out[6];
 assign d15_addr[5] = d20_out[1];
-assign d15_addr[6] = d16_out[7];//tim; // gnd
-assign d15_addr[7] = d16_out[0];//w;
-assign d15_addr[8] = d16_out[4];//sel;
+assign d15_addr[6] = d16_out[7];
+assign d15_addr[7] = d16_out[0];
+assign d15_addr[8] = d16_out[4];
 
 assign d15_out_pulled[0] = d15_out[0] == 1'b0 ? 1'b0 : 1'b1;
 assign d15_out_pulled[1] = d15_out[1] == 1'b0 ? 1'b0 : 1'b1;
@@ -87,14 +88,14 @@ assign d15_cs[2] = gnd;
 assign d15_cs[3] = gnd;
 
 // DD16
-assign d16_data[0] = w;//d15_out_pulled[6];
-assign d16_data[1] = a[0];//cx1;
-assign d16_data[2] = a[1];//d15_out_pulled[0];
+assign d16_data[0] = w;
+assign d16_data[1] = a[0];
+assign d16_data[2] = a[1];
 assign d16_data[3] = d15_out_pulled[2];
-assign d16_data[4] = sel;//d15_out_pulled[7];
+assign d16_data[4] = sel;
 assign d16_data[5] = d15_out_pulled[6];
-assign d16_data[6] = ie;//d15_out_pulled[4];
-assign d16_data[7] = tim;//d15_out_pulled[3];
+assign d16_data[6] = ie;
+assign d16_data[7] = tim;
 
 // DD16
 assign d20_data[0] = vcc;
