@@ -19,6 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module dig_machine_ip3604(
+    input wire reset,
     input wire [8:0] address,
     input wire [3:0] cs,
     output wire [7:0] data
@@ -30,6 +31,8 @@ assign data = cs == 4'b0011 ? ~selected_data : 8'b00000000;
 
 always @(*)
 begin
+    if (reset == 1'b0)
+    begin
     case (address)
         0: selected_data = 8'b00001001;
         1: selected_data = 8'b10100010;
@@ -545,6 +548,11 @@ begin
         511: selected_data = 8'b00100100;
         default: selected_data = 8'b00000000;
     endcase
+    end
+    else
+    begin
+        selected_data = 8'b00000000;
+    end
 end
 
 endmodule

@@ -467,11 +467,11 @@ begin
     else if (state == BEGIN_INIT_STATE)
     begin
         counter <= counter + 1;
-        global_reset <= 0;
+        global_reset <= 1;
     end
     else
     begin
-        global_reset <= 1;
+        global_reset <= 0;
     end
 end
 

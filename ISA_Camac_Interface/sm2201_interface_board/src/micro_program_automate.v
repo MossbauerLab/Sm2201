@@ -108,7 +108,7 @@ assign d20_data[6] = d15_out_pulled[4];
 assign d20_data[7] = d15_out_pulled[3];
 
 // DD15
-dig_machine_ip3604 d15(.address(d15_addr), .cs(d15_cs), .data(d15_out));
+dig_machine_ip3604 d15(.reset(reset), .address(d15_addr), .cs(d15_cs), .data(d15_out));
 
 // DD16
 SN74LS374 d16(.out_control(gnd), .clk(clk), .reset(reset), .data(d16_data), .out(d16_out));

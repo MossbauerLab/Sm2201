@@ -36,7 +36,7 @@ module sm2201_interface_board_testbench;
     reg [9:0] isa_addr;
     wire [7:0] isa_data;
     reg [31:0] counter;
-    reg [1:0] operation;        // 0 -read, 1 - write
+    reg [1:0] operation;        // 0 - read, 1 - write
 
     // isa output signals
     wire [7:0] isa_irq;
@@ -45,7 +45,6 @@ module sm2201_interface_board_testbench;
     // CAMAC input signals
     reg cb_prr;
     reg cb_zk4;
-    //reg cb_cx1;
     wire [15:0] cb_data;
     reg [15:0] cb_data_out;
     reg [11:0] cb_addr;
@@ -90,13 +89,10 @@ module sm2201_interface_board_testbench;
         // initial CAMAC
         cb_prr <= 1;
         cb_zk4 <= 1;
-        // cb_cx1 <= 1;
         cb_data_out <= 16'b0100001000001000;
         cb_addr <= 11'b00000000000;
         counter <= 0;
         operation <= 0;
-        //#4000 cb_prr <= 0;
-        //#5000 cb_prr <= 1;
     end
     
     // we are model ISA logic
