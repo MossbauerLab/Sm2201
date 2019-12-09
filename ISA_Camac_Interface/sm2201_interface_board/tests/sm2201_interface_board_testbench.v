@@ -51,7 +51,7 @@ module sm2201_interface_board_testbench;
     reg [7:0] isa_data_out;
 
     assign cb_data = q_r_debug == 1'b0 ? cb_data_out : 16'b0000000000000000;
-    assign isa_data = q_r_debug == 1'b1 ? isa_data_out : 8'b00000000;
+    assign isa_data = q_r_debug == 1'b1 ? isa_data_out : 8'b1010001;
 
     // Instantiate the Unit Under Test (UUT)
     sm2201_interface_board
@@ -89,6 +89,7 @@ module sm2201_interface_board_testbench;
         // initial CAMAC
         cb_prr <= 1;
         cb_zk4 <= 1;
+        isa_data_out <= 8'b00011000;
         cb_data_out <= 16'b1111111111111111;
         cb_addr <= 11'b00000000000;
         counter <= 0;
