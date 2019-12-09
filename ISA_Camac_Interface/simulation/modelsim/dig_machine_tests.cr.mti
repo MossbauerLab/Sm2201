@@ -1,0 +1,15 @@
+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/dig_machine_ip3601_testbench.v {1 {vlog -work work -stats=none C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/dig_machine_ip3601_testbench.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module dig_machine_ip3601_testbench
+
+Top level modules:
+	dig_machine_ip3601_testbench
+
+} {} {}} C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/dig_machine_ip3601.v {1 {vlog -work work -stats=none C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/dig_machine_ip3601.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module dig_machine_ip3601
+
+Top level modules:
+	dig_machine_ip3601
+
+} {} {}}

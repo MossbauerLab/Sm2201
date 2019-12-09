@@ -1,0 +1,15 @@
+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/tests/IC8216_testbench.v {1 {vlog -work work -stats=none C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/tests/IC8216_testbench.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module IC8216_testbench
+
+Top level modules:
+	IC8216_testbench
+
+} {} {}} C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/IC82x6.v {1 {vlog -work work -stats=none C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/IC82x6.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module IC82x6
+
+Top level modules:
+	IC82x6
+
+} {} {}}
