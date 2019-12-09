@@ -41,6 +41,11 @@
 //
 // Revision: 1.0
 // Additional Comments: D1 + D2 or D3 + D4 are sources for D6 + D7
+//       Read DATA procedure (from CAMAC to ISA):
+//            1) D_SEL must be set to 0 (D11 and D12 chip select)
+//            2) When DCE = 0 (q = 0, reading), we passes D11-D12 d_in to db
+//               a) Data on d11_in
+//               b) Data on d12_in
 //
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -326,9 +331,11 @@ assign q_r_debug = q_r;
 // #######################################################################
 
 /* DD1 (BUS former)
- * Passes data to CAMAC BUS from DD3 
- * Mode was permanently set to always write to bus (di -> db) when m_w is 0
- * therefore it captures data from s1 lines d3_s1 -> db
+ * Passes data to CAMAC BUS from DD3 (Synchronous Multiplexer) 
+ * Mode was permanently set to always write to bus (di -> db) 
+ * when m_w is 0 (WRITE TO CAMAC), it means that source for d3 is d3_s1
+ * Full chain:
+ *     CAMAC D4-D7 -> d3_s1 -> d3_q on posedge on n_c1 -> db -> D12-D15
  */
 IC82x6 #(.INVERTED_OUTPUT(0)) 
    d1 (.dce(gnd), .cs_n(m_w), .d_in(d1_di), .d_bus(d1_db));
@@ -336,7 +343,9 @@ IC82x6 #(.INVERTED_OUTPUT(0))
 /* DD2 (BUS former)
  * Passes data to CAMAC BUS from DD4
  * Mode was permanently set to always write to bus (di -> db) when m_w is 0
- * therefore it captures data from s1 lines d4_s1 -> db
+ * (WRITE TO CAMAC), it means that source for d3 is d3_s1
+ * Full chain:
+ *     CAMAC D0-D3 -> d4_s1 -> d4_q on posedge on n_c1 -> db -> D8-D11
  */
 IC82x6 #(.INVERTED_OUTPUT(0)) 
     d2 (.dce(gnd), .cs_n(m_w), .d_in(d2_di), .d_bus(d2_db));

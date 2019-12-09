@@ -41,8 +41,8 @@ module IC8216_testbench;
     
     reg [3:0] d_bus_reg;
     wire [3:0] d_bus_net;
-    reg d_bus_source = 1'b0;
-    assign d_bus = d_bus_source == 1'b1 ? d_bus_reg : d_bus_net;
+    // reg d_bus_source;
+    assign d_bus = dce == 1'b1 ? d_bus_reg : d_bus_net;
 
     // Instantiate the Unit Under Test (UUT)
     IC82x6 # (.INVERTED_OUTPUT(0))
@@ -59,13 +59,14 @@ module IC8216_testbench;
     initial begin
         // bus_reg = 0;
         // module is in OFF state (detached from buses)
-        d_bus_source = 1'b0;
+        //d_bus_source = 1'b0;
         d_bus_reg = 4'b0000;
         d_in = TEST_VALUE_1;
         cs_n = 1;
         dce = 0;
         
         #200;
+        //d_bus_source = 1'b1;
         // read, d_in -> d_bus
         cs_n = 0;    
         d_in = TEST_VALUE_1;
@@ -73,26 +74,31 @@ module IC8216_testbench;
 
         #200;    
         // write, d_bus -> d_out
-        dce = 1;  
-
+        dce = 1;
+        
+        d_bus_reg = 4'b1111;
       
         #200;
         //  module is in OFF state (detached from buses)
+        //d_bus_source = 1'b0;
         d_in = TEST_VALUE_2;
         cs_n = 1;
         dce = 0;
         
         #200;
         // read, d_in -> d_bus
+        //d_bus_source = 1'b1;
         cs_n = 0;
         d_in = TEST_VALUE_2;
 
         #200;
         // write, d_bus -> d_out
         dce = 1;
+        d_bus_reg = 4'b1110;
         
         // module is OFF
         #200;
+        //d_bus_source = 1'b0;
         cs_n = 1;
     end
     
@@ -103,14 +109,15 @@ module IC8216_testbench;
             d_bus_reg <= 4'b0100;
         if (counter == 14)
         begin
-            d_bus_source <= 1'b1;
+            //d_bus_source <= 1'b1;
+            d_bus_reg <= 4'b1111;
             dce <= 1;                 // write, d_bus -> d_out
             cs_n <= 0;
         end
         if (counter == 16)
         begin
             cs_n <= 1;                // OFF
-            d_bus_source <= 0;
+            //d_bus_source <= 1'b0;
         end
          
         if (counter == 18)
@@ -118,12 +125,14 @@ module IC8216_testbench;
             d_in <= TEST_VALUE_3;
             dce <= 0;
             cs_n <= 0;
+            //d_bus_source = 1'b1;
         end
          
         if (counter == 20)
         begin
             cs_n <= 1;
             counter <= 0;
+            //d_bus_source <= 1'b0;
         end
     end
       

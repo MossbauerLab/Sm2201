@@ -25,34 +25,21 @@ module IC82x6 #
 )
 (
     input wire [3:0] d_in,
-    output reg [3:0] d_out,
+    output wire [3:0] d_out,
     inout wire [3:0] d_bus,
     input wire cs_n,
     input wire dce
 );
 
+wire [3:0] d_bus_write;
+wire [3:0] d_in_value;
+wire [3:0] d_bus_value;
 
-reg [3:0] d_bus_reg;
-assign d_bus = cs_n == 1'b0 ? ((dce== 1'b0) ? d_bus_reg : d_bus) : 4'bz;
+assign d_in_value = (INVERTED_OUTPUT == 0) ? d_in : ~d_in;
+assign d_bus_value = (INVERTED_OUTPUT == 0) ? d_bus : ~d_bus;
 
-always @(*)
-begin
-   if (cs_n == 1'b1)                                                             // chip is OFF
-    begin
-        d_out <= 4'bz;
-        d_bus_reg <= 4'bz;
-    end
-    else                                                                          // chip is ON
-    begin
-        if (dce == 1'b0)                                                          // READ: d_in -> d_bus
-        begin
-            d_bus_reg <= INVERTED_OUTPUT == 0 ? d_in : 15 - d_in;
-        end
-        else
-        begin
-            d_out <= INVERTED_OUTPUT == 0 ? d_bus_reg : 15  - d_bus_reg;         // WRITE: d_bus -> d_out via register
-        end
-    end
-end
+assign d_bus = (cs_n == 1'b0) ? d_bus_write : 4'bz;
+assign d_bus_write = (cs_n == 1'b0 && dce == 1'b0) ? d_in_value : 4'bz;
+assign d_out = (cs_n == 1'b0 && dce == 1'b1) ? d_bus_value : 4'bz;
 
 endmodule

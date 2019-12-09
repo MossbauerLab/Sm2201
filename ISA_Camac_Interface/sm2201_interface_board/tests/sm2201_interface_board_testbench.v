@@ -27,7 +27,7 @@ module sm2201_interface_board_testbench;
     // isa input signals
     reg isa_clk;
     reg isa_ior;
-    reg isa_iow;
+    wire isa_iow;
     reg isa_reset;
     reg isa_ale;
     reg isa_aen;
@@ -47,11 +47,12 @@ module sm2201_interface_board_testbench;
     reg cb_zk4;
     wire [15:0] cb_data;
     reg [15:0] cb_data_out;
-    reg [11:0] cb_addr;
+    wire [11:0] cb_addr;
     reg [7:0] isa_data_out;
 
-    assign cb_data = q_r_debug == 1'b0 ? cb_data_out : 16'b0000000000000000;
-    assign isa_data = q_r_debug == 1'b1 ? isa_data_out : 8'b1010001;
+    assign cb_data = q_r_debug == 1'b0 ? cb_data_out : 16'bz;//16'b0000000000000000;
+    assign isa_data = q_r_debug == 1'b1 ? isa_data_out : 8'bz;//8'b1010001;
+    assign isa_iow = ~ isa_ior;
 
     // Instantiate the Unit Under Test (UUT)
     sm2201_interface_board
@@ -73,7 +74,8 @@ module sm2201_interface_board_testbench;
         .cb_prr(cb_prr),
         .cb_zk4(cb_zk4),
         .cb_cx1(cb_cx1),
-        .cb_data(cb_data)
+        .cb_data(cb_data),
+        .cb_addr(cb_addr)
     );
 
     initial 
@@ -82,7 +84,6 @@ module sm2201_interface_board_testbench;
         isa_reset <= 0;
         isa_clk <= 0;
         isa_ior <= 1;
-        isa_iow <= 1;
         isa_addr <= 240;
         isa_ale <= 0;
         isa_aen <= 0;
@@ -91,7 +92,6 @@ module sm2201_interface_board_testbench;
         cb_zk4 <= 1;
         isa_data_out <= 8'b00011000;
         cb_data_out <= 16'b1111111111111111;
-        cb_addr <= 11'b00000000000;
         counter <= 0;
         operation <= 0;
     end
@@ -101,7 +101,7 @@ module sm2201_interface_board_testbench;
     begin
         #60 isa_clk <= ~isa_clk; 
         #120 counter <= counter + 1;
-        // ALE generation
+        // ISA ALE, IOR, IOW generation
         if (counter == 10) 
         begin
             isa_ale <= 1;
@@ -110,22 +110,17 @@ module sm2201_interface_board_testbench;
         begin
             if (operation == 0)
                 isa_ior <= 0;
-            else
-                isa_iow <= 0;
         end
         else if (counter == 44)
         begin
             isa_ale <= 0;
         end
-        else if (counter == 136)
+
+        else if (counter == 146)
         begin
             if (operation == 0)
                 isa_ior <= 1;
-            else
-                isa_iow <= 1;
-        end
-        else if (counter == 146)
-        begin
+
             counter <= 10;
             operation <= operation + 1;
             if (operation == 1)
