@@ -192,4 +192,77 @@ set_global_assignment -name VERILOG_FILE sm2201_interface_board/sm2201_interface
 set_global_assignment -name VERILOG_FILE sm2201_interface_board/src/dig_machine_ip3604.v
 set_global_assignment -name VERILOG_FILE sm2201_interface_board/src/dig_machine_ip3601.v
 set_global_assignment -name VERILOG_FILE sm2201_interface_board/lib/SN74LS07.v
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_addr[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_addr[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_addr[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_addr[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_addr[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_addr[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_addr[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_addr[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_addr[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_addr[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_addr[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_addr[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_addr
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_b_b1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_cx1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_cx3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to q_r_debug
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_data
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_pc4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_prepare_bus
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_prr
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_zk4
+set_location_assignment PIN_E11 -to cb_addr[11]
+set_location_assignment PIN_E12 -to cb_addr[10]
+set_location_assignment PIN_E13 -to cb_addr[9]
+set_location_assignment PIN_E14 -to cb_addr[8]
+set_location_assignment PIN_E15 -to cb_addr[7]
+set_location_assignment PIN_E16 -to cb_addr[6]
+set_location_assignment PIN_E10 -to cb_addr[5]
+set_location_assignment PIN_F7 -to cb_addr[4]
+set_location_assignment PIN_F8 -to cb_addr[3]
+set_location_assignment PIN_F9 -to cb_addr[2]
+set_location_assignment PIN_F10 -to cb_addr[1]
+set_location_assignment PIN_F11 -to cb_addr[0]
+set_location_assignment PIN_F12 -to cb_b_b1
+set_location_assignment PIN_F15 -to cb_cx1
+set_location_assignment PIN_F16 -to cb_cx3
+set_location_assignment PIN_F17 -to cb_data[15]
+set_location_assignment PIN_F21 -to cb_data[14]
+set_location_assignment PIN_F22 -to cb_data[13]
+set_location_assignment PIN_C1 -to cb_data[12]
+set_location_assignment PIN_C2 -to cb_data[11]
+set_location_assignment PIN_C3 -to cb_data[10]
+set_location_assignment PIN_C4 -to cb_data[9]
+set_location_assignment PIN_C6 -to cb_data[8]
+set_location_assignment PIN_C7 -to cb_data[7]
+set_location_assignment PIN_C8 -to cb_data[6]
+set_location_assignment PIN_C10 -to cb_data[5]
+set_location_assignment PIN_C13 -to cb_data[4]
+set_location_assignment PIN_C15 -to cb_data[3]
+set_location_assignment PIN_C17 -to cb_data[2]
+set_location_assignment PIN_C19 -to cb_data[1]
+set_location_assignment PIN_B4 -to cb_data[0]
+set_location_assignment PIN_B5 -to cb_pc4
+set_location_assignment PIN_B9 -to cb_prepare_bus
+set_location_assignment PIN_B8 -to cb_prr
+set_location_assignment IOBANK_2 -to cb_zk4
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

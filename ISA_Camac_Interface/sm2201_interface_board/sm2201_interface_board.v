@@ -44,7 +44,10 @@
 //       Read DATA procedure (from CAMAC to ISA):
 //            1) D_SEL must be set to 0 (D11 and D12 chip select)
 //            2) When DCE = 0 (q = 0, reading), we passes D11-D12 d_in to db
-//               a) Data on d11_in
+//               a) Data on d11_in:
+//                  - w = 0, SEL2 = 0 posedge n_c1 -> CAMAC D12-D15
+//                  - w = 1, SEL2 = 0 posedge n_c1 -> CAMAC D4-D7
+//                  - SEL2 = 1 CAMAC D4-D7
 //               b) Data on d12_in
 //
 //////////////////////////////////////////////////////////////////////////////////
