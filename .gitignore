@@ -10,6 +10,13 @@ ISA_Camac_Interface/incremental_db/
 
 ISA_Camac_Interface/output_files/
 
-ISA_Camac_Interface/simulation/
+# SIMULATION files
+ISA_Camac_Interface/simulation/modelsim/work/*
+ISA_Camac_Interface/simulation/modelsim/rtl_work/*
+ISA_Camac_Interface/simulation/modelsim/gate_work/*
+ISA_Camac_Interface/simulation/modelsim/wlft*
 
+# Backup and report files
+*.v.bak
 *.rpt
+*do.bak*
