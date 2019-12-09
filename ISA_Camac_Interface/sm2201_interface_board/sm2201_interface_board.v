@@ -129,8 +129,8 @@ wire [5:0] d14_out;
 wire [5:0] d17_data;
 wire [5:0] d17_out;
 
-wire d5_y1;
-wire d5_y2;
+//wire d5_y1;
+//wire d5_y2;
 
 wire [1:0] micro_program_automate_addr;
 wire interrupt_en;
@@ -255,8 +255,8 @@ assign d17_data[5] = rdy;
 
 
 // INTERNAL
-assign m_w = d5_y1;
-assign q_r = d5_y2;
+//assign m_w = d5_y1;
+//assign q_r = d5_y2;
 assign v_rp = d8_out[5];
 assign g_rd = isa_ior;
 assign p_wr = isa_iow;
@@ -405,10 +405,13 @@ SN74LS07 d18(.a6(d17_out[5]), .y6(f_tim),
              .a1(rdy), .y1(isa_chrdy)
              );
 
+rw_trigger rw_trig(.reset(global_reset), .ior(isa_ior), .iow(isa_iow), 
+                   .r(q_r), .w(m_w));
+
 // DD5
-SN74LS00 d5(.a1(isa_ior), .b1(d5_y2), .y1(d5_y1),
+/*SN74LS00 d5(.a1(isa_ior), .b1(d5_y2), .y1(d5_y1),
             .a2(isa_iow), .b2(d5_y1), .y2(d5_y2)
-            );
+            );*/
 
 address_request_decoder addr_decoder(.address(isa_addr), .ale(isa_ale), .aen(isa_aen), .ior(g_rd), .iow(p_wr), 
                                      .interrupt_req(v_rp), .zk4(cb_zk4), .sel(d_sel), .sel1(l_sel1), 
