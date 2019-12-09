@@ -20,3 +20,6 @@ ISA_Camac_Interface/simulation/modelsim/wlft*
 *.v.bak
 *.rpt
 *do.bak*
+*.vo
+*.sdo
+*.do
