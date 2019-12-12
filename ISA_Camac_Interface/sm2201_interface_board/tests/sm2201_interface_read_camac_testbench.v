@@ -42,6 +42,7 @@ module sm2201_interface_read_camac_testbench;
     wire [7:0] isa_data;
     reg [31:0] counter;
     reg [1:0] operation;        // 0 - read, 1 - write
+    reg [31:0] state;
 
     // isa output signals
     wire [7:0] isa_irq;
@@ -61,6 +62,10 @@ module sm2201_interface_read_camac_testbench;
     assign isa_data = q_r_debug == 1'b1 ? isa_data_out : isa_data_in;
     assign isa_iow = ~ isa_ior;
     assign isa_aen = isa_ale;
+
+
+    localparam reg[31:0] WRITE_ADDR_INT_REG_READY = 0;
+    localparam reg[31:0] WRITE_ADDR_INT_REG_SEND = 1;
 
     // Instantiate the Unit Under Test (UUT)
     sm2201_interface_board
@@ -101,6 +106,7 @@ module sm2201_interface_read_camac_testbench;
         cb_data_out <= 16'b0000000000000000;
         counter <= 0;
         operation <= 0;
+        state = INITIAL;
     end
     
     // we are model ISA logic
@@ -108,7 +114,7 @@ module sm2201_interface_read_camac_testbench;
     begin
         #60 isa_clk <= ~isa_clk; 
         #120 counter <= counter + 1;
-        // ISA ALE, IOR, IOW generation
+        // ISA ALE
         if (counter == 10) 
         begin
             isa_ale <= 1;
@@ -122,5 +128,16 @@ module sm2201_interface_read_camac_testbench;
         begin
             isa_addr <= 106;
         end
+        case (state)
+            WRITE_ADDR_INT_REG_READY:
+            begin
+            end
+            WRITE_ADDR_INT_REG_SEND:
+            begin
+            end
+            default:
+            begin
+            end
+        endcase
     end
 endmodule
