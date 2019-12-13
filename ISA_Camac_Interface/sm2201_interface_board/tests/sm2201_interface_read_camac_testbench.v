@@ -32,7 +32,7 @@ module sm2201_interface_read_camac_testbench;
     // isa input signals
     reg isa_clk;
     reg isa_ior;
-    wire isa_iow;
+    reg isa_iow;
     reg isa_reset;
     reg isa_ale;
     wire isa_aen;
@@ -60,7 +60,6 @@ module sm2201_interface_read_camac_testbench;
 
     assign cb_data = q_r_debug == 1'b0 ? cb_data_out : cb_data_in;
     assign isa_data = q_r_debug == 1'b1 ? isa_data_out : isa_data_in;
-    assign isa_iow = ~ isa_ior;
     assign isa_aen = isa_ale;
 
 
@@ -97,6 +96,7 @@ module sm2201_interface_read_camac_testbench;
         isa_reset <= 0;
         isa_clk <= 0;
         isa_ior <= 1;
+        isa_iow <= 1;
         isa_addr <= 240;
         isa_ale <= 0;
         // initial CAMAC
@@ -106,7 +106,6 @@ module sm2201_interface_read_camac_testbench;
         cb_data_out <= 16'b0000000000000000;
         counter <= 0;
         operation <= 0;
-        state = INITIAL;
     end
     
     // we are model ISA logic
@@ -115,29 +114,32 @@ module sm2201_interface_read_camac_testbench;
         #60 isa_clk <= ~isa_clk; 
         #120 counter <= counter + 1;
         // ISA ALE
-        if (counter == 10) 
+        if (counter == 50) 
         begin
             isa_ale <= 1;
         end
-        if (counter == 44)
+        if (counter == 84)
         begin
             isa_ale <= 0;
         end
-
-        if (counter == 146)
+        if (counter > 85 && counter < 186)
         begin
-            isa_addr <= 106;
+            if (counter == 86)
+            begin
+                operation <= 1'b1;
+                isa_addr <= 262;  // 106h
+                isa_iow <= 1'b0;
+                isa_data_out <= 8'b10100110;
+            end
+            if (counter == 115)
+            begin
+                isa_iow <= 1'b1;
+            end
+            // todo: switch addr and isa data possibly
         end
-        case (state)
-            WRITE_ADDR_INT_REG_READY:
-            begin
-            end
-            WRITE_ADDR_INT_REG_SEND:
-            begin
-            end
-            default:
-            begin
-            end
-        endcase
+        if (counter == 190)
+        begin
+            counter <= 0;
+        end
     end
 endmodule
