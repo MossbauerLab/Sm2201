@@ -43,6 +43,7 @@ module sm2201_interface_read_camac_testbench;
     reg [31:0] counter;
     reg [1:0] operation;        // 0 - read, 1 - write
     reg [31:0] state;
+    wire cb_b_b1;
 
     // isa output signals
     wire [7:0] isa_irq;
@@ -53,14 +54,17 @@ module sm2201_interface_read_camac_testbench;
     reg cb_zk4;
     wire [15:0] cb_data;
     reg [15:0] cb_data_out;
-    wire [15:0] cb_data_in;
+    //wire [15:0] cb_data_in;
+    //reg [15:0] cb_data_in_buffer;
     wire [11:0] cb_addr;
     reg [7:0] isa_data_out;
-    wire [7:0] isa_data_in;
+    //wire [7:0] isa_data_in;
+    
 
-    assign cb_data = q_r_debug == 1'b1 ? cb_data_out : cb_data_in;
-    assign isa_data = q_r_debug == 1'b1 ? isa_data_out : isa_data_in;
+    assign cb_data = cb_b_b1 == 1'b1 ? cb_data_out : 16'bz; //cb_data_in;
+    assign isa_data = q_r_debug == 1'b1 ? isa_data_out : 8'bz;// isa_data_in;
     assign isa_aen = isa_ale;
+    //assign cb_data_in = cb_data_in_buffer;
 
 
     localparam reg[31:0] WRITE_ADDR_INT_REG_READY = 0;
@@ -87,7 +91,8 @@ module sm2201_interface_read_camac_testbench;
         .cb_zk4(cb_zk4),
         .cb_cx1(cb_cx1),
         .cb_data(cb_data),
-        .cb_addr(cb_addr)
+        .cb_addr(cb_addr),
+        .cb_b_b1(cb_b_b1)
     );
 
     initial 
@@ -102,8 +107,9 @@ module sm2201_interface_read_camac_testbench;
         // initial CAMAC
         cb_prr <= 1;
         cb_zk4 <= 1;
-        isa_data_out <= 8'b00000000;
-        cb_data_out <= 16'b0000000000000000;
+        isa_data_out <= 16'b0000000000000000;
+        cb_data_out <= 16'b1100001000111000;
+        //cb_data_in_buffer <= 8'b00000000;
         counter <= 0;
         operation <= 0;
     end

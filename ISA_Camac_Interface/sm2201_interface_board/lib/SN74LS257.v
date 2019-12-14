@@ -34,7 +34,7 @@ module SN74LS257 #
     wire [3:0] selection;
     wire [3:0] internal_out;
     assign selection = select == 0 ? a : b;
-    assign internal_out = INVERTED_OUTPUT == 0 ? selection : 15 - selection;
+    assign internal_out = INVERTED_OUTPUT == 0 ? selection : ~selection;
     
     assign y = out_control == 0 ? internal_out : 4'b0000;
 endmodule
