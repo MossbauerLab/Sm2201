@@ -58,7 +58,7 @@ module sm2201_interface_read_camac_testbench;
     reg [7:0] isa_data_out;
     wire [7:0] isa_data_in;
 
-    assign cb_data = q_r_debug == 1'b0 ? cb_data_out : cb_data_in;
+    assign cb_data = q_r_debug == 1'b1 ? cb_data_out : cb_data_in;
     assign isa_data = q_r_debug == 1'b1 ? isa_data_out : isa_data_in;
     assign isa_aen = isa_ale;
 
@@ -132,6 +132,16 @@ module sm2201_interface_read_camac_testbench;
                 isa_data_out <= 8'b10100110;
             end
             if (counter == 115)
+            begin
+                isa_iow <= 1'b1;
+            end
+            if (counter == 155)
+            begin
+                isa_addr <= 263;//308;  // 2nd byte
+                isa_iow <= 1'b0;
+                isa_data_out <= 8'b00000000;
+            end
+            if (counter == 180)
             begin
                 isa_iow <= 1'b1;
             end
