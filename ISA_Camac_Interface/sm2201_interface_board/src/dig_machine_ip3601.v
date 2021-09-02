@@ -26,7 +26,7 @@ module dig_machine_ip3601(
 
 reg[3:0] selected_data;
 
-assign data = cs == 2'b00 ? ~selected_data : 4'b0000;
+assign data = cs == 2'b00 ? ~selected_data : 4'b0000;  // i don't actually know inverted or not!
 always @(*)
 begin
     case (address)
