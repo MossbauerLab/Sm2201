@@ -1,0 +1,340 @@
+# Reading C:/intelFPGA_pro/19.2/modelsim_ase/tcl/vsim/pref.tcl
+# do sm2201_interface_board_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+# vmap work rtl_work 
+# Copying C:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src {C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/rw_trigger.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:12:22 on Sep 06,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src" C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/rw_trigger.v 
+# -- Compiling module rw_trigger
+# 
+# Top level modules:
+# 	rw_trigger
+# End time: 23:12:22 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src {C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/address_request_decoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:12:24 on Sep 06,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src" C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/address_request_decoder.v 
+# -- Compiling module address_request_decoder
+# 
+# Top level modules:
+# 	address_request_decoder
+# End time: 23:12:24 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src {C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/micro_program_automate.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:12:24 on Sep 06,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src" C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/micro_program_automate.v 
+# -- Compiling module micro_program_automate
+# 
+# Top level modules:
+# 	micro_program_automate
+# End time: 23:12:24 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib {C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS374.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:12:24 on Sep 06,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib" C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS374.v 
+# -- Compiling module SN74LS374
+# 
+# Top level modules:
+# 	SN74LS374
+# End time: 23:12:24 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib {C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS365.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:12:24 on Sep 06,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib" C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS365.v 
+# -- Compiling module SN74LS365
+# 
+# Top level modules:
+# 	SN74LS365
+# End time: 23:12:24 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib {C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS298.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:12:24 on Sep 06,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib" C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS298.v 
+# -- Compiling module SN74LS298
+# 
+# Top level modules:
+# 	SN74LS298
+# End time: 23:12:24 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib {C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS257.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:12:24 on Sep 06,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib" C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS257.v 
+# -- Compiling module SN74LS257
+# 
+# Top level modules:
+# 	SN74LS257
+# End time: 23:12:24 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib {C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS27.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:12:24 on Sep 06,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib" C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS27.v 
+# -- Compiling module SN74LS27
+# 
+# Top level modules:
+# 	SN74LS27
+# End time: 23:12:24 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib {C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS00.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:12:24 on Sep 06,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib" C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS00.v 
+# -- Compiling module SN74LS00
+# 
+# Top level modules:
+# 	SN74LS00
+# End time: 23:12:24 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib {C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/IC82x6.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:12:25 on Sep 06,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib" C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/IC82x6.v 
+# -- Compiling module IC82x6
+# 
+# Top level modules:
+# 	IC82x6
+# End time: 23:12:25 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board {C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:12:25 on Sep 06,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board" C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v 
+# -- Compiling module sm2201_interface_board
+# 
+# Top level modules:
+# 	sm2201_interface_board
+# End time: 23:12:25 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src {C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/dig_machine_ip3604.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:12:25 on Sep 06,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src" C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/dig_machine_ip3604.v 
+# -- Compiling module dig_machine_ip3604
+# 
+# Top level modules:
+# 	dig_machine_ip3604
+# End time: 23:12:25 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src {C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/dig_machine_ip3601.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:12:25 on Sep 06,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src" C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/dig_machine_ip3601.v 
+# -- Compiling module dig_machine_ip3601
+# 
+# Top level modules:
+# 	dig_machine_ip3601
+# End time: 23:12:25 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib {C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS07.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:12:25 on Sep 06,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib" C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS07.v 
+# -- Compiling module SN74LS07
+# 
+# Top level modules:
+# 	SN74LS07
+# End time: 23:12:25 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/tests {C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/tests/sm2201_interface_board_bus_passivity_testbench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:12:25 on Sep 06,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/tests" C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/tests/sm2201_interface_board_bus_passivity_testbench.v 
+# -- Compiling module sm2201_interface_board_bus_passivity_testbench
+# 
+# Top level modules:
+# 	sm2201_interface_board_bus_passivity_testbench
+# End time: 23:12:25 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  sm2201_interface_board_bus_passivity_testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" sm2201_interface_board_bus_passivity_testbench 
+# Start time: 23:12:25 on Sep 06,2021
+# Loading work.sm2201_interface_board_bus_passivity_testbench
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.sm2201_interface_board
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.IC82x6
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.SN74LS298
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.SN74LS257
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.SN74LS374
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.SN74LS365
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.SN74LS07
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.rw_trigger
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.address_request_decoder
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.SN74LS00
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.SN74LS27
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.dig_machine_ip3601
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.micro_program_automate
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.dig_machine_ip3604
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-3017) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/tests/sm2201_interface_board_bus_passivity_testbench.v(71): [TFMPC] - Too few port connections. Expected 20, found 16.
+#    Time: 0 ps  Iteration: 0  Instance: /sm2201_interface_board_bus_passivity_testbench/uut File: C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/tests/sm2201_interface_board_bus_passivity_testbench.v(71): [TFMPC] - Missing connection for port 'isa_irq'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/tests/sm2201_interface_board_bus_passivity_testbench.v(71): [TFMPC] - Missing connection for port 'cb_prepare_bus'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/tests/sm2201_interface_board_bus_passivity_testbench.v(71): [TFMPC] - Missing connection for port 'cb_pc4'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/tests/sm2201_interface_board_bus_passivity_testbench.v(71): [TFMPC] - Missing connection for port 'cb_cx3'.
+# ** Warning: (vsim-3017) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(339): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /sm2201_interface_board_bus_passivity_testbench/uut/d1 File: C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/IC82x6.v
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(339): [TFMPC] - Missing connection for port 'd_out'.
+# ** Warning: (vsim-3017) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(349): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /sm2201_interface_board_bus_passivity_testbench/uut/d2 File: C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/IC82x6.v
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(349): [TFMPC] - Missing connection for port 'd_out'.
+# ** Warning: (vsim-3017) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(410): [TFMPC] - Too few port connections. Expected 12, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /sm2201_interface_board_bus_passivity_testbench/uut/d18 File: C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS07.v
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(410): [TFMPC] - Missing connection for port 'a2'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(410): [TFMPC] - Missing connection for port 'y2'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(410): [TFMPC] - Missing connection for port 'a4'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(410): [TFMPC] - Missing connection for port 'y4'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(410): [TFMPC] - Missing connection for port 'a5'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(410): [TFMPC] - Missing connection for port 'y5'.
+# ** Warning: (vsim-3017) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/address_request_decoder.v(86): [TFMPC] - Too few port connections. Expected 12, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /sm2201_interface_board_bus_passivity_testbench/uut/addr_decoder/d5 File: C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS00.v
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/address_request_decoder.v(86): [TFMPC] - Missing connection for port 'a1'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/address_request_decoder.v(86): [TFMPC] - Missing connection for port 'b1'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/address_request_decoder.v(86): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/address_request_decoder.v(86): [TFMPC] - Missing connection for port 'a2'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/address_request_decoder.v(86): [TFMPC] - Missing connection for port 'b2'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/address_request_decoder.v(86): [TFMPC] - Missing connection for port 'y2'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 10 ms
+add wave -position end sim:/sm2201_interface_board_bus_passivity_testbench/uut/automate/*
+restart -f
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-3017) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/tests/sm2201_interface_board_bus_passivity_testbench.v(71): [TFMPC] - Too few port connections. Expected 20, found 16.
+#    Time: 0 ps  Iteration: 0  Instance: /sm2201_interface_board_bus_passivity_testbench/uut File: C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/tests/sm2201_interface_board_bus_passivity_testbench.v(71): [TFMPC] - Missing connection for port 'isa_irq'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/tests/sm2201_interface_board_bus_passivity_testbench.v(71): [TFMPC] - Missing connection for port 'cb_prepare_bus'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/tests/sm2201_interface_board_bus_passivity_testbench.v(71): [TFMPC] - Missing connection for port 'cb_pc4'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/tests/sm2201_interface_board_bus_passivity_testbench.v(71): [TFMPC] - Missing connection for port 'cb_cx3'.
+# ** Warning: (vsim-3017) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(339): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /sm2201_interface_board_bus_passivity_testbench/uut/d1 File: C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/IC82x6.v
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(339): [TFMPC] - Missing connection for port 'd_out'.
+# ** Warning: (vsim-3017) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(349): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /sm2201_interface_board_bus_passivity_testbench/uut/d2 File: C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/IC82x6.v
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(349): [TFMPC] - Missing connection for port 'd_out'.
+# ** Warning: (vsim-3017) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(410): [TFMPC] - Too few port connections. Expected 12, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /sm2201_interface_board_bus_passivity_testbench/uut/d18 File: C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS07.v
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(410): [TFMPC] - Missing connection for port 'a2'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(410): [TFMPC] - Missing connection for port 'y2'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(410): [TFMPC] - Missing connection for port 'a4'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(410): [TFMPC] - Missing connection for port 'y4'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(410): [TFMPC] - Missing connection for port 'a5'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/sm2201_interface_board.v(410): [TFMPC] - Missing connection for port 'y5'.
+# ** Warning: (vsim-3017) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/address_request_decoder.v(86): [TFMPC] - Too few port connections. Expected 12, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /sm2201_interface_board_bus_passivity_testbench/uut/addr_decoder/d5 File: C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/lib/SN74LS00.v
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/address_request_decoder.v(86): [TFMPC] - Missing connection for port 'a1'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/address_request_decoder.v(86): [TFMPC] - Missing connection for port 'b1'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/address_request_decoder.v(86): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/address_request_decoder.v(86): [TFMPC] - Missing connection for port 'a2'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/address_request_decoder.v(86): [TFMPC] - Missing connection for port 'b2'.
+# ** Warning: (vsim-3722) C:/Users/michael/Projects/Messbauer/sm2201/SM2201/Sm2201/ISA_Camac_Interface/sm2201_interface_board/src/address_request_decoder.v(86): [TFMPC] - Missing connection for port 'y2'.
+run -all
