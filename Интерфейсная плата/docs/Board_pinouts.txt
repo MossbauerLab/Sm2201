@@ -1,0 +1,67 @@
+   Port			Direction	  Pin		 I/O Standard	Board Connector		Board Pin	Ext Connector	Ext Connector Pin
+cb_addr[11]		Output		PIN_H2		3.3-V LVTTL			U7					18		CAMAC				
+cb_addr[10]		Output		PIN_H1		3.3-V LVTTL			U7					17		CAMAC				
+cb_addr[9]		Output		PIN_J2		3.3-V LVTTL			U7					16		CAMAC				
+cb_addr[8]		Output		PIN_J1		3.3-V LVTTL			U7					15		CAMAC				
+cb_addr[7]		Output		PIN_M2		3.3-V LVTTL			U7					14		CAMAC				
+cb_addr[6]		Output		PIN_M1		3.3-V LVTTL			U7					13		CAMAC				
+cb_addr[5]		Output		PIN_N2 		3.3-V LVTTL			U7					12		CAMAC				
+cb_addr[4]		Output		PIN_N1		3.3-V LVTTL			U7					11		CAMAC				
+cb_addr[3]		Output		PIN_P2		3.3-V LVTTL			U7					10		CAMAC				
+cb_addr[2]		Output		PIN_P1		3.3-V LVTTL			U7					9		CAMAC				
+cb_addr[1]		Output		PIN_R2		3.3-V LVTTL			U7					8		CAMAC				
+cb_addr[0]		Output		PIN_R1		3.3-V LVTTL			U7					7		CAMAC				
+cb_b_b1			Output		PIN_F1		3.3-V LVTTL			U7					19		CAMAC				
+cb_cx1			Output		PIN_F2 		3.3-V LVTTL			U7					20		CAMAC				
+cb_cx3			Output		PIN_E1		3.3-V LVTTL			U7					21		CAMAC				
+cb_data[15]		Bidir		PIN_B7		3.3-V LVTTL			U7					37		CAMAC				
+cb_data[14]		Bidir		PIN_A6		3.3-V LVTTL			U7					36		CAMAC				
+cb_data[13]		Bidir		PIN_B6		3.3-V LVTTL			U7					35		CAMAC				
+cb_data[12]		Bidir		PIN_A5		3.3-V LVTTL			U7					34		CAMAC				
+cb_data[11]		Bidir		PIN_B5		3.3-V LVTTL			U7					33		CAMAC				
+cb_data[10]		Bidir		PIN_C3		3.3-V LVTTL			U7					32		CAMAC				
+cb_data[9]		Bidir		PIN_C4		3.3-V LVTTL			U7					31		CAMAC				
+cb_data[8]		Bidir		PIN_A4		3.3-V LVTTL			U7					30		CAMAC				
+cb_data[7]		Bidir		PIN_B4		3.3-V LVTTL			U7					29		CAMAC				
+cb_data[6]		Bidir		PIN_A3		3.3-V LVTTL			U7					28		СAMAC				
+cb_data[5]		Bidir		PIN_B3		3.3-V LVTTL			U7					27		CAMAC				
+cb_data[4]		Bidir		PIN_B2		3.3-V LVTTL			U7					26		CAMAC				
+cb_data[3]		Bidir		PIN_B1		3.3-V LVTTL			U7					25		CAMAC				
+cb_data[2]		Bidir		PIN_C2		3.3-V LVTTL			U7					24		CAMAC				
+cb_data[1]		Bidir		PIN_C1		3.3-V LVTTL			U7					23		CAMAC				
+cb_data[0]		Bidir		PIN_D2		3.3-V LVTTL			U7					22		CAMAC				
+cb_pc4			Output		PIN_B10		3.3-V LVTTL			U7					43		CAMAC				
+cb_prepare_bus	Output		PIN_B9		3.3-V LVTTL			U7					41		CAMAC				
+cb_prr			Input		PIN_B8		3.3-V LVTTL			U7					39		CAMAC				
+cb_zk4			Input		PIN_A8		3.3-V LVTTL			U7					40		CAMAC				
+isa_addr[9]		Input		PIN_U21		3.3-V LVTTL			U8					30		ISA					A22
+isa_addr[8]		Input		PIN_U22		3.3-V LVTTL			U8					29		ISA					A23
+isa_addr[7]		Input		PIN_V21		3.3-V LVTTL			U8					28		ISA					A24
+isa_addr[6]		Input		PIN_V22		3.3-V LVTTL			U8					27		ISA					A25
+isa_addr[5]		Input		PIN_W21		3.3-V LVTTL			U8					26		ISA					A26
+isa_addr[4]		Input		PIN_W22		3.3-V LVTTL			U8					25		ISA					A27
+isa_addr[3]		Input		PIN_Y21		3.3-V LVTTL			U8					24		ISA					A28
+isa_addr[2]		Input		PIN_Y22		3.3-V LVTTL			U8					23		ISA					A29
+isa_addr[1]		Input		PIN_AB20	3.3-V LVTTL			U8					22		ISA					A30
+isa_addr[0]		Input		PIN_AA20	3.3-V LVTTL			U8					21		ISA					A31
+isa_aen			Input		PIN_D21		3.3-V LVTTL			U8					52		ISA					A11
+isa_ale			Input		PIN_E21		3.3-V LVTTL			U8					50		ISA					B28
+isa_chrdy		Output		PIN_D22		3.3-V LVTTL			U8					51		ISA					A10
+isa_clk			Input		PIN_E22		3.3-V LVTTL			U8					49		ISA					B20
+isa_data[7]		Bidir		PIN_C22		3.3-V LVTTL			U8					53		ISA					A2
+isa_data[6]		Bidir		PIN_C21		3.3-V LVTTL			U8					54		ISA					A3
+isa_data[5]		Bidir		PIN_B22		3.3-V LVTTL			U8					55		ISA					A4
+isa_data[4]		Bidir		PIN_B21		3.3-V LVTTL			U8					56		ISA					A5
+isa_data[3]		Bidir		PIN_N20		3.3-V LVTTL			U8					57		ISA					A6
+isa_data[2]		Bidir		PIN_N19		3.3-V LVTTL			U8					58		ISA					A7
+isa_data[1]		Bidir		PIN_M20		3.3-V LVTTL			U8					59		ISA					A8
+isa_data[0]		Bidir		PIN_M19		3.3-V LVTTL			U8					60		ISA					A9
+isa_ior			Input		PIN_K21		3.3-V LVTTL			U8					42		ISA					B14
+isa_iow			Input		PIN_J22		3.3-V LVTTL			U8					43		ISA					B13
+isa_irq[7]		Output		PIN_R22		3.3-V LVTTL			U8					31		ISA					B21
+isa_irq[6]		Output		PIN_R21		3.3-V LVTTL			U8					32		ISA					B22
+isa_irq[5]		Output		PIN_P22		3.3-V LVTTL			U8					33		ISA					B23
+isa_irq[4]		Output		PIN_P21		3.3-V LVTTL			U8					34		ISA					B24
+isa_irq[3]		Output		PIN_N22		3.3-V LVTTL			U8					35		ISA					B25
+isa_reset		Input		PIN_AA19	3.3-V LVTTL			U8					19		ISA					B2
+q_r_debug		Output		PIN_B17		3.3-V LVTTL			U8

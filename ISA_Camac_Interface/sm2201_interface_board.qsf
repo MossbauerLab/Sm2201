@@ -130,7 +130,7 @@ set_location_assignment PIN_E21 -to isa_ale
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_ale
 set_location_assignment PIN_R21 -to isa_irq[6]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_irq[6]
-set_location_assignment PIN_AB19 -to isa_irq[2]
+set_location_assignment PIN_N21 -to isa_irq[2]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_irq[2]
 set_location_assignment PIN_J22 -to isa_iow
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to isa_iow
@@ -219,41 +219,41 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_pc4
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_prepare_bus
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_prr
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cb_zk4
-set_location_assignment PIN_E11 -to cb_addr[11]
-set_location_assignment PIN_E12 -to cb_addr[10]
-set_location_assignment PIN_E13 -to cb_addr[9]
-set_location_assignment PIN_E14 -to cb_addr[8]
-set_location_assignment PIN_E15 -to cb_addr[7]
-set_location_assignment PIN_E16 -to cb_addr[6]
-set_location_assignment PIN_E10 -to cb_addr[5]
-set_location_assignment PIN_F7 -to cb_addr[4]
-set_location_assignment PIN_F8 -to cb_addr[3]
-set_location_assignment PIN_F9 -to cb_addr[2]
-set_location_assignment PIN_F10 -to cb_addr[1]
-set_location_assignment PIN_F11 -to cb_addr[0]
-set_location_assignment PIN_F12 -to cb_b_b1
-set_location_assignment PIN_F15 -to cb_cx1
-set_location_assignment PIN_F16 -to cb_cx3
-set_location_assignment PIN_F17 -to cb_data[15]
-set_location_assignment PIN_F21 -to cb_data[14]
-set_location_assignment PIN_F22 -to cb_data[13]
-set_location_assignment PIN_C1 -to cb_data[12]
-set_location_assignment PIN_C2 -to cb_data[11]
+set_location_assignment PIN_H2 -to cb_addr[11]
+set_location_assignment PIN_H1 -to cb_addr[10]
+set_location_assignment PIN_J2 -to cb_addr[9]
+set_location_assignment PIN_J1 -to cb_addr[8]
+set_location_assignment PIN_M2 -to cb_addr[7]
+set_location_assignment PIN_M1 -to cb_addr[6]
+set_location_assignment PIN_N2 -to cb_addr[5]
+set_location_assignment PIN_N1 -to cb_addr[4]
+set_location_assignment PIN_P2 -to cb_addr[3]
+set_location_assignment PIN_P1 -to cb_addr[2]
+set_location_assignment PIN_R2 -to cb_addr[1]
+set_location_assignment PIN_R1 -to cb_addr[0]
+set_location_assignment PIN_F1 -to cb_b_b1
+set_location_assignment PIN_F2 -to cb_cx1
+set_location_assignment PIN_E1 -to cb_cx3
+set_location_assignment PIN_B7 -to cb_data[15]
+set_location_assignment PIN_A6 -to cb_data[14]
+set_location_assignment PIN_B6 -to cb_data[13]
+set_location_assignment PIN_A5 -to cb_data[12]
+set_location_assignment PIN_B5 -to cb_data[11]
 set_location_assignment PIN_C3 -to cb_data[10]
 set_location_assignment PIN_C4 -to cb_data[9]
-set_location_assignment PIN_C6 -to cb_data[8]
-set_location_assignment PIN_C7 -to cb_data[7]
-set_location_assignment PIN_C8 -to cb_data[6]
-set_location_assignment PIN_C10 -to cb_data[5]
-set_location_assignment PIN_C13 -to cb_data[4]
-set_location_assignment PIN_C15 -to cb_data[3]
-set_location_assignment PIN_C17 -to cb_data[2]
-set_location_assignment PIN_C19 -to cb_data[1]
-set_location_assignment PIN_B4 -to cb_data[0]
-set_location_assignment PIN_B5 -to cb_pc4
+set_location_assignment PIN_A4 -to cb_data[8]
+set_location_assignment PIN_B4 -to cb_data[7]
+set_location_assignment PIN_A3 -to cb_data[6]
+set_location_assignment PIN_B3 -to cb_data[5]
+set_location_assignment PIN_B2 -to cb_data[4]
+set_location_assignment PIN_B1 -to cb_data[3]
+set_location_assignment PIN_C2 -to cb_data[2]
+set_location_assignment PIN_C1 -to cb_data[1]
+set_location_assignment PIN_D2 -to cb_data[0]
+set_location_assignment PIN_B10 -to cb_pc4
 set_location_assignment PIN_B9 -to cb_prepare_bus
 set_location_assignment PIN_B8 -to cb_prr
-set_location_assignment IOBANK_2 -to cb_zk4
+set_location_assignment PIN_A8 -to cb_zk4
 set_global_assignment -name ENABLE_SIGNALTAP OFF
 set_global_assignment -name USE_SIGNALTAP_FILE sm2201_iface_board_isa_analyzer.stp
 set_global_assignment -name SIGNALTAP_FILE output_files/analyzer_profile.stp
@@ -279,4 +279,7 @@ set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/mic
 set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/address_request_decoder_testbench.v -section_id address_request_decoder_testbench -library work
 set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/sm2201_interface_read_camac_testbench.v -section_id sm2201_interface_read_camac_testbench -library work
 set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/sm2201_interface_board_bus_passivity_testbench.v -section_id sm2201_interface_board_bus_passivity_testbench
+set_location_assignment PIN_M22 -to isa_irq[1]
+set_location_assignment PIN_M21 -to isa_irq[0]
+set_location_assignment PIN_B17 -to q_r_debug
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
