@@ -1,0 +1,39 @@
+ISA - Industry Standard Architecture. Most computers had ISA slots, but nowadays it is mostly replaced by PCI. The ISA bus protocol is quite simple. ISA supports 8 bit mode as well as 16 bit mode. If you have a look at a 16-bit ethernet card you'll see that it's connectors are split into two groups. The smaller one is only used in 16-bit mode - normally, the NIC looks on power up if the second group is connected and chooses thereupon the operation mode. Every ISA card is configured for a base address and an IRQ line. These two parameters make it possible to have more than one card on the ISA bus.
+
+Here are the pinouts for the ISA Bus. The "Rear of Computer" means the back of the computer. Ex: If you had a 8 bit modem, it would be the side you would plug the phone cord into with the card in the slot.
+
+ISA Bus (8-bit) Pinouts
+          Rear of Computer/Looking from the top
+                    :------:------:
+             GROUND |- B1     A1 -| I/O CH CHK
+          RESET DRV |- B2     A2 -| DATA 7
+              +5VDC |- B3     A3 -| DATA 6
+              IRQ 9 |- B4     A4 -| DATA 5
+              -5VDC |- B5     A5 -| DATA 4
+              DRQ 2 |- B6     A6 -| DATA 3
+             -12VDC |- B7     A7 -| DATA 2
+            -0 WAIT |- B8     A8 -| DATA 1
+             +12VDC |- B9     A9 -| DATA 0
+             GROUND |- B10   A10 -| -I/O RDY
+             -SMEMW |- B11   A11 -| AEN
+             -SMEMR |- B12   A12 -| ADDR 19
+               -IOW |- B13   A13 -| ADDR 18
+               -IOR |- B14   A14 -| ADDR 17
+            -DACK 3 |- B15   A15 -| ADDR 16
+              DRQ 3 |- B16   A16 -| ADDR 15
+            -DACK 1 |- B17   A17 -| ADDR 14
+              DRQ 1 |- B18   A18 -| ADDR 13
+           -REFRESH |- B19   A19 -| ADDR 12
+      CLK (4.77MHz) |- B20   A20 -| ADDR 11
+              IRQ 7 |- B21   A21 -| ADDR 10
+              IRQ 6 |- B22   A22 -| ADDR 9
+              IRQ 5 |- B23   A23 -| ADDR 8
+              IRQ 4 |- B24   A24 -| ADDR 7
+              IRQ 3 |- B25   A25 -| ADDR 6
+            -DACK 2 |- B26   A26 -| ADDR 5
+                T/C |- B27   A27 -| ADDR 4
+               BALE |- B28   A28 -| ADDR 3
+              +5VDC |- B29   A29 -| ADDR 2
+       OSC(14.3MHz) |- B30   A30 -| ADDR 1
+             GROUND |- B31   A31 -| ADDR 0
+                    :------:------:

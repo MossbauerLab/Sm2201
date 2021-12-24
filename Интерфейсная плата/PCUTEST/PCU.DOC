@@ -1,0 +1,802 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0\fnil\fcharset204{\*\fname Courier New;}Courier New Cyr;}}
+\viewkind4\uc1\pard\lang1049\f0\fs20\par
+                      \'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'ed\'ee\'e5\par
+                            I\'c2\'cc \'d0\'d1-\'ca\'c0\'cc\'c0\'ca\par
+\par
+                        \'d2\'e5\'f5\'ed\'e8\'f7\'e5\'f1\'ea\'ee\'e5 \'ee\'ef\'e8\'f1\'e0\'ed\'e8\'e5\par
+                     \'e8\'ed\'f1\'f2\'f0\'f3\'ea\'f6\'e8\'ff \'ef\'ee \'fd\'ea\'f1\'ef\'eb\'f3\'e0\'f2\'e0\'f6\'e8\'e8\par
+\par
+\par
+\par
+                            \'d1\'ee\'e4\'e5\'f0\'e6\'e0\'ed\'e8\'e5\par
+1.\'c2\'e2\'e5\'e4\'e5\'ed\'e8\'e5........................................................3\par
+2.\'cd\'e0\'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5......................................................4\par
+3.\'d2\'e5\'f5\'ed\'e8\'f7\'e5\'f1\'ea\'e8\'e5 \'e4\'e0\'ed\'ed\'fb\'e5..............................................5\par
+4.\'d1\'ee\'f1\'f2\'e0\'e2 \'e8\'e7\'e4\'e5\'eb\'e8\'ff..................................................5\par
+5.\'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'e8 \'f0\'e0\'e1\'ee\'f2\'e0 \'e8\'e7\'e4\'e5\'eb\'e8\'ff.....................................6\par
+5.1.\'cf\'ee\'f0\'f2\'fb \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0..............................................8\par
+5.2.\'c7\'e0\'ef\'e8\'f1\'fc \'e2 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0 \'e8 \'f1\'f2\'e0\'ed\'f6\'e8\'e8 \'ea\'f0\'e5\'e9\'f2\'e0....................8\par
+5.3.\'c2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'e5 \'f4\'f3\'ed\'ea\'f6\'e8\'e8 \'f7\'f2\'e5\'ed\'e8\'ff....................................11\par
+5.4.\'d6\'e8\'ea\'eb \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'ff..............................................12\par
+5.5.\'ce\'ef\'e8\'f1\'e0\'ed\'e8\'e5 \'ef\'f0\'e8\'ed\'f6\'e8\'ef\'e8\'e0\'eb\'fc\'ed\'ee\'e9 \'fd\'eb\'e5\'ea\'f2\'f0\'e8\'f7\'e5\'f1\'ea\'e8\'e9 \'f1\'f5\'e5\'ec\'fb..................13\par
+6.\'d3\'ea\'e0\'e7\'e0\'ed\'e8\'ff \'ec\'e5\'f0 \'e1\'e5\'e7\'ee\'ef\'e0\'f1\'ed\'ee\'f1\'f2\'e8......................................18\par
+7.\'cf\'ee\'f0\'ff\'e4\'ee\'ea \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'ea\'e8 \'e8 \'ef\'ee\'e4\'e3\'ee\'f2\'ee\'e2\'ea\'e8  \'ea \'f0\'e0\'e1\'ee\'f2\'e5.......................19\par
+8.\'cf\'ee\'f0\'ff\'e4\'ee\'ea \'f0\'e0\'e1\'ee\'f2\'fb.................................................20\par
+9.\'cf\'f0\'ee\'e2\'e5\'f0\'ea\'e0 \'f2\'e5\'f5\'ed\'e8\'f7\'e5\'f1\'ea\'ee\'e3\'ee \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'ff................................20\par
+10.\'c2\'ee\'e7\'ec\'ee\'e6\'ed\'fb\'e5 \'ed\'e5\'e8\'f1\'ef\'f0\'e0\'e2\'ed\'ee\'f1\'f2\'e8 \'e8 \'f1\'ef\'ee\'f1\'ee\'e1\'fb \'e8\'f5 \'f3\'f1\'f2\'f0\'e0\'ed\'e5\'ed\'e8\'ff...............21\par
+11.\'d2\'e5\'f5\'ed\'e8\'f7\'e5\'f1\'ea\'ee\'e5 \'ee\'e1\'f1\'eb\'f3\'e6\'e8\'e2\'e0\'ed\'e8\'e5......................................22\par
+\par
+\'cf\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'e5 1. \'cb\'e8\'ed\'e8\'e8 \'f8\'e8\'ed\'fb IBM PC..................................23\par
+\'cf\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'e5 2. \'ca\'e0\'e1\'e5\'eb\'fc \'f1\'ee\'e5\'e4\'e8\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'e9 \'e4\'eb\'ff \'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0 \'ca-16.........25\par
+\'cf\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'e5 3. \'ca\'e0\'e1\'e5\'eb\'fc \'f1\'ee\'e5\'e4\'e8\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'e9 \'e4\'eb\'ff \'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0 \'ca\'ca...........27\par
+\par
+\par
+                             1.\'c2\'e2\'e5\'e4\'e5\'ed\'e8\'e5\par
+\par
+     \'cd\'e0\'f1\'f2\'ee\'ff\'f9\'e5\'e5  \'f2\'e5\'f5\'ed\'e8\'f7\'e5\'f1\'ea\'ee\'e5  \'ee\'ef\'e8\'f1\'e0\'ed\'e8\'e5  \'ef\'f0\'e5\'e4\'ed\'e0\'e7\'ed\'e0\'f7\'e5\'ed\'ee  \'e4\'eb\'ff  \'e8\'e7\'f3\'f7\'e5\'ed\'e8\'ff\par
+\'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'ed\'ee\'e3\'ee \'e8 \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'f2 \'f1\'e2\'e5\'e4\'e5\'ed\'e8\'ff, \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'fb\'e5  \'e4\'eb\'ff  \'e5\'e3\'ee\par
+\'e8\'e7\'f3\'f7\'e5\'ed\'e8\'ff \'e8 \'ef\'ee\'e4\'e4\'e5\'f0\'e6\'e0\'ed\'e8\'ff \'e2 \'f0\'e0\'e1\'ee\'f7\'e5\'ec \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'e8.\par
+\par
+\par
+                            2.\'cd\'e0\'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5\par
+\par
+    \'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'ed\'ee\'e5  PCU v.5.0   (\'e2  \'e4\'e0\'eb\'fc\'ed\'e5\'e9\'f8\'e5\'ec  \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee),\par
+\'ef\'f0\'e5\'e4\'ed\'e0\'e7\'ed\'e0\'f7\'e5\'ed\'ee \'e4\'eb\'ff \'f1\'e2\'ff\'e7\'e8 \'dd\'c2\'cc IBM PC (\'c0\'d2,\'d5\'d2, \'cf\'f0\'e0\'e2\'e5\'f6 16)   \'f1  \'ec\'ee\'e4\'f3\'eb\'ff\'ec\'e8 \par
+\'ca\'c0\'cc\'c0\'ca \'e8 \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'ef\'ee\'e4\'ea\'eb\'fe\'f7\'e0\'f2\'fc \'ea \'dd\'c2\'cc \'e4\'ee \'f7\'e5\'f2\'fb\'f0\'e5\'f5 \'ea\'f0\'e5\'e9\'f2\'ee\'e2 \'ca\'c0\'cc\'c0\'ca.\par
+     \'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'f0\'e0\'e1\'ee\'f2\'e0\'e5\'f2 \'e2 \'f1\'eb\'e5\'e4\'f3\'fe\'f9\'e8\'f5 \'f3\'f1\'eb\'ee\'e2\'e8\'ff\'f5 \'fd\'ea\'f1\'ef\'eb\'f3\'e0\'f2\'e0\'f6\'e8\'e8:\par
+     \'f2\'e5\'ec\'ef\'e5\'f0\'e0\'f2\'f3\'f0\'e0 \'ee\'ea\'f0\'f3\'e6\'e0\'fe\'f9\'e5\'e3\'ee \'e2\'ee\'e7\'e4\'f3\'f5\'e0 \'ee\'f2 10 \'e4\'ee 35 \'d1,\par
+     \'ee\'f2\'ed\'ee\'f1\'e8\'f2\'e5\'eb\'fc\'ed\'e0\'ff \'e2\'eb\'e0\'e6\'ed\'ee\'f1\'f2\'fc \'ee\'ea\'f0\'f3\'e6\'e0\'fe\'f9\'e5\'e3\'ee  \'e2\'ee\'e7\'e4\'f3\'f5\'e0  \'ef\'f0\'e8  \'f2\'e5\'ec\'ef\'e5\'f0\'e0\'f2\'f3\'f0\'e5 \par
+25\'d1 \'e4\'ee 80%,\par
+     \'e0\'f2\'ec\'ee\'f1\'f4\'e5\'f0\'ed\'ee\'e5 \'e4\'e0\'e2\'eb\'e5\'ed\'e8\'e5 \'ee\'f2 84 \'e4\'ee 107 \'ea\'cf\'e0 (\'ee\'f2 360 \'e4\'ee 800 \'ec\'ec.\'f0\'f2.\'f1\'f2)\par
+     \'ef\'e8\'f2\'e0\'ed\'e8\'e5  \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0  \'ee\'f1\'f3\'f9\'e5\'f1\'f2\'e2\'eb\'ff\'e5\'f2\'f1\'ff  \'ee\'f2   \'f8\'e8\'ed\'fb   \'ef\'e8\'f2\'e0\'ed\'e8\'ff   \'dd\'c2\'cc \par
+\'ed\'e0\'ef\'f0\'ff\'e6\'e5\'ed\'e8\'e5\'ec \'ef\'ee\'f1\'f2\'ee\'ff\'ed\'ed\'ee\'e3\'ee \'f2\'ee\'ea\'e0 (5 +/- 10%) \'c2.\par
+\par
+                        3.\'d2\'e5\'f5\'ed\'e8\'f7\'e5\'f1\'ea\'e8\'e5 \'e4\'e0\'ed\'ed\'fb\'e5\par
+     3.1.\'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'ee\'e1\'e5\'f1\'ef\'e5\'f7\'e8\'e2\'e0\'e5\'f2 \'f3\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'e5  \'ea\'f0\'e5\'e9\'f2\'ee\'ec  \'ca\'c0\'cc\'c0\'ca  (\'f7\'e5\'f0\'e5\'e7\par
+\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0 \'ca16 \'e8\'eb\'e8 \'ca\'ca), \'f1\'ee\'e4\'e5\'f0\'e6\'e0\'f9\'e8\'ec \'e4\'ee 23 \'f1\'ec\'e5\'ed\'ed\'fb\'f5 \'e1\'eb\'ee\'ea\'ee\'e2.\par
+     3.2.\'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee  \'ee\'e1\'e5\'f1\'ef\'e5\'f7\'e8\'e2\'e0\'e5\'f2  \'ef\'f0\'e8\'e5\'ec  \'e8\'e7  \'dd\'c2\'cc  \'ea\'ee\'e4\'ee\'e2  \'ea\'ee\'ec\'e0\'ed\'e4  \'e8\par
+\'f1\'eb\'f3\'e6\'e5\'e1\'ed\'ee\'e9 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e8.\par
+     3.3.\'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'f4\'e8\'ea\'f1\'e8\'f0\'f3\'e5\'f2 \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'ff \'ee\'f2  \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0  \'e1\'e5\'e7\par
+\'e8\'e4\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f6\'e8\'e8  \'e2\'e5\'ea\'f2\'ee\'f0\'e0  \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'ff.  \'cf\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'e5  \'ee\'e1\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'e5\'f2\'f1\'ff  \'ed\'e0\par
+\'f3\'f0\'ee\'e2\'ed\'ff\'f5 \'ef\'f0\'e8\'ee\'f0\'e8\'f2\'e5\'f2\'e0 \'ee\'f2 3 \'e4\'ee 7.\par
+     3.4.\'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'ee\'e1\'e5\'f1\'ef\'e5\'f7\'e8\'e2\'e0\'e5\'f2 \'ee\'e1\'ec\'e5\'ed 24-\'f0\'e0\'e7\'f0\'ff\'e4\'ed\'fb\'ec\'e8 \'f1\'eb\'ee\'e2\'e0\'ec\'e8 \'e7\'e0 \'e4\'e2\'e0\par
+\'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'ff \'ea \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'f3.\par
+     3.5.\'cf\'e5\'f0\'e5\'e4\'e0\'f7\'e0  \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e8  \'ec\'e5\'e6\'e4\'f3  \'dd\'c2\'cc  \'e8  \'ca\'c0\'cc\'c0\'ca  \'ef\'f0\'ee\'e8\'f1\'f5\'ee\'e4\'e8\'f2   \'e2 \par
+\'ef\'e0\'f0\'e0\'eb\'eb\'e5\'eb\'fc\'ed\'ee\'ec 16 \'e1\'e8\'f2\'ee\'e2\'ee\'ec \'ea\'ee\'e4\'e5.\par
+     3.6.\'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'e8\'ec\'e5\'e5\'f2 \'e4\'e2\'e5 \'e3\'f0\'f3\'ef\'ef\'fb \'f0\'e5\'e3\'e8\'f1\'f2\'f0\'ee\'e2 \'f1 \'e0\'e4\'f0\'e5\'f1\'e0\'ec\'e8:\par
+     100-106 (200-206) - \'f0\'e5\'e3\'e8\'f1\'f2\'f0\'fb \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0,\par
+     120-13F (220-23F) - \'f0\'e5\'e3\'e8\'f1\'f2\'f0\'fb \'e2\'fb\'e1\'f0\'e0\'ed\'ed\'ee\'e9 \'f1\'f2\'e0\'ed\'f6\'e8\'e8 \'ea\'f0\'e5\'e9\'f2\'e0.\par
+     3.7.\'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'ee\'e1\'e5\'f1\'ef\'e5\'f7\'e8\'e2\'e0\'e5\'f2  \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'e5  \'e0\'e4\'f0\'e5\'f1\'ee\'e2  \'f0\'e5\'e3\'e8\'f1\'f2\'f0\'ee\'e2 \par
+\'ec\'ee\'e4\'f3\'eb\'e5\'e9 \'ca\'c0\'cc\'c0\'ca \'ea\'e0\'ea \'e0\'e4\'f0\'e5\'f1\'ee\'e2 \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'fe\'f9\'f5 \'ef\'ee\'f0\'f2\'ee\'e2 \'dd\'c2\'cc.\par
+\'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'ee\'e1\'e5\'f1\'ef\'e5\'f7\'e8\'e2\'e0\'e5\'f2 \'f1\'e2\'ff\'e7\'fc \'dd\'c2\'cc \'f1 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0\'ec\'e8,   \'e8\'ec\'e5\'fe\'f9\'e8\'ec\'e8\par
+\'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'f2\'e8\'ef\'e0 "\'ce\'e1\'f9\'e0\'ff \'f8\'e8\'ed\'e0".\par
+     3.8.\'cf\'ee  \'f3\'f0\'ee\'e2\'ed\'ff\'ec  \'e2\'f5\'ee\'e4\'ed\'fb\'f5  \'e8  \'e2\'fb\'f5\'ee\'e4\'ed\'fb\'f5   \'ed\'e0\'ef\'f0\'ff\'e6\'e5\'ed\'e8\'e9   \'e8   \'f2\'ee\'ea\'ee\'e2 \par
+\'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'ee\'f2\'e2\'e5\'f7\'e0\'e5\'f2 \'f2\'f0\'e5\'e1\'ee\'e2\'e0\'ed\'e8\'ff\'ec \'c3\'ce\'d1\'d2 26.201-80.\par
+\par
+                          4.\'d1\'ee\'f1\'f2\'e0\'e2 \'e8\'e7\'e4\'e5\'eb\'e8\'ff\par
+\'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'ed\'ee\'e5 PCU v.5.0, 1 \'f8\'f2.\par
+\par
+\par
+                    5.\'ce\'ef\'e8\'f1\'e0\'ed\'e8\'e5 \'f0\'e0\'e1\'ee\'f2\'fb \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0\par
+     \'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'f0\'e0\'e1\'ee\'f2\'e0\'e5\'f2 \'e2 \'f1\'ee\'f1\'f2\'e0\'e2\'e5  \'dd\'c2\'cc,  \'f3\'f1\'f2\'e0\'ed\'e0\'e2\'eb\'e8\'e2\'e0\'e5\'f2\'f1\'ff  \'e2  \'eb\'fe\'e1\'ee\'e9 \par
+\'f1\'e2\'ee\'e1\'ee\'e4\'ed\'fb\'e9 \'f0\'e0\'e7\'fa\'e5\'ec \'ed\'e0 \'ee\'f1\'ed\'ee\'e2\'ed\'ee\'e9 \'ef\'e0\'ed\'e5\'eb\'e8 \'dd\'c2\'cc \'e8 \'f1\'ee\'e2\'ec\'e5\'f1\'f2\'ed\'ee \'f1  \'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'ee\'ec \par
+\'ca\'ca (\'ca-16) \'ee\'f1\'f3\'f9\'e5\'f1\'f2\'e2\'eb\'ff\'e5\'f2 \'f3\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'e5 \'ea\'f0\'e5\'e9\'f2\'ee\'ec.\par
+    \'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'ee\'e1\'e5\'f1\'ef\'e5\'f7\'e8\'e2\'e0\'e5\'f2 \'f0\'e0\'e1\'ee\'f2\'f3 \'e2 \'f0\'e5\'e6\'e8\'ec\'e5 \'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'ee\'e3\'ee  \'ee\'e1\'ec\'e5\'ed\'e0  \'e8\par
+\'f4\'e8\'ea\'f1\'e8\'f0\'f3\'e5\'f2 \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'ff \'ee\'f2 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0 \'e1\'e5\'e7 \'e8\'e4\'e5\'ed\'f2\'e8\'f4\'e8\'ea\'e0\'f6\'e8\'e8 \'e2\'e5\'ea\'f2\'ee\'f0\'e0 \par
+\'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'ff . \'cf\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'e5 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0 \'ec\'ee\'e6\'e5\'f2 \'e1\'fb\'f2\'fc  \'ee\'e1\'f0\'e0\'e1\'ee\'f2\'e0\'ed\'ee  \'e2 \par
+\'dd\'c2\'cc \'ed\'e0 \'f3\'f0\'ee\'e2\'ed\'ff\'f5 \'ef\'f0\'e8\'ee\'f0\'e8\'f2\'e5\'f2\'e0 \'ee\'f2 3  \'e4\'ee  7  (\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2\'f1\'ff  \'ef\'e5\'f0\'e5\'ec\'fb\'f7\'ea\'ee\'e9  \'e2\par
+\'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e5).  \'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee  \'e7\'e0\'ed\'e8\'ec\'e0\'e5\'f2  \'e0\'e4\'f0\'e5\'f1\'ed\'f3\'fe  \'ee\'e1\'eb\'e0\'f1\'f2\'fc  \'ef\'ee\'f0\'f2\'ee\'e2   \'dd\'c2\'cc \par
+\'f1\'ee\'f1\'f2\'ee\'ff\'f9\'f3\'fe \'e8\'e7 \'e4\'e2\'f3\'f5 \'e3\'f0\'f3\'ef\'ef. \'cf\'e5\'f0\'e2\'e0\'ff \'e3\'f0\'f3\'ef\'ef\'e0 - 7 \'ef\'ee\'f0\'f2\'ee\'e2, \'e2\'f2\'ee\'f0\'e0\'ff \'e3\'f0\'f3\'ef\'ef\'e0  - \par
+32 \'ef\'ee\'f0\'f2\'e0.\par
+     \'c4\'eb\'ff    \'f1\'ee\'e3\'eb\'e0\'f1\'ee\'e2\'e0\'ed\'e8\'ff    \'e2\'ee\'f1\'fc\'ec\'e8\'f0\'e0\'e7\'f0\'ff\'e4\'ed\'ee\'e3\'ee    \'ef\'ee\'f0\'f2\'e0     \'dd\'c2\'cc     \'e8 \par
+\'f8\'e5\'f1\'f2\'ed\'e0\'e4\'f6\'e0\'f2\'e8\'f0\'e0\'e7\'f0\'ff\'e4\'ed\'ee\'e9    \'f8\'e8\'ed\'fb     \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0     \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff\par
+\'e4\'ee\'ef\'ee\'eb\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'e9 \'f0\'e5\'e3\'e8\'f1\'f2\'f0,  \'f0\'e5\'e3\'e8\'f1\'f2\'f0  \'e2\'f2\'ee\'f0\'ee\'e3\'ee  \'e1\'e0\'e9\'f2\'e0  (\'d0\'c32\'c1).  \'ce\'ef\'e5\'f0\'e0\'f6\'e8\'e8 \par
+\'e7\'e0\'ef\'e8\'f1\'e8 \'e2 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0 \'ef\'f0\'ee\'e2\'ee\'e4\'ff\'f2\'f1\'ff \'e2 2 \'fd\'f2\'e0\'ef\'e0.\'d1\'ed\'e0\'f7\'e0\'eb\'e0 \'ef\'f0\'ee\'e8\'e7\'e2\'ee\'e4\'e8\'f2\'f1\'ff \par
+\'e7\'e0\'ef\'e8\'f1\'fc \'f1\'f2\'e0\'f0\'f8\'e5\'e3\'ee \'e1\'e0\'e9\'f2\'e0 \'e4\'e0\'ed\'ed\'fb\'f5 \'e2 \'d0\'c32\'c1, \'e7\'e0\'f2\'e5\'ec  \'e7\'e0\'ef\'e8\'f1\'fc  \'ec\'eb\'e0\'e4\'f8\'e5\'e3\'ee  \'e1\'e0\'e9\'f2\'e0 \par
+\'e4\'e0\'ed\'ed\'fb\'f5 \'ed\'e5\'ef\'ee\'f1\'f0\'e5\'e4\'f1\'f2\'e2\'e5\'ed\'ed\'ee \'e2 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0 \'e8  \'ee\'e4\'ed\'ee\'e2\'f0\'e5\'ec\'e5\'ed\'ed\'ee  \'f1\'f2\'e0\'f0\'f8\'e5\'e3\'ee \par
+\'e1\'e0\'e9\'f2\'e0 \'e8\'e7 \'d0\'c32\'c1 \'e2 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0.  \'ce\'ef\'e5\'f0\'e0\'f6\'e8\'e8  \'f7\'f2\'e5\'ed\'e8\'ff  \'e2\'fb\'ef\'ee\'eb\'ed\'ff\'fe\'f2\'f1\'ff  \'e2 \par
+\'ee\'e1\'f0\'e0\'f2\'ed\'ee\'ec \'ef\'ee\'f0\'ff\'e4\'ea\'e5.\par
+\'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'ed\'e0\'ff \'f1\'f5\'e5\'ec\'e0 \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0 \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e0 \'ed\'e0 \'f0\'e8\'f1\'f3\'ed\'ea\'e5.\par
+\par
+                        5.1.\'cf\'ee\'f0\'f2\'fb \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0\par
+      \'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'e8\'ec\'e5\'e5\'f2 \'e4\'e2\'e5 \'e3\'f0\'f3\'ef\'ef\'fb \'ef\'ee\'f0\'f2\'ee\'e2. \'cf\'e5\'f0\'e2\'e0\'ff \'e3\'f0\'f3\'ef\'ef\'e0  \'ee\'f2\'ee\'e1\'f0\'e0\'e6\'e0\'e5\'f2 \par
+\'f0\'e5\'e3\'e8\'f1\'f2\'f0\'fb \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0 \'e8 \'e2\'ed\'f3\'f2\'f0\'e5\'ed\'ed\'e8\'e5 \'f0\'e5\'e3\'e8\'f1\'f2\'f0\'fb \'f3\'f1\'f2\'f0\'ee\'e9\'f2\'e2\'e0,  \'e2\'f2\'ee\'f0\'e0\'ff\par
+\'ee\'f2\'ee\'e1\'f0\'e0\'e6\'e0\'e5\'f2  \'f0\'e5\'e3\'e8\'f1\'f2\'f0\'fb  \'e2\'fb\'e1\'f0\'e0\'ed\'ed\'ee\'e9  \'f1\'f2\'e0\'ed\'f6\'e8\'e8   \'ea\'f0\'e5\'e9\'f2\'e0.   \'c4\'eb\'ff   \'f3\'e4\'ee\'e1\'f1\'f2\'e2\'e0 \par
+\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0, \'e7\'e0\'ef\'f1\'fc \'e8 \'f7\'f2\'e5\'ed\'e8\'e5 \'d0\'c32\'c1 \'ee\'f1\'f3\'f9\'e5\'f1\'f2\'e2\'eb\'ff\'e5\'f2\'f1\'ff  \'ef\'ee \par
+\'e2\'f1\'e5\'ec \'ed\'e5\'f7\'e5\'f2\'ed\'fb\'ec \'e0\'e4\'f0\'e5\'f1\'e0\'ec \'ee\'e1\'e5\'e8\'f5 \'e3\'f0\'f3\'ef\'ef \'ef\'ee\'f0\'f2\'ee\'e2,  \'ef\'ee\'fd\'f2\'ee\'ec\'f3  \'ef\'f0\'e8  \'e4\'e0\'eb\'fc\'ed\'e5\'e9\'f8\'e5\'ec \par
+\'ee\'ef\'e8\'f1\'e0\'ed\'e8\'e8 \'e2\'f1\'e5  \'ed\'e5\'f7\'e5\'f2\'ed\'fb\'e5  \'e0\'e4\'f0\'e5\'f1\'e0  \'e1\'f3\'e4\'f3\'f2  \'ee\'ef\'f3\'f9\'e5\'ed\'fb.      \'c0\'e4\'f0\'e5\'f1\'e0  \'ef\'ee\'f0\'f2\'ee\'e2 \par
+\'ef\'f0\'e8\'e2\'e5\'e4\'e5\'ed\'fb \'e2 \'f2\'e0\'e1\'eb.1. \'ce\'ed\'e8 \'ec\'ee\'e3\'f3\'f2 \'e8\'e7\'ec\'e5\'ed\'ff\'f2\'fc\'f1\'ff \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe \'ef\'e5\'f0\'e5\'ec\'fb\'f7\'ea\'e8 E1.\par
+     \'cf\'f0\'e8 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'ea\'e5 \'ef\'e5\'f0\'e5\'ec\'fb\'f7\'e5\'ea \'ec\'e5\'e6\'e4\'f3 \'ea\'ee\'ed\'f2\'e0\'ea\'f2\'e0\'ec\'e8 1-2 \'e8 3-4  \'e2\'fb\'e1\'e8\'f0\'e0\'fe\'f2\'f1\'ff \par
+\'e0\'e4\'f0\'e5\'f1\'e0 100-106  \'e8  120-13F  (\'ee\'f1\'ed\'ee\'e2\'ed\'ee\'e9  \'e2\'e0\'f0\'e8\'e0\'ed\'f2),  \'e0  \'ef\'f0\'e8  \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'ea\'e5 \par
+\'ef\'e5\'f0\'e5\'ec\'fb\'f7\'e5\'ea \'ed\'e0 \'ea\'ee\'ed\'f2\'e0\'ea\'f2\'e0\'f5 1-4 \'e8 2-3 \'e2\'fb\'e1\'e8\'f0\'e0\'fe\'f2\'f1\'ff \'e0\'e4\'f0\'e5\'f1\'e0 200-206, 220-23F\par
+(\'e4\'ee\'ef\'ee\'eb\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'e9 \'e2\'e0\'f0\'e8\'e0\'ed\'f2 \'e4\'eb\'ff \'dd\'c2\'cc \'cf\'f0\'e0\'e2\'e5\'f6 16).\par
+      \'c2 \'f2\'e0\'e1\'eb\'e8\'f6\'e5 "*" \'f1\'eb\'e5\'e4\'f3\'e5\'f2 \'e7\'e0\'ec\'e5\'ed\'e8\'f2\'fc \'ed\'e0 1  \'e4\'eb\'ff  \'ee\'f1\'ed\'ee\'e2\'ed\'ee\'e3\'ee  \'e2\'e0\'f0\'e8\'e0\'ed\'f2\'e0\par
+\'e8\'eb\'e8 \'ed\'e0 2 \'e4\'eb\'ff \'e4\'ee\'ef\'ee\'eb\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'ee\'e3\'ee.\par
+                                                         \'d2\'e0\'e1\'eb\'e8\'f6\'e0 1.\par
+-----------------------------------------------------------------\par
+               \'cf\'e5\'f0\'e2\'e0\'ff \'e3\'f0\'f3\'ef\'ef\'e0 \'ef\'ee\'f0\'f2\'ee\'e2 *00-*06                     I \par
+-----------------------------------------------------------------\par
+ \'e0\'e4\'f0\'e5\'f1 I                  \'ed\'e0\'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5                            I\par
+-----------------------------------------------------------------\par
+ *00   I  \'d0\'e5\'e3\'e8\'f1\'f2\'f0 \'f3\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'ff \'e8 \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'ff \'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0            I\par
+ *02   I  \'d0\'e5\'e3\'e8\'f1\'f2\'f0 \'f1\'f2\'e0\'f0\'f8\'e5\'e3\'ee \'e1\'e0\'e9\'f2\'e0 (\'ed\'e5 \'ef\'f3\'f2\'e0\'f2\'fc \'f1 \'d0\'c32\'c1)             I\par
+ *04   I  \'d0\'e5\'e3\'e8\'f1\'f2\'f0 \'ec\'e0\'f1\'ea\'e8 \'e8 \'e7\'e0\'ef\'f0\'ee\'f1\'ee\'e2                              I\par
+ *06   I  \'d0\'e5\'e3\'e8\'f1\'f2\'f0 \'e0\'e4\'f0\'e5\'f1\'e0 \'e8 \'f0\'e0\'e7\'f0\'e5\'f8\'e5\'ed\'e8\'ff \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'ff (\'d0\'c0\'cf)          I\par
+-----------------------------------------------------------------\par
+               \'c2\'f2\'ee\'f0\'e0\'ff \'e3\'f0\'f3\'ef\'ef\'e0 \'ef\'ee\'f0\'f2\'ee\'e2 *20-*3F                     I \par
+-----------------------------------------------------------------\par
+ *20   I  \'d0\'e5\'e3\'e8\'f1\'f2\'f0 \'e2\'fb\'e1\'f0\'e0\'ed\'ed\'ee\'e9 \'f1\'f2\'e0\'ed\'f6\'e8\'e8, \'f1\'f3\'e1\'e0\'e4\'f0\'e5\'f1 0                 I\par
+ *22   I  \'d0\'e5\'e3\'e8\'f1\'f2\'f0 \'e2\'fb\'e1\'f0\'e0\'ed\'ed\'ee\'e9 \'f1\'f2\'e0\'ed\'f6\'e8\'e8, \'f1\'f3\'e1\'e0\'e4\'f0\'e5\'f1 1                 I\par
+ *24   I  \'d0\'e5\'e3\'e8\'f1\'f2\'f0 \'e2\'fb\'e1\'f0\'e0\'ed\'ed\'ee\'e9 \'f1\'f2\'e0\'ed\'f6\'e8\'e8, \'f1\'f3\'e1\'e0\'e4\'f0\'e5\'f1 2                 I\par
+ *26   I  \'d0\'e5\'e3\'e8\'f1\'f2\'f0 \'e2\'fb\'e1\'f0\'e0\'ed\'ed\'ee\'e9 \'f1\'f2\'e0\'ed\'f6\'e8\'e8, \'f1\'f3\'e1\'e0\'e4\'f0\'e5\'f1 3                 I\par
+....   I                                                        I\par
+ *3\'c5   I  \'d0\'e5\'e3\'e8\'f1\'f2\'f0 \'e2\'fb\'e1\'f0\'e0\'ed\'ed\'ee\'e9 \'f1\'f2\'e0\'ed\'f6\'e8\'e8, \'f1\'f3\'e1\'e0\'e4\'f0\'e5\'f1 16                I\par
+-----------------------------------------------------------------\par
+\par
+           5.2.\'c7\'e0\'ef\'e8\'f1\'fc \'e2 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0 \'e8 \'f1\'f2\'e0\'ed\'f6\'e8\'e8 \'ea\'f0\'e5\'e9\'f2\'e0          \par
+     \'ca\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0 \'ee\'e1\'e5\'f1\'ef\'e5\'f7\'e8\'e2\'e0\'e5\'f2 \'ee\'e1\'ec\'e5\'ed 24-\'f0\'e0\'e7\'f0\'ff\'e4\'ed\'fb\'ec\'e8 \'f1\'eb\'ee\'e2\'e0\'ec\'e8 (3 \'e1\'e0\'e9\'f2\'e0), \par
+\'dd\'c2\'cc \'ee\'ef\'e5\'f0\'e8\'f0\'f3\'e5\'f2 \'f1 16-\'f0\'e0\'e7\'f0\'ff\'e4\'ed\'fb\'ec\'e8 \'f1\'eb\'ee\'e2\'e0\'ec\'e8 (2 \'e1\'e0\'e9\'f2\'e0), \'ef\'ee\'fd\'f2\'ee\'ec\'f3 \'e4\'eb\'ff \'e7\'e0\'ef\'e8\'f1\'e8 \par
+\'ed\'e0 \'f8\'e8\'ed\'f3 \'ca\'c0\'cc\'c0\'ca \'f2\'f0\'e5\'f5\'e1\'e0\'e9\'f2\'ee\'e2\'ee\'e3\'ee  \'f1\'eb\'ee\'e2\'e0  \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff  \'f0\'e5\'e3\'e8\'f1\'f2\'f0  \'f1\'f2\'e0\'f0\'f8\'e5\'e3\'ee \par
+\'e1\'e0\'e9\'f2\'e0, \'ea\'f3\'e4\'e0 \'e8 \'ef\'ee\'ec\'e5\'f9\'e0\'e5\'f2\'f1\'ff \'f2\'f0\'e5\'f2\'e8\'e9 \'e1\'e0\'e9\'f2.\par
+     \'c4\'eb\'ff \'ef\'e5\'f0\'e5\'e4\'e0\'f7\'e8 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f6\'e8\'e8  \'e8\'e7  \'dd\'c2\'cc  \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'ee  \'e7\'e0\'ef\'e8\'f1\'e0\'f2\'fc  \'ed\'ee\'ec\'e5\'f0\'e0 \par
+\'ea\'f0\'e5\'e9\'f2\'e0 \'e8 \'f1\'f2\'e0\'ed\'f6\'e8\'e8 \'e2 \'f0\'e5\'e3\'e8\'f1\'f2\'f0 \'e0\'e4\'f0\'e5\'f1\'e0 \'e8 \'f0\'e0\'e7\'f0\'e5\'f8\'e5\'ed\'e8\'ff \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'ff (\'d0\'c0\'cf).\par
+     \'cf\'f0\'e8  \'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'e8  \'ef\'ee  \'e7\'e0\'ef\'e8\'f1\'e8  \'ef\'ee  \'e0\'e4\'f0\'e5\'f1\'f3   \'d0\'c0\'cf   \'ed\'e0   \'f8\'e8\'ed\'e5   IBM\par
+\'e2\'fb\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2\'f1\'ff: \'e0\'e4\'f0\'e5\'f1, \'e4\'e0\'ed\'ed\'fb\'e5 \'e4\'eb\'ff \'e7\'e0\'ef\'e8\'f1\'e8 \'e8  \'f1\'e8\'e3\'ed\'e0\'eb\'fb  AEN,  ALE,  IOW.\par
+\'c4\'e5\'f8\'e8\'f4\'f0\'e0\'f2\'ee\'f0 \'e0\'e4\'f0\'e5\'f1\'e0 \'e8 \'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'ff, \'ef\'f0\'e8\'ed\'e8\'ec\'e0\'ff \'ea\'ee\'e4  \'e0\'e4\'f0\'e5\'f1\'e0  \'e8  \'f3\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'ff, \par
+\'e2\'fb\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'e5\'f2 \'f1\'e8\'e3\'ed\'e0\'eb SEL1=0 \'e8 \'e2\'fb\'e4\'e0\'e5\'f2 \'ea\'ee\'e4 \'e2\'ed\'f3\'f2\'f0\'e5\'ed\'ed\'e5\'e3\'ee \'e0\'e4\'f0\'e5\'f1\'e0  \'c0\'ce,  \'c01 \par
+\'ed\'e0 \'ec\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9 \'e0\'e2\'f2\'ee\'ec\'e0\'f2.\par
+     \'d1\'ee\'e4\'e5\'f0\'e6\'e8\'ec\'ee\'e5 \'f8\'e8\'ed\'fb \'e4\'e0\'ed\'ed\'fb\'f5, \'f7\'e5\'f0\'e5\'e7  \'e1\'f3\'f4\'e5\'f0  \'ec\'eb\'e0\'e4\'f8\'e5\'e3\'ee  \'e1\'e0\'e9\'f2\'e0  \'e4\'e0\'ed\'ed\'fb\'f5, \par
+\'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'f3\'ef\'f0\'e0\'e2\'eb\'ff\'e5\'f2\'f1\'ff \'f1\'e8\'e3\'ed\'e0\'eb\'e0\'ec\'e8 SEL1=0, R=1, \'ef\'ee\'e4\'e0\'e5\'f2\'f1\'ff  \'ed\'e0  \'d0\'c0\'cf.  \'d8\'e8\'ed\'e0\par
+\'e4\'e0\'ed\'ed\'fb\'f5 \'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0 \'ed\'e0\'f5\'ee\'e4\'e8\'f2\'f1\'ff \'e2 \'fd\'f2\'ee \'e2\'f0\'e5\'ec\'ff \'e2 \'e7\'e0\'ef\'e5\'f0\'f2\'ee\'ec \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'e8 \'e8  \'ed\'e5 \par
+\'ec\'e5\'f8\'e0\'e5\'f2 \'ef\'e5\'f0\'e5\'e4\'e0\'f7\'e5 \'e4\'e0\'ed\'ed\'fb\'f5.\par
+     \'cc\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9 \'e0\'e2\'f2\'ee\'ec\'e0\'f2, \'ef\'ee\'eb\'f3\'f7\'e8\'e2 \'f1\'e8\'e3\'ed\'e0\'eb  SEL1=0,  \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \par
+\'ef\'ee \'ea\'ee\'e4\'f3 \'e2\'ed\'f3\'f2\'f0\'e5\'ed\'ed\'e5\'e3\'ee \'e0\'e4\'f0\'e5\'f1\'e0 \'e0\'e4\'f0\'e5\'f1 \'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'ff \'e8 \'e2\'fb\'e4\'e0\'e5\'f2 \'f1\'f2\'f0\'ee\'e1  \'d12, \'ef\'ee \par
+\'ef\'e5\'f0\'e5\'e4\'ed\'e5\'ec\'f3 \'f4\'f0\'ee\'ed\'f2\'f3  \'ea\'ee\'f2\'ee\'f0\'ee\'e3\'ee   \'e4\'e0\'ed\'ed\'fb\'e5  \'e7\'e0\'ef\'e8\'f1\'fb\'e2\'e0\'fe\'f2\'f1\'ff  \'e2  \'d0\'c0\'cf.  \'c7\'e0\'f2\'e5\'ec\par
+\'f1\'eb\'e5\'e4\'f3\'e5\'f2 \'e7\'e0\'ef\'e8\'f1\'e0\'f2\'fc \'ed\'ee\'ec\'e5\'f0  \'f4\'f3\'ed\'ea\'f6\'e8\'e8  \'e2  \'f0\'e5\'e3\'e8\'f1\'f2\'f0  \'f3\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'ff \'e8 \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'ff\par
+(\'d0\'d3\'d1) \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0.  \'c4\'eb\'ff  \'fd\'f2\'ee\'e3\'ee  \'f1\'ed\'e0\'f7\'e0\'eb\'e0  \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'ee  \'ee\'e1\'ed\'f3\'eb\'e8\'f2\'fc \par
+\'f0\'e5\'e3\'e8\'f1\'f2\'f0 \'e2\'f2\'ee\'f0\'ee\'e3\'ee \'e1\'e0\'e9\'f2\'e0 (\'f7\'f2\'ee\'e1\'fb  \'ef\'f0\'e8  \'e7\'e0\'ef\'e8\'f1\'e8  \'ea\'ee\'e4\'e0  \'f4\'f3\'ed\'ea\'f6\'e8\'e8  \'e8\'f1\'ea\'eb\'fe\'f7\'e8\'f2\'fc \par
+\'e7\'e0\'ef\'e8\'f1\'fc \'e5\'e4\'e8\'ed\'e8\'f7\'ed\'fb\'f5 \'e1\'e8\'f2\'ee\'e2 \'e2\'ee \'e2\'f2\'ee\'f0\'ee\'ec \'e1\'e0\'e9\'f2\'e5 \'d0\'d3\'d1). \'cf\'f0\'e8 \'e7\'e0\'ef\'e8\'f1\'e8 \'ef\'ee \'eb\'fe\'e1\'ee\'ec\'f3 \par
+\'ed\'e5\'f7\'e5\'f2\'ed\'ee\'ec\'f3 \'e0\'e4\'f0\'e5\'f1\'f3 (\'e2 \'ef\'f0\'e5\'e4\'e5\'eb\'e0\'f5 \'e0\'e4\'f0\'e5\'f1\'ee\'e2 \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0) \'e2 \'d0\'c32\'c1 ,  \'ed\'e0  \'f8\'e8\'ed\'f3 \par
+IBM  \'e2\'fb\'e4\'e0\'fe\'f2\'f1\'ff  \'e0\'e4\'f0\'e5\'f1,  \'e4\'e0\'ed\'ed\'fb\'e5,  \'f1\'e8\'e3\'ed\'e0\'eb\'fb SEL, ALE, IOW.   \'c4\'e0\'eb\'fc\'ed\'e5\'e9\'f8\'e5\'e5 \par
+\'f4\'f3\'ed\'ea\'f6\'e8\'ee\'ed\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'e5 \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0 \'f1\'f5\'ee\'e4\'ed\'ee \'f1 \'f0\'e5\'e6\'e8\'ec\'ee\'ec \'e7\'e0\'ef\'e8\'f1\'e8 \'e2  \'d0\'c0\'cf,  \'f1  \'f2\'ee\'e9 \par
+\'f0\'e0\'e7\'ed\'e8\'f6\'e5\'e9, \'f7\'f2\'ee \'e2\'fb\'e4\'e0\'e5\'f2\'f1\'ff \'e4\'f0\'f3\'e3\'ee\'e9 \'ea\'ee\'e4 \'e2\'ed\'f3\'f2\'f0\'e5\'ed\'ed\'e5\'e3\'ee  \'e0\'e4\'f0\'e5\'f1\'e0,  \'ef\'ee\'f1\'eb\'e5  \'f7\'e5\'e3\'ee \par
+\'ec\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9 \'e0\'e2\'f2\'ee\'ec\'e0\'f2 \'e2\'fb\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'e5\'f2 \'ed\'e5 \'f1\'f2\'f0\'ee\'e1 \'d12, \'e0 \'f1\'f2\'f0\'ee\'e1 \'d11.\par
+     \'cf\'ee\'f1\'eb\'e5 \'ee\'e1\'ed\'f3\'eb\'e5\'ed\'e8\'ff \'d0\'c32\'c1 \'ec\'ee\'e6\'ed\'ee \'e7\'e0\'ef\'e8\'f1\'e0\'f2\'fc \'ea\'ee\'e4  \'f4\'f3\'ed\'ea\'f6\'e8\'e8  \'ef\'ee  \'e0\'e4\'f0\'e5\'f1\'f3\par
+\'d0\'d3\'d1 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0.  \'d6\'e8\'ea\'eb \'e7\'e0\'ef\'e8\'f1\'e8 \'ed\'e0\'f7\'e8\'ed\'e0\'e5\'f2\'f1\'ff \'ea\'e0\'ea \'ee\'ef\'e8\'f1\'e0\'ed\'ee \'e2\'fb\'f8\'e5.\par
+\'d1\'e8\'e3\'ed\'e0\'eb\'fb \'c00, \'c01 \'f3\'ea\'e0\'e7\'fb\'e2\'e0\'fe\'f2 \'ed\'e0 \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'fe \'f1 \'ea\'f0\'e5\'e9\'f2\'ee\'ec. \'c4\'e5\'f8\'e8\'f4\'f0\'e0\'f2\'ee\'f0 \'e0\'e4\'f0\'e5\'f1\'e0 \par
+\'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'ff, \'ee\'ef\'ee\'e7\'ed\'e0\'e2 \'e0\'e4\'f0\'e5\'f1  \'d0\'d3\'d1  \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0,  \'e2\'fb\'e4\'e0\'e5\'f2  \'f1\'e8\'e3\'ed\'e0\'eb \par
+SEL1=1,  \'ef\'ee\'e4   \'e2\'ee\'e7\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5\'ec   \'ea\'ee\'f2\'ee\'f0\'ee\'e3\'ee  \'e1\'f3\'f4\'e5\'f0   \'f1\'f2\'e0\'f0\'f8\'e5\'e3\'ee   \'e0\'e4\'f0\'e5\'f1\'e0 \par
+\'e7\'e0\'ea\'f0\'fb\'e2\'e0\'e5\'f2\'f1\'ff \'e8 \'ed\'e0 \'f8\'e8\'ed\'f3 \'e0\'e4\'f0\'e5\'f1\'e0 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0 \'ef\'e5\'f0\'e5\'e4\'e0\'fe\'f2\'f1\'ff  \'e0\'e4\'f0\'e5\'f1\'e0 \par
+\'c01 , \'c04 (\'f1 \'e1\'f3\'f4\'e5\'f0\'e0 \'ec\'eb\'e0\'e4\'f8\'e5\'e3\'ee \'e0\'e4\'f0\'e5\'f1\'e0) \'e8 \'c010 \'c011 \'f1 \'d0\'c0\'cf. \'c0\'e4\'f0\'e5\'f1\'e0 \'c05  ,\par
+\'c09 \'ef\'e5\'f0\'e5\'e4\'e0\'fe\'f2\'f1\'ff \'e2\'fb\'f1\'ee\'ea\'e8\'ec \'f3\'f0\'ee\'e2\'ed\'e5\'ec (\'f1 \'e7\'e0\'ea\'f0\'fb\'f2\'ee\'e3\'ee \'e1\'f3\'f4\'e5\'f0\'e0)  \'e8  \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'fe\'f2 \par
+\'e2\'fb\'e1\'ee\'f0 \'f0\'e5\'e3\'e8\'f1\'f2\'f0\'ee\'e2 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0, \'e0 \'ed\'e5  \'f1\'f2\'e0\'ed\'f6\'e8\'e8.  \'c1\'f3\'f4\'e5\'f0  \'e2\'f2\'ee\'f0\'ee\'e3\'ee \par
+\'e1\'e0\'e9\'f2\'e0 \'e4\'e0\'ed\'ed\'fb\'f5 \'ef\'ee\'e4 \'e2\'ee\'e7\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5\'ec \'f1\'e8\'e3\'ed\'e0\'eb\'e0 W=0 \'ee\'f2\'ea\'f0\'fb\'e2\'e0\'e5\'f2\'f1\'ff \'e8  \'ef\'e5\'f0\'e5\'e4\'e0\'e5\'f2\par
+\'e4\'e0\'ed\'ed\'fb\'e5 \'f1 \'d0\'c32\'c1 \'ed\'e0 \'eb\'e8\'ed\'e8\'e8 D8,  D15  \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0.  \'cf\'e5\'f0\'e2\'fb\'e9  \'e1\'e0\'e9\'f2\par
+\'e4\'e0\'ed\'ed\'fb\'f5 \'f1 \'e1\'f3\'f4\'e5\'f0\'e0 \'ef\'e5\'f0\'e2\'ee\'e3\'ee \'e1\'e0\'e9\'f2\'e0 \'e4\'e0\'ed\'ed\'fb\'f5 \'ef\'e5\'f0\'e5\'e4\'e0\'e5\'f2\'f1\'ff \'ed\'e0 \'eb\'e8\'ed\'e8\'e8 D0,D7.\par
+     \'cc\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9  \'e0\'e2\'f2\'ee\'ec\'e0\'f2,  \'f0\'e0\'f1\'ef\'ee\'e7\'ed\'e0\'e2  \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'fe  \'f1  \'ea\'f0\'e5\'e9\'f2\'ee\'ec,\par
+\'e2\'fb\'e4\'e0\'e5\'f2 \'f1\'e8\'e3\'ed\'e0\'eb CHRDY=0 \'ed\'e0 \'f8\'e8\'ed\'f3 IBM, \'e7\'e0\'e4\'e5\'f0\'e6\'e8\'e2\'e0\'ff \'f2\'e5\'ec \'f1\'e0\'ec\'fb\'ec  \'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'e5\par
+\'ee\'ef\'e5\'f0\'e0\'f6\'e8\'e8  \'e4\'ee  \'ee\'f2\'e2\'e5\'f2\'e0  \'e8\'e7   \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0.   \'ce\'e4\'ed\'ee\'e2\'f0\'e5\'ec\'e5\'ed\'ed\'ee   \'ed\'e0\par
+\'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0 \'e2\'fb\'e4\'e0\'e5\'f2\'f1\'ff  \'f1\'e8\'e3\'ed\'e0\'eb  \'d1\'d5\'c7  \'e8  \'ef\'f0\'ee\'e8\'e7\'e2\'ee\'e4\'e8\'f2\'f1\'ff  \'ee\'e6\'e8\'e4\'e0\'ed\'e8\'e5\par
+\'f1\'e8\'e3\'ed\'e0\'eb\'e0 \'d1\'d5\'c8 \'ee\'f2 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0. \'c5\'f1\'eb\'e8  \'e0\'e4\'f0\'e5\'f1  \'e2  \'d0\'c0\'cf  \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\par
+\'e2\'e5\'f0\'ed\'ee, \'f2\'ee \'f7\'e5\'f0\'e5\'e7 \'ed\'e5\'ea\'ee\'f2\'ee\'f0\'ee\'e5 \'e2\'f0\'e5\'ec\'ff (1 \'ec\'ea\'f1), \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0 \'ee\'f2\'e2\'e5\'f2\'e8\'f2\par
+\'f1\'e8\'e3\'ed\'e0\'eb\'ee\'ec \'d1\'d5\'c8=0. \'cc\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9 \'e0\'e2\'f2\'ee\'ec\'e0\'f2 \'f1\'ed\'e8\'ec\'e0\'e5\'f2 \'f1\'e8\'e3\'ed\'e0\'eb CHRDY, \'f6\'e8\'ea\'eb\par
+\'e7\'e0\'ef\'e8\'f1\'e8 \'ee\'ea\'ee\'ed\'f7\'e5\'ed. \'c2  \'ef\'f0\'ee\'f2\'e8\'e2\'ed\'ee\'ec  \'f1\'eb\'f3\'f7\'e0\'e5,  \'ef\'f0\'e8  \'ee\'f2\'f1\'f3\'f2\'f1\'f2\'e2\'e8\'e8  \'ee\'f2\'e2\'e5\'f2\'e0  \'e2\par
+\'f2\'e5\'f7\'e5\'ed\'e8\'e5 10 \'ec\'ea\'f1, \'ec\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9 \'e0\'e2\'f2\'ee\'ec\'e0\'f2 \'ee\'e1\'f0\'fb\'e2\'e0\'e5\'f2 \'f6\'e8\'ea\'eb  \'e7\'e0\'ef\'e8\'f1\'e8  \'e8\par
+\'f1\'ed\'e8\'ec\'e0\'e5\'f2 \'f1\'e8\'e3\'ed\'e0\'eb CHRDY \'e2\'ee \'e8\'e7\'e1\'e5\'e6\'e0\'ed\'e8\'e5 "\'e7\'e0\'e2\'e8\'f1\'e0\'ed\'e8\'ff" \'dd\'c2\'cc.\par
+     \'c4\'e0\'eb\'e5\'e5 \'ed\'e0\'ec \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'ee \'e7\'e0\'ef\'e8\'f1\'e0\'f2\'fc  \'e4\'e0\'ed\'ed\'fb\'e5  \'e2  \'e2\'fb\'e1\'f0\'e0\'ed\'ed\'f3\'fe  \'f1\'f2\'e0\'ed\'f6\'e8\'fe\par
+\'ea\'f0\'e5\'e9\'f2\'e0. \'c4\'eb\'ff \'fd\'f2\'ee\'e3\'ee \'f1\'ed\'e0\'f7\'e0\'eb\'e0 \'e7\'e0\'ef\'e8\'f8\'e5\'ec \'e2\'f2\'ee\'f0\'ee\'e9 \'e1\'e0\'e9\'f2 \'e4\'e0\'ed\'ed\'fb\'f5 \'e2 \'d0\'c32\'c1,  \'ea\'e0\'ea\par
+\'ee\'ef\'e8\'f1\'e0\'ed\'ee   \'e2\'fb\'f8\'e5,   \'e7\'e0\'f2\'e5\'ec   \'ef\'e5\'f0\'e2\'fb\'e9   \'e1\'e0\'e9\'f2   \'e4\'e0\'ed\'ed\'fb\'f5    \'ef\'ee    \'e0\'e4\'f0\'e5\'f1\'f3,\par
+\'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'fe\'f9\'e5\'ec\'f3  \'ed\'f3\'e6\'ed\'ee\'ec\'f3  \'f1\'f3\'e1\'e0\'e4\'f0\'e5\'f1\'f3  \'e2  \'ea\'f0\'e5\'e9\'f2\'e5  (\'f1\'ec.\'f2\'e0\'e1\'eb\'e8\'f6\'f3  1).\par
+\'c7\'e0\'ef\'e8\'f1\'fc \'ef\'ee \'e0\'e4\'f0\'e5\'f1\'f3 \'f1\'f2\'e0\'ed\'f6\'e8\'e8 \'e8\'e4\'e5\'f2 \'e0\'ed\'e0\'eb\'ee\'e3\'e8\'f7\'ed\'ee \'e7\'e0\'ef\'e8\'f1\'e8 \'e2 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0,\par
+\'f1 \'f2\'ee\'e9 \'f0\'e0\'e7\'ed\'e8\'f6\'e5\'e9, \'f7\'f2\'ee \'e4\'e5\'f8\'e8\'f4\'f0\'e0\'f2\'ee\'f0 \'e0\'e4\'f0\'e5\'f1\'e0 \'e8 \'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'ff  \'ed\'e5  \'e2\'fb\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'e5\'f2\par
+\'f1\'e8\'e3\'ed\'e0\'eb SEL1=1 (\'ee\'ed \'ee\'f1\'f2\'e0\'e5\'f2\'f1\'ff \'f0\'e0\'e2\'ed\'fb\'ec 0). \'c2 \'f0\'e5\'e7\'f3\'eb\'fc\'f2\'e0\'f2\'e5, \'e1\'f3\'f4\'e5\'f0  \'f1\'f2\'e0\'f0\'f8\'e5\'e3\'ee\par
+\'e0\'e4\'f0\'e5\'f1\'e0 \'ee\'f2\'ea\'f0\'fb\'f2,\'e8  \'ed\'e0 \'e0\'e4\'f0\'e5\'f1\'e0 \'c05-\'c09 \'ea\'f0\'e5\'e9\'f2 \'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0  \'ef\'ee\'e4\'e0\'e5\'f2\'f1\'ff  \'ed\'ee\'ec\'e5\'f0\par
+\'f1\'f2\'e0\'ed\'f6\'e8\'e8 \'e8\'e7 \'d0\'c0\'cf.\par
+                   5.3.\'c2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'e5 \'f4\'f3\'ed\'ea\'f6\'e8\'e8 \'f7\'f2\'e5\'ed\'e8\'ff\par
+     \'c2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'e5   \'f4\'f3\'ed\'ea\'f6\'e8\'e8   \'f7\'f2\'e5\'ed\'e8\'ff  \'e8\'e7   \'f1\'f2\'e0\'ed\'f6\'e8\'e8   \'ea\'f0\'e5\'e9\'f2\'e0.    \'c4\'eb\'ff\par
+\'fd\'f2\'ee\'e3\'ee \'ed\'e0\'ec \'f2\'f0\'e5\'e1\'f3\'e5\'f2\'f1\'ff \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc \'e8 \'e7\'e0\'ef\'e8\'f1\'e0\'f2\'fc \'ed\'ee\'ec\'e5\'f0 \'f1\'f2\'e0\'ed\'f6\'e8\'e8\'e8 \'e2 \'d0\'c0\'cf, \'e0\par
+\'f2\'e0\'ea\'e6\'e5 \'f4\'f3\'ed\'ea\'f6\'e8\'fe \'f7\'f2\'e5\'ed\'e8\'ff \'e2 \'d0\'d3\'d1 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0,  \'ea\'e0\'ea  \'e1\'fb\'eb\'ee  \'ee\'ef\'e8\'f1\'e0\'ed\'ee\par
+\'e2\'fb\'f8\'e5. \'c7\'e0\'f2\'e5\'ec \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'ee \'ef\'f0\'ee\'f7\'e8\'f2\'e0\'f2\'fc \'ef\'e5\'f0\'e2\'fb\'e9 \'e1\'e0\'e9\'f2  \'e4\'e0\'ed\'ed\'fb\'f5  \'ef\'ee  \'e0\'e4\'f0\'e5\'f1\'f3,\par
+\'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'fe\'f9\'e5\'ec\'f3 \'ed\'f3\'e6\'ed\'ee\'ec\'f3 \'f1\'f3\'e1\'e0\'e4\'f0\'e5\'f1\'f3 \'e2 \'ea\'f0\'e5\'e9\'f2\'e5 (\'f1\'ec.\'f2\'e0\'e1\'eb\'e8\'f6\'f3  1).  \'cf\'f0\'e8\par
+\'fd\'f2\'ee\'ec  \'ed\'e0  \'f8\'e8\'ed\'e5  IBM  \'e2\'fb\'f1\'f2\'e0\'e2\'eb\'ff\'fe\'f2\'f1\'ff  \'e0\'e4\'f0\'e5\'f1  \'e8  \'f1\'e8\'e3\'ed\'e0\'eb\'fb  AEN,ALE,IOR.\par
+\'c4\'e5\'f8\'e8\'f4\'f0\'e0\'f2\'ee\'f0  \'e0\'e4\'f0\'e5\'f1\'e0  \'e8  \'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'ff  \'e2\'fb\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'e5\'f2  \'f1\'e8\'e3\'ed\'e0\'eb   SEL1   \'e8\par
+\'e2\'ed\'f3\'f2\'f0\'e5\'ed\'ed\'e8\'e5 \'e0\'e4\'f0\'e5\'f1\'e0 (\'c00, \'c01), \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'fe\'f9\'e8\'e5 \'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'fe  \'ea  \'ea\'f0\'e5\'e9\'f2\'f3.\par
+\'c1\'f3\'f4\'e5\'f0  \'e2\'f2\'ee\'f0\'ee\'e3\'ee  \'e1\'e0\'e9\'f2\'e0  \'e4\'e0\'ed\'ed\'fb\'f5,  \'ef\'ee\'e4  \'e2\'ee\'e7\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5\'ec  \'f1\'e8\'e3\'ed\'e0\'eb\'e0  W=1,\par
+\'e7\'e0\'ea\'f0\'fb\'f2   \'e8   \'ed\'e5   \'ec\'e5\'f8\'e0\'e5\'f2   \'ef\'f0\'ee\'f5\'ee\'e6\'e4\'e5\'ed\'e8\'fe   \'f1\'e8\'e3\'ed\'e0\'eb\'ee\'e2   D8-D15    \'ee\'f2\par
+\'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0 \'ed\'e0 \'ea\'ee\'ec\'ec\'f3\'f2\'e0\'f2\'ee\'f0 1. \'ca\'ee\'ec\'ec\'f3\'f2\'e0\'f2\'ee\'f0 1 \'ef\'ee\'e4  \'e2\'ee\'e7\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5\'ec\par
+\'f1\'e8\'e3\'ed\'e0\'eb\'e0 W=1 \'ef\'f0\'ee\'ef\'f3\'f1\'ea\'e0\'e5\'f2 \'fd\'f2\'e8 \'e4\'e0\'ed\'ed\'fb\'e5 \'ed\'e0  \'e2\'f5\'ee\'e4  \'d0\'c32\'c1.  \'c0\'e4\'f0\'e5\'f1\'ed\'fb\'e5  \'f6\'e5\'ef\'e8\par
+\'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0 \'f0\'e0\'e1\'ee\'f2\'e0\'fe\'f2 \'f2\'e0\'ea \'e6\'e5, \'ea\'e0\'ea \'ef\'f0\'e8 \'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'e8 \'ea \'f1\'f2\'e0\'ed\'f6\'e8\'e8 \'ef\'ee \'e7\'e0\'ef\'e8\'f1\'e8.\par
+\'cc\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9 \'e0\'e2\'f2\'ee\'ec\'e0\'f2 \'e2\'fb\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'e5\'f2  \'f1\'e8\'e3\'ed\'e0\'eb\'fb  \'d1\'d5\'c7=0  \'e8  SEL2=0,\par
+\'ef\'f0\'e8\'ee\'f1\'f2\'e0\'ed\'e0\'e2\'eb\'e8\'e2\'e0\'e5\'f2 \'f8\'e8\'ed\'f3 IBM,  \'e2\'fb\'e4\'e0\'e2\'e0\'ff  \'f1\'e8\'e3\'ed\'e0\'eb  CHRDY=0,  \'e8  \'ee\'e6\'e8\'e4\'e0\'e5\'f2\par
+\'f1\'e8\'e3\'ed\'e0\'eb\'e0 \'d1\'d5\'c8 \'ee\'f2 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0. \'ca\'ee\'ec\'ec\'f3\'f2\'e0\'f2\'ee\'f0 2, \'ef\'ee\'e4  \'e2\'ee\'e7\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5\'ec\par
+\'f1\'e8\'e3\'ed\'e0\'eb\'e0 SEL2=0, \'e2\'ea\'eb\'fe\'f7\'e0\'e5\'f2\'f1\'ff \'ed\'e0 \'ef\'e5\'f0\'e5\'e4\'e0\'f7\'f3 \'e4\'e0\'ed\'ed\'fb\'f5 \'f1  \'eb\'e8\'ed\'e8\'e8  D0-D7  \'ed\'e0\par
+\'e2\'f5\'ee\'e4 \'e1\'f3\'f4\'e5\'f0\'e0 \'ef\'e5\'f0\'e2\'ee\'e3\'ee  \'e1\'e0\'e9\'f2\'e0  \'e4\'e0\'ed\'ed\'fb\'f5.  \'cf\'ee\'f1\'eb\'e5  \'ef\'ee\'eb\'f3\'f7\'e5\'ed\'e8\'ff  \'ee\'f2\'e2\'e5\'f2\'e0  \'ee\'f2\par
+\'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0 (\'d1\'d5\'c8 = 0) \'ec\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9 \'e0\'e2\'f2\'ee\'ec\'e0\'f2 \'e2\'fb\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'e5\'f2\par
+\'f1\'f2\'f0\'ee\'e1 \'d11, \'ef\'ee \'e7\'e0\'e4\'ed\'e5\'ec\'f3 \'f4\'f0\'ee\'ed\'f2\'f3 \'ea\'ee\'f2\'ee\'f0\'ee\'e3\'ee \'e2\'f2\'ee\'f0\'ee\'e9  \'e1\'e0\'e9\'f2  \'e7\'e0\'ef\'e8\'f1\'fb\'e2\'e0\'e5\'f2\'f1\'ff  \'e2\par
+\'d0\'c32\'c1. \'cf\'e5\'f0\'e2\'fb\'e9 \'e1\'e0\'e9\'f2 \'ea \'fd\'f2\'ee\'ec\'f3 \'ec\'ee\'ec\'e5\'ed\'f2\'f3 \'f3\'e6\'e5 \'ef\'e5\'f0\'e5\'e4\'e0\'ed \'e2 \'f8\'e8\'ed\'f3 IBM   \'f7\'e5\'f0\'e5\'e7\par
+\'e1\'f3\'f4\'e5\'f0 \'ef\'e5\'f0\'e2\'ee\'e3\'ee \'e1\'e0\'e9\'f2\'e0 \'e4\'e0\'ed\'ed\'fb\'f5. \'cf\'ee\'e4 \'e2\'ee\'e7\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5\'ec \'f1\'e8\'e3\'ed\'e0\'eb\'ee\'e2 SEL1=0, R=0\par
+\'ec\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9   \'e0\'e2\'f2\'ee\'ec\'e0\'f2   \'f1\'ed\'e8\'ec\'e0\'e5\'f2   \'f1\'e8\'e3\'ed\'e0\'eb   CHRDY,   \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'ff\par
+\'e7\'e0\'ea\'ee\'ed\'f7\'e5\'ed\'e0. \'cf\'f0\'e8 \'ee\'f2\'f1\'f3\'f2\'f1\'f2\'e2\'e8\'e8 \'f1\'e8\'e3\'ed\'e0\'eb\'e0 \'d1\'d5\'c8 \'e2 \'f2\'e5\'f7\'e5\'ed\'e8\'e5 10 \'ec\'ea\'f1. \'f1\'f2\'f0\'ee\'e1  \'d11\par
+\'ed\'e5 \'e2\'fb\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'e5\'f2\'f1\'ff, \'e0 \'f1\'e8\'e3\'ed\'e0\'eb CHRDY \'f1\'ed\'e8\'ec\'e0\'e5\'f2\'f1\'ff.\par
+     \'cf\'ee\'f1\'eb\'e5 \'fd\'f2\'ee\'e3\'ee  \'ec\'ee\'e6\'ed\'ee  \'ef\'f0\'ee\'f7\'e8\'f2\'e0\'f2\'fc  \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'ec\'ee\'e5  \'f0\'e5\'e3\'e8\'f1\'f2\'f0\'e0  \'e2\'f2\'ee\'f0\'ee\'e3\'ee\par
+\'e1\'e0\'e9\'f2\'e0 (\'ef\'ee \'ed\'e5\'f7\'e5\'f2\'ed\'ee\'ec\'f3 \'e0\'e4\'f0\'e5\'f1\'f3). \'cd\'e0\'f7\'e0\'eb\'ee \'f6\'e8\'ea\'eb\'e0 \'f2\'e0\'ea\'ee\'e5 \'e6\'e5, \'ea\'e0\'ea  \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'ff\par
+\'f7\'f2\'e5\'ed\'e8\'ff \'e8\'e7 \'f1\'f2\'e0\'ed\'f6\'e8\'e8,  \'ed\'ee  \'ea\'ee\'e4  \'e2\'ed\'f3\'f2\'f0\'e5\'ed\'ed\'e5\'e3\'ee  \'e0\'e4\'f0\'e5\'f1\'e0,  \'e2\'fb\'e4\'e0\'e2\'e0\'e5\'ec\'fb\'e9  \'ed\'e0\par
+\'ec\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9 \'e0\'e2\'f2\'ee\'ec\'e0\'f2,  \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'e5\'f2  \'d0\'c32\'c1.  \'cc\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9\par
+\'e0\'e2\'f2\'ee\'ec\'e0\'f2 \'e2\'fb\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'e5\'f2 \'f1\'e8\'e3\'ed\'e0\'eb  SEL2=1,  \'ef\'ee\'e4  \'e2\'ee\'e7\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5\'ec  \'ea\'ee\'f2\'ee\'f0\'ee\'e3\'ee\par
+\'ea\'ee\'ec\'ec\'f3\'f2\'e0\'f2\'ee\'f0 2 \'ef\'e5\'f0\'e5\'ea\'eb\'fe\'f7\'e0\'e5\'f2\'f1\'ff \'ed\'e0 \'ef\'e5\'f0\'e5\'e4\'e0\'f7\'f3 \'e4\'e0\'ed\'ed\'fb\'f5 \'ee\'f2 \'d0\'c32\'c1.  \'c4\'e0\'ed\'ed\'fb\'e5  \'f1\par
+\'ea\'ee\'ec\'ec\'f3\'f2\'e0\'f2\'ee\'f0\'e0  2,  \'f7\'e5\'f0\'e5\'e7  \'e1\'f3\'f4\'e5\'f0  \'ef\'e5\'f0\'e2\'ee\'e3\'ee  \'e1\'e0\'e9\'f2\'e0  \'e4\'e0\'ed\'ed\'fb\'f5   (\'ee\'f2\'ea\'f0\'fb\'f2\'fb\'e9\par
+\'f1\'e8\'e3\'ed\'e0\'eb\'e0\'ec\'e8 SEL1=0, R=0) \'ef\'e5\'f0\'e5\'e4\'e0\'fe\'f2\'f1\'ff \'ed\'e0 \'f8\'e8\'ed\'f3 IBM. \'ce\'ef\'e5\'f0\'e0\'f6\'e8\'ff \'e7\'e0\'ea\'ee\'ed\'f7\'e5\'ed\'e0.\par
+\par
+                        5.4.\'d6\'e8\'ea\'eb \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'ff\par
+     \'d6\'e8\'ea\'eb \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'ff \'e2\'fb\'ef\'ee\'eb\'ed\'ff\'e5\'f2\'f1\'ff \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee\'ec \'e0\'f1\'e8\'ed\'f5\'f0\'ee\'ed\'ed\'ee. \'c4\'eb\'ff \'f2\'ee\'e3\'ee,\par
+\'f7\'f2\'ee\'e1\'fb    \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'e5    \'ef\'f0\'ee\'e8\'e7\'ee\'f8\'eb\'ee,     \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'ee     \'ef\'f0\'e5\'e4\'e2\'e0\'f0\'e8\'f2\'e5\'eb\'fc\'ed\'ee\par
+\'e7\'e0\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'e8\'f0\'ee\'e2\'e0\'f2\'fc  \'ea\'ee\'f0\'ed\'f2\'ee\'eb\'eb\'e5\'f0  \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'e9 \'e2  \'dd\'c2\'cc,  \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc   \'e1\'e8\'f2\par
+\'f0\'e0\'e7\'f0\'e5\'f8\'e5\'ed\'e8\'ff  \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'ff  \'e2  \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e5  (\'f1\'f2\'e0\'f0\'f8\'e8\'e9   \'e1\'e8\'f2   \'e2   \'d0\'c0\'cf   -\par
+\'f3\'f1\'f2\'e0\'ed\'e0\'e2\'eb\'e8\'e2\'e0\'e5\'f2\'f1\'ff  \'ee\'ef\'e8\'f1\'e0\'ed\'ed\'fb\'ec \'e2\'fb\'f8\'e5 \'f1\'ef\'ee\'f1\'ee\'e1\'ee\'ec \'e2\'ec\'e5\'f1\'f2\'e5 \'f1 \'e7\'e0\'ef\'e8\'f1\'fc\'fe \'ed\'ee\'ec\'e5\'f0\'e0\par
+\'f1\'f2\'e0\'ed\'f6\'e8\'e8 \'e8 \'ea\'f0\'e5\'e9\'f2\'e0). \'c7\'e0\'f2\'e5\'ec \'f1\'eb\'e5\'e4\'f3\'e5\'f2 \'e7\'e0\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'e8\'f0\'ee\'e2\'e0\'f2\'fc \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\par
+\'e8 \'ec\'ee\'e4\'f3\'eb\'fc, \'ee\'f2  \'ea\'ee\'f2\'ee\'f0\'ee\'e3\'ee  \'c2\'fb  \'f5\'ee\'f2\'e8\'f2\'e5  \'ef\'ee\'eb\'f3\'f7\'e8\'f2\'fc  \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'e5,  \'f1\'ee\'e3\'eb\'e0\'f1\'ed\'ee\par
+\'e8\'ed\'f1\'f2\'f0\'f3\'ea\'f6\'e8\'ff\'ec \'ef\'ee \'fd\'ea\'f1\'ef\'eb\'f3\'e0\'f2\'e0\'f6\'e8\'e8 \'ec\'ee\'e4\'f3\'eb\'ff \'e8 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0 (\'f0\'e0\'e7\'f0\'e5\'f8\'e8\'f2\'fc\par
+LAM, \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc \'ec\'e0\'f1\'ea\'f3 \'e2 \'d0\'cc\'c7 \'e8 \'e1\'e8\'f2 \'f0\'e0\'e7\'f0\'e5\'f8\'e5\'ed\'e8\'ff \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'e9 \'e2 \'d0\'d3\'d1).\par
+     \'cf\'ee\'f1\'eb\'e5 \'fd\'f2\'ee\'e3\'ee \'ef\'f0\'e5\'e4\'e2\'e0\'f0\'e8\'f2\'e5\'eb\'fc\'ed\'ee\'e3\'ee \'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'ef\'f0\'e8 \'e2\'ee\'e7\'ed\'e8\'ea\'ed\'ee\'e2\'e5\'ed\'e8\'e8\par
+LAM-\'e7\'e0\'ef\'f0\'ee\'f1\'e0 \'ee\'f2 \'ec\'ee\'e4\'f3\'eb\'ff  \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0  \'e2\'fb\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2  \'f1\'e8\'e3\'ed\'e0\'eb  \'c7\'ca4=0,\par
+\'ec\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9 \'e0\'e2\'f2\'ee\'ec\'e0\'f2 \'ef\'f0\'e8 \'ee\'f2\'f1\'f3\'f2\'f1\'f2\'e2\'e8\'e8 \'e4\'f0\'f3\'e3\'e8\'f5 \'e7\'e0\'ef\'f0\'ee\'f1\'ee\'e2  \'e2\'fb\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2\par
+\'f1\'e8\'e3\'ed\'e0\'eb \'cf\'ca4=1. \'c5\'f1\'eb\'e8  \'e2\'fb\'ef\'ee\'eb\'ed\'ff\'e5\'f2\'f1\'ff  \'e4\'f0\'f3\'e3\'ee\'e9  \'e7\'e0\'ef\'f0\'ee\'f1  \'ef\'f0\'e8  \'e2\'ee\'e7\'ed\'e8\'ea\'ed\'ee\'e2\'e5\'ed\'e8\'e8\par
+\'c7\'ca4=0,\'f2\'ee \'f6\'e8\'ea\'eb \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'ff \'ee\'f2\'ea\'eb\'e0\'e4\'fb\'e2\'e0\'e5\'f2\'f1\'ff \'e4\'ee \'ee\'ea\'ee\'ed\'f7\'e0\'ed\'e8\'ff \'fd\'f2\'ee\'e3\'ee \'f6\'e8\'ea\'eb\'e0.  \'c2\par
+\'ee\'f2\'e2\'e5\'f2 \'ed\'e0 \'cf\'ca4=1 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0 \'f1\'e1\'f0\'e0\'f1\'fb\'e2\'e0\'e5\'f2 \'f1\'e8\'e3\'ed\'e0\'eb \'c7\'ca4 \'e8  \'e2\'fb\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2\par
+\'f1\'e8\'e3\'ed\'e0\'eb \'cf\'d0\'d0=0 \'e8 \'e2\'e5\'ea\'f2\'ee\'f0 \'ed\'e0 \'f8\'e8\'ed\'f3 D. \'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'ee\'f2\'e2\'e5\'f7\'e0\'e5\'f2  \'f1\'ed\'ff\'f2\'e8\'e5\'ec  \'cf\'ca4,\par
+\'f3\'f1\'f2\'e0\'ed\'ee\'e2\'ea\'ee\'e9 \'f1\'e8\'e3\'ed\'e0\'eb\'e0 \'d1\'d5\'c8=0. \'cf\'f0\'e8 \'fd\'f2\'ee\'ec \'e2\'e5\'ea\'f2\'ee\'f0 \'f2\'e5\'f0\'ff\'e5\'f2\'f1\'ff,  \'e0  \'f1\'e8\'e3\'ed\'e0\'eb  \'cf\'d0\'d0\par
+\'ef\'f0\'e5\'ee\'e1\'f0\'e0\'e7\'f3\'e5\'f2\'f1\'ff \'e2 \'f1\'e8\'e3\'ed\'e0\'eb IRQ - \'e7\'e0\'ef\'f0\'ee\'f1  \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'ff  \'ed\'e0  \'f8\'e8\'ed\'e5  IBM  P\'d1.\par
+\'ca\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0  \'ef\'f0\'e8\'ed\'e8\'ec\'e0\'e5\'f2  \'f1\'e8\'e3\'ed\'e0\'eb  \'d1\'d5\'c8  \'e8  \'f1\'e1\'f0\'e0\'f1\'fb\'e2\'e0\'e5\'f2  \'cf\'d0\'d0.  \'d6\'e8\'ea\'eb\par
+\'e7\'e0\'ea\'ee\'ed\'f7\'e5\'ed.\par
+\par
+            5.5.\'ce\'ef\'e8\'f1\'e0\'ed\'e8\'e5 \'ef\'f0\'e8\'ed\'f6\'e8\'ef\'e8\'e0\'eb\'fc\'ed\'ee\'e9 \'f1\'f5\'e5\'ec\'fb \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0\par
+               5.5.1.\'cd\'e0\'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \'fd\'eb\'e5\'ec\'e5\'ed\'f2\'ee\'e2 \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0\par
+     \'d3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'f1\'e2\'ff\'e7\'e8 \'f1\'ee\'f1\'f2\'ee\'e8\'f2 \'e8\'e7 \'f1\'eb\'e5\'e4\'f3\'fe\'f9\'e8\'f5 \'f4\'f3\'ed\'ea\'f6\'e8\'ee\'ed\'e0\'eb\'fc\'ed\'fb\'f5 \'e3\'f0\'f3\'ef\'ef:\par
+--------------------------------------------------------------\par
+|      \'cd\'e0\'e7\'e2\'e0\'ed\'e8\'ff \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'e8\'f5 \'e1\'eb\'ee\'ea\'ee\'e2     |    \'cc\'e8\'ea\'f0\'ee\'f1\'f5\'e5\'ec\'fb        |\par
+--------------------------------------------------------------\par
+|  \'c1\'f3\'f4\'e5\'f0 \'e2\'f2\'ee\'f0\'ee\'e3\'ee \'e1\'e0\'e9\'f2\'e0 \'e4\'e0\'ed\'ed\'fb\'f5         |    D1, D2            |\par
+|  \'d0\'e5\'e3\'e8\'f1\'f2\'f0 \'e2\'f2\'ee\'f0\'ee\'e3\'ee \'e1\'e0\'e9\'f2\'e0              |                      |\par
+|  \'e8 \'ea\'ee\'ec\'ec\'f3\'f2\'e0\'f2\'ee\'f0 1                     |    D3, D4            |\par
+|  \'ca\'ee\'ec\'ec\'f3\'f2\'e0\'f2\'ee\'f0 2                       |    D6, D7            |\par
+|  \'d0\'e5\'e3\'e8\'f1\'f2\'f0 \'e0\'e4\'f0\'e5\'f1\'e0 \'e8 \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'e9 (\'d0\'c0\'cf)  |    D8                |\par
+|  \'c4\'e5\'f8\'e8\'f4\'f0\'e0\'f2\'ee\'f0 \'e0\'e4\'f0\'e5\'f1\'e0 \'e8 \'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'ff      |    D5.1, D5.2,       |\par
+|                                     |    D9.1, D9.2, D10,  |\par
+|  \'d2\'f0\'e8\'e3\'e3\'e5\'f0 R-W                        |    D5.3, D5.4        |\par
+|  \'c1\'f3\'f4\'e5\'f0 \'ef\'e5\'f0\'e2\'ee\'e3\'ee \'e1\'e0\'e9\'f2\'e0 \'e4\'e0\'ed\'ed\'fb\'f5         |    D11, D12          |\par
+|  \'cc\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9 \'e0\'e2\'f2\'ee\'ec\'e0\'f2           |    D15, D16, D17.2,  |\par
+|                                     |    D18.2, D19        |\par
+|  \'c1\'f3\'f4\'e5\'f0 \'ec\'eb\'e0\'e4\'f8\'e5\'e3\'ee \'e0\'e4\'f0\'e5\'f1\'e0              |    D17.1             |\par
+--------------------------------------------------------------\par
+                     5.5.2.\'d6\'e5\'ef\'e8 \'ef\'e5\'f0\'e5\'e4\'e0\'f7\'e8 \'e4\'e0\'ed\'ed\'fb\'f5\par
+          \'c4\'e0\'ed\'ed\'fb\'e5 \'e8 \'e0\'e4\'f0\'e5\'f1\'e0 \'ed\'e0 \'f8\'e8\'ed\'e5  IBM  PC  \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'fb  \'e2  \'ef\'f0\'ff\'ec\'ee\'ec\par
+\'ea\'ee\'e4\'e5,\'f2.\'e5. "\'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'ee\'ec\'f3 \'ed\'f3\'eb\'fe" \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'e5\'f2 "0 \'c2" \'ed\'e0 \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'fe\'f9\'e5\'e9\par
+\'f8\'e8\'ed\'e5 \'e4\'e0\'ed\'ed\'fb\'f5 \'e8\'eb\'e8 \'e0\'e4\'f0\'e5\'f1\'e0. \'cd\'e0 \'f8\'e8\'ed\'e5 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0 (UNIBUS)  \'ef\'f0\'e8\'ed\'ff\'f2\'ee\par
+\'e8\'ed\'e2\'e5\'f0\'f1\'ed\'ee\'e5 \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'e5 \'e4\'e0\'ed\'ed\'fb\'f5 \'e8 \'e0\'e4\'f0\'e5\'f1\'ee\'e2,  \'ef\'ee\'fd\'f2\'ee\'ec\'f3  \'e2  \'f1\'f5\'e5\'ec\'e5  \'e1\'f3\'f4\'e5\'f0\par
+\'ef\'e5\'f0\'e2\'ee\'e3\'ee \'e1\'e0\'e9\'f2\'e0 \'e4\'e0\'ed\'ed\'fb\'f5, \'f7\'e5\'f0\'e5\'e7 \'ea\'ee\'f2\'ee\'f0\'fb\'e9  \'ef\'f0\'ee\'f5\'ee\'e4\'ff\'f2  \'e2\'f1\'e5  \'e4\'e0\'ed\'ed\'fb\'e5  \'e2  (\'e8\'e7)\par
+\'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0    ,\'e8\'ed\'e2\'e5\'f0\'f2\'e8\'f0\'f3\'e5\'f2  \'e4\'e0\'ed\'ed\'fb\'e5  \'f8\'e8\'ed\'fb  IBM  PC.  \'c0\'e4\'f0\'e5\'f1\'e0,\par
+\'ef\'ee\'f1\'f2\'f3\'ef\'e0\'fe\'f9\'e8\'e5 \'ed\'e0 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0 \'f1 \'f8\'e8\'ed\'fb IBM PC, \'f2\'e0\'ea\'e6\'e5  \'e8\'ed\'e2\'e5\'f0\'f2\'e8\'f0\'f3\'fe\'f2\'f1\'ff\par
+\'e1\'f3\'f4\'e5\'f0\'ee\'ec  \'ec\'eb\'e0\'e4\'f8\'e5\'e3\'ee  \'e0\'e4\'f0\'e5\'f1\'e0.  \'d1\'f2\'e0\'f0\'f8\'e0\'ff  \'f7\'e0\'f1\'f2\'fc  \'e0\'e4\'f0\'e5\'f1\'e0  \'e2  \'e8\'ed\'e2\'e5\'f0\'f1\'e8\'e8  \'ed\'e5\par
+\'ed\'f3\'e6\'e4\'e0\'e5\'f2\'f1\'ff, \'f2.\'ea. \'f3\'e6\'e5 \'ef\'f0\'ee\'e8\'ed\'e2\'e5\'f0\'f2\'e8\'f0\'ee\'e2\'e0\'ed\'e0 \'ef\'f0\'e8 \'e7\'e0\'ef\'e8\'f1\'e8 \'e2 \'d0\'c0\'cf.\par
+     \'d8\'e8\'ed\'fb \'e4\'e0\'ed\'ed\'fb\'f5 \'e8 \'e0\'e4\'f0\'e5\'f1\'ee\'e2 \'ed\'e5 \'e8\'ec\'e5\'fe\'f2 \'fd\'eb\'e5\'ea\'f2\'f0\'e8\'f7\'e5\'f1\'ea\'ee\'e3\'ee \'f1\'ee\'e3\'eb\'e0\'f1\'ee\'e2\'e0\'ed\'e8\'ff  \'ed\'e0\par
+\'ef\'eb\'e0\'f2\'e5, \'f2.\'ea. \'f1\'f7\'e8\'f2\'e0\'e5\'f2\'f1\'ff, \'f7\'f2\'ee \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0 \'e4\'ee\'eb\'e6\'e5\'ed  \'e8\'ec\'e5\'f2\'fc  \'e7\'e0\'e3\'eb\'f3\'f8\'ea\'f3\par
+\'ee\'e1\'f9\'e5\'e9 \'f8\'e8\'ed\'fb \'f1 \'f1\'ee\'e3\'eb\'e0\'f1\'f3\'fe\'f9\'e8\'ec\'e8 \'f0\'e5\'e7\'e8\'f1\'f2\'ee\'f0\'e0\'ec\'e8.\par
+\par
+                       5.5.3. \'d6\'e5\'ef\'e8 \'f3\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'ff\par
+               5.5.3.1. \'c4\'e5\'f8\'e8\'f4\'f0\'e0\'f2\'ee\'f0 \'e0\'e4\'f0\'e5\'f1\'e0 \'e8 \'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'ff\par
+     \'c4\'e5\'f8\'e8\'f4\'f0\'e0\'f2\'ee\'f0  \'e0\'e4\'f0\'e5\'f1\'e0  \'e8  \'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'ff  (\'c4\'d8\'c0)  \'e2\'fb\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'e5\'f2   \'f7\'e5\'f2\'fb\'f0\'e5\par
+\'e2\'fb\'f5\'ee\'e4\'ed\'fb\'f5 \'f1\'e8\'e3\'ed\'e0\'eb\'e0 - SEL1, SEL2 \'e8 \'e4\'e2\'e0 \'f1\'e8\'e3\'ed\'e0\'eb\'e0 \'e2\'ed\'f3\'f2\'f0\'e5\'ed\'ed\'e5\'e3\'ee \'e0\'e4\'f0\'e5\'f1\'e0 \'c00  \'e8\par
+\'c01. \'d1\'e8\'e3\'ed\'e0\'eb SEL1=0 \'e2\'fb\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'e5\'f2\'f1\'ff \'ef\'f0\'e8 \'eb\'fe\'e1\'ee\'ec \'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'e8  \'ea  \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'f3,\par
+\'f1\'e8\'e3\'ed\'e0\'eb SEL2=0 - \'ef\'f0\'e8 \'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'e8 \'ea \'e0\'e4\'f0\'e5\'f1\'e0\'ec \'f1\'f2\'e0\'ed\'f6\'e8\'e9.  \'c2\'ed\'f3\'f2\'f0\'e5\'ed\'ed\'e8\'e9  \'e0\'e4\'f0\'e5\'f1\par
+\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2\'f1\'ff \'ef\'ee \'f1\'eb\'e5\'e4\'f3\'fe\'f9\'e5\'e9 \'f2\'e0\'e1\'eb\'e8\'f6\'e5:\par
+---------------------------------------\par
+|     \'ce\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'e5        |  \'c01   |   \'c00 |\par
+---------------------------------------\par
+|     \'c0\'e4\'f0\'e5\'f1 \'d0\'c0\'cf        |  0    |   0  |\par
+|     \'c0\'e4\'f0\'e5\'f1 \'d0\'c32\'c1       |  0    |   1  |\par
+|     \'c0\'e4\'f0\'e5\'f1 \'ea\'f0\'e5\'e9\'f2\'e0     |  1    |   0  |\par
+|     \'d7\'f3\'e6\'ee\'e9 \'e0\'e4\'f0\'e5\'f1      |  1    |   1  |\par
+|     \'cd\'e5\'f2 \'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'ff    |  1    |   1  |\par
+---------------------------------------\par
+     \'ce\'f1\'ed\'ee\'e2\'ee\'e9 \'c4\'d8\'c0 \'ff\'e2\'eb\'ff\'e5\'f2\'f1\'ff \'cf\'c7\'d3 \'ca556\'d0\'d24 (D10). \'cd\'e0 \'ed\'e5\'e5  \'ef\'ee\'f1\'f2\'f3\'ef\'e0\'e5\'f2  \'ea\'ee\'e4\par
+\'ec\'eb\'e0\'e4\'f8\'e5\'e9 \'f7\'e0\'f1\'f2\'e8 \'e0\'e4\'f0\'e5\'f1\'e0 (\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'fe\'f9\'e8\'e9, \'ea\'f3\'e4\'e0 \'ef\'f0\'ee\'e8\'e7\'e2\'ee\'e4\'e8\'f2\'f1\'ff \'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'e5)  \'e8\par
+\'f2\'f0\'e8 \'f1\'e8\'e3\'ed\'e0\'eb\'e0 \'f0\'e0\'e7\'f0\'e5\'f8\'e5\'ed\'e8\'ff - PC ALE, PC AEN,\'e0 \'f2\'e0\'ea\'e6\'e5 \'f1\'e8\'e3\'ed\'e0\'eb\'ee\'e2 PC  IOR  \'e8\par
+PC  IOW  (\'ed\'e0  \'e2\'fb\'e2\'ee\'e4  13).  \'d1\'e8\'e3\'ed\'e0\'eb  \'ed\'f3\'eb\'e5\'e2\'ee\'e3\'ee  \'f3\'f0\'ee\'e2\'ed\'ff  \'ed\'e0  \'e2\'fb\'e2\'ee\'e4\'e5  13\par
+\'ef\'ee\'ff\'e2\'eb\'ff\'e5\'f2\'f1\'ff \'ef\'f0\'e8 \'eb\'fe\'e1\'ee\'ec \'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'e8 \'ea \'ef\'ee\'f0\'f2\'f3 \'e8\'e7 \'dd\'c2\'cc.\par
+     \'d1\'e8\'e3\'ed\'e0\'eb \'f1  \'e2\'fb\'e2\'ee\'e4\'e0  9  \'ec\'e8\'ea\'f0\'ee\'f1\'f5\'e5\'ec\'fb  D10  (\'ef\'ee\'ff\'e2\'eb\'ff\'fe\'f9\'e9\'f1\'ff  \'ef\'f0\'e8  \'eb\'fe\'e1\'ee\'ec\par
+\'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'e8 \'ea \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'f3),  \'e4\'ee\'ef\'ee\'eb\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'ee  \'f1\'ea\'eb\'e0\'e4\'fb\'e2\'e0\'e5\'f2\'f1\'ff  \'f1  \'f1\'e8\'e3\'ed\'e0\'eb\'e0\'ec\'e8\par
+\'f8\'e8\'ed\'fb \'ef\'ee \'e0\'e4\'f0\'e5\'f1\'e0\'ec\'e8 \'c07 - \'c09 \'dd\'c2\'cc \'e4\'eb\'ff \'ef\'ee\'eb\'ed\'ee\'e9  \'e4\'e5\'f8\'e8\'f4\'f0\'e0\'f6\'e8\'e8  \'e0\'e4\'f0\'e5\'f1\'e0  \'ef\'ee\'f0\'f2\'e0,\par
+\'ef\'ee\'f1\'eb\'e5 \'f7\'e5\'e3\'ee \'ed\'e0 \'fd\'eb\'e5\'ec\'e5\'ed\'f2\'e0\'f5 D9.2 \'e8 D5.2 - \'e2\'fb\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'e5\'f2\'f1\'ff \'f1\'e8\'e3\'ed\'e0\'eb SEL1=0.\par
+\'c0\'e4\'f0\'e5\'f1\'e0 \'c08 \'e8 \'c09 \'ec\'ee\'e3\'f3\'f2 \'ec\'e5\'ed\'ff\'f2\'fc\'f1\'ff \'ec\'e5\'f1\'f2\'e0\'ec\'e8 \'f1 \'ef\'ee\'ec\'ee\'f8\'fc\'fe \'ef\'e5\'f0\'e5\'ec\'fb\'f7\'ea\'e8  E1.  \'dd\'f2\'ee\par
+\'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'ee \'e4\'eb\'ff \'f1\'ec\'e5\'ed\'fb \'e1\'e0\'e7\'ee\'e2\'ee\'e3\'ee \'e0\'e4\'f0\'e5\'f1\'e0 \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0 \'f1\'ee 100  \'ed\'e0 200 (\'e4\'eb\'ff\par
+\'cf\'d0\'c0\'c2\'c5\'d6 - 16).\par
+\par
+                        5.5.3.2. \'d2\'f0\'e8\'e3\'e3\'e5\'f0 R-W\par
+     \'d2\'f0\'e8\'e3\'e3\'e5\'f0 R-W \'ee\'f1\'f3\'f9\'e5\'f1\'f2\'e2\'eb\'ff\'e5\'f2 \'e7\'e0\'ef\'ee\'ec\'e8\'ed\'e0\'ed\'e8\'e5  \'ef\'ee\'f1\'eb\'e5\'e4\'ed\'e5\'e3\'ee  \'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'ff  \'ea\par
+\'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'f3 (\'f7\'f2\'e5\'ed\'e8\'e5  \'e8\'eb\'e8  \'e7\'e0\'ef\'e8\'f1\'fc).  \'ce\'ed  \'e2\'fb\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'e5\'f2  \'f1\'e8\'e3\'ed\'e0\'eb\'fb  R  (0\par
+\'ee\'e1\'ee\'e7\'ed\'e0\'f7\'e0\'e5\'f2 \'f7\'f2\'e5\'ed\'e8\'e5 \'e2 \'dd\'c2\'cc) \'e8 W (0 \'ee\'e1\'ee\'e7\'ed\'e0\'f7\'e0\'e5\'f2  \'e7\'e0\'ef\'e8\'f1\'fc  \'e2  \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee).\par
+\'d1\'e8\'e3\'ed\'e0\'eb W \'e2\'fb\'e4\'e0\'e5\'f2\'f1\'ff \'f7\'e5\'f0\'e5\'e7 \'e1\'f3\'f4\'e5\'f0 D13.2 \'ed\'e0 \'f8\'e8\'ed\'f3  \'ce\'d8  \'c2/\'c21.  \'c7\'e0\'ef\'ee\'ec\'e8\'ed\'e0\'ed\'e8\'e5\par
+\'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff \'fd\'f2\'ee\'e3\'ee \'f1\'e8\'e3\'ed\'e0\'eb\'e0 \'ed\'f3\'e6\'ed\'ee \'e4\'eb\'ff \'f1\'ee\'e2\'ec\'e5\'f9\'e5\'ed\'e8\'ff \'e2\'ee  \'e2\'f0\'e5\'ec\'e5\'ed\'e8  \'e7\'e0\'e2\'e5\'f0\'f8\'e5\'ed\'e8\'ff\par
+\'ee\'ef\'e5\'f0\'e0\'f6\'e8\'e8 \'e2 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e5 \'e8 \'dd\'c2\'cc.\par
+     \'d1\'e8\'e3\'ed\'e0\'eb R  \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff  \'e4\'eb\'ff  \'ef\'e5\'f0\'e5\'ea\'eb\'fe\'f7\'e5\'ed\'e8\'ff  \'ed\'e0\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'ff  \'f0\'e0\'e1\'ee\'f2\'fb\par
+\'e1\'f3\'f4\'e5\'f0\'e0 \'ef\'e5\'f0\'e2\'ee\'e3\'ee \'e1\'e0\'e9\'f2\'e0 \'e4\'e0\'ed\'ed\'fb\'f5, \'e0 W  -  \'e4\'eb\'ff  \'ee\'f2\'ea\'f0\'fb\'f2\'e8\'ff  \'e1\'f3\'f4\'e5\'f0\'e0  \'e2\'f2\'ee\'f0\'ee\'e3\'ee\par
+\'e1\'e0\'e9\'f2\'e0 \'e4\'e0\'ed\'ed\'fb\'f5  \'e8  \'ef\'e5\'f0\'e5\'ea\'eb\'fe\'f7\'e5\'ed\'e8\'ff  \'ea\'ee\'ec\'ec\'f3\'f2\'e0\'f2\'ee\'f0\'e0  1.  \'d2\'e0\'ea\'e6\'e5  \'fd\'f2\'ee\'f2  \'f1\'e8\'e3\'ed\'e0\'eb\par
+\'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff  \'ec\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'ec  \'e0\'e2\'f2\'ee\'ec\'e0\'f2\'ee\'ec  \'e4\'eb\'ff   \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'e8\'ff   \'e2\'e8\'e4\'e0\par
+\'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'ff (\'f7\'f2\'e5\'ed\'e8\'e5 \'e8\'eb\'e8 \'e7\'e0\'ef\'e8\'f1\'fc).\par
+                 5.5.3.3. \'cc\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9 \'e0\'e2\'f2\'ee\'ec\'e0\'f2\par
+     \'cc\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9 \'e0\'e2\'f2\'ee\'ec\'e0\'f2 \'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed \'ef\'ee \'f1\'f2\'e0\'ed\'e4\'e0\'f0\'f2\'ed\'ee\'e9 \'f1\'f5\'e5\'ec\'e5  \'cf\'c7\'d3  -\par
+\'f0\'e5\'e3\'e8\'f1\'f2\'f0. \'d2\'e0\'ea\'f2\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'e5  \'e0\'e2\'f2\'ee\'ec\'e0\'f2\'e0  \'ee\'f1\'f3\'f9\'e5\'f1\'f2\'e2\'eb\'ff\'e5\'f2\'f1\'ff  \'f1\'e8\'e3\'ed\'e0\'eb\'ee\'ec  PC  CLK,\par
+\'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'e2\'fb\'e4\'e0\'e5\'f2\'f1\'ff \'f1\'e8\'ed\'f5\'f0\'ee\'ed\'ed\'ee \'f1 \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'ff\'ec\'e8 \'ed\'e0 \'f8\'e8\'ed\'e5 \'dd\'c2\'cc. \'dd\'f2\'ee  \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2\par
+\'f1\'e8\'e3\'ed\'e0\'eb\'fb \'f8\'e8\'ed\'fb (W,  SEL1)  \'ef\'ee\'e4\'ea\'eb\'fe\'f7\'e8\'f2\'fc  \'ed\'e5\'ef\'ee\'f1\'f0\'e5\'e4\'f1\'f2\'e2\'e5\'ed\'ed\'ee  \'ea  \'cf\'c7\'d3,  \'ec\'e8\'ed\'f3\'ff\par
+\'f0\'e5\'e3\'e8\'f1\'f2\'f0. \'d0\'e0\'e1\'ee\'f2\'e0 \'ec\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'ee\'e3\'ee  \'e0\'e2\'f2\'ee\'ec\'e0\'f2\'e0  \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2\'f1\'ff  \'e2\'f5\'ee\'e4\'ed\'fb\'ec\'e8\par
+\'f1\'e8\'e3\'ed\'e0\'eb\'e0\'ec\'e8 \'e8 \'f1\'e8\'e3\'ed\'e0\'eb\'e0\'ec\'e8 \'ec\'e8\'ea\'f0\'ee\'e0\'e4\'f0\'e5\'f1\'e0  \'cc0  \'e8  \'cc1.  \'cd\'e0\'f7\'e0\'eb\'fc\'ed\'ee\'e5  \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'e5\par
+\'ec\'e8\'ea\'f0\'ee\'e0\'e4\'f0\'e5\'f1\'e0 - 0, 0. \'cf\'f0\'e8 \'fd\'f2\'ee\'ec \'e6\'e5  \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e8  \'ec\'e8\'ea\'f0\'ee\'e0\'e4\'f0\'e5\'f1\'e0  \'e2\'fb\'ef\'ee\'eb\'ed\'ff\'fe\'f2\'f1\'ff\par
+\'e7\'e0\'ef\'e8\'f1\'fc \'e2 \'d0\'c0\'cf, \'e7\'e0\'ef\'e8\'f1\'fc \'e8 \'f7\'f2\'e5\'ed\'e8\'e5 \'d0\'c32\'c1 \'e8 \'ed\'e0\'f7\'e0\'eb\'ee \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'e9  \'f1  \'ea\'f0\'e5\'e9\'f2\'ee\'ec  \'e8\par
+\'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'ff.\'cf\'f0\'e8 \'cc0=1,  \'cc1=0  \'e2\'fb\'ef\'ee\'eb\'ed\'ff\'e5\'f2\'f1\'ff  \'e2\'f2\'ee\'f0\'e0\'ff  \'f7\'e0\'f1\'f2\'fc  \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'e9  \'f1\par
+\'ea\'f0\'e5\'e9\'f2\'ee\'ec (\'ee\'e6\'e8\'e4\'e0\'ed\'e8\'e5 \'d1\'d5\'c8 \'e8\'eb\'e8 \'f2\'e0\'e9\'ec\'e5\'f0\'e0), \'ef\'f0\'e8 \'cc0=0, \'cc1=1 -  \'f2\'f0\'e5\'f2\'fc\'ff  \'f7\'e0\'f1\'f2\'fc\par
+\'ee\'ef\'e5\'f0\'e0\'f6\'e8\'e9 \'f1 \'ea\'f0\'e5\'e9\'f2\'ee\'ec (\'ee\'e6\'e8\'e4\'e0\'ed\'e8\'e5 \'ea\'ee\'ed\'f6\'e0 \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'e8 \'ee\'f2 \'dd\'c2\'cc), \'ef\'f0\'e8  \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'e8\par
+1,1 - \'e2\'f2\'ee\'f0\'e0\'ff \'f7\'e0\'f1\'f2\'fc \'f6\'e8\'ea\'eb\'e0 \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'ff.\par
+     \'cc\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9   \'e0\'e2\'f2\'ee\'ec\'e0\'f2   \'e2\'fb\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'e5\'f2   \'f1\'eb\'e5\'e4\'f3\'fe\'f9\'e8\'e5   \'f1\'e8\'e3\'ed\'e0\'eb\'fb\par
+\'f3\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'ff\par
+     \'d11    = 0     \'ef\'f0\'e8 \'e7\'e0\'ef\'e8\'f1\'e8 \'e2 \'d0\'c32\'c1\par
+     \'d12    = 1     \'ef\'f0\'e8 \'e7\'e0\'ef\'e8\'f1\'e8 \'e2 \'d0\'c0\'cf\par
+     SEL2  = 1     \'ef\'f0\'e8 \'f7\'f2\'e5\'ed\'e8\'e8 \'d0\'c32\'c1\par
+     RDY   = 0     \'ef\'f0\'e8 \'ee\'e6\'e8\'e4\'e0\'ed\'e8\'e8 \'d1\'d5\'c8\par
+     \'c2 \'ee\'f1\'f2\'e0\'eb\'fc\'ed\'fb\'f5 \'f1\'eb\'f3\'f7\'e0\'ff\'f5 \'f1\'e8\'e3\'ed\'e0\'eb\'fb \'f3\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'ff  \'e8\'ec\'e5\'fe\'f2  \'ef\'f0\'ee\'f2\'e8\'e2\'ee\'ef\'ee\'eb\'ee\'e6\'ed\'fb\'e5\par
+\'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff.\par
+     \'d2\'e0\'e9\'ec\'e5\'f0, \'e2\'f5\'ee\'e4\'ff\'f9\'e8\'e9 \'e2 \'f1\'ee\'f1\'f2\'e0\'e2 \'ec\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'ee\'e3\'ee \'e0\'e2\'f2\'ee\'ec\'e0\'f2\'e0, \'f0\'e0\'e1\'ee\'f2\'e0\'e5\'f2\par
+\'f1\'eb\'e5\'e4\'f3\'fe\'f9\'e8\'ec  \'ee\'e1\'f0\'e0\'e7\'ee\'ec:  \'ea\'ee\'e3\'e4\'e0  \'e2  \'e0\'e2\'f2\'ee\'ec\'e0\'f2\'e5  \'ed\'e0\'f7\'e8\'ed\'e0\'e5\'f2\'f1\'ff  \'f6\'e8\'ea\'eb  \'ee\'e6\'e8\'e4\'e0\'ed\'e8\'ff\par
+\'f1\'e8\'e3\'ed\'e0\'eb\'e0 \'d1\'d5\'c8 \'ee\'f2 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0, \'ee\'ed  (\'e0\'e2\'f2\'ee\'ec\'e0\'f2)  \'e2\'fb\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2  \'f1\'e8\'e3\'ed\'e0\'eb\par
+RDY=0 \'e8 CHRDY=0, \'f7\'f2\'ee  \'ef\'e5\'f0\'e5\'e2\'ee\'e4\'e8\'f2  \'dd\'c2\'cc  \'e2  \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'e5  \'ee\'e6\'e8\'e4\'e0\'ed\'e8\'ff.  \'c5\'f1\'eb\'e8\par
+\'ee\'e1\'f0\'e0\'f9\'e5\'ed\'e8\'e5 \'ea \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'f3 \'ef\'f0\'ee\'e8\'e7\'e2\'ee\'e4\'e8\'eb\'ee\'f1\'fc \'ef\'ee \'ed\'e5\'e2\'e5\'f0\'ed\'ee\'ec\'f3 \'e0\'e4\'f0\'e5\'f1\'f3 \'f2\'ee\par
+\'f1\'e8\'e3\'ed\'e0\'eb \'d1\'d5\'c8 \'ed\'e5 \'ef\'ee\'ff\'e2\'e8\'f2\'f1\'ff \'ed\'e8\'ea\'ee\'e3\'e4\'e0 \'e8 \'dd\'c2\'cc "\'e7\'e0\'e2\'e8\'f1\'ed\'e5\'f2". \'c4\'eb\'ff \'ef\'f0\'e5\'e4\'ee\'f2\'e2\'f0\'e0\'f9\'e5\'ed\'e8\'ff\par
+\'fd\'f2\'ee\'e3\'ee \'f1\'e8\'e3\'ed\'e0\'eb  RDY  \'e8\'ed\'e2\'e5\'f0\'f2\'e8\'f0\'f3\'e5\'f2\'f1\'ff  \'e8  \'f7\'e5\'f0\'e5\'e7  \'ce\'ca  \'e1\'f3\'f4\'e5\'f0  \'ef\'ee\'e4\'e0\'e5\'f2\'f1\'ff  \'ed\'e0\par
+\'ea\'ee\'ed\'e4\'e5\'ed\'f1\'e0\'f2\'ee\'f0 \'d11, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ed\'e0\'f7\'e8\'ed\'e0\'e5\'f2 \'ec\'e5\'e4\'eb\'e5\'ed\'ed\'ee \'e7\'e0\'f0\'ff\'e6\'e0\'f2\'fc\'f1\'ff \'f7\'e5\'f0\'e5\'e7 \'f0\'e5\'e7\'e8\'f1\'f2\'ee\'f0\par
+R8. \'d7\'e5\'f0\'e5\'e7, \'ef\'f0\'e8\'ec\'e5\'f0\'ed\'ee, 10 \'ec\'ea\'f1 \'ed\'e0\'ef\'f0\'ff\'e6\'e5\'ed\'e8\'e5 \'ed\'e0 \'ed\'e5\'ec \'e4\'ee\'f1\'f2\'e8\'e3\'ed\'e5\'f2 1.4 \'c2,  \'f7\'f2\'ee\par
+\'e4\'ee\'f1\'f2\'e0\'f2\'ee\'f7\'ed\'ee \'e4\'eb\'ff \'f2\'ee\'e3\'ee, \'f7\'f2\'ee\'e1\'fb \'ee\'ed\'ee \'e1\'fb\'eb\'ee \'e2\'ee\'f1\'ef\'f0\'e8\'ed\'ff\'f2\'ee \'ea\'e0\'ea  "1".  \'cf\'ee  \'fd\'f2\'ee\'ec\'f3\par
+\'f1\'e8\'e3\'ed\'e0\'eb\'f3 \'ec\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9 \'e0\'e2\'f2\'ee\'ec\'e0\'f2 \'ef\'f0\'e5\'ea\'f0\'e0\'f9\'e0\'e5\'f2 \'ee\'e6\'e8\'e4\'e0\'ed\'e8\'e5  \'d1\'d5\'c8,  \'f1\'ed\'e8\'ec\'e0\'e5\'f2\par
+\'f1\'e8\'e3\'ed\'e0\'eb CHRDY \'e8 \'f0\'e0\'e7\'f0\'e5\'f8\'e0\'e5\'f2 \'dd\'c2\'cc \'ef\'f0\'ee\'e4\'ee\'eb\'e6\'e0\'f2\'fc \'f0\'e0\'e1\'ee\'f2\'f3. \'c5\'f1\'eb\'e8 \'e2  \'f2\'e5\'f7\'e5\'ed\'e8\'e5  10\par
+\'ec\'ea\'f1 \'e0\'e2\'f2\'ee\'ec\'e0\'f2 \'ef\'ee\'eb\'f3\'f7\'e8\'eb \'d1\'d5\'c8 , \'f2\'ee \'f6\'e8\'ea\'eb \'ee\'ea\'e0\'ed\'f7\'e8\'e2\'e0\'e5\'f2\'f1\'ff \'f8\'f2\'e0\'f2\'ed\'ee, \'f1 \'e7\'e0\'ef\'e8\'f1\'fc\'fe  \'e2\par
+\'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e5 \'e8\'eb\'e8 \'e2 \'dd\'c2\'cc \'e8 \'d0\'c32\'c1 \'e4\'e0\'ed\'ed\'fb\'f5.\par
+\par
+                      5.5.3.4. \'d6\'e5\'ef\'e8 \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'ff\par
+     \'c2 \'f1\'e8\'f1\'f2\'e5\'ec\'f3 \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'e9  \'ef\'eb\'e0\'f2\'fb  \'e2\'f5\'ee\'e4\'ff\'f2  (\'ea\'f0\'ee\'ec\'e5  \'ec\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'ee\'e3\'ee\par
+\'e0\'e2\'f2\'ee\'ec\'e0\'f2\'e0) \'fd\'eb\'e5\'ec\'e5\'ed\'f2\'fb D9.3, D18.3, D13.3 \'e8 \'ee\'e4\'e8\'ed \'f0\'e0\'e7\'f0\'ff\'e4 D8. \'d1\'e8\'e3\'ed\'e0\'eb \'d0\'cf \'f1\par
+\'e2\'fb\'e2\'ee\'e4\'e0 15 D8 \'ef\'f0\'e8 \'e7\'e0\'ef\'e8\'f1\'e8 \'f2\'f3\'e4\'e0 "1" \'ef\'ee\'ff\'e2\'eb\'ff\'e5\'f2\'f1\'ff \'f3\'f0\'ee\'e2\'ed\'e5\'ec 0. \'ce\'ed \'f0\'e0\'e7\'f0\'e5\'f8\'e0\'e5\'f2\par
+\'ed\'e0 \'fd\'eb\'e5\'ec\'e5\'ed\'f2\'e5 D9.3 \'ef\'f0\'ee\'f5\'ee\'e6\'e4\'e5\'ed\'e8\'e5 \'f1\'e8\'e3\'ed\'e0\'eb\'e0  \'c7\'ca4  \'f1  \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0  \'ed\'e0\par
+\'ec\'e8\'ea\'f0\'ee\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'ed\'fb\'e9 \'e0\'e2\'f2\'ee\'ec\'e0\'f2, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ee\'f2\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'e5\'f2 \'f6\'e8\'ea\'eb \'ef\'f0\'e5\'f0\'fb\'e2\'e0\'ed\'e8\'ff, \'ea\'e0\'ea\par
+\'e1\'fb\'eb\'ee \'ee\'ef\'e8\'f1\'e0\'ed\'ee \'e2 \'f0\'e0\'e7\'e4\'e5\'eb\'e5 2. \'dd\'eb\'e5\'ec\'e5\'ed\'f2  D18.3  \'ef\'e5\'f0\'e5\'e4\'e0\'e5\'f2  \'f1\'e8\'e3\'ed\'e0\'eb  \'cf\'d0\'d0  \'ed\'e0\par
+\'f1\'e8\'e3\'ed\'e0\'eb  \'d1\'d5\'c8  \'e4\'eb\'ff   \'ef\'f0\'e0\'e2\'e8\'eb\'fc\'ed\'ee\'e3\'ee   \'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'ff   \'f6\'e8\'ea\'eb\'e0   \'ef\'f0\'e5\'f0\'fb\'e2\'ed\'e8\'ff   \'e2\par
+\'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e5, \'e8 , \'f7\'e5\'f0\'e5\'e7  \'ef\'e5\'f0\'e5\'ec\'fb\'f7\'ea\'f3  E2  (\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'fe\'f9\'f3\'fe  \'f3\'f0\'ee\'e2\'e5\'ed\'fc\par
+\'ef\'f0\'e8\'ee\'f0\'e8\'f2\'e5\'f2\'e0) \'ed\'e0 \'ee\'e4\'ed\'f3 \'e8\'e7 \'eb\'e8\'ed\'e8\'e9  IOQ \'dd\'c2\'cc.\par
+\par
+                    6.\'d3\'ea\'e0\'e7\'e0\'ed\'e8\'e5 \'ec\'e5\'f0 \'e1\'e5\'e7\'ee\'ef\'e0\'f1\'ed\'ee\'f1\'f2\'e8\par
+     6.1.  \'ca \'f0\'e0\'e1\'ee\'f2\'e5  \'f1  \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee\'ec  \'e4\'ee\'ef\'f3\'f1\'ea\'e0\'fe\'f2\'f1\'ff   \'eb\'e8\'f6\'e0,  \'e8\'e7\'f3\'f7\'e8\'e2\'f8\'e8\'e5\par
+\'ed\'e0\'f1\'f2\'ee\'ff\'f9\'e5\'e5  \'f2\'e5\'f5\'ed\'e8\'f7\'e5\'f1\'ea\'ee\'e5  \'ee\'ef\'e8\'f1\'e0\'ed\'e8\'e5  \'e8  \'e8\'ed\'f1\'f2\'f0\'f3\'ea\'f6\'e8\'fe  \'ef\'ee   \'fd\'ea\'f1\'ef\'eb\'f3\'e0\'f2\'e0\'f6\'e8\'e8,\par
+\'e0\'f2\'f2\'e5\'f1\'f2\'ee\'e2\'e0\'ed\'ed\'fb\'e5     \'ef\'ee     "\'cf\'f0\'e0\'e2\'e8\'eb\'e0\'ec     \'f2\'e5\'f5\'ed\'e8\'f7\'e5\'f1\'ea\'ee\'e9     \'fd\'ea\'f1\'ef\'eb\'f3\'e0\'f2\'e0\'f6\'e8\'e8\par
+\'fd\'eb\'e5\'ea\'f2\'f0\'ee\'f3\'f1\'f2\'e0\'ed\'ee\'e2\'ee\'ea \'ef\'ee\'f2\'f0\'e5\'e1\'e8\'f2\'e5\'eb\'e5\'e9 (\'cf\'d2\'dd) \'e8 \'ef\'f0\'e0\'e2\'e8\'eb\'e0\'ec \'f2\'e5\'f5\'ed\'e8\'ea\'e8 \'e1\'e5\'e7\'ee\'ef\'e0\'f1\'ed\'ee\'f1\'f2\'e8\par
+\'ef\'f0\'e8 \'fd\'ea\'f1\'ef\'eb\'f3\'e0\'f2\'e0\'f6\'e8\'e8 \'fd\'eb\'e5\'ea\'f2\'f0\'ee\'f3\'f1\'f2\'e0\'ed\'ee\'e2\'ee\'ea \'ef\'ee\'f2\'f0\'e5\'e1\'e8\'f2\'e5\'eb\'e5\'e9 (\'cf\'d2\'c1)"  \'e4\'eb\'ff   \'f0\'e0\'e1\'ee\'f2\'fb\par
+\'ed\'e0 \'fd\'eb\'e5\'ea\'f2\'f0\'ee\'f3\'f1\'f2\'e0\'ed\'ee\'e2\'ea\'e0\'f5  \'ec\'e5\'ed\'e5\'e5  1000  \'c2  \'e8  \'e8\'ec\'e5\'fe\'f9\'e8\'e5   \'ea\'e2\'e0\'eb\'e8\'f4\'e8\'ea\'e0\'f6\'e8\'ee\'ed\'ed\'f3\'fe\par
+\'e3\'f0\'f3\'ef\'ef\'f3 \'ef\'ee \'f2\'e5\'f5\'ed\'e8\'ea\'e5 \'e1\'e5\'e7\'ee\'ef\'e0\'f1\'ed\'ee\'f1\'f2\'e8 \'ed\'e5 \'ed\'e8\'e6\'e5 3.\par
+     6.2. \'c7\'e0\'ef\'f0\'e5\'f9\'e0\'e5\'f2\'f1\'ff \'e2\'ee \'e2\'f0\'e5\'ec\'ff \'fd\'ea\'f1\'ef\'eb\'f3\'e0\'f2\'e0\'f6\'e8\'e8  \'e2\'f1\'f2\'e0\'e2\'eb\'ff\'f2\'fc  \'e8  \'e2\'fb\'ed\'e8\'ec\'e0\'f2\'fc\par
+\'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'e8\'e7 \'f0\'e0\'e7\'fa\'e5\'ec\'e0 \'dd\'c2\'cc \'ef\'f0\'e8 \'e2\'ea\'eb\'fe\'f7\'e5\'ed\'ed\'ee\'ec \'ef\'e8\'f2\'e0\'ed\'e8\'e8.\par
+     6.3. \'ce\'f2\'f1\'ee\'e5\'e4\'e8\'ed\'ff\'f2\'fc \'e8\'eb\'e8 \'ef\'f0\'e8\'f1\'ee\'e5\'e4\'e8\'ed\'ff\'f2\'fc \'ea\'e0\'e1\'e5\'eb\'fc \'ec\'e5\'e6\'e4\'f3  \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee\'ec  \'e8\par
+\'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'ee\'ec.\par
+\par
+             7.\'cf\'ee\'f0\'ff\'e4\'ee\'ea  \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'ea\'e8 \'e8 \'ef\'ee\'e4\'e3\'ee\'f2\'ee\'e2\'ea\'e8 \'ea \'f0\'e0\'e1\'ee\'f2\'e5\par
+     7.1.\'cf\'e5\'f0\'e5\'e4 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'ea\'ee\'e9 \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0 \'e2 \'dd\'c2\'cc \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'ee  \'ee\'e7\'ed\'e0\'ea\'ee\'ec\'e8\'f2\'fc\'f1\'ff\par
+\'f1 \'f2\'e5\'f5\'ed\'e8\'f7\'e5\'f1\'ea\'e8\'ec \'ee\'ef\'e8\'f1\'e0\'ed\'e8\'e5\'ec \'e8 \'e8\'ed\'f1\'f2\'f0\'f3\'ea\'f6\'e8\'e5\'e9 \'ef\'ee \'fd\'ea\'f1\'ef\'eb\'f3\'e0\'f2\'e0\'f6\'e8\'e8 \'ed\'e0 \'ed\'e5\'e3\'ee.\par
+     7.2.\'d3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc \'ef\'e5\'f0\'e5\'ec\'fb\'f7\'ea\'e8 \'e2 \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e5 \'ec\'e5\'e6\'e4\'f3 \'ea\'ee\'ed\'f2\'e0\'ea\'f2\'e0\'ec\'e8:\par
+     1-2, 3-4 - \'ef\'f0\'e8 \'f0\'e0\'e1\'ee\'f2\'e5 \'dd\'c2\'cc IBM PC.\par
+     1-4, 2-3 - \'ef\'f0\'e8 \'f0\'e0\'e1\'ee\'f2\'e5 \'f1 \'dd\'c2\'cc "\'cf\'f0\'e0\'e2\'e5\'f6 16".\par
+     \'d3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc \'ef\'e5\'f0\'e5\'ec\'fb\'f7\'ea\'f3 E2 \'ed\'e0 \'ea\'ee\'ed\'f2\'e0\'ea\'f2\'e0\'f5 1-2.\par
+     7.3.\'d1  \'ef\'ee\'ec\'ee\'f9\'fc\'fe  \'ea\'ee\'ec\'e1\'e8\'ed\'e8\'f0\'ee\'e2\'e0\'ed\'ed\'ee\'e3\'ee   \'ef\'f0\'e8\'e1\'ee\'f0\'e0   \'d64360   \'ef\'f0\'ee\'e2\'e5\'f0\'e8\'f2\'fc\par
+\'ee\'f2\'f1\'f3\'f2\'f1\'f2\'e2\'e8\'e5 \'ea\'ee\'f0\'ee\'f2\'ea\'e8\'f5 \'e7\'e0\'ec\'fb\'ea\'e0\'ed\'e8\'e9 \'f6\'e5\'ef\'e5\'e9 \'ef\'e8\'f2\'e0\'ed\'e8\'ff \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0.\par
+     7.4.\'c4\'eb\'ff  \'ef\'f0\'ee\'e2\'e5\'f0\'ea\'e8  \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0  \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'fe\'f2\'f1\'ff  \'f1\'eb\'e5\'e4\'f3\'fe\'f9\'e8\'e5   \'e1\'eb\'ee\'ea\'e8\par
+\'ca\'c0\'cc\'c0\'ca:\par
+     \'ea\'f0\'e5\'e9\'f2 \'ca\'c0\'cc\'c0\'ca             5\'d0.250,\par
+     \'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0 \'ca16 (\'e8\'eb\'e8 \'ca\'ca) 5\'d0.850.35,\par
+     \'e8\'ed\'e4\'e8\'ea\'e0\'f2\'ee\'f0 \'ec\'e0\'e3\'e8\'f1\'f2\'f0\'e0\'eb\'e8    5\'d0.435.56,\par
+     \'f0\'e5\'e3\'e8\'f1\'f2\'f0 \'e2\'fb\'f5\'ee\'e4\'ed\'ee\'e9        \'cf53.056.037,\par
+     \'f0\'e5\'e3\'e8\'f1\'f2\'f0 \'e2\'f5\'ee\'e4\'ed\'ee\'e9         \'cf53.056.051,\par
+     7.5.\'c1\'eb\'ee\'ea\'e8 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc \'e2 \'ea\'f0\'e5\'e9\'f2 \'ca\'c0\'cc\'c0\'ca, \'ef\'f0\'e8\'f7\'e5\'ec, \'f0\'e5\'e3\'e8\'f1\'f2\'f0\'fb \'e2\'f5\'ee\'e4\'ed\'ee\'e9 \'e8\par
+\'e2\'fb\'f5\'ee\'e4\'ed\'ee\'e9 \'e4\'ee\'eb\'e6\'ed\'fb \'e7\'e0\'ed\'e8\'ec\'e0\'f2\'fc 1, 2 \'f1\'f2\'e0\'ed\'f6\'e8\'e8, \'e0 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0 -  24,  25\par
+\'f1\'f2\'e0\'ed\'f6\'e8\'e8.\par
+\par
+                          8.\'cf\'ee\'f0\'ff\'e4\'ee\'ea \'f0\'e0\'e1\'ee\'f2\'fb\par
+     8.1.\'d3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'e2 \'eb\'fe\'e1\'ee\'e9 \'f1\'e2\'ee\'e1\'ee\'e4\'ed\'fb\'e9 \'f0\'e0\'e7\'fa\'e5\'ec \'ed\'e0 \'ee\'f1\'ed\'ee\'e2\'ed\'ee\'e9\par
+\'ef\'e0\'ed\'e5\'eb\'e8 \'dd\'c2\'cc.\par
+     8.2.\'d1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe \'e6\'e3\'f3\'f2\'e0 \'ef\'ee\'e4\'ea\'eb\'fe\'f7\'e8\'f2\'fc \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'ee \'ea \'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'f3 \'ca16.\par
+     8.3.\'c2\'ea\'eb\'fe\'f7\'e8\'f2\'fc \'ea\'f0\'e5\'e9\'f2 \'e8 \'dd\'c2\'cc.\par
+\par
+                 9.\'cf\'f0\'ee\'e2\'e5\'f0\'ea\'e0 \'f2\'e5\'f5\'ed\'e8\'f7\'e5\'f1\'ea\'ee\'e3\'ee \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'ff\par
+     9.1.\'cf\'f0\'ee\'e2\'e5\'f0\'ea\'e0 \'f2\'e5\'f5\'ed\'e8\'f7\'e5\'f1\'ea\'ee\'e3\'ee \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'ff \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0  \'ee\'f1\'f3\'f9\'e5\'f1\'f2\'e2\'eb\'ff\'e5\'f2\'f1\'ff\par
+\'e2 \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'e8\'e8 \'f1 \'f3\'ea\'e0\'e7\'e0\'ed\'e8\'ff\'ec\'e8 \'f0\'f3\'ea\'ee\'e2\'ee\'e4\'f1\'f2\'e2\'e0 \'ee\'ef\'e5\'f0\'e0\'f2\'ee\'f0\'e0.\par
+\par
+\par
+         10.\'c2\'ee\'e7\'ec\'ee\'e6\'ed\'fb\'e5 \'ed\'e5\'e8\'f1\'ef\'f0\'e0\'e2\'ed\'ee\'f1\'f2\'e8 \'e8 \'f1\'ef\'ee\'f1\'ee\'e1\'fb \'e8\'e7 \'f3\'f1\'f2\'f0\'e0\'ed\'e5\'ed\'e8\'ff\par
+     10.1.\'cf\'e5\'f0\'e5\'f7\'e5\'ed\'fc \'e2\'ee\'e7\'ec\'ee\'e6\'ed\'fb\'f5 \'ed\'e5\'e8\'f1\'ef\'f0\'e0\'e2\'ed\'ee\'f1\'f2\'e5\'e9 \'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0  \'ef\'f0\'e8\'e2\'e5\'e4\'e5\'ed  \'e2\par
+\'f2\'e0\'e1\'eb.4.\par
+                             \'d2\'e0\'e1\'eb\'e8\'f6\'e0 4\par
+-------------------------------------------------------------------\par
+|\'c2\'e8\'e4 \'ed\'e5\'e8\'f1\'ef\'f0\'e0\'e2\'ed\'ee\'f1\'f2\'e8    |\'cf\'f0\'e8\'f7\'e8\'ed\'e0 \'ed\'e5\'e8\'f1\'ef\'f0\'e0\'e2\'ed\'ee\'f1\'f2\'e8 | \'d1\'ef\'ee\'f1\'ee\'e1\'fb \'f3\'f1\'f2\'f0\'e0\'ed\'e5\'ed\'e8\'ff |\par
+|                     |                      |                    |\par
+-------------------------------------------------------------------\par
+|1.\'dd\'c2\'cc \'ed\'e5 \'e7\'e0\'e3\'f0\'f3\'e6\'e0\'e5\'f2\'f1\'ff |                      |                    |\par
+|\'ef\'f0\'e8:                 |                      |                    |\par
+-------------------------------------------------------------------\par
+| \'e0)\'ee\'f2\'f1\'f3\'f2\'f1\'f2\'e2\'e8\'e8 \'f1\'e8\'e3\'ed\'e0\'eb\'e0|\'ed\'e5\'e8\'f1\'ef\'f0\'e0\'e2\'ed\'e0 \'ec\'e8\'ea\'f0\'ee\'f1\'f5\'e5\'ec\'e0 | \'e7\'e0\'ec\'e5\'ed\'e8\'f2\'fc \'ec\'e8\'ea\'f0\'ee\'f1\'f5\'e5\'ec\'f3|\par
+| CLK                 |D16                   | D16                |\par
+-------------------------------------------------------------------\par
+| \'e1)\'ee\'f2\'f1\'f3\'f2\'f1\'f2\'e2\'e8\'e8 \'f1\'e8\'e3\'ed\'e0\'eb\'e0|\'ed\'e5\'e8\'f1\'ef\'f0\'e0\'e2\'ed\'fb \'ec\'e8\'ea\'f0\'ee\'f1\'f5\'e5\'ec\'fb | \'e7\'e0\'ec\'e5\'ed\'e8\'f2\'fc \'ec\'e8\'ea\'f0\'ee\'f1\'f5\'e5\'ec\'fb|\par
+| RDY                 |D16 - D18             | D16- D18           |\par
+-------------------------------------------------------------------\par
+| \'e2)\'ee\'f2\'f1\'f3\'f2\'f1\'f2\'e2\'e8\'e8 \'f1\'e8\'e3\'ed\'e0\'eb\'e0|\'ed\'e5\'e8\'f1\'ef\'f0\'e0\'e2\'ed\'fb \'ec\'e8\'ea\'f0\'ee\'f1\'f5\'e5\'ec\'fb | \'e7\'e0\'ec\'e5\'ed\'e8\'f2\'fc \'ec\'e8\'ea\'f0\'ee\'f1\'f5\'e5\'ec\'fb|\par
+| SEL                 |D9 \'e8 D5               | D9 \'e8 D5            |\par
+-------------------------------------------------------------------\par
+|2.\'dd\'c2\'cc \'ed\'e5 \'e7\'e0\'e3\'f0\'f3\'e6\'e0\'e5\'f2\'f1\'ff |                      |                    |\par
+|\'ef\'f0\'e8 \'ed\'e0\'eb\'e8\'f7\'e8\'e8 \'f1\'e8\'e3\'ed\'e0\'eb\'ee\'e2 |                      |                    |\par
+|CLK, RDY, SEL        |                      | \'f1\'ec.\'ef.10.2          |\par
+-------------------------------------------------------------------\par
+     10.2.1.\'cf\'f0\'ee\'e2\'e5\'f0\'e8\'f2\'fc \'ed\'e0\'eb\'e8\'f7\'e8\'e5 \'f1\'e8\'e3\'ed\'e0\'eb\'ee\'e2 \'e2 \'e2\'e8\'e4\'e5 \'e8\'ec\'ef\'f3\'eb\'fc\'f1\'ee\'e2  \'e8\'eb\'e8 \'e2 \'e2\'e8\'e4\'e5\par
+\'eb\'ee\'e3.1  \'ed\'e0  \'f8\'e8\'ed\'e0\'f5  \'d0\'d1  \'f0\'e0\'e7\'fa\'e5\'ec\'e0   \'d51   \'e2   \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'e8\'e8   \'f1\'ee   \'f1\'f5\'e5\'ec\'ee\'e9\par
+\'ef\'f0\'e8\'ed\'f6\'e8\'ef\'e8\'e0\'eb\'fc\'ed\'ee\'e9.\par
+     10.2.2.\'c5\'f1\'eb\'e8 \'ee\'f2\'f1\'f3\'f2\'f1\'f2\'e2\'f3\'e5\'f2 \'eb\'fe\'e1\'ee\'e9  \'e8\'e7  \'f1\'e8\'e3\'ed\'e0\'eb\'ee\'e2  \'ed\'e0  \'f8\'e8\'ed\'e5  \'d0\'d1,  \'f2\'ee\par
+\'ee\'f2\'f1\'ee\'e5\'e4\'e8\'ed\'e8\'f2\'fc \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'fe\'f9\'f3\'fe \'f8\'e8\'ed\'f3 \'ee\'f2 \'f0\'e0\'e7\'fa\'e5\'ec\'e0 \'d51 \'e8 \'f3\'e1\'e5\'e4\'e8\'f2\'fc\'f1\'ff, \'f7\'f2\'ee \'dd\'c2\'cc\par
+\'e7\'e0\'e3\'f0\'f3\'e7\'e8\'f2\'f1\'ff.\par
+     10.2.3.\'c7\'e0\'ec\'e5\'ed\'e8\'f2\'fc \'ed\'e5\'e8\'f1\'ef\'f0\'e0\'e2\'ed\'f3\'fe \'ec\'e8\'ea\'f0\'ee\'f1\'f5\'e5\'ec\'f3 \'e2  \'f6\'e5\'ef\'e8  \'ee\'f2\'f1\'f3\'f2\'f1\'f2\'e2\'f3\'fe\'f9\'e5\'e3\'ee\par
+\'f1\'e8\'e3\'ed\'e0\'eb\'e0.\par
+\par
+                    11.\'d2\'e5\'f5\'ed\'e8\'f7\'e5\'f1\'ea\'ee\'e5 \'ee\'e1\'f1\'eb\'f3\'e6\'e8\'e2\'e0\'ed\'e8\'e5\par
+     11.1.\'cf\'e5\'f0\'e5\'f7\'e5\'ed\'fc \'f0\'e0\'e1\'ee\'f2 \'ef\'ee \'f2\'e5\'f5\'ed\'e8\'f7\'e5\'f1\'ea\'ee\'ec\'f3  \'ee\'e1\'f1\'eb\'f3\'e6\'e8\'e2\'e0\'ed\'e8\'fe  \'ef\'f0\'e8\'e2\'e5\'e4\'e5\'ed  \'e2\par
+\'f2\'e0\'e1\'eb.5.\par
+                             \'d2\'e0\'e1\'eb\'e8\'f6\'e0 5\par
+\par
+-------------------------------------------------------------------\par
+|\'d1\'ee\'e4\'e5\'f0\'e6\'e0\'ed\'e8\'e5 \'f0\'e0\'e1\'ee\'f2   | \'ef\'e5\'f0\'e8\'ee-  |\'d2\'e5\'f5\'ed\'e8\'f7\'e5\'f1\'ea\'e8\'e5 | \'cf\'f0\'e8\'e1\'ee\'f0\'fb, \'e8\'ed\'f1\'f2\'f0\'f3\'ec\'e5\'ed\'f2\'fb,|\par
+|\'e8 \'ec\'e5\'f2\'ee\'e4\'e8\'ea\'e0 \'e8\'f5      | \'e4\'e8\'f7\'ed\'ee\'f1\'f2\'fc|\'f2\'f0\'e5\'e1\'ee\'e2\'e0\'ed\'e8\'ff  | \'ef\'f0\'e8\'f1\'ef\'ee\'f1\'ee\'e1\'eb\'e5\'ed\'e8\'ff \'e8 \'ec\'e0- |\par
+|\'ef\'f0\'ee\'e2\'e5\'e4\'e5\'ed\'e8\'ff         | \'ef\'f0\'ee\'e2\'e5\'f0\'ea\'e8|            | \'f2\'e5\'f0\'e8\'e0\'eb\'fb, \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'fb\'e5 |\par
+|                   |         |            | \'e4\'eb\'ff \'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'ff \'f0\'e0\'e1\'ee\'f2\'fb1\par
+-------------------------------------------------------------------\par
+|1.\'cf\'f0\'ee\'f2\'e8\'f0\'ea\'e0 \'f1\'ef\'e8\'f0\'f2\'ee\'ec | 1 \'f0\'e0\'e7   |\'ce\'f2\'f1\'f3\'f2\'f1\'f2\'e2\'e8\'e5  | \'ca\'e8\'f1\'f2\'ee\'f7\'ea\'e0,\'ec\'e0\'f0\'eb\'ff, \'f1\'ef\'e8\'f0\'f21\par
+|\'ea\'ee\'ed\'f2\'e0\'ea\'f2\'ee\'e2 \'f0\'e0\'e7\'fa\'e5\'ec\'ee\'e2 | \'e2 6 \'ec\'e5- |\'e7\'e0\'e3\'f0\'ff\'e7\'ed\'e5\'ed\'e8\'ff | \'fd\'f2\'e8\'eb\'ee\'e2\'fb\'e9 \'f0\'e5\'ea\'f2\'e8\'f4\'e8\'ea\'e0\'f2  |\par
+|                   | \'f1\'ff\'f6\'e5\'e2   |\'ea\'ee\'ed\'f2\'e0\'ea\'f2\'ee\'e2   | 0,048 \'eb.             |\par
+-------------------------------------------------------------------\par
+|2.\'cf\'f0\'ee\'e2\'e5\'f0\'ea\'e0 \'f2\'e5\'f5\'ed\'e8-  | 1 \'f0\'e0\'e7   |\'d3\'f1\'ef\'e5\'f8\'ed\'ee\'e5    |                      |\par
+|\'f7\'e5\'f1\'ea\'ee\'e3\'ee \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'ff  | \'e2 \'ed\'e5-   |\'ef\'f0\'ee\'f5\'ee\'e6\'e4\'e5\'ed\'e8\'e5 |                      |\par
+|\'f3\'f1\'f2\'f0\'ee\'e9\'f1\'f2\'e2\'e0 \'e2 \'f1\'ee\'ee\'f2- | \'e4\'e5\'eb\'fe    |\'f2\'e5\'f1\'f2\'e0       |                      |\par
+|\'e2\'e5\'f2\'f1\'f2\'e2\'e8\'e8 \'f1 \'f3\'ea\'e0\'e7\'e0-  |         |            |                      |\par
+|\'ed\'e8\'ff\'ec\'e8 \'f0\'f3\'ea\'ee\'e2\'ee\'e4\'f1\'f2\'e2\'e0  |         |            |                      |\par
+|\'ee\'ef\'e5\'f0\'e0\'f2\'ee\'f0\'e0          |         |            |                      |\par
+-------------------------------------------------------------------\par
+\par
+     11.2.\'cd\'ee\'f0\'ec\'e0 \'f0\'e0\'f1\'f5\'ee\'e4\'e0 \'f1\'ef\'e8\'f0\'f2\'e0 \'f0\'e5\'ea\'f2\'e8\'f4\'e8\'ea\'ee\'e2\'e0\'ed\'ed\'ee\'e3\'ee \'c3\'ce\'d1\'d2 18300-72 \'e7\'e0\par
+1 \'e3\'ee\'e4 \'f1\'ee\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2 0,096 \'eb., \'ec\'e0\'f0\'eb\'e8 \'ec\'e5\'e4\'e8\'f6\'e8\'ed\'f1\'ea\'ee\'e9 \'c3\'ce\'d1\'d2 9412-77 - 0,25\'ec.\par
+\par
+                                    \'cf\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'e5 1. \'cb\'e8\'ed\'e8\'e8 \'f8\'e8\'ed\'fb IBM PC\par
+-------------------------------------------------------------------\par
+| \'d1\'e8\'e3\'ed\'e0\'eb | \'ca\'ee\'ed\'f2\'e0\'ea\'f2 | \'d3\'f0\'ee\'e2\'e5\'ed\'fc \'e0\'ea\'f2\'e8\'e2\'ed\'ee\'f1\'f2\'e8 |       \'cf\'f0\'e8\'ec\'e5\'f7\'e0\'ed\'e8\'e5        |\par
+-------------------------------------------------------------------\par
+| D0     |  A09    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| D1     |  A08    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| D2     |  A07    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| D3     |  A06    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| D4     |  A05    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| D5     |  A04    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| D6     |  A03    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| D7     |  A02    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+-------------------------------------------------------------------\par
+| A00    |  A31    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A01    |  A30    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A02    |  A29    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A03    |  A28    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A04    |  A27    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A05    |  A26    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A06    |  A25    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A07    |  A24    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A08    |  A23    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A09    |  A22    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A10    |  A21    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A11    |  A20    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A12    |  A19    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A13    |  A18    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A14    |  A17    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A15    |  A16    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A16    |  A15    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A17    |  A14    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A18    |  A13    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| A19    |  A12    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+-------------------------------------------------------------------\par
+| IRQ2   |  B04    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| IRQ3   |  B25    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| IRQ4   |  B24    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| IRQ5   |  B23    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| IRQ6   |  B22    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| IRQ7   |  B21    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+-------------------------------------------------------------------\par
+| IOR    |  B14    |    \'cd\'e8\'e7\'ea\'e8\'e9          |                         |\par
+| IOW    |  B13    |    \'cd\'e8\'e7\'ea\'e8\'e9          |                         |\par
+| MEMR   |  B12    |    \'cd\'e8\'e7\'ea\'e8\'e9          |                         |\par
+| MEMW   |  B11    |    \'cd\'e8\'e7\'ea\'e8\'e9          |                         |\par
+| CLK    |  B20    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |\'d1\'e8\'f1\'f2\'e5\'ec\'ed\'fb\'e9 \'f2\'e0\'ea\'f2 1/3       |\par
+| OSC    |  B30    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |\'cc\'e5\'e0\'ed\'e4\'f0 1/3 \'d1LK           |\par
+| T/\'d1    |  B27    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| AEN    |  B11    |    \'cd\'e8\'e7\'ea\'e8\'e9          |                         |\par
+| RESET  |  B02    |    \'cd\'e8\'e7\'ea\'e8\'e9          |                         |\par
+| DACK0  |  B19    |    \'cd\'e8\'e7\'ea\'e8\'e9          |                         |\par
+| DACK1  |  B17    |    \'cd\'e8\'e7\'ea\'e8\'e9          |                         |\par
+| DACK2  |  B26    |    \'cd\'e8\'e7\'ea\'e8\'e9          |                         |\par
+| DACK3  |  B15    |    \'cd\'e8\'e7\'ea\'e8\'e9          |                         |\par
+| ALE    |  B28    |    \'cd\'e8\'e7\'ea\'e8\'e9          |                         |\par
+|I/O CHCK|  A01    |    \'cd\'e8\'e7\'ea\'e8\'e9          |                         |\par
+| CHRDY  |  A10    |    \'cd\'e8\'e7\'ea\'e8\'e9          |                         |\par
+|CARD SEL|  B08    |    \'cd\'e8\'e7\'ea\'e8\'e9          |                         |\par
+| DRQ1   |  B18    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| DRQ2   |  B06    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+| DRQ3   |  B16    |    \'c2\'fb\'f1\'ee\'ea\'e8\'e9         |                         |\par
+-------------------------------------------------------------------\par
+| +12 \'c2  |  B09    |                    |\'cf\'e8\'f2\'e0\'ed\'e8\'e5                  |\par
+| -12 \'c2  |  B07    |                    |\'cf\'e8\'f2\'e0\'ed\'e8\'e5                  |\par
+| -5  \'c2  |  B05    |                    |\'cf\'e8\'f2\'e0\'ed\'e8\'e5                  |\par
+| +5  \'c2  |  B03    |                    |\'cf\'e8\'f2\'e0\'ed\'e8\'e5                  |\par
+| +5  \'c2  |  B29    |                    |\'cf\'e8\'f2\'e0\'ed\'e8\'e5                  |\par
+| GND    |  B01    |                    |\'ce\'e1\'f9\'e8\'e9                    |\par
+| GND    |  B10    |                    |\'ce\'e1\'f9\'e8\'e9                    |\par
+| GND    |  B31    |                    |\'ce\'e1\'f9\'e8\'e9                    |\par
+-------------------------------------------------------------------\par
+\par
+                               \'cf\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'e5 2. \'ca\'e0\'e1\'e5\'eb\'fc \'f1\'ee\'e5\'e4\'e8\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'e9\par
+                                             \'e4\'eb\'ff \'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0 \'ca-16\par
+\par
+          \'f51                                 \'f52\par
+----------------                          ------------------\par
+| \'d6\'e5\'ef\'fc    |\'ca\'ee\'ed\'f2|                          |\'ca\'ee\'ed\'f2|   \'d6\'e5\'ef\'fc    |\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c001   |28  ---------------------------- \'c124|   \'ce\'d8   \'c001|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c002   |29  ---------------------------- \'c126|   \'ce\'d8   \'c002|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c003   |30  ---------------------------- \'c125|   \'ce\'d8   \'c003|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c004   |31  ---------------------------- \'c014|   \'ce\'d8   \'c004|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c005   |32  ---------------------------- \'c010|   \'ce\'d8   \'c005|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c006   |33  ---------------------------- \'c011|   \'ce\'d8   \'c006|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c007   |34  ---------------------------- \'c013|   \'ce\'d8   \'c007|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c008   |35  ---------------------------- \'c015|   \'ce\'d8   \'c008|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c009   |36  ---------------------------- \'c016|   \'ce\'d8   \'c009|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c010   |37  ---------------------------- \'c115|   \'ce\'d8   \'c010|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c011   |38  ---------------------------- \'c114|   \'ce\'d8   \'c011|\par
+----------------                          ------------------\par
+|\'ce\'d8 D00   |45  ---------------------------- \'c11 |   \'ce\'d8   D00|\par
+----------------                          ------------------\par
+|\'ce\'d8 D01   |46  ---------------------------- \'c12 |   \'ce\'d8   D01|\par
+----------------                          ------------------\par
+|\'ce\'d8 D02   |47  ---------------------------- \'c02 |   \'ce\'d8   D02|\par
+----------------                          ------------------\par
+|\'ce\'d8 D03   |48  ---------------------------- \'c13 |   \'ce\'d8   D03|\par
+----------------                          ------------------\par
+|\'ce\'d8 D04   |49  ---------------------------- \'c03 |   \'ce\'d8   D04|\par
+----------------                          ------------------\par
+|\'ce\'d8 D05   |50  ---------------------------- \'c14 |   \'ce\'d8   D05|\par
+----------------                          ------------------\par
+|\'ce\'d8 D06   |51  ---------------------------- \'c04 |   \'ce\'d8   D06|\par
+----------------                          ------------------\par
+|\'ce\'d8 D07   |52  ---------------------------- \'c15 |   \'ce\'d8   D07|\par
+----------------                          ------------------\par
+|\'ce\'d8 D08   |53  ---------------------------- \'c05 |   \'ce\'d8   D08|\par
+----------------                          ------------------\par
+|\'ce\'d8 D09   |54  ---------------------------- \'c16 |   \'ce\'d8   D09|\par
+----------------                          ------------------\par
+|\'ce\'d8 D10   |55  ---------------------------- \'c06 |   \'ce\'d8   D10|\par
+----------------                          ------------------\par
+|\'ce\'d8 D11   |56  ---------------------------- \'c17 |   \'ce\'d8   D11|\par
+----------------                          ------------------\par
+|\'ce\'d8 D12   |57  ---------------------------- \'c07 |   \'ce\'d8   D12|\par
+----------------                          ------------------\par
+|\'ce\'d8 D13   |58  ---------------------------- \'c18 |   \'ce\'d8   D13|\par
+----------------                          ------------------\par
+|\'ce\'d8 D14   |59  ---------------------------- \'c08 |   \'ce\'d8   D14|\par
+----------------                          ------------------\par
+|\'ce\'d8 D15   |60  ---------------------------- \'c09 |   \'ce\'d8   D15|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'d1\'d5\'c8   |16  ---------------------------- \'c017|   \'ce\'d8   \'d1\'d5\'c8|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'cf\'ce\'c4\'c3  |18  ---------------------------- \'c012|   \'ce\'d8  \'cf\'ce\'c4\'c3|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'cf\'ca    |19  ---------------------------- \'c127|   \'ce\'d8  \'cf\'ca4 |\par
+----------------                          ------------------\par
+|\'ce\'d8 \'d1\'d5\'c7   |20  ---------------------------- \'c113|   \'ce\'d8   \'d1\'d5\'c7|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c2/\'c21  |17  ---------------------------- \'c112|   \'ce\'d8   \'d301|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c7\'ca    |22  ---------------------------- \'c020|   \'ce\'d8   \'c7\'cf4|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'cf\'d0\'d0   |15  ---------------------------- \'c019|   \'ce\'d8  \'cf\'d0\'c5\'d0|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c7\'c0\'cd   |24  ---------------------------- \'c110|   \'ce\'d8   \'c7\'c0\'cd|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c000   |27  -----|      |--------------- \'c123|   \'ce\'d8   \'c000|\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c012   |39  ---------------------------- \'c117|   \'ce\'d8   \'c012|\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c2/\'c20  |21  -----|      |--------------- \'c116|   \'ce\'d8   \'d300|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |01  ---------------------------- \'c030|   \'c7\'e5\'ec\'eb\'ff   |\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |02  ------      ---------------- \'c109|  \'d1\'cc-\'ed\'e8\'e7\'ea\'e8\'e9|\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |03  ------      ---------------- \'c118|   \'ce\'d8   \'c013|\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |04  ------      ---------------- \'c129|   \'ce\'d8   \'c014|\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |05  ------      ---------------- \'c120|   \'ce\'d8   \'c015|\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |06  ------      ---------------- \'c121|   \'ce\'d8   \'c017|\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |07  ------      ---------------- \'c122|   \'ce\'d8   \'c016|\par
+----------------    |                     ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |08  ------\par
+----------------    |\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |09  ------\par
+----------------    |\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |10  ------\par
+----------------    |\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |11  ------\par
+----------------    |\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |12  ------\par
+----------------    |\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |13  ------\par
+----------------    |\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |14  ------       \'cf\'f0\'e8 \'ec\'ee\'ed\'f2\'e0\'e6\'e5  \'ea\'e0\'e1\'e5\'eb\'ff,   \'ec\'e5\'e6\'e4\'f3 \'e4\'e2\'f3\'ec\'ff\par
+----------------    |       \'f1\'e8\'e3\'ed\'e0\'eb\'fc\'ed\'fb\'ec\'e8 \'ef\'f0\'ee\'e2\'ee\'e4\'ed\'e8\'ea\'e0\'ec\'e8 \'ef\'f0\'ee\'ef\'f3\'f1\'f2\'e8\'f2\'fc\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |25  ------       \'ee\'e4\'e8\'ed \'ee\'e1\'f9\'e8\'e9.\par
+----------------    |\par
+|\'ce\'d8 Q-U   |26  ------       \'cf\'e5\'f0\'e5\'e4 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'ea\'ee\'e9 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0\par
+----------------    |       \'ef\'f0\'ee\'e2\'e5\'f0\'fc\'f2\'e5 \'ef\'ee\'eb\'ee\'e6\'e5\'ed\'e8\'e5 \'ef\'e5\'f0\'e5\'ec\'fb\'f7\'e5\'ea \'e7\'e0\'e4\'e0\'fe\'f9\'e8\'f5\par
+|\'ce\'d8 \'c013   |40  ------       \'f3\'f0\'ee\'e2\'e5\'ed\'fc \'e5\'e3\'ee \'ef\'f0\'e8\'ee\'f0\'e8\'f2\'e5\'f2\'e0 \'ed\'e0 \'ee\'e1\'f9\'e5\'e9 \'f8\'e8\'ed\'e5.\par
+----------------    |       \'cf\'f0\'e8\'ee\'f0\'e8\'f2\'e5\'f2 \'e4\'ee\'eb\'e6\'e5\'ed \'e1\'fb\'f2\'fc \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed 4 (\'e2\par
+|\'ce\'d8 \'c014   |41  ------       \'ef\'f0\'ee\'f2\'e8\'e2\'ed\'ee\'ec \'f1\'eb\'f3\'f7\'e0\'e5 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e9\'f2\'e5 \'f1\'e8\'e3\'ed\'e0\'eb\'fb\par
+----------------    |       \'c7\'cf \'e8 \'cf\'ca \'f1 \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'fe\'f9\'e8\'ec\'e8 \'ed\'ee\'ec\'e5\'f0\'e0\'ec\'e8).\par
+|\'ce\'d8 \'c015   |42  ------\par
+----------------    |\par
+|\'ce\'d8 \'c016   |43  ------\par
+----------------    |\par
+|\'ce\'d8 \'c017   |44  ------\par
+----------------\par
+\par
+                               \'cf\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'e5 3. \'ca\'e0\'e1\'e5\'eb\'fc \'f1\'ee\'e5\'e4\'e8\'ed\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'e9\par
+                                             \'e4\'eb\'ff \'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0 \'ca\'ca\par
+\par
+          \'f51                                 \'f52\par
+----------------                          ------------------\par
+| \'d6\'e5\'ef\'fc    |\'ca\'ee\'ed\'f2|                          |\'ca\'ee\'ed\'f2|   \'d6\'e5\'ef\'fc    |\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c001   |28  ---------------------------- \'c131|   \'ce\'d8   \'c001|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c002   |29  ---------------------------- \'c032|   \'ce\'d8   \'c002|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c003   |30  ---------------------------- \'c132|   \'ce\'d8   \'c003|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c004   |31  ---------------------------- \'c033|   \'ce\'d8   \'c004|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c005   |32  ---------------------------- \'c133|   \'ce\'d8   \'c005|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c006   |33  ---------------------------- \'c034|   \'ce\'d8   \'c006|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c007   |34  ---------------------------- \'c134|   \'ce\'d8   \'c007|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c008   |35  ---------------------------- \'c035|   \'ce\'d8   \'c008|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c009   |36  ---------------------------- \'c135|   \'ce\'d8   \'c009|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c010   |37  ---------------------------- \'c036|   \'ce\'d8   \'c010|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c011   |38  ---------------------------- \'c136|   \'ce\'d8   \'c011|\par
+----------------                          ------------------\par
+|\'ce\'d8 D00   |45  ---------------------------- \'c06 |   \'ce\'d8   D00|\par
+----------------                          ------------------\par
+|\'ce\'d8 D01   |46  ---------------------------- \'c16 |   \'ce\'d8   D01|\par
+----------------                          ------------------\par
+|\'ce\'d8 D02   |47  ---------------------------- \'c07 |   \'ce\'d8   D02|\par
+----------------                          ------------------\par
+|\'ce\'d8 D03   |48  ---------------------------- \'c17 |   \'ce\'d8   D03|\par
+----------------                          ------------------\par
+|\'ce\'d8 D04   |49  ---------------------------- \'c08 |   \'ce\'d8   D04|\par
+----------------                          ------------------\par
+|\'ce\'d8 D05   |50  ---------------------------- \'c18 |   \'ce\'d8   D05|\par
+----------------                          ------------------\par
+|\'ce\'d8 D06   |51  ---------------------------- \'c09 |   \'ce\'d8   D06|\par
+----------------                          ------------------\par
+|\'ce\'d8 D07   |52  ---------------------------- \'c19 |   \'ce\'d8   D07|\par
+----------------                          ------------------\par
+|\'ce\'d8 D08   |53  ---------------------------- \'c011|   \'ce\'d8   D08|\par
+----------------                          ------------------\par
+|\'ce\'d8 D09   |54  ---------------------------- \'c111|   \'ce\'d8   D09|\par
+----------------                          ------------------\par
+|\'ce\'d8 D10   |55  ---------------------------- \'c012|   \'ce\'d8   D10|\par
+----------------                          ------------------\par
+|\'ce\'d8 D11   |56  ---------------------------- \'c112|   \'ce\'d8   D11|\par
+----------------                          ------------------\par
+|\'ce\'d8 D12   |57  ---------------------------- \'c013|   \'ce\'d8   D12|\par
+----------------                          ------------------\par
+|\'ce\'d8 D13   |58  ---------------------------- \'c113|   \'ce\'d8   D13|\par
+----------------                          ------------------\par
+|\'ce\'d8 D14   |59  ---------------------------- \'c014|   \'ce\'d8   D14|\par
+----------------                          ------------------\par
+|\'ce\'d8 D15   |60  ---------------------------- \'c114|   \'ce\'d8   D15|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'d1\'d5\'c8   |16  ---------------------------- \'c145|   \'ce\'d8   \'d1\'d5\'c8|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'cf\'ce\'c4\'c3  |18  ---------------------------- \'c14 |   \'ce\'d8   \'cf\'c3\'ce|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'cf\'ca    |19  ---------------------------- \'c027|   \'ce\'d8   4\'c2\'d5|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'d1\'d5\'c7   |20  ---------------------------- \'c045|   \'ce\'d8   \'d1\'d5\'c7|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c2/\'c21  |17  ---------------------------- \'c143|   \'ce\'d8    \'d11|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c7\'ca    |22  ---------------------------- \'c028|   \'ce\'d8   \'c7\'cf4|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'cf\'d0\'d0   |15  ---------------------------- \'c04 |   \'ce\'d8   \'cf\'d0\'c2|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c7\'c0\'cd   |24  ---------------------------- \'c117|   \'ce\'d8   \'c7\'c0\'cd|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c000   |27  -----|      |--------------- \'c031|   \'ce\'d8   \'c000|\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c012   |39  ---------------------------- \'c037|   \'ce\'d8   \'c012|\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c2/\'c20  |21  -----|      |--------------- \'c043|   \'ce\'d8    \'d10|\par
+----------------                          ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |01  ---------------------------- \'c13 |   \'c7\'e5\'ec\'eb\'ff   |\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |02  ------      ---------------- \'c110|   \'c7\'e5\'ec\'eb\'ff   |\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |03  ------      ---------------- \'c05 |   \'c7\'e5\'ec\'eb\'ff   |\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |04  ------      ---------------- \'c015|   \'c7\'e5\'ec\'eb\'ff   |\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |05  ------      ---------------- \'c144|   \'c7\'e5\'ec\'eb\'ff   |\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |06  ------      ---------------- \'c046|   \'c7\'e5\'ec\'eb\'ff   |\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |07  ------      ---------------- \'c137|   \'ce\'d8   \'c013|\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |08  ------      ---------------- \'c038|   \'ce\'d8   \'c014|\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |09  ------      ---------------- \'c139|   \'ce\'d8   \'c015|\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |10  ------      ---------------- \'c039|   \'ce\'d8   \'c017|\par
+----------------    |      |              ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |11  ------      ---------------- \'c139|   \'ce\'d8   \'c016|\par
+----------------    |                     ------------------\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |12  ------\par
+----------------    |\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |13  ------\par
+----------------    |\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |14  ------       \'cf\'f0\'e8 \'ec\'ee\'ed\'f2\'e0\'e6\'e5  \'ea\'e0\'e1\'e5\'eb\'ff,   \'ec\'e5\'e6\'e4\'f3 \'e4\'e2\'f3\'ec\'ff\par
+----------------    |       \'f1\'e8\'e3\'ed\'e0\'eb\'fc\'ed\'fb\'ec\'e8 \'ef\'f0\'ee\'e2\'ee\'e4\'ed\'e8\'ea\'e0\'ec\'e8 \'ef\'f0\'ee\'ef\'f3\'f1\'f2\'e8\'f2\'fc\par
+|\'ce\'d8 \'c7\'e5\'ec\'eb\'ff |25  ------       \'ee\'e4\'e8\'ed \'ee\'e1\'f9\'e8\'e9.\par
+----------------    |\par
+|\'ce\'d8 Q-U   |26  ------       \'cf\'e5\'f0\'e5\'e4 \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'ea\'ee\'e9 \'ea\'f0\'e5\'e9\'f2-\'ea\'ee\'ed\'f2\'f0\'ee\'eb\'eb\'e5\'f0\'e0\par
+----------------    |       \'ef\'f0\'ee\'e2\'e5\'f0\'fc\'f2\'e5 \'ef\'ee\'eb\'ee\'e6\'e5\'ed\'e8\'e5 \'ef\'e5\'f0\'e5\'ec\'fb\'f7\'e5\'ea \'e7\'e0\'e4\'e0\'fe\'f9\'e8\'f5\par
+|\'ce\'d8 \'c013   |40  ------       \'f3\'f0\'ee\'e2\'e5\'ed\'fc \'e5\'e3\'ee \'ef\'f0\'e8\'ee\'f0\'e8\'f2\'e5\'f2\'e0 \'ed\'e0 \'ee\'e1\'f9\'e5\'e9 \'f8\'e8\'ed\'e5.\par
+----------------    |       \'cf\'f0\'e8\'ee\'f0\'e8\'f2\'e5\'f2 \'e4\'ee\'eb\'e6\'e5\'ed \'e1\'fb\'f2\'fc \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed 4 (\'e2\par
+|\'ce\'d8 \'c014   |41  ------       \'ef\'f0\'ee\'f2\'e8\'e2\'ed\'ee\'ec \'f1\'eb\'f3\'f7\'e0\'e5 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e9\'f2\'e5 \'f1\'e8\'e3\'ed\'e0\'eb\'fb\par
+----------------    |       \'c7\'cf \'e8 \'cf\'ca \'f1 \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'fe\'f9\'e8\'ec\'e8 \'ed\'ee\'ec\'e5\'f0\'e0\'ec\'e8).\par
+|\'ce\'d8 \'c015   |42  ------\par
+----------------    |\par
+|\'ce\'d8 \'c016   |43  ------\par
+----------------    |\par
+|\'ce\'d8 \'c017   |44  ------\par
+----------------\par
+\par
+\'1a\par
+}
+ 

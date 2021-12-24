@@ -314,8 +314,8 @@ assign cb_data[10] = d2_db[1];
 assign cb_data[8] = d2_db[2];
 assign cb_data[11] = d2_db[3];
 
-assign isa_data[0] = d12_db[0];
-assign isa_data[1] = d12_db[1];
+assign isa_data[0] = d12_db[1];
+assign isa_data[1] = d12_db[0];
 assign isa_data[2] = d12_db[2];
 assign isa_data[3] = d12_db[3];
 assign isa_data[4] = d11_db[0];
