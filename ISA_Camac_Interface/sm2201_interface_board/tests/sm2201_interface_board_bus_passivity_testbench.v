@@ -58,8 +58,8 @@ module sm2201_interface_board_bus_passivity_testbench;
     //wire [7:0] isa_data_in;
     
 
-    assign cb_data = cb_b_b1 == 1'b1 ? cb_data_out : 16'bz; //cb_data_in;
-    assign isa_data = q_r_debug == 1'b1 ? isa_data_out : 8'bz;// isa_data_in;
+    assign cb_data = cb_b_b1 == 1'b1 ? cb_data_out : 16'b0000000000000000; //cb_data_in;
+    //assign isa_data = q_r_debug == 1'b1 ? isa_data_out : 8'bz;// isa_data_in;
     //assign cb_data_in = cb_data_in_buffer;
 
 
@@ -105,7 +105,8 @@ module sm2201_interface_board_bus_passivity_testbench;
         cb_prr <= 1;
         cb_zk4 <= 1;
         isa_data_out <= 16'b0000000000000000;
-        cb_data_out <= 16'b0000000000000000;//16'b1111111111111111;  // because we have opened inputs
+        cb_data_out <= //16'b0000000000000000;
+		               16'b1111111111111111;  // because we have opened inputs
         //cb_data_in_buffer <= 8'b00000000;
         counter <= 0;
         operation <= 0;

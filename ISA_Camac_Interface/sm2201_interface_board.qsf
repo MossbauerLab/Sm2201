@@ -255,7 +255,7 @@ set_location_assignment PIN_B9 -to cb_prepare_bus
 set_location_assignment PIN_B8 -to cb_prr
 set_location_assignment PIN_A8 -to cb_zk4
 set_global_assignment -name ENABLE_SIGNALTAP OFF
-set_global_assignment -name USE_SIGNALTAP_FILE sm2201_iface_board_isa_analyzer.stp
+set_global_assignment -name USE_SIGNALTAP_FILE sm2201_interface_board/bus_passivity_test.stp
 set_global_assignment -name SIGNALTAP_FILE output_files/analyzer_profile.stp
 set_global_assignment -name SIGNALTAP_FILE analyzer_profile.stp
 set_global_assignment -name SIGNALTAP_FILE sm2201_iface_board_isa_analyzer.stp
@@ -282,4 +282,5 @@ set_global_assignment -name EDA_TEST_BENCH_FILE sm2201_interface_board/tests/sm2
 set_location_assignment PIN_M22 -to isa_irq[1]
 set_location_assignment PIN_M21 -to isa_irq[0]
 set_location_assignment PIN_B17 -to q_r_debug
+set_global_assignment -name SIGNALTAP_FILE sm2201_interface_board/bus_passivity_test.stp
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
