@@ -51,14 +51,15 @@ module sm2201_interface_board_bus_passivity_testbench;
     reg cb_zk4;
     wire [15:0] cb_data;
     reg [15:0] cb_data_out;
-    //wire [15:0] cb_data_in;
+    wire [15:0] cb_data_in;
     //reg [15:0] cb_data_in_buffer;
     wire [11:0] cb_addr;
     reg [7:0] isa_data_out;
     wire [7:0] isa_data_in;
     
 
-    assign cb_data = cb_b_b1 == 1'b1 ? cb_data_out : 16'b0000000000000000; //cb_data_in;
+    assign cb_data = cb_b_b1 == 1'b1 ? cb_data_out : cb_data_in;
+	//16'b0000000000000000; //
     assign isa_data = isa_ior == 1'b0 ? isa_data_in : isa_data_out;
     //assign cb_data_in = cb_data_in_buffer;
 
@@ -86,7 +87,7 @@ module sm2201_interface_board_bus_passivity_testbench;
         .cb_prr(cb_prr),
         .cb_zk4(cb_zk4),
         .cb_cx1(cb_cx1),
-        .cb_data(cb_data),
+        .cb_data(cb_data_in),
         .cb_addr(cb_addr),
         .cb_b_b1(cb_b_b1)
     );
