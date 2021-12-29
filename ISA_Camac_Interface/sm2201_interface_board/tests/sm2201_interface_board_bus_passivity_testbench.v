@@ -55,11 +55,11 @@ module sm2201_interface_board_bus_passivity_testbench;
     //reg [15:0] cb_data_in_buffer;
     wire [11:0] cb_addr;
     reg [7:0] isa_data_out;
-    //wire [7:0] isa_data_in;
+    wire [7:0] isa_data_in;
     
 
     assign cb_data = cb_b_b1 == 1'b1 ? cb_data_out : 16'b0000000000000000; //cb_data_in;
-    //assign isa_data = q_r_debug == 1'b1 ? isa_data_out : 8'bz;// isa_data_in;
+    assign isa_data = isa_ior == 1'b0 ? isa_data_in : isa_data_out;
     //assign cb_data_in = cb_data_in_buffer;
 
 
@@ -75,7 +75,7 @@ module sm2201_interface_board_bus_passivity_testbench;
         .isa_ior(isa_ior), 
         .isa_iow(isa_iow), 
         .isa_addr(isa_addr),
-        .isa_data(isa_data),
+        .isa_data(isa_data_in),
         .isa_ale(isa_ale),
         .isa_aen(isa_aen),
         // isa outputs
@@ -104,7 +104,7 @@ module sm2201_interface_board_bus_passivity_testbench;
         // initial CAMAC
         cb_prr <= 1;
         cb_zk4 <= 1;
-        isa_data_out <= 16'b0000000000000000;
+        isa_data_out <= 8'b01010110;
         cb_data_out <= //16'b0000000000000000;
 		               16'b1111111111111111;  // because we have opened inputs
         //cb_data_in_buffer <= 8'b00000000;
