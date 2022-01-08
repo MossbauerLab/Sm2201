@@ -31,7 +31,7 @@ cb_data[2]		Bidir		PIN_C2		3.3-V LVTTL			U7					24		CAMAC
 cb_data[1]		Bidir		PIN_C1		3.3-V LVTTL			U7					23		CAMAC				
 cb_data[0]		Bidir		PIN_D2		3.3-V LVTTL			U7					22		CAMAC				
 cb_pc4			Output		PIN_B10		3.3-V LVTTL			U7					43		CAMAC				
-cb_prepare_bus	Output		PIN_B9		3.3-V LVTTL			U7					41		CAMAC				
+cb_prepare_bus		Output		PIN_B9		3.3-V LVTTL			U7					41		CAMAC				
 cb_prr			Input		PIN_B8		3.3-V LVTTL			U7					39		CAMAC				
 cb_zk4			Input		PIN_A8		3.3-V LVTTL			U7					40		CAMAC				
 isa_addr[9]		Input		PIN_U21		3.3-V LVTTL			U8					30		ISA					A22

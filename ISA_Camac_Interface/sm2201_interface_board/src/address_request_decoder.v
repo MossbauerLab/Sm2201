@@ -48,6 +48,8 @@ module address_request_decoder(
     output wire interrupt_en  // interrupt enabled
 );
 
+supply1 vcc;
+
 wire [7:0] d10_addr;
 wire [1:0] d10_cs;
 wire [3:0] d10_out;
@@ -58,6 +60,8 @@ wire d5_y3;
 wire d9_y1;
 wire d9_y2;
 wire d9_y3;
+
+wire zk4_pulled;
 
 // DD10
 assign d10_addr[0] = address[6];
@@ -82,6 +86,8 @@ assign internal_address[0] = d10_out_pulled[1];
 assign internal_address[1] = d10_out_pulled[0];
 assign sel1 = d10_out_pulled[2];
 
+assign zk4_pulled = zk4 == 1'b0 ? 1'b0 : 1'b1;  // todo: umv: check this ....
+
 // DD5
 SN74LS00 d5(.a3(ior), .b3(iow), .y3(d5_y3),
             .a4(d9_y2), .b4(address[8]), .y4(sel));
@@ -89,7 +95,7 @@ SN74LS00 d5(.a3(ior), .b3(iow), .y3(d5_y3),
 // DD9
 SN74LS27 d9(.a1(d5_y3), .b1(d5_y3), .c1(d5_y3), .y1(d9_y1),
             .a2(address[7]), .b2(d10_out_pulled[3]), .c2(address[9]), .y2(d9_y2),
-            .a3(interrupt_req), .b3(zk4), .c3(interrupt_req), .y3(d9_y3));
+            .a3(interrupt_req), .b3(zk4_pulled), .c3(interrupt_req), .y3(d9_y3));
 
 // DD10
 dig_machine_ip3601 d10(.address(d10_addr), .cs(d10_cs), .data(d10_out));
