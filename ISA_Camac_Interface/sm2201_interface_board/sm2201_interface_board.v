@@ -167,10 +167,12 @@ assign d4_s1[1] = cb_data[7];
 assign d4_s1[2] = cb_data[6];
 assign d4_s1[3] = cb_data[5];
 
+// ---
 assign d4_s2[0] = cb_data[12];
 assign d4_s2[1] = cb_data[15];
 assign d4_s2[2] = cb_data[14];
 assign d4_s2[3] = cb_data[13];
+// ---
 
 // DD2
 
@@ -185,10 +187,12 @@ assign d3_s1[1] = cb_data[3];
 assign d3_s1[2] = cb_data[2];
 assign d3_s1[3] = cb_data[0];
 
+// ---
 assign d3_s2[0] = cb_data[9];
 assign d3_s2[1] = cb_data[11];
 assign d3_s2[2] = cb_data[10];
 assign d3_s2[3] = cb_data[8];
+// ---
 
 // DD6
 assign d6_a[0] = d4_q[0];

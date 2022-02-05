@@ -52,16 +52,17 @@ module sm2201_interface_board_bus_passivity_testbench;
     wire [15:0] cb_data;
     reg [15:0] cb_data_out;
     wire [15:0] cb_data_in;
-    //reg [15:0] cb_data_in_buffer;
+    reg [15:0] cb_data_in_buffer;
     wire [11:0] cb_addr;
     reg [7:0] isa_data_out;
     wire [7:0] isa_data_in;
-    
+    reg [7:0] isa_data_in_buffer;
 
-    assign cb_data = cb_b_b1 == 1'b1 ? cb_data_out : cb_data_in;
-	//16'b0000000000000000; //
-    assign isa_data = isa_ior == 1'b0 ? isa_data_in : isa_data_out;
-    //assign cb_data_in = cb_data_in_buffer;
+    assign cb_data = /*cb_b_b1*/ isa_ior == 1'b1 ? cb_data_out : cb_data_in;
+    assign cb_data_in = cb_data_in_buffer;
+    //16'b0000000000000000; //
+    assign isa_data = q_r_debug == 1'b0 ? isa_data_in : isa_data_out;
+    //assign isa_data_in = isa_data_in_buffer;
 
 
     localparam reg[31:0] WRITE_ADDR_INT_REG_READY = 0;
@@ -106,9 +107,9 @@ module sm2201_interface_board_bus_passivity_testbench;
         cb_prr <= 1;
         cb_zk4 <= 1;
         isa_data_out <= 8'b01010110;
-        cb_data_out <= //16'b0000000000000000;
-		               16'b1111111111111111;  // because we have opened inputs
-        //cb_data_in_buffer <= 8'b00000000;
+        cb_data_out <= 16'b1001100110001000;
+        cb_data_in_buffer <= 16'b1111111111111111;
+        //isa_data_in_buffer <= 8'b00000000;
         counter <= 0;
         operation <= 0;
     end
