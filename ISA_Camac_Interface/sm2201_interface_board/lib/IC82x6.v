@@ -39,7 +39,7 @@ assign d_in_value = (INVERTED_OUTPUT == 0) ? d_in : ~d_in;
 assign d_bus_value = (INVERTED_OUTPUT == 0) ? d_bus : ~d_bus;
 
 assign d_bus = (cs_n == 1'b0) ? d_bus_write : 4'bz;
-assign d_bus_write = (/*cs_n == 1'b0 &&*/ dce == 1'b0) ? d_in_value : 4'b0000;
-assign d_out = (/*cs_n == 1'b0 &&*/ dce == 1'b1) ? d_bus_value : 4'bz;
+assign d_bus_write = (cs_n == 1'b0 && dce == 1'b0) ? d_in_value : 4'bz;
+assign d_out = (cs_n == 1'b0 && dce == 1'b1) ? d_bus_value : 4'bz;
 
 endmodule

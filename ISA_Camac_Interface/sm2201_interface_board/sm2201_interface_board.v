@@ -95,9 +95,6 @@ wire p_wr;
 wire l_sel1;
 wire v_rp;
 
-// hb - high byte, means cb_data[15:8]
-// wire [7:0] cb_data_hb_out;
-
 wire [3:0] d1_di;
 wire [3:0] d1_db;
 
@@ -316,16 +313,6 @@ assign cb_data[0] = d12_do[0];
 assign cb_data[1] = d12_do[1];
 assign cb_data[2] = d12_do[2];
 assign cb_data[3] = d12_do[3];
-
-/*assign cb_data[12] = d1_db[0];
-assign cb_data[14] = d1_db[1];
-assign cb_data[13] = d1_db[2];
-assign cb_data[15] = d1_db[3];
-
-assign cb_data[9] = d2_db[0];
-assign cb_data[10] = d2_db[1];
-assign cb_data[8] = d2_db[2];
-assign cb_data[11] = d2_db[3];*/
 
 assign isa_data[0] = d12_db[1];
 assign isa_data[1] = d12_db[0];
