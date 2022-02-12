@@ -23,3 +23,5 @@ ISA_Camac_Interface/simulation/modelsim/wlft*
 *.vo
 *.sdo
 *.do
+
+sm2201_iface_board_v2/db/
