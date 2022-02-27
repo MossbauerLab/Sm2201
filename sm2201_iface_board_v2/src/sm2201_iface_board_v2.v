@@ -37,7 +37,7 @@ module sm2201_iface_board_v2(
     output wire camac_prepare_bus,      // ОШ ПОДГ.
     output wire camac_b_b1,             // ОШ B/B1
     output wire camac_pc4,              // ОШ ПК4        ???
-    output wire camac_cx3,              // ОШ СХ3
+    output wire camac_cx3               // ОШ СХ3
 );
 
 endmodule

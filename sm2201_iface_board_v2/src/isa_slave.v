@@ -57,10 +57,27 @@ module isa_slave #
     input  wire isa_reset,
     input  wire isa_ior,
     input  wire isa_iow,
+	 // following signals are used to manage data
 	 output wire operation,    // 1 - Input (Bus Write, isa_iow pulse), 0 - Output (Bus Read, isa_ior pulse)
-	 input  wire [DATA_WIDTH-1:0] data_to_send,
+	 input  wire [DATA_WIDTH-1:0] send_data,
 	 input  wire send_req,
-	 output wire send_
+	 output wire send_ack,
+	 output wire [DATA_WIDTH-1:0] recv_data,
+	 output wire recv_req,
+	 input  wire recv_ack
 );
+
+localparam reg[3:0] INITED_STATE = 1;
+localparam reg[3:0] WAIT_OPERATION_STATE = 2;
+localparam reg[3:0] READ_OPERATION_STATE = 3;
+localparam reg[3:0] WRITE_OPERATION_STATE = 4;
+localparam reg[3:0] OPERATION_COMPLETED_STATE = 5;
+reg[3:0] state;
+
+
+always @(posedge isa_clk)
+begin
+    
+end
 
 endmodule
